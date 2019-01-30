@@ -1,0 +1,591 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1526 ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"183 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+[v _isr isr `II(v  1 e 1 0 ]
+"851
+[v _main main `(i  1 e 2 0 ]
+"1163
+[v _applianceControl applianceControl `(v  1 e 1 0 ]
+"1270
+[v _GPIO_pin_Initialize GPIO_pin_Initialize `(v  1 e 1 0 ]
+"1314
+[v _allPeripheralInit allPeripheralInit `(v  1 e 1 0 ]
+"1324
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"1362
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"1393
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"1423
+[v _CCP9_Initialize CCP9_Initialize `(v  1 e 1 0 ]
+"1446
+[v _errorsISR errorsISR `(v  1 e 1 0 ]
+"1456
+[v _errorsMain errorsMain `(v  1 e 1 0 ]
+"1467
+[v _TransmissionIndicationLedBlinking TransmissionIndicationLedBlinking `(v  1 e 1 0 ]
+"1472
+[v _ReceivingIndicationLedBlinking ReceivingIndicationLedBlinking `(v  1 e 1 0 ]
+"1478
+[v _sendAcknowledgment sendAcknowledgment `(v  1 e 1 0 ]
+"1489
+[v _SwitchOffStatustToGatway SwitchOffStatustToGatway `(v  1 e 1 0 ]
+"1496
+[v _SwitchOnStatustToGatway SwitchOnStatustToGatway `(v  1 e 1 0 ]
+"1503
+[v _copyReceivedDataBuffer copyReceivedDataBuffer `(v  1 e 1 0 ]
+"1513
+[v _pinINIT_extra pinINIT_extra `(v  1 e 1 0 ]
+"1530
+[v _clearAllPorts clearAllPorts `(v  1 e 1 0 ]
+[s S337 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"506 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
+[u S346 . 1 `S337 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES346  1 e 1 @13 ]
+[s S281 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"630
+[u S290 . 1 `S281 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES290  1 e 1 @15 ]
+[s S311 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+`uc 1 RE4 1 0 :1:4 
+`uc 1 RE5 1 0 :1:5 
+`uc 1 RE6 1 0 :1:6 
+`uc 1 RE7 1 0 :1:7 
+]
+"692
+[u S320 . 1 `S311 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES320  1 e 1 @16 ]
+[s S174 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"760
+[s S183 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S188 . 1 `S174 1 . 1 0 `S183 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES188  1 e 1 @17 ]
+[s S68 . 1 `uc 1 TMR3IF 1 0 :1:0 
+`uc 1 TMR4IF 1 0 :1:1 
+`uc 1 TMR5IF 1 0 :1:2 
+`uc 1 TMR6IF 1 0 :1:3 
+`uc 1 CCP3IF 1 0 :1:4 
+`uc 1 CCP4IF 1 0 :1:5 
+`uc 1 CCP5IF 1 0 :1:6 
+`uc 1 CCP6IF 1 0 :1:7 
+]
+"903
+[u S77 . 1 `S68 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES77  1 e 1 @19 ]
+[s S564 . 1 `uc 1 SSP2IF 1 0 :1:0 
+`uc 1 BCL2IF 1 0 :1:1 
+`uc 1 CCP7IF 1 0 :1:2 
+`uc 1 CCP8IF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+`uc 1 CCP9IF 1 0 :1:6 
+`uc 1 CCP10IF 1 0 :1:7 
+]
+"965
+[u S573 . 1 `S564 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES573  1 e 1 @20 ]
+"1037
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"1057
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"1077
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S208 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"1100
+[s S215 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S222 . 1 `S208 1 . 1 0 `S215 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES222  1 e 1 @24 ]
+"1155
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+[s S414 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1415
+[u S423 . 1 `S414 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES423  1 e 1 @141 ]
+[s S492 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1477
+[u S501 . 1 `S492 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES501  1 e 1 @142 ]
+[s S393 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1539
+[u S402 . 1 `S393 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES402  1 e 1 @143 ]
+[s S435 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 TRISE3 1 0 :1:3 
+`uc 1 TRISE4 1 0 :1:4 
+`uc 1 TRISE5 1 0 :1:5 
+`uc 1 TRISE6 1 0 :1:6 
+`uc 1 TRISE7 1 0 :1:7 
+]
+"1601
+[u S444 . 1 `S435 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES444  1 e 1 @144 ]
+[s S142 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1669
+[s S151 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S156 . 1 `S142 1 . 1 0 `S151 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES156  1 e 1 @145 ]
+[s S47 . 1 `uc 1 TMR3IE 1 0 :1:0 
+`uc 1 TMR4IE 1 0 :1:1 
+`uc 1 TMR5IE 1 0 :1:2 
+`uc 1 TMR6IE 1 0 :1:3 
+`uc 1 CCP3IE 1 0 :1:4 
+`uc 1 CCP4IE 1 0 :1:5 
+`uc 1 CCP5IE 1 0 :1:6 
+`uc 1 CCP6IE 1 0 :1:7 
+]
+"1812
+[u S56 . 1 `S47 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES56  1 e 1 @147 ]
+[s S585 . 1 `uc 1 SSP2IE 1 0 :1:0 
+`uc 1 BCL2IE 1 0 :1:1 
+`uc 1 CCP7IE 1 0 :1:2 
+`uc 1 CCP8IE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+`uc 1 CCP9IE 1 0 :1:6 
+`uc 1 CCP10IE 1 0 :1:7 
+]
+"1874
+[u S594 . 1 `S585 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES594  1 e 1 @148 ]
+"2868
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2921
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2979
+[v _ANSELD ANSELD `VEuc  1 e 1 @399 ]
+"3025
+[v _ANSELE ANSELE `VEuc  1 e 1 @400 ]
+"3256
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"3310
+[v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
+"3371
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
+"3441
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"3495
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S20 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3521
+[u S29 . 1 `S20 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES29  1 e 1 @413 ]
+"3675
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+[s S536 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3701
+[u S545 . 1 `S536 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES545  1 e 1 @414 ]
+"3855
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"4005
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4075
+[v _WPUD WPUD `VEuc  1 e 1 @527 ]
+"4137
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+[s S89 . 1 `uc 1 RF0 1 0 :1:0 
+`uc 1 RF1 1 0 :1:1 
+`uc 1 RF2 1 0 :1:2 
+`uc 1 RF3 1 0 :1:3 
+`uc 1 RF4 1 0 :1:4 
+`uc 1 RF5 1 0 :1:5 
+`uc 1 RF6 1 0 :1:6 
+`uc 1 RF7 1 0 :1:7 
+]
+"5216
+[u S98 . 1 `S89 1 . 1 0 ]
+[v _PORTFbits PORTFbits `VES98  1 e 1 @652 ]
+[s S358 . 1 `uc 1 RG0 1 0 :1:0 
+`uc 1 RG1 1 0 :1:1 
+`uc 1 RG2 1 0 :1:2 
+`uc 1 RG3 1 0 :1:3 
+`uc 1 RG4 1 0 :1:4 
+`uc 1 RG5 1 0 :1:5 
+]
+"5276
+[u S365 . 1 `S358 1 . 1 0 ]
+[v _PORTGbits PORTGbits `VES365  1 e 1 @653 ]
+[s S471 . 1 `uc 1 TRISF0 1 0 :1:0 
+`uc 1 TRISF1 1 0 :1:1 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"5778
+[u S480 . 1 `S471 1 . 1 0 ]
+[v _TRISFbits TRISFbits `VES480  1 e 1 @780 ]
+[s S456 . 1 `uc 1 TRISG0 1 0 :1:0 
+`uc 1 TRISG1 1 0 :1:1 
+`uc 1 TRISG2 1 0 :1:2 
+`uc 1 TRISG3 1 0 :1:3 
+`uc 1 TRISG4 1 0 :1:4 
+]
+"5837
+[u S462 . 1 `S456 1 . 1 0 ]
+[v _TRISGbits TRISGbits `VES462  1 e 1 @781 ]
+"6516
+[v _ANSELF ANSELF `VEuc  1 e 1 @1036 ]
+"6578
+[v _ANSELG ANSELG `VEuc  1 e 1 @1037 ]
+"6624
+[v _TMR3L TMR3L `VEuc  1 e 1 @1041 ]
+"6644
+[v _TMR3H TMR3H `VEuc  1 e 1 @1042 ]
+"6664
+[v _T3CON T3CON `VEuc  1 e 1 @1043 ]
+[s S110 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 TMR3CS 1 0 :2:6 
+]
+"6687
+[s S117 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3OSCEN 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+`uc 1 TMR3CS0 1 0 :1:6 
+`uc 1 TMR3CS1 1 0 :1:7 
+]
+[u S124 . 1 `S110 1 . 1 0 `S117 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES124  1 e 1 @1043 ]
+"6742
+[v _T3GCON T3GCON `VEuc  1 e 1 @1044 ]
+"7229
+[v _WPUG WPUG `VEuc  1 e 1 @1165 ]
+"8317
+[v _CCPR9L CCPR9L `VEuc  1 e 1 @1562 ]
+"8337
+[v _CCPR9H CCPR9H `VEuc  1 e 1 @1563 ]
+"8357
+[v _CCP9CON CCP9CON `VEuc  1 e 1 @1564 ]
+"9033
+[v _CCP9IF CCP9IF `VEb  1 e 0 @166 ]
+"9107
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"9299
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"9347
+[v _RC1IF RC1IF `VEb  1 e 0 @141 ]
+"149 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+[v _mainReceivedDataPosition mainReceivedDataPosition `i  1 e 2 0 ]
+[v _mainDataReceived mainDataReceived `i  1 e 2 0 ]
+"150
+[v _mainReceivedDataBuffer mainReceivedDataBuffer `[18]uc  1 e 18 0 ]
+"151
+[v _tempReceivedDataBuffer tempReceivedDataBuffer `[10]uc  1 e 10 0 ]
+"152
+[v _parentalLockBuffer parentalLockBuffer `[14]uc  1 e 14 0 ]
+"153
+[v _copy_parentalLockBuffer copy_parentalLockBuffer `[14]uc  1 e 14 0 ]
+"154
+[v _currentStateBuffer currentStateBuffer `[58]uc  1 e 58 0 ]
+"156
+[v _M1 M1 `ui  1 e 2 0 ]
+[v _M2 M2 `ui  1 e 2 0 ]
+[v _M3 M3 `ui  1 e 2 0 ]
+[v _M4 M4 `ui  1 e 2 0 ]
+"157
+[v _M5 M5 `ui  1 e 2 0 ]
+[v _M6 M6 `ui  1 e 2 0 ]
+[v _M7 M7 `ui  1 e 2 0 ]
+[v _M8 M8 `ui  1 e 2 0 ]
+"158
+[v _M9 M9 `ui  1 e 2 0 ]
+"159
+[v _start_PWM_Generation_in_ISR_FLAG start_PWM_Generation_in_ISR_FLAG `i  1 e 2 0 ]
+"160
+[v _levelofDimmer_MSB levelofDimmer_MSB `uc  1 e 1 0 ]
+[v _levelofDimmer_LSB levelofDimmer_LSB `uc  1 e 1 0 ]
+"851
+[v _main main `(i  1 e 2 0 ]
+{
+"880
+[v main@dataBufferCounter dataBufferCounter `i  1 a 2 0 ]
+"901
+[v main@man man `i  1 a 2 2 ]
+"1161
+} 0
+"1456
+[v _errorsMain errorsMain `(v  1 e 1 0 ]
+{
+[v errorsMain@errNum errNum `*.25DCuc  1 p 2 0 ]
+"1465
+} 0
+"1503
+[v _copyReceivedDataBuffer copyReceivedDataBuffer `(v  1 e 1 0 ]
+{
+"1504
+[v copyReceivedDataBuffer@dataBufferCounter dataBufferCounter `i  1 a 2 1 ]
+"1509
+} 0
+"1163
+[v _applianceControl applianceControl `(v  1 e 1 0 ]
+{
+[v applianceControl@charSwitchMSB charSwitchMSB `uc  1 a 1 wreg ]
+"1168
+[v applianceControl@integerSwitchState integerSwitchState `i  1 a 2 33 ]
+"1170
+[v applianceControl@currentStateBufferPositions currentStateBufferPositions `i  1 a 2 31 ]
+"1167
+[v applianceControl@integerSwitchNumber integerSwitchNumber `i  1 a 2 29 ]
+"1174
+[v applianceControl@dimmerSpeedStringBuffer dimmerSpeedStringBuffer `[2]uc  1 a 2 27 ]
+"1173
+[v applianceControl@switchNumberStringBuffer switchNumberStringBuffer `[2]uc  1 a 2 25 ]
+"1169
+[v applianceControl@integerSpeed integerSpeed `i  1 a 2 22 ]
+"1163
+[v applianceControl@charSwitchMSB charSwitchMSB `uc  1 a 1 wreg ]
+[v applianceControl@charSwitchLSB charSwitchLSB `uc  1 p 1 14 ]
+[v applianceControl@charSwitchSTATE charSwitchSTATE `uc  1 p 1 15 ]
+[v applianceControl@chDimmerSpeedMSB chDimmerSpeedMSB `uc  1 p 1 16 ]
+[v applianceControl@chDimmerSpeedLSB chDimmerSpeedLSB `uc  1 p 1 17 ]
+"1164
+[v applianceControl@charParentalControl charParentalControl `uc  1 p 1 18 ]
+[v applianceControl@charFinalFrameState charFinalFrameState `uc  1 p 1 19 ]
+"1170
+[v applianceControl@F3725 F3725 `[2]uc  1 s 2 F3725 ]
+"1173
+[v applianceControl@F3727 F3727 `[2]uc  1 s 2 F3727 ]
+"1167
+[v applianceControl@charSwitchMSB charSwitchMSB `uc  1 a 1 24 ]
+"1264
+} 0
+"1478
+[v _sendAcknowledgment sendAcknowledgment `(v  1 e 1 0 ]
+{
+[v sendAcknowledgment@currentStateBuffer currentStateBuffer `*.5uc  1 a 1 wreg ]
+"1479
+[v sendAcknowledgment@Tx_count Tx_count `i  1 a 2 1 ]
+"1478
+[v sendAcknowledgment@currentStateBuffer currentStateBuffer `*.5uc  1 a 1 wreg ]
+[v sendAcknowledgment@currentStateBuffer currentStateBuffer `*.5uc  1 a 1 3 ]
+"1488
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v atoi@a a `i  1 a 2 11 ]
+"8
+[v atoi@sign sign `uc  1 a 1 10 ]
+"5
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+[v atoi@s s `*.4DCuc  1 a 1 13 ]
+"24
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"1314 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+[v _allPeripheralInit allPeripheralInit `(v  1 e 1 0 ]
+{
+"1319
+} 0
+"1393
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"1422
+} 0
+"1362
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"1391
+} 0
+"1324
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"1360
+} 0
+"1423
+[v _CCP9_Initialize CCP9_Initialize `(v  1 e 1 0 ]
+{
+"1443
+} 0
+"1467
+[v _TransmissionIndicationLedBlinking TransmissionIndicationLedBlinking `(v  1 e 1 0 ]
+{
+"1471
+} 0
+"1496
+[v _SwitchOnStatustToGatway SwitchOnStatustToGatway `(v  1 e 1 0 ]
+{
+[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `uc  1 a 1 wreg ]
+[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `uc  1 a 1 wreg ]
+"1498
+[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `uc  1 a 1 1 ]
+"1502
+} 0
+"1489
+[v _SwitchOffStatustToGatway SwitchOffStatustToGatway `(v  1 e 1 0 ]
+{
+[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `uc  1 a 1 wreg ]
+[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `uc  1 a 1 wreg ]
+"1491
+[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `uc  1 a 1 1 ]
+"1495
+} 0
+"1472
+[v _ReceivingIndicationLedBlinking ReceivingIndicationLedBlinking `(v  1 e 1 0 ]
+{
+"1477
+} 0
+"1270
+[v _GPIO_pin_Initialize GPIO_pin_Initialize `(v  1 e 1 0 ]
+{
+"1309
+} 0
+"1513
+[v _pinINIT_extra pinINIT_extra `(v  1 e 1 0 ]
+{
+"1525
+} 0
+"1530
+[v _clearAllPorts clearAllPorts `(v  1 e 1 0 ]
+{
+"1547
+} 0
+"183
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"842
+} 0
+"1446
+[v _errorsISR errorsISR `(v  1 e 1 0 ]
+{
+[v errorsISR@errNum errNum `*.25DCuc  1 p 2 0 ]
+"1455
+} 0
