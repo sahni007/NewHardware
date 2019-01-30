@@ -9,45 +9,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S187 . . ]
 "3521
 [v _RC1STAbits `VS187 ~T0 @X0 0 e@413 ]
-"162 megaonoff.c
+"175 megaonoff.c
 [v _errorsISR `(v ~T0 @X0 0 ef1`*Cuc ]
 "3256 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [v _RC1REG `Vuc ~T0 @X0 0 e@409 ]
-"1801
-[s S89 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S89 . TMR3IE TMR4IE TMR5IE TMR6IE CCP3IE CCP4IE CCP5IE CCP6IE ]
-"1800
-[u S88 `S89 1 ]
-[n S88 . . ]
-"1812
-[v _PIE3bits `VS88 ~T0 @X0 0 e@147 ]
-"892
-[s S50 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S50 . TMR3IF TMR4IF TMR5IF TMR6IF CCP3IF CCP4IF CCP5IF CCP6IF ]
-"891
-[u S49 `S50 1 ]
-[n S49 . . ]
-"903
-[v _PIR3bits `VS49 ~T0 @X0 0 e@19 ]
-"5205
-[s S261 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S261 . RF0 RF1 RF2 RF3 RF4 RF5 RF6 RF7 ]
-"5204
-[u S260 `S261 1 ]
-[n S260 . . ]
-"5216
-[v _PORTFbits `VS260 ~T0 @X0 0 e@652 ]
-"6670
-[s S334 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :2 `uc 1 ]
-[n S334 . TMR3ON . nT3SYNC SOSCEN T3CKPS TMR3CS ]
-"6678
-[s S335 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S335 . . T3OSCEN T3CKPS0 T3CKPS1 TMR3CS0 TMR3CS1 ]
-"6669
-[u S333 `S334 1 `S335 1 ]
-[n S333 . . . ]
-"6687
-[v _T3CONbits `VS333 ~T0 @X0 0 e@1043 ]
 "1652
 [s S83 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S83 . TMR1IE TMR2IE CCP1IE SSP1IE TX1IE RC1IE ADIE TMR1GIE ]
@@ -70,10 +35,27 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S43 . . . ]
 "760
 [v _PIR1bits `VS43 ~T0 @X0 0 e@17 ]
-"6644
-[v _TMR3H `Vuc ~T0 @X0 0 e@1042 ]
-"6624
-[v _TMR3L `Vuc ~T0 @X0 0 e@1041 ]
+"5205
+[s S261 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S261 . RF0 RF1 RF2 RF3 RF4 RF5 RF6 RF7 ]
+"5204
+[u S260 `S261 1 ]
+[n S260 . . ]
+"5216
+[v _PORTFbits `VS260 ~T0 @X0 0 e@652 ]
+"1271
+[s S70 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S70 . T2CKPS TMR2ON T2OUTPS ]
+"1276
+[s S71 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S71 . T2CKPS0 T2CKPS1 . T2OUTPS0 T2OUTPS1 T2OUTPS2 T2OUTPS3 ]
+"1270
+[u S69 `S70 1 `S71 1 ]
+[n S69 . . . ]
+"1286
+[v _T2CONbits `VS69 ~T0 @X0 0 e@28 ]
+"1245
+[v _PR2 `Vuc ~T0 @X0 0 e@27 ]
 "1083
 [s S60 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :2 `uc 1 ]
 [n S60 . TMR1ON . nT1SYNC SOSCEN T1CKPS TMR1CS ]
@@ -85,8 +67,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S59 . . . ]
 "1100
 [v _T1CONbits `VS59 ~T0 @X0 0 e@24 ]
-"9033
-[v _CCP9IF `Vb ~T0 @X0 0 e@166 ]
+"954
+[s S52 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S52 . SSP2IF BCL2IF CCP7IF CCP8IF TX2IF RC2IF CCP9IF CCP10IF ]
+"953
+[u S51 `S52 1 ]
+[n S51 . . ]
+"965
+[v _PIR4bits `VS51 ~T0 @X0 0 e@20 ]
+"8923
+[v _CCP10IF `Vb ~T0 @X0 0 e@167 ]
 "1057
 [v _TMR1H `Vuc ~T0 @X0 0 e@23 ]
 "1037
@@ -96,17 +86,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 "153 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic.h
 [v __delay `JF3649 ~T0 @X0 0 e ]
 [p i __delay ]
-"171 megaonoff.c
+"184 megaonoff.c
 [v _GPIO_pin_Initialize `(v ~T0 @X0 0 ef ]
-"177
+"199
 [v _allPeripheralInit `(v ~T0 @X0 0 ef ]
-"168
-[v _ReceivingIndicationLedBlinking `(v ~T0 @X0 0 ef ]
-"179
-[v _copyReceivedDataBuffer `(v ~T0 @X0 0 ef ]
 "181
+[v _ReceivingIndicationLedBlinking `(v ~T0 @X0 0 ef ]
+"201
+[v _copyReceivedDataBuffer `(v ~T0 @X0 0 ef ]
+"203
 [v _applianceControl `(v ~T0 @X0 0 ef7`uc`uc`uc`uc`uc`uc`uc ]
-"163
+"176
 [v _errorsMain `(v ~T0 @X0 0 ef1`*Cuc ]
 "619 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [s S40 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -116,9 +106,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S39 . . ]
 "630
 [v _PORTDbits `VS39 ~T0 @X0 0 e@15 ]
-"166 megaonoff.c
+"179 megaonoff.c
 [v _SwitchOnStatustToGatway `(v ~T0 @X0 0 ef1`uc ]
-"167
+"180
 [v _TransmissionIndicationLedBlinking `(v ~T0 @X0 0 ef ]
 "681 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [s S42 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -128,7 +118,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S41 . . ]
 "692
 [v _PORTEbits `VS41 ~T0 @X0 0 e@16 ]
-"165 megaonoff.c
+"178 megaonoff.c
 [v _SwitchOffStatustToGatway `(v ~T0 @X0 0 ef1`uc ]
 "495 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [s S36 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -148,11 +138,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTGbits `VS262 ~T0 @X0 0 e@653 ]
 "55 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdlib.h
 [v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
-"164 megaonoff.c
+"177 megaonoff.c
 [v _sendAcknowledgment `(v ~T0 @X0 0 ef1`*uc ]
-"169
+"182
 [v _clearAllPorts `(v ~T0 @X0 0 ef ]
-"170
+"183
 [v _pinINIT_extra `(v ~T0 @X0 0 ef ]
 "1528 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [s S79 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -202,14 +192,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S76 . . ]
 "1477
 [v _TRISCbits `VS76 ~T0 @X0 0 e@142 ]
-"172 megaonoff.c
+"185 megaonoff.c
 [v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
-"175
+"188
 [v _TMR1_Initialize `(v ~T0 @X0 0 ef ]
-"174
+"189
+[v _TMR2_Initialize `(v ~T0 @X0 0 ef ]
+"187
 [v _TMR3_Initialize `(v ~T0 @X0 0 ef ]
-"176
+"190
+[v _TMR4_Initialize `(v ~T0 @X0 0 ef ]
+"191
+[v _TMR5_Initialize `(v ~T0 @X0 0 ef ]
+"192
+[v _TMR6_Initialize `(v ~T0 @X0 0 ef ]
+"193
+[v _TMR8_Initialize `(v ~T0 @X0 0 ef ]
+"194
+[v _TMR10_Initialize `(v ~T0 @X0 0 ef ]
+"195
 [v _CCP9_Initialize `(v ~T0 @X0 0 ef ]
+"198
+[v _CCP8_Initialize `(v ~T0 @X0 0 ef ]
+"197
+[v _CCP7_Initialize `(v ~T0 @X0 0 ef ]
+"196
+[v _CCP10_Initialize `(v ~T0 @X0 0 ef ]
 "3855 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [v _BAUD1CON `Vuc ~T0 @X0 0 e@415 ]
 "3495
@@ -240,20 +248,82 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _T3CON `Vuc ~T0 @X0 0 e@1043 ]
 "6742
 [v _T3GCON `Vuc ~T0 @X0 0 e@1044 ]
+"6644
+[v _TMR3H `Vuc ~T0 @X0 0 e@1042 ]
+"6624
+[v _TMR3L `Vuc ~T0 @X0 0 e@1041 ]
+"892
+[s S50 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S50 . TMR3IF TMR4IF TMR5IF TMR6IF CCP3IF CCP4IF CCP5IF CCP6IF ]
+"891
+[u S49 `S50 1 ]
+[n S49 . . ]
+"903
+[v _PIR3bits `VS49 ~T0 @X0 0 e@19 ]
+"1801
+[s S89 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S89 . TMR3IE TMR4IE TMR5IE TMR6IE CCP3IE CCP4IE CCP5IE CCP6IE ]
+"1800
+[u S88 `S89 1 ]
+[n S88 . . ]
+"1812
+[v _PIE3bits `VS88 ~T0 @X0 0 e@147 ]
+"6970
+[v _T5CON `Vuc ~T0 @X0 0 e@1050 ]
+"7048
+[v _T5GCON `Vuc ~T0 @X0 0 e@1051 ]
+"6950
+[v _TMR5H `Vuc ~T0 @X0 0 e@1049 ]
+"6930
+[v _TMR5L `Vuc ~T0 @X0 0 e@1048 ]
+"1265
+[v _T2CON `Vuc ~T0 @X0 0 e@28 ]
+"1225
+[v _TMR2 `Vuc ~T0 @X0 0 e@26 ]
+"6852
+[v _T4CON `Vuc ~T0 @X0 0 e@1047 ]
+"6812
+[v _TMR4 `Vuc ~T0 @X0 0 e@1045 ]
+"7158
+[v _T6CON `Vuc ~T0 @X0 0 e@1054 ]
+"7118
+[v _TMR6 `Vuc ~T0 @X0 0 e@1052 ]
+"7795
+[v _T8CON `Vuc ~T0 @X0 0 e@1431 ]
+"7755
+[v _TMR8 `Vuc ~T0 @X0 0 e@1429 ]
+"826
+[s S47 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S47 . CCP2IF TMR8IF TMR10IF BCL1IF . TMR3GIF TMR5GIF OSFIF ]
+"836
+[s S48 :3 `uc 1 :1 `uc 1 ]
+[n S48 . . BCLIF ]
+"825
+[u S46 `S47 1 `S48 1 ]
+[n S46 . . . ]
+"841
+[v _PIR2bits `VS46 ~T0 @X0 0 e@18 ]
+"1735
+[s S86 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S86 . CCP2IE TMR8IE TMR10IE BCL1IE . TMR3GIE TMR5GIE OSFIE ]
+"1745
+[s S87 :3 `uc 1 :1 `uc 1 ]
+[n S87 . . BCLIE ]
+"1734
+[u S85 `S86 1 `S87 1 ]
+[n S85 . . . ]
+"1750
+[v _PIE2bits `VS85 ~T0 @X0 0 e@146 ]
+"7906
+[v _T10CON `Vuc ~T0 @X0 0 e@1438 ]
+"7866
+[v _TMR10 `Vuc ~T0 @X0 0 e@1436 ]
 "8357
 [v _CCP9CON `Vuc ~T0 @X0 0 e@1564 ]
 "8337
 [v _CCPR9H `Vuc ~T0 @X0 0 e@1563 ]
 "8317
 [v _CCPR9L `Vuc ~T0 @X0 0 e@1562 ]
-"954
-[s S52 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S52 . SSP2IF BCL2IF CCP7IF CCP8IF TX2IF RC2IF CCP9IF CCP10IF ]
-"953
-[u S51 `S52 1 ]
-[n S51 . . ]
-"965
-[v _PIR4bits `VS51 ~T0 @X0 0 e@20 ]
 "1863
 [s S91 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S91 . SSP2IE BCL2IE CCP7IE CCP8IE TX2IE RC2IE CCP9IE CCP10IE ]
@@ -262,6 +332,22 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S90 . . ]
 "1874
 [v _PIE4bits `VS90 ~T0 @X0 0 e@148 ]
+"8468
+[v _CCP10CON `Vuc ~T0 @X0 0 e@1567 ]
+"8448
+[v _CCPR10H `Vuc ~T0 @X0 0 e@1566 ]
+"8428
+[v _CCPR10L `Vuc ~T0 @X0 0 e@1565 ]
+"8135
+[v _CCP7CON `Vuc ~T0 @X0 0 e@1558 ]
+"8115
+[v _CCPR7H `Vuc ~T0 @X0 0 e@1557 ]
+"8095
+[v _CCPR7L `Vuc ~T0 @X0 0 e@1556 ]
+"8226
+[v _CCPR8H `Vuc ~T0 @X0 0 e@1560 ]
+"8206
+[v _CCPR8L `Vuc ~T0 @X0 0 e@1559 ]
 "3310
 [v _TX1REG `Vuc ~T0 @X0 0 e@410 ]
 "6578
@@ -365,35 +451,35 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdlib.h: 101: extern char * ltoa(char * buf, long val, int base);
 [; ;stdlib.h: 102: extern char * ultoa(char * buf, unsigned long val, int base);
 [; ;stdlib.h: 104: extern char * ftoa(float f, int * status);
-"25 megaonoff.c
+"24 megaonoff.c
 [p x FOSC=HS ]
-"26
+"25
 [p x WDTE=OFF ]
-"27
+"26
 [p x PWRTE=OFF ]
-"28
+"27
 [p x MCLRE=OFF ]
-"29
+"28
 [p x CP=OFF ]
-"30
+"29
 [p x BOREN=OFF ]
-"31
+"30
 [p x CLKOUTEN=OFF ]
-"32
+"31
 [p x IESO=OFF ]
-"33
+"32
 [p x FCMEN=OFF ]
-"36
+"35
 [p x WRT=OFF ]
-"37
+"36
 [p x VCAPEN=OFF ]
-"38
+"37
 [p x STVREN=OFF ]
-"39
+"38
 [p x BORV=LO ]
-"40
+"39
 [p x LPBOR=OFF ]
-"41
+"40
 [p x LVP=OFF ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
@@ -3963,7 +4049,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-"149 megaonoff.c
+"162 megaonoff.c
 [v _mainReceivedDataPosition `i ~T0 @X0 1 e ]
 [i _mainReceivedDataPosition
 -> 0 `i
@@ -3972,8 +4058,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _mainDataReceived
 -> 0 `i
 ]
-[; ;megaonoff.c: 149: int mainReceivedDataPosition=0, mainDataReceived=0;
-"150
+[; ;megaonoff.c: 162: int mainReceivedDataPosition=0, mainDataReceived=0;
+"163
 [v _mainReceivedDataBuffer `uc ~T0 @X0 + -> 16 `i -> 2 `i e ]
 [i _mainReceivedDataBuffer
 :U ..
@@ -3981,8 +4067,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;megaonoff.c: 150: unsigned char mainReceivedDataBuffer[(16+2)]="#";
-"151
+[; ;megaonoff.c: 163: unsigned char mainReceivedDataBuffer[(16+2)]="#";
+"164
 [v _tempReceivedDataBuffer `uc ~T0 @X0 - + -> 16 `i -> 2 `i -> 8 `i e ]
 [i _tempReceivedDataBuffer
 :U ..
@@ -3990,8 +4076,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;megaonoff.c: 151: unsigned char tempReceivedDataBuffer[(16+2)-8]="#";
-"152
+[; ;megaonoff.c: 164: unsigned char tempReceivedDataBuffer[(16+2)-8]="#";
+"165
 [v _parentalLockBuffer `uc ~T0 @X0 + -> 12 `i -> 2 `i e ]
 [i _parentalLockBuffer
 :U ..
@@ -4010,8 +4096,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;megaonoff.c: 152: unsigned char parentalLockBuffer[(12+2)]="000000000000";
-"153
+[; ;megaonoff.c: 165: unsigned char parentalLockBuffer[(12+2)]="000000000000";
+"166
 [v _copy_parentalLockBuffer `uc ~T0 @X0 + -> 12 `i -> 2 `i e ]
 [i _copy_parentalLockBuffer
 :U ..
@@ -4030,8 +4116,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;megaonoff.c: 153: unsigned char copy_parentalLockBuffer[(12+2)]="000000000000";
-"154
+[; ;megaonoff.c: 166: unsigned char copy_parentalLockBuffer[(12+2)]="000000000000";
+"167
 [v _currentStateBuffer `uc ~T0 @X0 + * + -> 12 `i -> 2 `i -> 4 `i -> 2 `i e ]
 [i _currentStateBuffer
 :U ..
@@ -4039,29 +4125,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;megaonoff.c: 154: unsigned char currentStateBuffer[((12+2)*4)+2]="#";
-"156
+[; ;megaonoff.c: 167: unsigned char currentStateBuffer[((12+2)*4)+2]="#";
+"169
 [v _M1 `ui ~T0 @X0 1 e ]
-[; ;megaonoff.c: 156: unsigned int M1;unsigned int M2;unsigned int M3;unsigned int M4;
+[; ;megaonoff.c: 169: unsigned int M1;unsigned int M2;unsigned int M3;unsigned int M4;
 [v _M2 `ui ~T0 @X0 1 e ]
 [v _M3 `ui ~T0 @X0 1 e ]
 [v _M4 `ui ~T0 @X0 1 e ]
-"157
+"170
 [v _M5 `ui ~T0 @X0 1 e ]
-[; ;megaonoff.c: 157: unsigned int M5;unsigned int M6;unsigned int M7;unsigned int M8;
+[; ;megaonoff.c: 170: unsigned int M5;unsigned int M6;unsigned int M7;unsigned int M8;
 [v _M6 `ui ~T0 @X0 1 e ]
 [v _M7 `ui ~T0 @X0 1 e ]
 [v _M8 `ui ~T0 @X0 1 e ]
-"158
+"171
 [v _M9 `ui ~T0 @X0 1 e ]
-[; ;megaonoff.c: 158: unsigned int M9;
-"159
+[; ;megaonoff.c: 171: unsigned int M9;
+"172
 [v _start_PWM_Generation_in_ISR_FLAG `i ~T0 @X0 1 e ]
 [i _start_PWM_Generation_in_ISR_FLAG
 -> 0 `i
 ]
-[; ;megaonoff.c: 159: int start_PWM_Generation_in_ISR_FLAG=0;
-"160
+[; ;megaonoff.c: 172: int start_PWM_Generation_in_ISR_FLAG=0;
+"173
 [v _levelofDimmer_MSB `uc ~T0 @X0 1 e ]
 [i _levelofDimmer_MSB
 -> -> 48 `ui `uc
@@ -4070,2099 +4156,2113 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _levelofDimmer_LSB
 -> -> 48 `ui `uc
 ]
-[; ;megaonoff.c: 160: char levelofDimmer_MSB='0',levelofDimmer_LSB='0';
-[; ;megaonoff.c: 162: void errorsISR(const char* errNum);
-[; ;megaonoff.c: 163: void errorsMain(const char* errNum);
-[; ;megaonoff.c: 164: void sendAcknowledgment(char* currentStateBuffer);
-[; ;megaonoff.c: 165: void SwitchOffStatustToGatway(char SwitchOffNumber);
-[; ;megaonoff.c: 166: void SwitchOnStatustToGatway(char SwitchOnNumber);
-[; ;megaonoff.c: 167: void TransmissionIndicationLedBlinking();
-[; ;megaonoff.c: 168: void ReceivingIndicationLedBlinking();
-[; ;megaonoff.c: 169: void clearAllPorts();
-[; ;megaonoff.c: 170: void pinINIT_extra();
-[; ;megaonoff.c: 171: void GPIO_pin_Initialize();
-[; ;megaonoff.c: 172: void EUSART_Initialize();
-[; ;megaonoff.c: 174: void TMR3_Initialize();
-[; ;megaonoff.c: 175: void TMR1_Initialize();
-[; ;megaonoff.c: 176: void CCP9_Initialize();
-[; ;megaonoff.c: 177: void allPeripheralInit();
-[; ;megaonoff.c: 179: void copyReceivedDataBuffer();
-[; ;megaonoff.c: 181: void applianceControl(char switchMSB, char switchLSB, char switchSTATE, char dimmerSpeedMSB, char dimmerSpeedLSB, char parentalControl, char finalFrameState);
+[; ;megaonoff.c: 173: char levelofDimmer_MSB='0',levelofDimmer_LSB='0';
+[; ;megaonoff.c: 175: void errorsISR(const char* errNum);
+[; ;megaonoff.c: 176: void errorsMain(const char* errNum);
+[; ;megaonoff.c: 177: void sendAcknowledgment(char* currentStateBuffer);
+[; ;megaonoff.c: 178: void SwitchOffStatustToGatway(char SwitchOffNumber);
+[; ;megaonoff.c: 179: void SwitchOnStatustToGatway(char SwitchOnNumber);
+[; ;megaonoff.c: 180: void TransmissionIndicationLedBlinking();
+[; ;megaonoff.c: 181: void ReceivingIndicationLedBlinking();
+[; ;megaonoff.c: 182: void clearAllPorts();
+[; ;megaonoff.c: 183: void pinINIT_extra();
+[; ;megaonoff.c: 184: void GPIO_pin_Initialize();
+[; ;megaonoff.c: 185: void EUSART_Initialize();
+[; ;megaonoff.c: 187: void TMR3_Initialize();
+[; ;megaonoff.c: 188: void TMR1_Initialize();
+[; ;megaonoff.c: 189: void TMR2_Initialize();
+[; ;megaonoff.c: 190: void TMR4_Initialize();
+[; ;megaonoff.c: 191: void TMR5_Initialize();
+[; ;megaonoff.c: 192: void TMR6_Initialize();
+[; ;megaonoff.c: 193: void TMR8_Initialize();
+[; ;megaonoff.c: 194: void TMR10_Initialize();
+[; ;megaonoff.c: 195: void CCP9_Initialize();
+[; ;megaonoff.c: 196: void CCP10_Initialize();
+[; ;megaonoff.c: 197: void CCP7_Initialize();
+[; ;megaonoff.c: 198: void CCP8_Initialize();
+[; ;megaonoff.c: 199: void allPeripheralInit();
+[; ;megaonoff.c: 201: void copyReceivedDataBuffer();
+[; ;megaonoff.c: 203: void applianceControl(char switchMSB, char switchLSB, char switchSTATE, char dimmerSpeedMSB, char dimmerSpeedLSB, char parentalControl, char finalFrameState);
 [v $root$_isr `(v ~T0 @X0 0 e ]
-[v F3708 `(v ~T0 @X0 1 tf ]
-"183
-[v _isr `IF3708 ~T0 @X0 1 e ]
+[v F3717 `(v ~T0 @X0 1 tf ]
+"205
+[v _isr `IF3717 ~T0 @X0 1 e ]
 {
-[; ;megaonoff.c: 183: interrupt void isr(){
+[; ;megaonoff.c: 205: interrupt void isr(){
 [e :U _isr ]
 [f ]
-[; ;megaonoff.c: 186: if(RC1IF){
-"186
+[; ;megaonoff.c: 208: if(RC1IF){
+"208
 [e $ ! _RC1IF 465  ]
 {
-[; ;megaonoff.c: 187: if(RC1STAbits.OERR){
-"187
+[; ;megaonoff.c: 209: if(RC1STAbits.OERR){
+"209
 [e $ ! != -> . . _RC1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 466  ]
 {
-[; ;megaonoff.c: 188: RC1STAbits.CREN = 0;
-"188
+[; ;megaonoff.c: 210: RC1STAbits.CREN = 0;
+"210
 [e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 189: RC1STAbits.CREN = 1;
-"189
-[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 190: errorsISR("EROV");
-"190
-[e ( _errorsISR (1 :s 1C ]
-"191
-}
-[e :U 466 ]
-[; ;megaonoff.c: 191: }
-[; ;megaonoff.c: 193: mainReceivedDataBuffer[mainReceivedDataPosition]=RC1REG;
-"193
-[e = *U + &U _mainReceivedDataBuffer * -> -> _mainReceivedDataPosition `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux _RC1REG ]
-[; ;megaonoff.c: 197: if(mainReceivedDataBuffer[0]=='%'){
-"197
-[e $ ! == -> *U + &U _mainReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 37 `ui 467  ]
-{
-[; ;megaonoff.c: 198: mainReceivedDataPosition++;
-"198
-[e ++ _mainReceivedDataPosition -> 1 `i ]
-[; ;megaonoff.c: 199: if(mainReceivedDataPosition>15){
-"199
-[e $ ! > _mainReceivedDataPosition -> 15 `i 468  ]
-{
-[; ;megaonoff.c: 200: mainDataReceived=1;
-"200
-[e = _mainDataReceived -> 1 `i ]
-[; ;megaonoff.c: 201: mainReceivedDataPosition=0;
-"201
-[e = _mainReceivedDataPosition -> 0 `i ]
-[; ;megaonoff.c: 202: RC1IF=0;
-"202
-[e = _RC1IF -> -> 0 `i `b ]
-"203
-}
-[e :U 468 ]
-"204
-}
-[; ;megaonoff.c: 203: }
-[; ;megaonoff.c: 204: }
-[e $U 469  ]
-"205
-[e :U 467 ]
-[; ;megaonoff.c: 205: else{
-{
-[; ;megaonoff.c: 206: RC1STAbits.CREN = 0;
-"206
-[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 207: RC1STAbits.CREN = 1;
-"207
-[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 208: mainReceivedDataPosition=0;
-"208
-[e = _mainReceivedDataPosition -> 0 `i ]
-[; ;megaonoff.c: 211: errorsISR("ERRX");
+[; ;megaonoff.c: 211: RC1STAbits.CREN = 1;
 "211
-[e ( _errorsISR (1 :s 2C ]
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 212: errorsISR("EROV");
 "212
-}
-[e :U 469 ]
+[e ( _errorsISR (1 :s 1C ]
 "213
 }
-[e :U 465 ]
-[; ;megaonoff.c: 212: }
+[e :U 466 ]
 [; ;megaonoff.c: 213: }
-[; ;megaonoff.c: 218: if(PIE3bits.TMR3IE==1 && PIR3bits.TMR3IF==1)
-"218
-[e $ ! && == -> . . _PIE3bits 0 0 `i -> 1 `i == -> . . _PIR3bits 0 0 `i -> 1 `i 470  ]
-[; ;megaonoff.c: 219: {
+[; ;megaonoff.c: 215: mainReceivedDataBuffer[mainReceivedDataPosition]=RC1REG;
+"215
+[e = *U + &U _mainReceivedDataBuffer * -> -> _mainReceivedDataPosition `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux _RC1REG ]
+[; ;megaonoff.c: 219: if(mainReceivedDataBuffer[0]=='%'){
 "219
+[e $ ! == -> *U + &U _mainReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 37 `ui 467  ]
 {
-[; ;megaonoff.c: 220: PIR3bits.TMR3IF=0;
+[; ;megaonoff.c: 220: mainReceivedDataPosition++;
 "220
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 221: PORTFbits.RF3 = 0;
+[e ++ _mainReceivedDataPosition -> 1 `i ]
+[; ;megaonoff.c: 221: if(mainReceivedDataPosition>15){
 "221
-[e = . . _PORTFbits 0 3 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 222: T3CONbits.TMR3ON=0;
+[e $ ! > _mainReceivedDataPosition -> 15 `i 468  ]
+{
+[; ;megaonoff.c: 222: mainDataReceived=1;
 "222
-[e = . . _T3CONbits 0 0 -> -> 0 `i `uc ]
+[e = _mainDataReceived -> 1 `i ]
+[; ;megaonoff.c: 223: mainReceivedDataPosition=0;
+"223
+[e = _mainReceivedDataPosition -> 0 `i ]
+[; ;megaonoff.c: 224: RC1IF=0;
 "224
+[e = _RC1IF -> -> 0 `i `b ]
+"225
+}
+[e :U 468 ]
+"226
+}
+[; ;megaonoff.c: 225: }
+[; ;megaonoff.c: 226: }
+[e $U 469  ]
+"227
+[e :U 467 ]
+[; ;megaonoff.c: 227: else{
+{
+[; ;megaonoff.c: 228: RC1STAbits.CREN = 0;
+"228
+[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 229: RC1STAbits.CREN = 1;
+"229
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 230: mainReceivedDataPosition=0;
+"230
+[e = _mainReceivedDataPosition -> 0 `i ]
+[; ;megaonoff.c: 233: errorsISR("ERRX");
+"233
+[e ( _errorsISR (1 :s 2C ]
+"234
+}
+[e :U 469 ]
+"235
+}
+[e :U 465 ]
+[; ;megaonoff.c: 234: }
+[; ;megaonoff.c: 235: }
+[; ;megaonoff.c: 240: if(PIE1bits.TMR2IE==1 && PIR1bits.TMR2IF==1)
+"240
+[e $ ! && == -> . . _PIE1bits 0 1 `i -> 1 `i == -> . . _PIR1bits 0 1 `i -> 1 `i 470  ]
+[; ;megaonoff.c: 241: {
+"241
+{
+[; ;megaonoff.c: 242: PIR1bits.TMR2IF=0;
+"242
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 243: PORTFbits.RF3 = 0;
+"243
+[e = . . _PORTFbits 0 3 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 244: T2CONbits.TMR2ON=0;
+"244
+[e = . . _T2CONbits 0 1 -> -> 0 `i `uc ]
+"245
 }
 [e :U 470 ]
-[; ;megaonoff.c: 224: }
-[; ;megaonoff.c: 228: if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF==1)
-"228
+[; ;megaonoff.c: 245: }
+[; ;megaonoff.c: 249: if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF==1)
+"249
 [e $ ! && == -> . . _PIE1bits 0 0 `i -> 1 `i == -> . . _PIR1bits 0 0 `i -> 1 `i 471  ]
-[; ;megaonoff.c: 229: {
-"229
+[; ;megaonoff.c: 250: {
+"250
 {
-[; ;megaonoff.c: 230: PIR1bits.TMR1IF=0;
-"230
+[; ;megaonoff.c: 251: PIR1bits.TMR1IF=0;
+"251
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 232: PORTFbits.RF3 = 1;
-"232
+[; ;megaonoff.c: 252: PORTFbits.RF3 = 1;
+"252
 [e = . . _PORTFbits 0 3 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 233: TMR3H=0xFF;
-"233
-[e = _TMR3H -> -> 255 `i `uc ]
-[; ;megaonoff.c: 234: TMR3L=0xD8;
-"234
-[e = _TMR3L -> -> 216 `i `uc ]
-[; ;megaonoff.c: 235: T3CONbits.TMR3ON = 1;
-"235
-[e = . . _T3CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 236: T1CONbits.TMR1ON = 0;
-"236
+[; ;megaonoff.c: 253: PR2=0x9F;
+"253
+[e = _PR2 -> -> 159 `i `uc ]
+[; ;megaonoff.c: 254: T2CONbits.TMR2ON = 1;
+"254
+[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 255: T1CONbits.TMR1ON = 0;
+"255
 [e = . . _T1CONbits 0 0 -> -> 0 `i `uc ]
-"237
+"256
 }
 [e :U 471 ]
-[; ;megaonoff.c: 237: }
-[; ;megaonoff.c: 240: if(CCP9IF){
-"240
-[e $ ! _CCP9IF 472  ]
-{
-[; ;megaonoff.c: 241: if(CCP9IF == 1){
-"241
-[e $ ! == -> _CCP9IF `i -> 1 `i 473  ]
-{
-[; ;megaonoff.c: 242: CCP9IF=0;
-"242
-[e = _CCP9IF -> -> 0 `i `b ]
-[; ;megaonoff.c: 243: if(start_PWM_Generation_in_ISR_FLAG == 1){
-"243
-[e $ ! == _start_PWM_Generation_in_ISR_FLAG -> 1 `i 474  ]
-{
-[; ;megaonoff.c: 244: switch(levelofDimmer_MSB)
-"244
-[e $U 476  ]
-[; ;megaonoff.c: 245: {
-"245
-{
-[; ;megaonoff.c: 246: case '0':
-"246
-[e :U 477 ]
-[; ;megaonoff.c: 248: switch(levelofDimmer_LSB)
-"248
-[e $U 479  ]
-[; ;megaonoff.c: 249: {
-"249
-{
-[; ;megaonoff.c: 250: case '0':
-"250
-[e :U 480 ]
-[; ;megaonoff.c: 251: TMR1H=0x7B;
-"251
-[e = _TMR1H -> -> 123 `i `uc ]
-[; ;megaonoff.c: 252: TMR1L=0x30;
-"252
-[e = _TMR1L -> -> 48 `i `uc ]
-[; ;megaonoff.c: 253: T1CONbits.TMR1ON = 1;
-"253
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 255: break;
-"255
-[e $U 478  ]
-[; ;megaonoff.c: 256: case '1':
-"256
-[e :U 481 ]
-[; ;megaonoff.c: 257: TMR1H=0x7C;
-"257
-[e = _TMR1H -> -> 124 `i `uc ]
-[; ;megaonoff.c: 258: TMR1L=0xC0;
+[; ;megaonoff.c: 256: }
+[; ;megaonoff.c: 258: if(PIR4bits.CCP8IF==1 || PIR4bits.CCP7IF == 1 || PIR4bits.CCP9IF==1 || PIR4bits.CCP10IF==1){
 "258
-[e = _TMR1L -> -> 192 `i `uc ]
-[; ;megaonoff.c: 259: T1CONbits.TMR1ON = 1;
-"259
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 261: break;
-"261
-[e $U 478  ]
-[; ;megaonoff.c: 262: case '2':
-"262
-[e :U 482 ]
-[; ;megaonoff.c: 263: TMR1H=0x7D;
-"263
-[e = _TMR1H -> -> 125 `i `uc ]
-[; ;megaonoff.c: 264: TMR1L=0x88;
-"264
-[e = _TMR1L -> -> 136 `i `uc ]
-[; ;megaonoff.c: 265: T1CONbits.TMR1ON = 1;
-"265
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 266: break;
-"266
-[e $U 478  ]
-[; ;megaonoff.c: 267: case '3':
-"267
-[e :U 483 ]
-[; ;megaonoff.c: 268: TMR1H=0x7F;
-"268
-[e = _TMR1H -> -> 127 `i `uc ]
-[; ;megaonoff.c: 269: TMR1L=0x18;
-"269
-[e = _TMR1L -> -> 24 `i `uc ]
-[; ;megaonoff.c: 270: T1CONbits.TMR1ON = 1;
-"270
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 271: break;
-"271
-[e $U 478  ]
-[; ;megaonoff.c: 272: case '4':
-"272
-[e :U 484 ]
-[; ;megaonoff.c: 273: TMR1H=0x80;
-"273
-[e = _TMR1H -> -> 128 `i `uc ]
-[; ;megaonoff.c: 274: TMR1L=0xA8;
-"274
-[e = _TMR1L -> -> 168 `i `uc ]
-[; ;megaonoff.c: 275: T1CONbits.TMR1ON = 1;
-"275
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 276: break;
-"276
-[e $U 478  ]
-[; ;megaonoff.c: 277: case '5':
-"277
-[e :U 485 ]
-[; ;megaonoff.c: 278: TMR1H=0x81;
-"278
-[e = _TMR1H -> -> 129 `i `uc ]
-[; ;megaonoff.c: 279: TMR1L=0x70;
-"279
-[e = _TMR1L -> -> 112 `i `uc ]
-[; ;megaonoff.c: 280: T1CONbits.TMR1ON = 1;
-"280
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 281: break;
-"281
-[e $U 478  ]
-[; ;megaonoff.c: 282: case '6':
-"282
-[e :U 486 ]
-[; ;megaonoff.c: 283: TMR1H=0x83;
-"283
-[e = _TMR1H -> -> 131 `i `uc ]
-[; ;megaonoff.c: 284: TMR1L=0x00;
-"284
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 285: T1CONbits.TMR1ON = 1;
-"285
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 286: break;
-"286
-[e $U 478  ]
-[; ;megaonoff.c: 287: case '7':
-"287
-[e :U 487 ]
-[; ;megaonoff.c: 288: TMR1H=0x83;
-"288
-[e = _TMR1H -> -> 131 `i `uc ]
-[; ;megaonoff.c: 289: TMR1L=0xC8;
-"289
-[e = _TMR1L -> -> 200 `i `uc ]
-[; ;megaonoff.c: 290: T1CONbits.TMR1ON = 1;
-"290
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 291: break;
-"291
-[e $U 478  ]
-[; ;megaonoff.c: 292: case '8':
-"292
-[e :U 488 ]
-[; ;megaonoff.c: 293: TMR1H=0x87;
-"293
-[e = _TMR1H -> -> 135 `i `uc ]
-[; ;megaonoff.c: 294: TMR1L=0xB0;
-"294
-[e = _TMR1L -> -> 176 `i `uc ]
-[; ;megaonoff.c: 295: T1CONbits.TMR1ON = 1;
-"295
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 296: break;
-"296
-[e $U 478  ]
-[; ;megaonoff.c: 297: case '9':
-"297
-[e :U 489 ]
-[; ;megaonoff.c: 298: TMR1H=0x85;
-"298
-[e = _TMR1H -> -> 133 `i `uc ]
-[; ;megaonoff.c: 299: TMR1L=0x58;
-"299
-[e = _TMR1L -> -> 88 `i `uc ]
-[; ;megaonoff.c: 300: T1CONbits.TMR1ON = 1;
-"300
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 301: break;
-"301
-[e $U 478  ]
-[; ;megaonoff.c: 303: default:
-"303
-[e :U 490 ]
-[; ;megaonoff.c: 304: break;
-"304
-[e $U 478  ]
-"305
-}
-[; ;megaonoff.c: 305: }
-[e $U 478  ]
-"248
-[e :U 479 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 480
- , $ -> -> 49 `ui `uc 481
- , $ -> -> 50 `ui `uc 482
- , $ -> -> 51 `ui `uc 483
- , $ -> -> 52 `ui `uc 484
- , $ -> -> 53 `ui `uc 485
- , $ -> -> 54 `ui `uc 486
- , $ -> -> 55 `ui `uc 487
- , $ -> -> 56 `ui `uc 488
- , $ -> -> 57 `ui `uc 489
- 490 ]
-"305
-[e :U 478 ]
-[; ;megaonoff.c: 306: break;
-"306
-[e $U 475  ]
-[; ;megaonoff.c: 307: case '1':
-"307
-[e :U 491 ]
-[; ;megaonoff.c: 309: switch(levelofDimmer_LSB)
-"309
-[e $U 493  ]
-[; ;megaonoff.c: 310: {
-"310
+[e $ ! || || || == -> . . _PIR4bits 0 3 `i -> 1 `i == -> . . _PIR4bits 0 2 `i -> 1 `i == -> . . _PIR4bits 0 6 `i -> 1 `i == -> . . _PIR4bits 0 7 `i -> 1 `i 472  ]
 {
-[; ;megaonoff.c: 311: case '0':
+[; ;megaonoff.c: 259: if(CCP10IF){
+"259
+[e $ ! _CCP10IF 473  ]
+{
+[; ;megaonoff.c: 260: if(CCP10IF == 1){
+"260
+[e $ ! == -> _CCP10IF `i -> 1 `i 474  ]
+{
+[; ;megaonoff.c: 261: CCP10IF=0;
+"261
+[e = _CCP10IF -> -> 0 `i `b ]
+[; ;megaonoff.c: 262: if(start_PWM_Generation_in_ISR_FLAG == 1){
+"262
+[e $ ! == _start_PWM_Generation_in_ISR_FLAG -> 1 `i 475  ]
+{
+[; ;megaonoff.c: 263: switch(levelofDimmer_MSB)
+"263
+[e $U 477  ]
+[; ;megaonoff.c: 264: {
+"264
+{
+[; ;megaonoff.c: 265: case '0':
+"265
+[e :U 478 ]
+[; ;megaonoff.c: 267: switch(levelofDimmer_LSB)
+"267
+[e $U 480  ]
+[; ;megaonoff.c: 268: {
+"268
+{
+[; ;megaonoff.c: 269: case '0':
+"269
+[e :U 481 ]
+[; ;megaonoff.c: 270: TMR1H=0x7B;
+"270
+[e = _TMR1H -> -> 123 `i `uc ]
+[; ;megaonoff.c: 271: TMR1L=0x30;
+"271
+[e = _TMR1L -> -> 48 `i `uc ]
+[; ;megaonoff.c: 272: T1CONbits.TMR1ON = 1;
+"272
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 274: break;
+"274
+[e $U 479  ]
+[; ;megaonoff.c: 275: case '1':
+"275
+[e :U 482 ]
+[; ;megaonoff.c: 276: TMR1H=0x7C;
+"276
+[e = _TMR1H -> -> 124 `i `uc ]
+[; ;megaonoff.c: 277: TMR1L=0xC0;
+"277
+[e = _TMR1L -> -> 192 `i `uc ]
+[; ;megaonoff.c: 278: T1CONbits.TMR1ON = 1;
+"278
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 280: break;
+"280
+[e $U 479  ]
+[; ;megaonoff.c: 281: case '2':
+"281
+[e :U 483 ]
+[; ;megaonoff.c: 282: TMR1H=0x7D;
+"282
+[e = _TMR1H -> -> 125 `i `uc ]
+[; ;megaonoff.c: 283: TMR1L=0x88;
+"283
+[e = _TMR1L -> -> 136 `i `uc ]
+[; ;megaonoff.c: 284: T1CONbits.TMR1ON = 1;
+"284
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 285: break;
+"285
+[e $U 479  ]
+[; ;megaonoff.c: 286: case '3':
+"286
+[e :U 484 ]
+[; ;megaonoff.c: 287: TMR1H=0x7F;
+"287
+[e = _TMR1H -> -> 127 `i `uc ]
+[; ;megaonoff.c: 288: TMR1L=0x18;
+"288
+[e = _TMR1L -> -> 24 `i `uc ]
+[; ;megaonoff.c: 289: T1CONbits.TMR1ON = 1;
+"289
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 290: break;
+"290
+[e $U 479  ]
+[; ;megaonoff.c: 291: case '4':
+"291
+[e :U 485 ]
+[; ;megaonoff.c: 292: TMR1H=0x80;
+"292
+[e = _TMR1H -> -> 128 `i `uc ]
+[; ;megaonoff.c: 293: TMR1L=0xA8;
+"293
+[e = _TMR1L -> -> 168 `i `uc ]
+[; ;megaonoff.c: 294: T1CONbits.TMR1ON = 1;
+"294
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 295: break;
+"295
+[e $U 479  ]
+[; ;megaonoff.c: 296: case '5':
+"296
+[e :U 486 ]
+[; ;megaonoff.c: 297: TMR1H=0x81;
+"297
+[e = _TMR1H -> -> 129 `i `uc ]
+[; ;megaonoff.c: 298: TMR1L=0x70;
+"298
+[e = _TMR1L -> -> 112 `i `uc ]
+[; ;megaonoff.c: 299: T1CONbits.TMR1ON = 1;
+"299
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 300: break;
+"300
+[e $U 479  ]
+[; ;megaonoff.c: 301: case '6':
+"301
+[e :U 487 ]
+[; ;megaonoff.c: 302: TMR1H=0x83;
+"302
+[e = _TMR1H -> -> 131 `i `uc ]
+[; ;megaonoff.c: 303: TMR1L=0x00;
+"303
+[e = _TMR1L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 304: T1CONbits.TMR1ON = 1;
+"304
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 305: break;
+"305
+[e $U 479  ]
+[; ;megaonoff.c: 306: case '7':
+"306
+[e :U 488 ]
+[; ;megaonoff.c: 307: TMR1H=0x83;
+"307
+[e = _TMR1H -> -> 131 `i `uc ]
+[; ;megaonoff.c: 308: TMR1L=0xC8;
+"308
+[e = _TMR1L -> -> 200 `i `uc ]
+[; ;megaonoff.c: 309: T1CONbits.TMR1ON = 1;
+"309
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 310: break;
+"310
+[e $U 479  ]
+[; ;megaonoff.c: 311: case '8':
 "311
-[e :U 494 ]
-[; ;megaonoff.c: 312: TMR1H=0x86;
+[e :U 489 ]
+[; ;megaonoff.c: 312: TMR1H=0x87;
 "312
-[e = _TMR1H -> -> 134 `i `uc ]
-[; ;megaonoff.c: 313: TMR1L=0x20;
+[e = _TMR1H -> -> 135 `i `uc ]
+[; ;megaonoff.c: 313: TMR1L=0xB0;
 "313
-[e = _TMR1L -> -> 32 `i `uc ]
+[e = _TMR1L -> -> 176 `i `uc ]
 [; ;megaonoff.c: 314: T1CONbits.TMR1ON = 1;
 "314
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 315: break;
 "315
-[e $U 492  ]
-[; ;megaonoff.c: 316: case '1':
+[e $U 479  ]
+[; ;megaonoff.c: 316: case '9':
 "316
-[e :U 495 ]
-[; ;megaonoff.c: 317: TMR1H=0x86;
+[e :U 490 ]
+[; ;megaonoff.c: 317: TMR1H=0x85;
 "317
-[e = _TMR1H -> -> 134 `i `uc ]
-[; ;megaonoff.c: 318: TMR1L=0xE8;
+[e = _TMR1H -> -> 133 `i `uc ]
+[; ;megaonoff.c: 318: TMR1L=0x58;
 "318
-[e = _TMR1L -> -> 232 `i `uc ]
+[e = _TMR1L -> -> 88 `i `uc ]
 [; ;megaonoff.c: 319: T1CONbits.TMR1ON = 1;
 "319
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 320: break;
 "320
-[e $U 492  ]
-[; ;megaonoff.c: 321: case '2':
-"321
-[e :U 496 ]
-[; ;megaonoff.c: 322: TMR1H=0x87;
+[e $U 479  ]
+[; ;megaonoff.c: 322: default:
 "322
-[e = _TMR1H -> -> 135 `i `uc ]
-[; ;megaonoff.c: 323: TMR1L=0xB0;
+[e :U 491 ]
+[; ;megaonoff.c: 323: break;
 "323
-[e = _TMR1L -> -> 176 `i `uc ]
-[; ;megaonoff.c: 324: T1CONbits.TMR1ON = 1;
+[e $U 479  ]
 "324
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+}
+[; ;megaonoff.c: 324: }
+[e $U 479  ]
+"267
+[e :U 480 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 481
+ , $ -> -> 49 `ui `uc 482
+ , $ -> -> 50 `ui `uc 483
+ , $ -> -> 51 `ui `uc 484
+ , $ -> -> 52 `ui `uc 485
+ , $ -> -> 53 `ui `uc 486
+ , $ -> -> 54 `ui `uc 487
+ , $ -> -> 55 `ui `uc 488
+ , $ -> -> 56 `ui `uc 489
+ , $ -> -> 57 `ui `uc 490
+ 491 ]
+"324
+[e :U 479 ]
 [; ;megaonoff.c: 325: break;
 "325
-[e $U 492  ]
-[; ;megaonoff.c: 326: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 326: case '1':
 "326
-[e :U 497 ]
-[; ;megaonoff.c: 327: TMR1H=0x88;
-"327
-[e = _TMR1H -> -> 136 `i `uc ]
-[; ;megaonoff.c: 328: TMR1L=0x78;
-"328
-[e = _TMR1L -> -> 120 `i `uc ]
-[; ;megaonoff.c: 329: T1CONbits.TMR1ON = 1;
-"329
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 330: break;
-"330
-[e $U 492  ]
-[; ;megaonoff.c: 331: case '4':
-"331
-[e :U 498 ]
-[; ;megaonoff.c: 332: TMR1H=0x89;
-"332
-[e = _TMR1H -> -> 137 `i `uc ]
-[; ;megaonoff.c: 333: TMR1L=0x40;
-"333
-[e = _TMR1L -> -> 64 `i `uc ]
-[; ;megaonoff.c: 334: T1CONbits.TMR1ON = 1;
-"334
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 335: break;
-"335
-[e $U 492  ]
-[; ;megaonoff.c: 336: case '5':
-"336
-[e :U 499 ]
-[; ;megaonoff.c: 337: TMR1H=0x8A;
-"337
-[e = _TMR1H -> -> 138 `i `uc ]
-[; ;megaonoff.c: 338: TMR1L=0x08;
-"338
-[e = _TMR1L -> -> 8 `i `uc ]
-[; ;megaonoff.c: 339: T1CONbits.TMR1ON = 1;
-"339
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 340: break;
-"340
-[e $U 492  ]
-[; ;megaonoff.c: 341: case '6':
-"341
-[e :U 500 ]
-[; ;megaonoff.c: 342: TMR1H=0x8A;
-"342
-[e = _TMR1H -> -> 138 `i `uc ]
-[; ;megaonoff.c: 343: TMR1L=0xD0;
-"343
-[e = _TMR1L -> -> 208 `i `uc ]
-[; ;megaonoff.c: 344: T1CONbits.TMR1ON = 1;
-"344
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 345: break;
-"345
-[e $U 492  ]
-[; ;megaonoff.c: 346: case '7':
-"346
-[e :U 501 ]
-[; ;megaonoff.c: 347: TMR1H=0x8B;
-"347
-[e = _TMR1H -> -> 139 `i `uc ]
-[; ;megaonoff.c: 348: TMR1L=0x98;
-"348
-[e = _TMR1L -> -> 152 `i `uc ]
-[; ;megaonoff.c: 349: T1CONbits.TMR1ON = 1;
-"349
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 350: break;
-"350
-[e $U 492  ]
-[; ;megaonoff.c: 351: case '8':
-"351
-[e :U 502 ]
-[; ;megaonoff.c: 352: TMR1H=0x8C;
-"352
-[e = _TMR1H -> -> 140 `i `uc ]
-[; ;megaonoff.c: 353: TMR1L=0x60;
-"353
-[e = _TMR1L -> -> 96 `i `uc ]
-[; ;megaonoff.c: 354: T1CONbits.TMR1ON = 1;
-"354
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 355: break;
-"355
-[e $U 492  ]
-[; ;megaonoff.c: 356: case '9':
-"356
-[e :U 503 ]
-[; ;megaonoff.c: 357: TMR1H=0x8D;
-"357
-[e = _TMR1H -> -> 141 `i `uc ]
-[; ;megaonoff.c: 358: TMR1L=0x28;
-"358
-[e = _TMR1L -> -> 40 `i `uc ]
-[; ;megaonoff.c: 359: T1CONbits.TMR1ON = 1;
-"359
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 360: break;
-"360
-[e $U 492  ]
-[; ;megaonoff.c: 362: default:
-"362
-[e :U 504 ]
-[; ;megaonoff.c: 363: break;
-"363
-[e $U 492  ]
-"364
-}
-[; ;megaonoff.c: 364: }
-[e $U 492  ]
-"309
-[e :U 493 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 494
- , $ -> -> 49 `ui `uc 495
- , $ -> -> 50 `ui `uc 496
- , $ -> -> 51 `ui `uc 497
- , $ -> -> 52 `ui `uc 498
- , $ -> -> 53 `ui `uc 499
- , $ -> -> 54 `ui `uc 500
- , $ -> -> 55 `ui `uc 501
- , $ -> -> 56 `ui `uc 502
- , $ -> -> 57 `ui `uc 503
- 504 ]
-"364
 [e :U 492 ]
-[; ;megaonoff.c: 365: break;
-"365
-[e $U 475  ]
-[; ;megaonoff.c: 366: case '2':
-"366
-[e :U 505 ]
-[; ;megaonoff.c: 368: switch(levelofDimmer_LSB)
-"368
-[e $U 507  ]
-[; ;megaonoff.c: 369: {
-"369
+[; ;megaonoff.c: 328: switch(levelofDimmer_LSB)
+"328
+[e $U 494  ]
+[; ;megaonoff.c: 329: {
+"329
 {
-[; ;megaonoff.c: 370: case '0':
+[; ;megaonoff.c: 330: case '0':
+"330
+[e :U 495 ]
+[; ;megaonoff.c: 331: TMR1H=0x86;
+"331
+[e = _TMR1H -> -> 134 `i `uc ]
+[; ;megaonoff.c: 332: TMR1L=0x20;
+"332
+[e = _TMR1L -> -> 32 `i `uc ]
+[; ;megaonoff.c: 333: T1CONbits.TMR1ON = 1;
+"333
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 334: break;
+"334
+[e $U 493  ]
+[; ;megaonoff.c: 335: case '1':
+"335
+[e :U 496 ]
+[; ;megaonoff.c: 336: TMR1H=0x86;
+"336
+[e = _TMR1H -> -> 134 `i `uc ]
+[; ;megaonoff.c: 337: TMR1L=0xE8;
+"337
+[e = _TMR1L -> -> 232 `i `uc ]
+[; ;megaonoff.c: 338: T1CONbits.TMR1ON = 1;
+"338
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 339: break;
+"339
+[e $U 493  ]
+[; ;megaonoff.c: 340: case '2':
+"340
+[e :U 497 ]
+[; ;megaonoff.c: 341: TMR1H=0x87;
+"341
+[e = _TMR1H -> -> 135 `i `uc ]
+[; ;megaonoff.c: 342: TMR1L=0xB0;
+"342
+[e = _TMR1L -> -> 176 `i `uc ]
+[; ;megaonoff.c: 343: T1CONbits.TMR1ON = 1;
+"343
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 344: break;
+"344
+[e $U 493  ]
+[; ;megaonoff.c: 345: case '3':
+"345
+[e :U 498 ]
+[; ;megaonoff.c: 346: TMR1H=0x88;
+"346
+[e = _TMR1H -> -> 136 `i `uc ]
+[; ;megaonoff.c: 347: TMR1L=0x78;
+"347
+[e = _TMR1L -> -> 120 `i `uc ]
+[; ;megaonoff.c: 348: T1CONbits.TMR1ON = 1;
+"348
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 349: break;
+"349
+[e $U 493  ]
+[; ;megaonoff.c: 350: case '4':
+"350
+[e :U 499 ]
+[; ;megaonoff.c: 351: TMR1H=0x89;
+"351
+[e = _TMR1H -> -> 137 `i `uc ]
+[; ;megaonoff.c: 352: TMR1L=0x40;
+"352
+[e = _TMR1L -> -> 64 `i `uc ]
+[; ;megaonoff.c: 353: T1CONbits.TMR1ON = 1;
+"353
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 354: break;
+"354
+[e $U 493  ]
+[; ;megaonoff.c: 355: case '5':
+"355
+[e :U 500 ]
+[; ;megaonoff.c: 356: TMR1H=0x8A;
+"356
+[e = _TMR1H -> -> 138 `i `uc ]
+[; ;megaonoff.c: 357: TMR1L=0x08;
+"357
+[e = _TMR1L -> -> 8 `i `uc ]
+[; ;megaonoff.c: 358: T1CONbits.TMR1ON = 1;
+"358
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 359: break;
+"359
+[e $U 493  ]
+[; ;megaonoff.c: 360: case '6':
+"360
+[e :U 501 ]
+[; ;megaonoff.c: 361: TMR1H=0x8A;
+"361
+[e = _TMR1H -> -> 138 `i `uc ]
+[; ;megaonoff.c: 362: TMR1L=0xD0;
+"362
+[e = _TMR1L -> -> 208 `i `uc ]
+[; ;megaonoff.c: 363: T1CONbits.TMR1ON = 1;
+"363
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 364: break;
+"364
+[e $U 493  ]
+[; ;megaonoff.c: 365: case '7':
+"365
+[e :U 502 ]
+[; ;megaonoff.c: 366: TMR1H=0x8B;
+"366
+[e = _TMR1H -> -> 139 `i `uc ]
+[; ;megaonoff.c: 367: TMR1L=0x98;
+"367
+[e = _TMR1L -> -> 152 `i `uc ]
+[; ;megaonoff.c: 368: T1CONbits.TMR1ON = 1;
+"368
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 369: break;
+"369
+[e $U 493  ]
+[; ;megaonoff.c: 370: case '8':
 "370
-[e :U 508 ]
-[; ;megaonoff.c: 371: TMR1H=0x8D;
+[e :U 503 ]
+[; ;megaonoff.c: 371: TMR1H=0x8C;
 "371
-[e = _TMR1H -> -> 141 `i `uc ]
-[; ;megaonoff.c: 372: TMR1L=0xF0;
+[e = _TMR1H -> -> 140 `i `uc ]
+[; ;megaonoff.c: 372: TMR1L=0x60;
 "372
-[e = _TMR1L -> -> 240 `i `uc ]
+[e = _TMR1L -> -> 96 `i `uc ]
 [; ;megaonoff.c: 373: T1CONbits.TMR1ON = 1;
 "373
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 374: break;
 "374
-[e $U 506  ]
-[; ;megaonoff.c: 375: case '1':
+[e $U 493  ]
+[; ;megaonoff.c: 375: case '9':
 "375
-[e :U 509 ]
-[; ;megaonoff.c: 376: TMR1H=0x8E;
+[e :U 504 ]
+[; ;megaonoff.c: 376: TMR1H=0x8D;
 "376
-[e = _TMR1H -> -> 142 `i `uc ]
-[; ;megaonoff.c: 377: TMR1L=0xB8;
+[e = _TMR1H -> -> 141 `i `uc ]
+[; ;megaonoff.c: 377: TMR1L=0x28;
 "377
-[e = _TMR1L -> -> 184 `i `uc ]
+[e = _TMR1L -> -> 40 `i `uc ]
 [; ;megaonoff.c: 378: T1CONbits.TMR1ON = 1;
 "378
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 379: break;
 "379
-[e $U 506  ]
-[; ;megaonoff.c: 380: case '2':
-"380
-[e :U 510 ]
-[; ;megaonoff.c: 381: TMR1H=0x8F;
+[e $U 493  ]
+[; ;megaonoff.c: 381: default:
 "381
-[e = _TMR1H -> -> 143 `i `uc ]
-[; ;megaonoff.c: 382: TMR1L=0x80;
+[e :U 505 ]
+[; ;megaonoff.c: 382: break;
 "382
-[e = _TMR1L -> -> 128 `i `uc ]
-[; ;megaonoff.c: 383: T1CONbits.TMR1ON = 1;
+[e $U 493  ]
 "383
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+}
+[; ;megaonoff.c: 383: }
+[e $U 493  ]
+"328
+[e :U 494 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 495
+ , $ -> -> 49 `ui `uc 496
+ , $ -> -> 50 `ui `uc 497
+ , $ -> -> 51 `ui `uc 498
+ , $ -> -> 52 `ui `uc 499
+ , $ -> -> 53 `ui `uc 500
+ , $ -> -> 54 `ui `uc 501
+ , $ -> -> 55 `ui `uc 502
+ , $ -> -> 56 `ui `uc 503
+ , $ -> -> 57 `ui `uc 504
+ 505 ]
+"383
+[e :U 493 ]
 [; ;megaonoff.c: 384: break;
 "384
-[e $U 506  ]
-[; ;megaonoff.c: 385: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 385: case '2':
 "385
-[e :U 511 ]
-[; ;megaonoff.c: 386: TMR1H=0x90;
-"386
-[e = _TMR1H -> -> 144 `i `uc ]
-[; ;megaonoff.c: 387: TMR1L=0x48;
-"387
-[e = _TMR1L -> -> 72 `i `uc ]
-[; ;megaonoff.c: 388: T1CONbits.TMR1ON = 1;
-"388
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 389: break;
-"389
-[e $U 506  ]
-[; ;megaonoff.c: 390: case '4':
-"390
-[e :U 512 ]
-[; ;megaonoff.c: 391: TMR1H=0x91;
-"391
-[e = _TMR1H -> -> 145 `i `uc ]
-[; ;megaonoff.c: 392: TMR1L=0x10;
-"392
-[e = _TMR1L -> -> 16 `i `uc ]
-[; ;megaonoff.c: 393: T1CONbits.TMR1ON = 1;
-"393
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 394: break;
-"394
-[e $U 506  ]
-[; ;megaonoff.c: 395: case '5':
-"395
-[e :U 513 ]
-[; ;megaonoff.c: 396: TMR1H=0x91;
-"396
-[e = _TMR1H -> -> 145 `i `uc ]
-[; ;megaonoff.c: 397: TMR1L=0xD8;
-"397
-[e = _TMR1L -> -> 216 `i `uc ]
-[; ;megaonoff.c: 398: T1CONbits.TMR1ON = 1;
-"398
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 399: break;
-"399
-[e $U 506  ]
-[; ;megaonoff.c: 400: case '6':
-"400
-[e :U 514 ]
-[; ;megaonoff.c: 401: TMR1H=0x92;
-"401
-[e = _TMR1H -> -> 146 `i `uc ]
-[; ;megaonoff.c: 402: TMR1L=0xA0;
-"402
-[e = _TMR1L -> -> 160 `i `uc ]
-[; ;megaonoff.c: 403: T1CONbits.TMR1ON = 1;
-"403
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 404: break;
-"404
-[e $U 506  ]
-[; ;megaonoff.c: 405: case '7':
-"405
-[e :U 515 ]
-[; ;megaonoff.c: 406: TMR1H=0x93;
-"406
-[e = _TMR1H -> -> 147 `i `uc ]
-[; ;megaonoff.c: 407: TMR1L=0x68;
-"407
-[e = _TMR1L -> -> 104 `i `uc ]
-[; ;megaonoff.c: 408: T1CONbits.TMR1ON = 1;
-"408
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 409: break;
-"409
-[e $U 506  ]
-[; ;megaonoff.c: 410: case '8':
-"410
-[e :U 516 ]
-[; ;megaonoff.c: 411: TMR1H=0x94;
-"411
-[e = _TMR1H -> -> 148 `i `uc ]
-[; ;megaonoff.c: 412: TMR1L=0x30;
-"412
-[e = _TMR1L -> -> 48 `i `uc ]
-[; ;megaonoff.c: 413: T1CONbits.TMR1ON = 1;
-"413
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 414: break;
-"414
-[e $U 506  ]
-[; ;megaonoff.c: 415: case '9':
-"415
-[e :U 517 ]
-[; ;megaonoff.c: 416: TMR1H=0x94;
-"416
-[e = _TMR1H -> -> 148 `i `uc ]
-[; ;megaonoff.c: 417: TMR1L=0xF8;
-"417
-[e = _TMR1L -> -> 248 `i `uc ]
-[; ;megaonoff.c: 418: T1CONbits.TMR1ON = 1;
-"418
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 419: break;
-"419
-[e $U 506  ]
-[; ;megaonoff.c: 421: default:
-"421
-[e :U 518 ]
-[; ;megaonoff.c: 422: break;
-"422
-[e $U 506  ]
-"423
-}
-[; ;megaonoff.c: 423: }
-[e $U 506  ]
-"368
-[e :U 507 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 508
- , $ -> -> 49 `ui `uc 509
- , $ -> -> 50 `ui `uc 510
- , $ -> -> 51 `ui `uc 511
- , $ -> -> 52 `ui `uc 512
- , $ -> -> 53 `ui `uc 513
- , $ -> -> 54 `ui `uc 514
- , $ -> -> 55 `ui `uc 515
- , $ -> -> 56 `ui `uc 516
- , $ -> -> 57 `ui `uc 517
- 518 ]
-"423
 [e :U 506 ]
-[; ;megaonoff.c: 424: break;
-"424
-[e $U 475  ]
-[; ;megaonoff.c: 425: case '3':
-"425
-[e :U 519 ]
-[; ;megaonoff.c: 427: switch(levelofDimmer_LSB)
-"427
-[e $U 521  ]
-[; ;megaonoff.c: 428: {
-"428
+[; ;megaonoff.c: 387: switch(levelofDimmer_LSB)
+"387
+[e $U 508  ]
+[; ;megaonoff.c: 388: {
+"388
 {
-[; ;megaonoff.c: 429: case '0':
+[; ;megaonoff.c: 389: case '0':
+"389
+[e :U 509 ]
+[; ;megaonoff.c: 390: TMR1H=0x8D;
+"390
+[e = _TMR1H -> -> 141 `i `uc ]
+[; ;megaonoff.c: 391: TMR1L=0xF0;
+"391
+[e = _TMR1L -> -> 240 `i `uc ]
+[; ;megaonoff.c: 392: T1CONbits.TMR1ON = 1;
+"392
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 393: break;
+"393
+[e $U 507  ]
+[; ;megaonoff.c: 394: case '1':
+"394
+[e :U 510 ]
+[; ;megaonoff.c: 395: TMR1H=0x8E;
+"395
+[e = _TMR1H -> -> 142 `i `uc ]
+[; ;megaonoff.c: 396: TMR1L=0xB8;
+"396
+[e = _TMR1L -> -> 184 `i `uc ]
+[; ;megaonoff.c: 397: T1CONbits.TMR1ON = 1;
+"397
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 398: break;
+"398
+[e $U 507  ]
+[; ;megaonoff.c: 399: case '2':
+"399
+[e :U 511 ]
+[; ;megaonoff.c: 400: TMR1H=0x8F;
+"400
+[e = _TMR1H -> -> 143 `i `uc ]
+[; ;megaonoff.c: 401: TMR1L=0x80;
+"401
+[e = _TMR1L -> -> 128 `i `uc ]
+[; ;megaonoff.c: 402: T1CONbits.TMR1ON = 1;
+"402
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 403: break;
+"403
+[e $U 507  ]
+[; ;megaonoff.c: 404: case '3':
+"404
+[e :U 512 ]
+[; ;megaonoff.c: 405: TMR1H=0x90;
+"405
+[e = _TMR1H -> -> 144 `i `uc ]
+[; ;megaonoff.c: 406: TMR1L=0x48;
+"406
+[e = _TMR1L -> -> 72 `i `uc ]
+[; ;megaonoff.c: 407: T1CONbits.TMR1ON = 1;
+"407
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 408: break;
+"408
+[e $U 507  ]
+[; ;megaonoff.c: 409: case '4':
+"409
+[e :U 513 ]
+[; ;megaonoff.c: 410: TMR1H=0x91;
+"410
+[e = _TMR1H -> -> 145 `i `uc ]
+[; ;megaonoff.c: 411: TMR1L=0x10;
+"411
+[e = _TMR1L -> -> 16 `i `uc ]
+[; ;megaonoff.c: 412: T1CONbits.TMR1ON = 1;
+"412
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 413: break;
+"413
+[e $U 507  ]
+[; ;megaonoff.c: 414: case '5':
+"414
+[e :U 514 ]
+[; ;megaonoff.c: 415: TMR1H=0x91;
+"415
+[e = _TMR1H -> -> 145 `i `uc ]
+[; ;megaonoff.c: 416: TMR1L=0xD8;
+"416
+[e = _TMR1L -> -> 216 `i `uc ]
+[; ;megaonoff.c: 417: T1CONbits.TMR1ON = 1;
+"417
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 418: break;
+"418
+[e $U 507  ]
+[; ;megaonoff.c: 419: case '6':
+"419
+[e :U 515 ]
+[; ;megaonoff.c: 420: TMR1H=0x92;
+"420
+[e = _TMR1H -> -> 146 `i `uc ]
+[; ;megaonoff.c: 421: TMR1L=0xA0;
+"421
+[e = _TMR1L -> -> 160 `i `uc ]
+[; ;megaonoff.c: 422: T1CONbits.TMR1ON = 1;
+"422
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 423: break;
+"423
+[e $U 507  ]
+[; ;megaonoff.c: 424: case '7':
+"424
+[e :U 516 ]
+[; ;megaonoff.c: 425: TMR1H=0x93;
+"425
+[e = _TMR1H -> -> 147 `i `uc ]
+[; ;megaonoff.c: 426: TMR1L=0x68;
+"426
+[e = _TMR1L -> -> 104 `i `uc ]
+[; ;megaonoff.c: 427: T1CONbits.TMR1ON = 1;
+"427
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 428: break;
+"428
+[e $U 507  ]
+[; ;megaonoff.c: 429: case '8':
 "429
-[e :U 522 ]
-[; ;megaonoff.c: 430: TMR1H=0x95;
+[e :U 517 ]
+[; ;megaonoff.c: 430: TMR1H=0x94;
 "430
-[e = _TMR1H -> -> 149 `i `uc ]
-[; ;megaonoff.c: 431: TMR1L=0xC0;
+[e = _TMR1H -> -> 148 `i `uc ]
+[; ;megaonoff.c: 431: TMR1L=0x30;
 "431
-[e = _TMR1L -> -> 192 `i `uc ]
+[e = _TMR1L -> -> 48 `i `uc ]
 [; ;megaonoff.c: 432: T1CONbits.TMR1ON = 1;
 "432
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 433: break;
 "433
-[e $U 520  ]
-[; ;megaonoff.c: 434: case '1':
+[e $U 507  ]
+[; ;megaonoff.c: 434: case '9':
 "434
-[e :U 523 ]
-[; ;megaonoff.c: 435: TMR1H=0x97;
+[e :U 518 ]
+[; ;megaonoff.c: 435: TMR1H=0x94;
 "435
-[e = _TMR1H -> -> 151 `i `uc ]
-[; ;megaonoff.c: 436: TMR1L=0x50;
+[e = _TMR1H -> -> 148 `i `uc ]
+[; ;megaonoff.c: 436: TMR1L=0xF8;
 "436
-[e = _TMR1L -> -> 80 `i `uc ]
+[e = _TMR1L -> -> 248 `i `uc ]
 [; ;megaonoff.c: 437: T1CONbits.TMR1ON = 1;
 "437
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 438: break;
 "438
-[e $U 520  ]
-[; ;megaonoff.c: 439: case '2':
-"439
-[e :U 524 ]
-[; ;megaonoff.c: 440: TMR1H=0x98;
+[e $U 507  ]
+[; ;megaonoff.c: 440: default:
 "440
-[e = _TMR1H -> -> 152 `i `uc ]
-[; ;megaonoff.c: 441: TMR1L=0xE0;
+[e :U 519 ]
+[; ;megaonoff.c: 441: break;
 "441
-[e = _TMR1L -> -> 224 `i `uc ]
-[; ;megaonoff.c: 442: T1CONbits.TMR1ON = 1;
+[e $U 507  ]
 "442
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+}
+[; ;megaonoff.c: 442: }
+[e $U 507  ]
+"387
+[e :U 508 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 509
+ , $ -> -> 49 `ui `uc 510
+ , $ -> -> 50 `ui `uc 511
+ , $ -> -> 51 `ui `uc 512
+ , $ -> -> 52 `ui `uc 513
+ , $ -> -> 53 `ui `uc 514
+ , $ -> -> 54 `ui `uc 515
+ , $ -> -> 55 `ui `uc 516
+ , $ -> -> 56 `ui `uc 517
+ , $ -> -> 57 `ui `uc 518
+ 519 ]
+"442
+[e :U 507 ]
 [; ;megaonoff.c: 443: break;
 "443
-[e $U 520  ]
+[e $U 476  ]
 [; ;megaonoff.c: 444: case '3':
 "444
-[e :U 525 ]
-[; ;megaonoff.c: 445: TMR1H=0x9A;
-"445
-[e = _TMR1H -> -> 154 `i `uc ]
-[; ;megaonoff.c: 446: TMR1L=0x70;
-"446
-[e = _TMR1L -> -> 112 `i `uc ]
-[; ;megaonoff.c: 447: T1CONbits.TMR1ON = 1;
-"447
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 448: break;
-"448
-[e $U 520  ]
-[; ;megaonoff.c: 449: case '4':
-"449
-[e :U 526 ]
-[; ;megaonoff.c: 450: TMR1H=0x9C;
-"450
-[e = _TMR1H -> -> 156 `i `uc ]
-[; ;megaonoff.c: 451: TMR1L=0x00;
-"451
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 452: T1CONbits.TMR1ON = 1;
-"452
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 453: break;
-"453
-[e $U 520  ]
-[; ;megaonoff.c: 454: case '5':
-"454
-[e :U 527 ]
-[; ;megaonoff.c: 455: TMR1H=0x9D;
-"455
-[e = _TMR1H -> -> 157 `i `uc ]
-[; ;megaonoff.c: 456: TMR1L=0x90;
-"456
-[e = _TMR1L -> -> 144 `i `uc ]
-[; ;megaonoff.c: 457: T1CONbits.TMR1ON = 1;
-"457
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 458: break;
-"458
-[e $U 520  ]
-[; ;megaonoff.c: 459: case '6':
-"459
-[e :U 528 ]
-[; ;megaonoff.c: 460: TMR1H=0x9F;
-"460
-[e = _TMR1H -> -> 159 `i `uc ]
-[; ;megaonoff.c: 461: TMR1L=0x20;
-"461
-[e = _TMR1L -> -> 32 `i `uc ]
-[; ;megaonoff.c: 462: T1CONbits.TMR1ON = 1;
-"462
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 463: break;
-"463
-[e $U 520  ]
-[; ;megaonoff.c: 464: case '7':
-"464
-[e :U 529 ]
-[; ;megaonoff.c: 465: TMR1H=0xA0;
-"465
-[e = _TMR1H -> -> 160 `i `uc ]
-[; ;megaonoff.c: 466: TMR1L=0xB0;
-"466
-[e = _TMR1L -> -> 176 `i `uc ]
-[; ;megaonoff.c: 467: T1CONbits.TMR1ON = 1;
-"467
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 468: break;
-"468
-[e $U 520  ]
-[; ;megaonoff.c: 469: case '8':
-"469
-[e :U 530 ]
-[; ;megaonoff.c: 470: TMR1H=0xA2;
-"470
-[e = _TMR1H -> -> 162 `i `uc ]
-[; ;megaonoff.c: 471: TMR1L=0x40;
-"471
-[e = _TMR1L -> -> 64 `i `uc ]
-[; ;megaonoff.c: 472: T1CONbits.TMR1ON = 1;
-"472
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 473: break;
-"473
-[e $U 520  ]
-[; ;megaonoff.c: 474: case '9':
-"474
-[e :U 531 ]
-[; ;megaonoff.c: 475: TMR1H=0xA3;
-"475
-[e = _TMR1H -> -> 163 `i `uc ]
-[; ;megaonoff.c: 476: TMR1L=0xD0;
-"476
-[e = _TMR1L -> -> 208 `i `uc ]
-[; ;megaonoff.c: 477: T1CONbits.TMR1ON = 1;
-"477
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 478: break;
-"478
-[e $U 520  ]
-[; ;megaonoff.c: 479: default:
-"479
-[e :U 532 ]
-[; ;megaonoff.c: 480: break;
-"480
-[e $U 520  ]
-"481
-}
-[; ;megaonoff.c: 481: }
-[e $U 520  ]
-"427
-[e :U 521 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 522
- , $ -> -> 49 `ui `uc 523
- , $ -> -> 50 `ui `uc 524
- , $ -> -> 51 `ui `uc 525
- , $ -> -> 52 `ui `uc 526
- , $ -> -> 53 `ui `uc 527
- , $ -> -> 54 `ui `uc 528
- , $ -> -> 55 `ui `uc 529
- , $ -> -> 56 `ui `uc 530
- , $ -> -> 57 `ui `uc 531
- 532 ]
-"481
 [e :U 520 ]
+[; ;megaonoff.c: 446: switch(levelofDimmer_LSB)
+"446
+[e $U 522  ]
+[; ;megaonoff.c: 447: {
+"447
+{
+[; ;megaonoff.c: 448: case '0':
+"448
+[e :U 523 ]
+[; ;megaonoff.c: 449: TMR1H=0x95;
+"449
+[e = _TMR1H -> -> 149 `i `uc ]
+[; ;megaonoff.c: 450: TMR1L=0xC0;
+"450
+[e = _TMR1L -> -> 192 `i `uc ]
+[; ;megaonoff.c: 451: T1CONbits.TMR1ON = 1;
+"451
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 452: break;
+"452
+[e $U 521  ]
+[; ;megaonoff.c: 453: case '1':
+"453
+[e :U 524 ]
+[; ;megaonoff.c: 454: TMR1H=0x97;
+"454
+[e = _TMR1H -> -> 151 `i `uc ]
+[; ;megaonoff.c: 455: TMR1L=0x50;
+"455
+[e = _TMR1L -> -> 80 `i `uc ]
+[; ;megaonoff.c: 456: T1CONbits.TMR1ON = 1;
+"456
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 457: break;
+"457
+[e $U 521  ]
+[; ;megaonoff.c: 458: case '2':
+"458
+[e :U 525 ]
+[; ;megaonoff.c: 459: TMR1H=0x98;
+"459
+[e = _TMR1H -> -> 152 `i `uc ]
+[; ;megaonoff.c: 460: TMR1L=0xE0;
+"460
+[e = _TMR1L -> -> 224 `i `uc ]
+[; ;megaonoff.c: 461: T1CONbits.TMR1ON = 1;
+"461
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 462: break;
+"462
+[e $U 521  ]
+[; ;megaonoff.c: 463: case '3':
+"463
+[e :U 526 ]
+[; ;megaonoff.c: 464: TMR1H=0x9A;
+"464
+[e = _TMR1H -> -> 154 `i `uc ]
+[; ;megaonoff.c: 465: TMR1L=0x70;
+"465
+[e = _TMR1L -> -> 112 `i `uc ]
+[; ;megaonoff.c: 466: T1CONbits.TMR1ON = 1;
+"466
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 467: break;
+"467
+[e $U 521  ]
+[; ;megaonoff.c: 468: case '4':
+"468
+[e :U 527 ]
+[; ;megaonoff.c: 469: TMR1H=0x9C;
+"469
+[e = _TMR1H -> -> 156 `i `uc ]
+[; ;megaonoff.c: 470: TMR1L=0x00;
+"470
+[e = _TMR1L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 471: T1CONbits.TMR1ON = 1;
+"471
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 472: break;
+"472
+[e $U 521  ]
+[; ;megaonoff.c: 473: case '5':
+"473
+[e :U 528 ]
+[; ;megaonoff.c: 474: TMR1H=0x9D;
+"474
+[e = _TMR1H -> -> 157 `i `uc ]
+[; ;megaonoff.c: 475: TMR1L=0x90;
+"475
+[e = _TMR1L -> -> 144 `i `uc ]
+[; ;megaonoff.c: 476: T1CONbits.TMR1ON = 1;
+"476
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 477: break;
+"477
+[e $U 521  ]
+[; ;megaonoff.c: 478: case '6':
+"478
+[e :U 529 ]
+[; ;megaonoff.c: 479: TMR1H=0x9F;
+"479
+[e = _TMR1H -> -> 159 `i `uc ]
+[; ;megaonoff.c: 480: TMR1L=0x20;
+"480
+[e = _TMR1L -> -> 32 `i `uc ]
+[; ;megaonoff.c: 481: T1CONbits.TMR1ON = 1;
+"481
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 482: break;
 "482
-[e $U 475  ]
-[; ;megaonoff.c: 483: case '4':
+[e $U 521  ]
+[; ;megaonoff.c: 483: case '7':
 "483
-[e :U 533 ]
-[; ;megaonoff.c: 485: switch(levelofDimmer_LSB)
+[e :U 530 ]
+[; ;megaonoff.c: 484: TMR1H=0xA0;
+"484
+[e = _TMR1H -> -> 160 `i `uc ]
+[; ;megaonoff.c: 485: TMR1L=0xB0;
 "485
-[e $U 535  ]
-[; ;megaonoff.c: 486: {
+[e = _TMR1L -> -> 176 `i `uc ]
+[; ;megaonoff.c: 486: T1CONbits.TMR1ON = 1;
 "486
-{
-[; ;megaonoff.c: 487: case '0':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 487: break;
 "487
-[e :U 536 ]
-[; ;megaonoff.c: 488: TMR1H=0xA5;
+[e $U 521  ]
+[; ;megaonoff.c: 488: case '8':
 "488
-[e = _TMR1H -> -> 165 `i `uc ]
-[; ;megaonoff.c: 489: TMR1L=0x60;
+[e :U 531 ]
+[; ;megaonoff.c: 489: TMR1H=0xA2;
 "489
-[e = _TMR1L -> -> 96 `i `uc ]
-[; ;megaonoff.c: 490: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 162 `i `uc ]
+[; ;megaonoff.c: 490: TMR1L=0x40;
 "490
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 491: break;
+[e = _TMR1L -> -> 64 `i `uc ]
+[; ;megaonoff.c: 491: T1CONbits.TMR1ON = 1;
 "491
-[e $U 534  ]
-[; ;megaonoff.c: 492: case '1':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 492: break;
 "492
-[e :U 537 ]
-[; ;megaonoff.c: 493: TMR1H=0xA6;
+[e $U 521  ]
+[; ;megaonoff.c: 493: case '9':
 "493
-[e = _TMR1H -> -> 166 `i `uc ]
-[; ;megaonoff.c: 494: TMR1L=0xF0;
+[e :U 532 ]
+[; ;megaonoff.c: 494: TMR1H=0xA3;
 "494
-[e = _TMR1L -> -> 240 `i `uc ]
-[; ;megaonoff.c: 495: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 163 `i `uc ]
+[; ;megaonoff.c: 495: TMR1L=0xD0;
 "495
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 496: break;
+[e = _TMR1L -> -> 208 `i `uc ]
+[; ;megaonoff.c: 496: T1CONbits.TMR1ON = 1;
 "496
-[e $U 534  ]
-[; ;megaonoff.c: 497: case '2':
-"497
-[e :U 538 ]
-[; ;megaonoff.c: 498: TMR1H=0xA8;
-"498
-[e = _TMR1H -> -> 168 `i `uc ]
-[; ;megaonoff.c: 499: TMR1L=0x80;
-"499
-[e = _TMR1L -> -> 128 `i `uc ]
-[; ;megaonoff.c: 500: T1CONbits.TMR1ON = 1;
-"500
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 497: break;
+"497
+[e $U 521  ]
+[; ;megaonoff.c: 498: default:
+"498
+[e :U 533 ]
+[; ;megaonoff.c: 499: break;
+"499
+[e $U 521  ]
+"500
+}
+[; ;megaonoff.c: 500: }
+[e $U 521  ]
+"446
+[e :U 522 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 523
+ , $ -> -> 49 `ui `uc 524
+ , $ -> -> 50 `ui `uc 525
+ , $ -> -> 51 `ui `uc 526
+ , $ -> -> 52 `ui `uc 527
+ , $ -> -> 53 `ui `uc 528
+ , $ -> -> 54 `ui `uc 529
+ , $ -> -> 55 `ui `uc 530
+ , $ -> -> 56 `ui `uc 531
+ , $ -> -> 57 `ui `uc 532
+ 533 ]
+"500
+[e :U 521 ]
 [; ;megaonoff.c: 501: break;
 "501
-[e $U 534  ]
-[; ;megaonoff.c: 502: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 502: case '4':
 "502
-[e :U 539 ]
-[; ;megaonoff.c: 503: TMR1H=0xAA;
-"503
-[e = _TMR1H -> -> 170 `i `uc ]
-[; ;megaonoff.c: 504: TMR1L=0x10;
-"504
-[e = _TMR1L -> -> 16 `i `uc ]
-[; ;megaonoff.c: 505: T1CONbits.TMR1ON = 1;
-"505
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 506: break;
-"506
-[e $U 534  ]
-[; ;megaonoff.c: 507: case '4':
-"507
-[e :U 540 ]
-[; ;megaonoff.c: 508: TMR1H=0xAB;
-"508
-[e = _TMR1H -> -> 171 `i `uc ]
-[; ;megaonoff.c: 509: TMR1L=0xA0;
-"509
-[e = _TMR1L -> -> 160 `i `uc ]
-[; ;megaonoff.c: 510: T1CONbits.TMR1ON = 1;
-"510
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 511: break;
-"511
-[e $U 534  ]
-[; ;megaonoff.c: 512: case '5':
-"512
-[e :U 541 ]
-[; ;megaonoff.c: 513: TMR1H=0xAD;
-"513
-[e = _TMR1H -> -> 173 `i `uc ]
-[; ;megaonoff.c: 514: TMR1L=0x30;
-"514
-[e = _TMR1L -> -> 48 `i `uc ]
-[; ;megaonoff.c: 515: T1CONbits.TMR1ON = 1;
-"515
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 516: break;
-"516
-[e $U 534  ]
-[; ;megaonoff.c: 517: case '6':
-"517
-[e :U 542 ]
-[; ;megaonoff.c: 518: TMR1H=0xAE;
-"518
-[e = _TMR1H -> -> 174 `i `uc ]
-[; ;megaonoff.c: 519: TMR1L=0xC0;
-"519
-[e = _TMR1L -> -> 192 `i `uc ]
-[; ;megaonoff.c: 520: T1CONbits.TMR1ON = 1;
-"520
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 521: break;
-"521
-[e $U 534  ]
-[; ;megaonoff.c: 522: case '7':
-"522
-[e :U 543 ]
-[; ;megaonoff.c: 523: TMR1H=0xB0;
-"523
-[e = _TMR1H -> -> 176 `i `uc ]
-[; ;megaonoff.c: 524: TMR1L=0x50;
-"524
-[e = _TMR1L -> -> 80 `i `uc ]
-[; ;megaonoff.c: 525: T1CONbits.TMR1ON = 1;
-"525
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 526: break;
-"526
-[e $U 534  ]
-[; ;megaonoff.c: 527: case '8':
-"527
-[e :U 544 ]
-[; ;megaonoff.c: 528: TMR1H=0xB1;
-"528
-[e = _TMR1H -> -> 177 `i `uc ]
-[; ;megaonoff.c: 529: TMR1L=0xE0;
-"529
-[e = _TMR1L -> -> 224 `i `uc ]
-[; ;megaonoff.c: 530: T1CONbits.TMR1ON = 1;
-"530
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 531: break;
-"531
-[e $U 534  ]
-[; ;megaonoff.c: 532: case '9':
-"532
-[e :U 545 ]
-[; ;megaonoff.c: 533: TMR1H=0xB3;
-"533
-[e = _TMR1H -> -> 179 `i `uc ]
-[; ;megaonoff.c: 534: TMR1L=0x70;
-"534
-[e = _TMR1L -> -> 112 `i `uc ]
-[; ;megaonoff.c: 535: T1CONbits.TMR1ON = 1;
-"535
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 536: break;
-"536
-[e $U 534  ]
-[; ;megaonoff.c: 537: default:
-"537
-[e :U 546 ]
-[; ;megaonoff.c: 538: break;
-"538
-[e $U 534  ]
-"539
-}
-[; ;megaonoff.c: 539: }
-[e $U 534  ]
-"485
-[e :U 535 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 536
- , $ -> -> 49 `ui `uc 537
- , $ -> -> 50 `ui `uc 538
- , $ -> -> 51 `ui `uc 539
- , $ -> -> 52 `ui `uc 540
- , $ -> -> 53 `ui `uc 541
- , $ -> -> 54 `ui `uc 542
- , $ -> -> 55 `ui `uc 543
- , $ -> -> 56 `ui `uc 544
- , $ -> -> 57 `ui `uc 545
- 546 ]
-"539
 [e :U 534 ]
+[; ;megaonoff.c: 504: switch(levelofDimmer_LSB)
+"504
+[e $U 536  ]
+[; ;megaonoff.c: 505: {
+"505
+{
+[; ;megaonoff.c: 506: case '0':
+"506
+[e :U 537 ]
+[; ;megaonoff.c: 507: TMR1H=0xA5;
+"507
+[e = _TMR1H -> -> 165 `i `uc ]
+[; ;megaonoff.c: 508: TMR1L=0x60;
+"508
+[e = _TMR1L -> -> 96 `i `uc ]
+[; ;megaonoff.c: 509: T1CONbits.TMR1ON = 1;
+"509
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 510: break;
+"510
+[e $U 535  ]
+[; ;megaonoff.c: 511: case '1':
+"511
+[e :U 538 ]
+[; ;megaonoff.c: 512: TMR1H=0xA6;
+"512
+[e = _TMR1H -> -> 166 `i `uc ]
+[; ;megaonoff.c: 513: TMR1L=0xF0;
+"513
+[e = _TMR1L -> -> 240 `i `uc ]
+[; ;megaonoff.c: 514: T1CONbits.TMR1ON = 1;
+"514
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 515: break;
+"515
+[e $U 535  ]
+[; ;megaonoff.c: 516: case '2':
+"516
+[e :U 539 ]
+[; ;megaonoff.c: 517: TMR1H=0xA8;
+"517
+[e = _TMR1H -> -> 168 `i `uc ]
+[; ;megaonoff.c: 518: TMR1L=0x80;
+"518
+[e = _TMR1L -> -> 128 `i `uc ]
+[; ;megaonoff.c: 519: T1CONbits.TMR1ON = 1;
+"519
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 520: break;
+"520
+[e $U 535  ]
+[; ;megaonoff.c: 521: case '3':
+"521
+[e :U 540 ]
+[; ;megaonoff.c: 522: TMR1H=0xAA;
+"522
+[e = _TMR1H -> -> 170 `i `uc ]
+[; ;megaonoff.c: 523: TMR1L=0x10;
+"523
+[e = _TMR1L -> -> 16 `i `uc ]
+[; ;megaonoff.c: 524: T1CONbits.TMR1ON = 1;
+"524
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 525: break;
+"525
+[e $U 535  ]
+[; ;megaonoff.c: 526: case '4':
+"526
+[e :U 541 ]
+[; ;megaonoff.c: 527: TMR1H=0xAB;
+"527
+[e = _TMR1H -> -> 171 `i `uc ]
+[; ;megaonoff.c: 528: TMR1L=0xA0;
+"528
+[e = _TMR1L -> -> 160 `i `uc ]
+[; ;megaonoff.c: 529: T1CONbits.TMR1ON = 1;
+"529
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 530: break;
+"530
+[e $U 535  ]
+[; ;megaonoff.c: 531: case '5':
+"531
+[e :U 542 ]
+[; ;megaonoff.c: 532: TMR1H=0xAD;
+"532
+[e = _TMR1H -> -> 173 `i `uc ]
+[; ;megaonoff.c: 533: TMR1L=0x30;
+"533
+[e = _TMR1L -> -> 48 `i `uc ]
+[; ;megaonoff.c: 534: T1CONbits.TMR1ON = 1;
+"534
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 535: break;
+"535
+[e $U 535  ]
+[; ;megaonoff.c: 536: case '6':
+"536
+[e :U 543 ]
+[; ;megaonoff.c: 537: TMR1H=0xAE;
+"537
+[e = _TMR1H -> -> 174 `i `uc ]
+[; ;megaonoff.c: 538: TMR1L=0xC0;
+"538
+[e = _TMR1L -> -> 192 `i `uc ]
+[; ;megaonoff.c: 539: T1CONbits.TMR1ON = 1;
+"539
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 540: break;
 "540
-[e $U 475  ]
-[; ;megaonoff.c: 541: case '5':
+[e $U 535  ]
+[; ;megaonoff.c: 541: case '7':
 "541
-[e :U 547 ]
-[; ;megaonoff.c: 543: switch(levelofDimmer_LSB)
+[e :U 544 ]
+[; ;megaonoff.c: 542: TMR1H=0xB0;
+"542
+[e = _TMR1H -> -> 176 `i `uc ]
+[; ;megaonoff.c: 543: TMR1L=0x50;
 "543
-[e $U 549  ]
-[; ;megaonoff.c: 544: {
+[e = _TMR1L -> -> 80 `i `uc ]
+[; ;megaonoff.c: 544: T1CONbits.TMR1ON = 1;
 "544
-{
-[; ;megaonoff.c: 545: case '0':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 545: break;
 "545
-[e :U 550 ]
-[; ;megaonoff.c: 546: TMR1H=0xB5;
+[e $U 535  ]
+[; ;megaonoff.c: 546: case '8':
 "546
-[e = _TMR1H -> -> 181 `i `uc ]
-[; ;megaonoff.c: 547: TMR1L=0x00;
+[e :U 545 ]
+[; ;megaonoff.c: 547: TMR1H=0xB1;
 "547
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 548: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 177 `i `uc ]
+[; ;megaonoff.c: 548: TMR1L=0xE0;
 "548
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 549: break;
+[e = _TMR1L -> -> 224 `i `uc ]
+[; ;megaonoff.c: 549: T1CONbits.TMR1ON = 1;
 "549
-[e $U 548  ]
-[; ;megaonoff.c: 550: case '1':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 550: break;
 "550
-[e :U 551 ]
-[; ;megaonoff.c: 551: TMR1H=0xB6;
+[e $U 535  ]
+[; ;megaonoff.c: 551: case '9':
 "551
-[e = _TMR1H -> -> 182 `i `uc ]
-[; ;megaonoff.c: 552: TMR1L=0x90;
+[e :U 546 ]
+[; ;megaonoff.c: 552: TMR1H=0xB3;
 "552
-[e = _TMR1L -> -> 144 `i `uc ]
-[; ;megaonoff.c: 553: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 179 `i `uc ]
+[; ;megaonoff.c: 553: TMR1L=0x70;
 "553
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 554: break;
+[e = _TMR1L -> -> 112 `i `uc ]
+[; ;megaonoff.c: 554: T1CONbits.TMR1ON = 1;
 "554
-[e $U 548  ]
-[; ;megaonoff.c: 555: case '2':
-"555
-[e :U 552 ]
-[; ;megaonoff.c: 556: TMR1H=0xB8;
-"556
-[e = _TMR1H -> -> 184 `i `uc ]
-[; ;megaonoff.c: 557: TMR1L=0x20;
-"557
-[e = _TMR1L -> -> 32 `i `uc ]
-[; ;megaonoff.c: 558: T1CONbits.TMR1ON = 1;
-"558
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 555: break;
+"555
+[e $U 535  ]
+[; ;megaonoff.c: 556: default:
+"556
+[e :U 547 ]
+[; ;megaonoff.c: 557: break;
+"557
+[e $U 535  ]
+"558
+}
+[; ;megaonoff.c: 558: }
+[e $U 535  ]
+"504
+[e :U 536 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 537
+ , $ -> -> 49 `ui `uc 538
+ , $ -> -> 50 `ui `uc 539
+ , $ -> -> 51 `ui `uc 540
+ , $ -> -> 52 `ui `uc 541
+ , $ -> -> 53 `ui `uc 542
+ , $ -> -> 54 `ui `uc 543
+ , $ -> -> 55 `ui `uc 544
+ , $ -> -> 56 `ui `uc 545
+ , $ -> -> 57 `ui `uc 546
+ 547 ]
+"558
+[e :U 535 ]
 [; ;megaonoff.c: 559: break;
 "559
-[e $U 548  ]
-[; ;megaonoff.c: 560: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 560: case '5':
 "560
-[e :U 553 ]
-[; ;megaonoff.c: 561: TMR1H=0xB9;
-"561
-[e = _TMR1H -> -> 185 `i `uc ]
-[; ;megaonoff.c: 562: TMR1L=0xB0;
-"562
-[e = _TMR1L -> -> 176 `i `uc ]
-[; ;megaonoff.c: 563: T1CONbits.TMR1ON = 1;
-"563
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 564: break;
-"564
-[e $U 548  ]
-[; ;megaonoff.c: 565: case '4':
-"565
-[e :U 554 ]
-[; ;megaonoff.c: 566: TMR1H=0xBB;
-"566
-[e = _TMR1H -> -> 187 `i `uc ]
-[; ;megaonoff.c: 567: TMR1L=0x40;
-"567
-[e = _TMR1L -> -> 64 `i `uc ]
-[; ;megaonoff.c: 568: T1CONbits.TMR1ON = 1;
-"568
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 569: break;
-"569
-[e $U 548  ]
-[; ;megaonoff.c: 570: case '5':
-"570
-[e :U 555 ]
-[; ;megaonoff.c: 571: TMR1H=0xBC;
-"571
-[e = _TMR1H -> -> 188 `i `uc ]
-[; ;megaonoff.c: 572: TMR1L=0xD0;
-"572
-[e = _TMR1L -> -> 208 `i `uc ]
-[; ;megaonoff.c: 573: T1CONbits.TMR1ON = 1;
-"573
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 574: break;
-"574
-[e $U 548  ]
-[; ;megaonoff.c: 575: case '6':
-"575
-[e :U 556 ]
-[; ;megaonoff.c: 576: TMR1H=0xBE;
-"576
-[e = _TMR1H -> -> 190 `i `uc ]
-[; ;megaonoff.c: 577: TMR1L=0x60;
-"577
-[e = _TMR1L -> -> 96 `i `uc ]
-[; ;megaonoff.c: 578: T1CONbits.TMR1ON = 1;
-"578
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 579: break;
-"579
-[e $U 548  ]
-[; ;megaonoff.c: 580: case '7':
-"580
-[e :U 557 ]
-[; ;megaonoff.c: 581: TMR1H=0xBF;
-"581
-[e = _TMR1H -> -> 191 `i `uc ]
-[; ;megaonoff.c: 582: TMR1L=0xF0;
-"582
-[e = _TMR1L -> -> 240 `i `uc ]
-[; ;megaonoff.c: 583: T1CONbits.TMR1ON = 1;
-"583
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 584: break;
-"584
-[e $U 548  ]
-[; ;megaonoff.c: 585: case '8':
-"585
-[e :U 558 ]
-[; ;megaonoff.c: 586: TMR1H=0xC1;
-"586
-[e = _TMR1H -> -> 193 `i `uc ]
-[; ;megaonoff.c: 587: TMR1L=0x80;
-"587
-[e = _TMR1L -> -> 128 `i `uc ]
-[; ;megaonoff.c: 588: T1CONbits.TMR1ON = 1;
-"588
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 589: break;
-"589
-[e $U 548  ]
-[; ;megaonoff.c: 590: case '9':
-"590
-[e :U 559 ]
-[; ;megaonoff.c: 591: TMR1H=0xC3;
-"591
-[e = _TMR1H -> -> 195 `i `uc ]
-[; ;megaonoff.c: 592: TMR1L=0x10;
-"592
-[e = _TMR1L -> -> 16 `i `uc ]
-[; ;megaonoff.c: 593: T1CONbits.TMR1ON = 1;
-"593
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 594: break;
-"594
-[e $U 548  ]
-[; ;megaonoff.c: 596: default:
-"596
-[e :U 560 ]
-[; ;megaonoff.c: 597: break;
-"597
-[e $U 548  ]
-"598
-}
-[; ;megaonoff.c: 598: }
-[e $U 548  ]
-"543
-[e :U 549 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 550
- , $ -> -> 49 `ui `uc 551
- , $ -> -> 50 `ui `uc 552
- , $ -> -> 51 `ui `uc 553
- , $ -> -> 52 `ui `uc 554
- , $ -> -> 53 `ui `uc 555
- , $ -> -> 54 `ui `uc 556
- , $ -> -> 55 `ui `uc 557
- , $ -> -> 56 `ui `uc 558
- , $ -> -> 57 `ui `uc 559
- 560 ]
-"598
 [e :U 548 ]
-[; ;megaonoff.c: 599: break;
-"599
-[e $U 475  ]
-[; ;megaonoff.c: 600: case '6':
-"600
-[e :U 561 ]
-[; ;megaonoff.c: 602: switch(levelofDimmer_LSB)
-"602
-[e $U 563  ]
-[; ;megaonoff.c: 603: {
-"603
+[; ;megaonoff.c: 562: switch(levelofDimmer_LSB)
+"562
+[e $U 550  ]
+[; ;megaonoff.c: 563: {
+"563
 {
-[; ;megaonoff.c: 604: case '0':
+[; ;megaonoff.c: 564: case '0':
+"564
+[e :U 551 ]
+[; ;megaonoff.c: 565: TMR1H=0xB5;
+"565
+[e = _TMR1H -> -> 181 `i `uc ]
+[; ;megaonoff.c: 566: TMR1L=0x00;
+"566
+[e = _TMR1L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 567: T1CONbits.TMR1ON = 1;
+"567
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 568: break;
+"568
+[e $U 549  ]
+[; ;megaonoff.c: 569: case '1':
+"569
+[e :U 552 ]
+[; ;megaonoff.c: 570: TMR1H=0xB6;
+"570
+[e = _TMR1H -> -> 182 `i `uc ]
+[; ;megaonoff.c: 571: TMR1L=0x90;
+"571
+[e = _TMR1L -> -> 144 `i `uc ]
+[; ;megaonoff.c: 572: T1CONbits.TMR1ON = 1;
+"572
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 573: break;
+"573
+[e $U 549  ]
+[; ;megaonoff.c: 574: case '2':
+"574
+[e :U 553 ]
+[; ;megaonoff.c: 575: TMR1H=0xB8;
+"575
+[e = _TMR1H -> -> 184 `i `uc ]
+[; ;megaonoff.c: 576: TMR1L=0x20;
+"576
+[e = _TMR1L -> -> 32 `i `uc ]
+[; ;megaonoff.c: 577: T1CONbits.TMR1ON = 1;
+"577
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 578: break;
+"578
+[e $U 549  ]
+[; ;megaonoff.c: 579: case '3':
+"579
+[e :U 554 ]
+[; ;megaonoff.c: 580: TMR1H=0xB9;
+"580
+[e = _TMR1H -> -> 185 `i `uc ]
+[; ;megaonoff.c: 581: TMR1L=0xB0;
+"581
+[e = _TMR1L -> -> 176 `i `uc ]
+[; ;megaonoff.c: 582: T1CONbits.TMR1ON = 1;
+"582
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 583: break;
+"583
+[e $U 549  ]
+[; ;megaonoff.c: 584: case '4':
+"584
+[e :U 555 ]
+[; ;megaonoff.c: 585: TMR1H=0xBB;
+"585
+[e = _TMR1H -> -> 187 `i `uc ]
+[; ;megaonoff.c: 586: TMR1L=0x40;
+"586
+[e = _TMR1L -> -> 64 `i `uc ]
+[; ;megaonoff.c: 587: T1CONbits.TMR1ON = 1;
+"587
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 588: break;
+"588
+[e $U 549  ]
+[; ;megaonoff.c: 589: case '5':
+"589
+[e :U 556 ]
+[; ;megaonoff.c: 590: TMR1H=0xBC;
+"590
+[e = _TMR1H -> -> 188 `i `uc ]
+[; ;megaonoff.c: 591: TMR1L=0xD0;
+"591
+[e = _TMR1L -> -> 208 `i `uc ]
+[; ;megaonoff.c: 592: T1CONbits.TMR1ON = 1;
+"592
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 593: break;
+"593
+[e $U 549  ]
+[; ;megaonoff.c: 594: case '6':
+"594
+[e :U 557 ]
+[; ;megaonoff.c: 595: TMR1H=0xBE;
+"595
+[e = _TMR1H -> -> 190 `i `uc ]
+[; ;megaonoff.c: 596: TMR1L=0x60;
+"596
+[e = _TMR1L -> -> 96 `i `uc ]
+[; ;megaonoff.c: 597: T1CONbits.TMR1ON = 1;
+"597
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 598: break;
+"598
+[e $U 549  ]
+[; ;megaonoff.c: 599: case '7':
+"599
+[e :U 558 ]
+[; ;megaonoff.c: 600: TMR1H=0xBF;
+"600
+[e = _TMR1H -> -> 191 `i `uc ]
+[; ;megaonoff.c: 601: TMR1L=0xF0;
+"601
+[e = _TMR1L -> -> 240 `i `uc ]
+[; ;megaonoff.c: 602: T1CONbits.TMR1ON = 1;
+"602
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 603: break;
+"603
+[e $U 549  ]
+[; ;megaonoff.c: 604: case '8':
 "604
-[e :U 564 ]
-[; ;megaonoff.c: 605: TMR1H=0xC4;
+[e :U 559 ]
+[; ;megaonoff.c: 605: TMR1H=0xC1;
 "605
-[e = _TMR1H -> -> 196 `i `uc ]
-[; ;megaonoff.c: 606: TMR1L=0xA0;
+[e = _TMR1H -> -> 193 `i `uc ]
+[; ;megaonoff.c: 606: TMR1L=0x80;
 "606
-[e = _TMR1L -> -> 160 `i `uc ]
+[e = _TMR1L -> -> 128 `i `uc ]
 [; ;megaonoff.c: 607: T1CONbits.TMR1ON = 1;
 "607
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 608: break;
 "608
-[e $U 562  ]
-[; ;megaonoff.c: 609: case '1':
+[e $U 549  ]
+[; ;megaonoff.c: 609: case '9':
 "609
-[e :U 565 ]
-[; ;megaonoff.c: 610: TMR1H=0xC6;
+[e :U 560 ]
+[; ;megaonoff.c: 610: TMR1H=0xC3;
 "610
-[e = _TMR1H -> -> 198 `i `uc ]
-[; ;megaonoff.c: 611: TMR1L=0x30;
+[e = _TMR1H -> -> 195 `i `uc ]
+[; ;megaonoff.c: 611: TMR1L=0x10;
 "611
-[e = _TMR1L -> -> 48 `i `uc ]
+[e = _TMR1L -> -> 16 `i `uc ]
 [; ;megaonoff.c: 612: T1CONbits.TMR1ON = 1;
 "612
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 613: break;
 "613
-[e $U 562  ]
-[; ;megaonoff.c: 614: case '2':
-"614
-[e :U 566 ]
-[; ;megaonoff.c: 615: TMR1H=0xC7;
+[e $U 549  ]
+[; ;megaonoff.c: 615: default:
 "615
-[e = _TMR1H -> -> 199 `i `uc ]
-[; ;megaonoff.c: 616: TMR1L=0xC0;
+[e :U 561 ]
+[; ;megaonoff.c: 616: break;
 "616
-[e = _TMR1L -> -> 192 `i `uc ]
-[; ;megaonoff.c: 617: T1CONbits.TMR1ON = 1;
+[e $U 549  ]
 "617
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+}
+[; ;megaonoff.c: 617: }
+[e $U 549  ]
+"562
+[e :U 550 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 551
+ , $ -> -> 49 `ui `uc 552
+ , $ -> -> 50 `ui `uc 553
+ , $ -> -> 51 `ui `uc 554
+ , $ -> -> 52 `ui `uc 555
+ , $ -> -> 53 `ui `uc 556
+ , $ -> -> 54 `ui `uc 557
+ , $ -> -> 55 `ui `uc 558
+ , $ -> -> 56 `ui `uc 559
+ , $ -> -> 57 `ui `uc 560
+ 561 ]
+"617
+[e :U 549 ]
 [; ;megaonoff.c: 618: break;
 "618
-[e $U 562  ]
-[; ;megaonoff.c: 619: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 619: case '6':
 "619
-[e :U 567 ]
-[; ;megaonoff.c: 620: TMR1H=0xC9;
-"620
-[e = _TMR1H -> -> 201 `i `uc ]
-[; ;megaonoff.c: 621: TMR1L=0x50;
-"621
-[e = _TMR1L -> -> 80 `i `uc ]
-[; ;megaonoff.c: 622: T1CONbits.TMR1ON = 1;
-"622
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 623: break;
-"623
-[e $U 562  ]
-[; ;megaonoff.c: 624: case '4':
-"624
-[e :U 568 ]
-[; ;megaonoff.c: 625: TMR1H=0xCA;
-"625
-[e = _TMR1H -> -> 202 `i `uc ]
-[; ;megaonoff.c: 626: TMR1L=0xE0;
-"626
-[e = _TMR1L -> -> 224 `i `uc ]
-[; ;megaonoff.c: 627: T1CONbits.TMR1ON = 1;
-"627
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 628: break;
-"628
-[e $U 562  ]
-[; ;megaonoff.c: 629: case '5':
-"629
-[e :U 569 ]
-[; ;megaonoff.c: 630: TMR1H=0xCC;
-"630
-[e = _TMR1H -> -> 204 `i `uc ]
-[; ;megaonoff.c: 631: TMR1L=0x70;
-"631
-[e = _TMR1L -> -> 112 `i `uc ]
-[; ;megaonoff.c: 632: T1CONbits.TMR1ON = 1;
-"632
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 633: break;
-"633
-[e $U 562  ]
-[; ;megaonoff.c: 634: case '6':
-"634
-[e :U 570 ]
-[; ;megaonoff.c: 635: TMR1H=0xCE;
-"635
-[e = _TMR1H -> -> 206 `i `uc ]
-[; ;megaonoff.c: 636: TMR1L=0x00;
-"636
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 637: T1CONbits.TMR1ON = 1;
-"637
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 638: break;
-"638
-[e $U 562  ]
-[; ;megaonoff.c: 639: case '7':
-"639
-[e :U 571 ]
-[; ;megaonoff.c: 640: TMR1H=0xCF;
-"640
-[e = _TMR1H -> -> 207 `i `uc ]
-[; ;megaonoff.c: 641: TMR1L=0x90;
-"641
-[e = _TMR1L -> -> 144 `i `uc ]
-[; ;megaonoff.c: 642: T1CONbits.TMR1ON = 1;
-"642
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 643: break;
-"643
-[e $U 562  ]
-[; ;megaonoff.c: 644: case '8':
-"644
-[e :U 572 ]
-[; ;megaonoff.c: 645: TMR1H=0xD1;
-"645
-[e = _TMR1H -> -> 209 `i `uc ]
-[; ;megaonoff.c: 646: TMR1L=0x20;
-"646
-[e = _TMR1L -> -> 32 `i `uc ]
-[; ;megaonoff.c: 647: T1CONbits.TMR1ON = 1;
-"647
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 648: break;
-"648
-[e $U 562  ]
-[; ;megaonoff.c: 649: case '9':
-"649
-[e :U 573 ]
-[; ;megaonoff.c: 650: TMR1H=0xD2;
-"650
-[e = _TMR1H -> -> 210 `i `uc ]
-[; ;megaonoff.c: 651: TMR1L=0xB0;
-"651
-[e = _TMR1L -> -> 176 `i `uc ]
-[; ;megaonoff.c: 652: T1CONbits.TMR1ON = 1;
-"652
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 653: break;
-"653
-[e $U 562  ]
-[; ;megaonoff.c: 654: default:
-"654
-[e :U 574 ]
-[; ;megaonoff.c: 655: break;
-"655
-[e $U 562  ]
-"656
-}
-[; ;megaonoff.c: 656: }
-[e $U 562  ]
-"602
-[e :U 563 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 564
- , $ -> -> 49 `ui `uc 565
- , $ -> -> 50 `ui `uc 566
- , $ -> -> 51 `ui `uc 567
- , $ -> -> 52 `ui `uc 568
- , $ -> -> 53 `ui `uc 569
- , $ -> -> 54 `ui `uc 570
- , $ -> -> 55 `ui `uc 571
- , $ -> -> 56 `ui `uc 572
- , $ -> -> 57 `ui `uc 573
- 574 ]
-"656
 [e :U 562 ]
+[; ;megaonoff.c: 621: switch(levelofDimmer_LSB)
+"621
+[e $U 564  ]
+[; ;megaonoff.c: 622: {
+"622
+{
+[; ;megaonoff.c: 623: case '0':
+"623
+[e :U 565 ]
+[; ;megaonoff.c: 624: TMR1H=0xC4;
+"624
+[e = _TMR1H -> -> 196 `i `uc ]
+[; ;megaonoff.c: 625: TMR1L=0xA0;
+"625
+[e = _TMR1L -> -> 160 `i `uc ]
+[; ;megaonoff.c: 626: T1CONbits.TMR1ON = 1;
+"626
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 627: break;
+"627
+[e $U 563  ]
+[; ;megaonoff.c: 628: case '1':
+"628
+[e :U 566 ]
+[; ;megaonoff.c: 629: TMR1H=0xC6;
+"629
+[e = _TMR1H -> -> 198 `i `uc ]
+[; ;megaonoff.c: 630: TMR1L=0x30;
+"630
+[e = _TMR1L -> -> 48 `i `uc ]
+[; ;megaonoff.c: 631: T1CONbits.TMR1ON = 1;
+"631
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 632: break;
+"632
+[e $U 563  ]
+[; ;megaonoff.c: 633: case '2':
+"633
+[e :U 567 ]
+[; ;megaonoff.c: 634: TMR1H=0xC7;
+"634
+[e = _TMR1H -> -> 199 `i `uc ]
+[; ;megaonoff.c: 635: TMR1L=0xC0;
+"635
+[e = _TMR1L -> -> 192 `i `uc ]
+[; ;megaonoff.c: 636: T1CONbits.TMR1ON = 1;
+"636
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 637: break;
+"637
+[e $U 563  ]
+[; ;megaonoff.c: 638: case '3':
+"638
+[e :U 568 ]
+[; ;megaonoff.c: 639: TMR1H=0xC9;
+"639
+[e = _TMR1H -> -> 201 `i `uc ]
+[; ;megaonoff.c: 640: TMR1L=0x50;
+"640
+[e = _TMR1L -> -> 80 `i `uc ]
+[; ;megaonoff.c: 641: T1CONbits.TMR1ON = 1;
+"641
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 642: break;
+"642
+[e $U 563  ]
+[; ;megaonoff.c: 643: case '4':
+"643
+[e :U 569 ]
+[; ;megaonoff.c: 644: TMR1H=0xCA;
+"644
+[e = _TMR1H -> -> 202 `i `uc ]
+[; ;megaonoff.c: 645: TMR1L=0xE0;
+"645
+[e = _TMR1L -> -> 224 `i `uc ]
+[; ;megaonoff.c: 646: T1CONbits.TMR1ON = 1;
+"646
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 647: break;
+"647
+[e $U 563  ]
+[; ;megaonoff.c: 648: case '5':
+"648
+[e :U 570 ]
+[; ;megaonoff.c: 649: TMR1H=0xCC;
+"649
+[e = _TMR1H -> -> 204 `i `uc ]
+[; ;megaonoff.c: 650: TMR1L=0x70;
+"650
+[e = _TMR1L -> -> 112 `i `uc ]
+[; ;megaonoff.c: 651: T1CONbits.TMR1ON = 1;
+"651
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 652: break;
+"652
+[e $U 563  ]
+[; ;megaonoff.c: 653: case '6':
+"653
+[e :U 571 ]
+[; ;megaonoff.c: 654: TMR1H=0xCE;
+"654
+[e = _TMR1H -> -> 206 `i `uc ]
+[; ;megaonoff.c: 655: TMR1L=0x00;
+"655
+[e = _TMR1L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 656: T1CONbits.TMR1ON = 1;
+"656
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 657: break;
 "657
-[e $U 475  ]
+[e $U 563  ]
 [; ;megaonoff.c: 658: case '7':
 "658
-[e :U 575 ]
-[; ;megaonoff.c: 660: switch(levelofDimmer_LSB)
+[e :U 572 ]
+[; ;megaonoff.c: 659: TMR1H=0xCF;
+"659
+[e = _TMR1H -> -> 207 `i `uc ]
+[; ;megaonoff.c: 660: TMR1L=0x90;
 "660
-[e $U 577  ]
-[; ;megaonoff.c: 661: {
+[e = _TMR1L -> -> 144 `i `uc ]
+[; ;megaonoff.c: 661: T1CONbits.TMR1ON = 1;
 "661
-{
-[; ;megaonoff.c: 662: case '0':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 662: break;
 "662
-[e :U 578 ]
-[; ;megaonoff.c: 663: TMR1H=0xD4;
+[e $U 563  ]
+[; ;megaonoff.c: 663: case '8':
 "663
-[e = _TMR1H -> -> 212 `i `uc ]
-[; ;megaonoff.c: 664: TMR1L=0x40;
+[e :U 573 ]
+[; ;megaonoff.c: 664: TMR1H=0xD1;
 "664
-[e = _TMR1L -> -> 64 `i `uc ]
-[; ;megaonoff.c: 665: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 209 `i `uc ]
+[; ;megaonoff.c: 665: TMR1L=0x20;
 "665
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 666: break;
+[e = _TMR1L -> -> 32 `i `uc ]
+[; ;megaonoff.c: 666: T1CONbits.TMR1ON = 1;
 "666
-[e $U 576  ]
-[; ;megaonoff.c: 667: case '1':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 667: break;
 "667
-[e :U 579 ]
-[; ;megaonoff.c: 668: TMR1H=0xD5;
+[e $U 563  ]
+[; ;megaonoff.c: 668: case '9':
 "668
-[e = _TMR1H -> -> 213 `i `uc ]
-[; ;megaonoff.c: 669: TMR1L=0xD0;
+[e :U 574 ]
+[; ;megaonoff.c: 669: TMR1H=0xD2;
 "669
-[e = _TMR1L -> -> 208 `i `uc ]
-[; ;megaonoff.c: 670: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 210 `i `uc ]
+[; ;megaonoff.c: 670: TMR1L=0xB0;
 "670
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 671: break;
+[e = _TMR1L -> -> 176 `i `uc ]
+[; ;megaonoff.c: 671: T1CONbits.TMR1ON = 1;
 "671
-[e $U 576  ]
-[; ;megaonoff.c: 672: case '2':
-"672
-[e :U 580 ]
-[; ;megaonoff.c: 673: TMR1H=0xD7;
-"673
-[e = _TMR1H -> -> 215 `i `uc ]
-[; ;megaonoff.c: 674: TMR1L=0x60;
-"674
-[e = _TMR1L -> -> 96 `i `uc ]
-[; ;megaonoff.c: 675: T1CONbits.TMR1ON = 1;
-"675
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 672: break;
+"672
+[e $U 563  ]
+[; ;megaonoff.c: 673: default:
+"673
+[e :U 575 ]
+[; ;megaonoff.c: 674: break;
+"674
+[e $U 563  ]
+"675
+}
+[; ;megaonoff.c: 675: }
+[e $U 563  ]
+"621
+[e :U 564 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 565
+ , $ -> -> 49 `ui `uc 566
+ , $ -> -> 50 `ui `uc 567
+ , $ -> -> 51 `ui `uc 568
+ , $ -> -> 52 `ui `uc 569
+ , $ -> -> 53 `ui `uc 570
+ , $ -> -> 54 `ui `uc 571
+ , $ -> -> 55 `ui `uc 572
+ , $ -> -> 56 `ui `uc 573
+ , $ -> -> 57 `ui `uc 574
+ 575 ]
+"675
+[e :U 563 ]
 [; ;megaonoff.c: 676: break;
 "676
-[e $U 576  ]
-[; ;megaonoff.c: 677: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 677: case '7':
 "677
-[e :U 581 ]
-[; ;megaonoff.c: 678: TMR1H=0xD8;
-"678
-[e = _TMR1H -> -> 216 `i `uc ]
-[; ;megaonoff.c: 679: TMR1L=0xF0;
-"679
-[e = _TMR1L -> -> 240 `i `uc ]
-[; ;megaonoff.c: 680: T1CONbits.TMR1ON = 1;
-"680
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 681: break;
-"681
-[e $U 576  ]
-[; ;megaonoff.c: 682: case '4':
-"682
-[e :U 582 ]
-[; ;megaonoff.c: 683: TMR1H=0xDA;
-"683
-[e = _TMR1H -> -> 218 `i `uc ]
-[; ;megaonoff.c: 684: TMR1L=0x80;
-"684
-[e = _TMR1L -> -> 128 `i `uc ]
-[; ;megaonoff.c: 685: T1CONbits.TMR1ON = 1;
-"685
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 686: break;
-"686
-[e $U 576  ]
-[; ;megaonoff.c: 687: case '5':
-"687
-[e :U 583 ]
-[; ;megaonoff.c: 688: TMR1H=0xDC;
-"688
-[e = _TMR1H -> -> 220 `i `uc ]
-[; ;megaonoff.c: 689: TMR1L=0x10;
-"689
-[e = _TMR1L -> -> 16 `i `uc ]
-[; ;megaonoff.c: 690: T1CONbits.TMR1ON = 1;
-"690
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 691: break;
-"691
-[e $U 576  ]
-[; ;megaonoff.c: 692: case '6':
-"692
-[e :U 584 ]
-[; ;megaonoff.c: 693: TMR1H=0xDD;
-"693
-[e = _TMR1H -> -> 221 `i `uc ]
-[; ;megaonoff.c: 694: TMR1L=0xA0;
-"694
-[e = _TMR1L -> -> 160 `i `uc ]
-[; ;megaonoff.c: 695: T1CONbits.TMR1ON = 1;
-"695
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 696: break;
-"696
-[e $U 576  ]
-[; ;megaonoff.c: 697: case '7':
-"697
-[e :U 585 ]
-[; ;megaonoff.c: 698: TMR1H=0xDF;
-"698
-[e = _TMR1H -> -> 223 `i `uc ]
-[; ;megaonoff.c: 699: TMR1L=0x30;
-"699
-[e = _TMR1L -> -> 48 `i `uc ]
-[; ;megaonoff.c: 700: T1CONbits.TMR1ON = 1;
-"700
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 701: break;
-"701
-[e $U 576  ]
-[; ;megaonoff.c: 702: case '8':
-"702
-[e :U 586 ]
-[; ;megaonoff.c: 703: TMR1H=0xE0;
-"703
-[e = _TMR1H -> -> 224 `i `uc ]
-[; ;megaonoff.c: 704: TMR1L=0xC0;
-"704
-[e = _TMR1L -> -> 192 `i `uc ]
-[; ;megaonoff.c: 705: T1CONbits.TMR1ON = 1;
-"705
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 706: break;
-"706
-[e $U 576  ]
-[; ;megaonoff.c: 707: case '9':
-"707
-[e :U 587 ]
-[; ;megaonoff.c: 708: TMR1H=0xE2;
-"708
-[e = _TMR1H -> -> 226 `i `uc ]
-[; ;megaonoff.c: 709: TMR1L=0x50;
-"709
-[e = _TMR1L -> -> 80 `i `uc ]
-[; ;megaonoff.c: 710: T1CONbits.TMR1ON = 1;
-"710
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 711: break;
-"711
-[e $U 576  ]
-[; ;megaonoff.c: 712: default:
-"712
-[e :U 588 ]
-[; ;megaonoff.c: 713: break;
-"713
-[e $U 576  ]
-"714
-}
-[; ;megaonoff.c: 714: }
-[e $U 576  ]
-"660
-[e :U 577 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 578
- , $ -> -> 49 `ui `uc 579
- , $ -> -> 50 `ui `uc 580
- , $ -> -> 51 `ui `uc 581
- , $ -> -> 52 `ui `uc 582
- , $ -> -> 53 `ui `uc 583
- , $ -> -> 54 `ui `uc 584
- , $ -> -> 55 `ui `uc 585
- , $ -> -> 56 `ui `uc 586
- , $ -> -> 57 `ui `uc 587
- 588 ]
-"714
 [e :U 576 ]
+[; ;megaonoff.c: 679: switch(levelofDimmer_LSB)
+"679
+[e $U 578  ]
+[; ;megaonoff.c: 680: {
+"680
+{
+[; ;megaonoff.c: 681: case '0':
+"681
+[e :U 579 ]
+[; ;megaonoff.c: 682: TMR1H=0xD4;
+"682
+[e = _TMR1H -> -> 212 `i `uc ]
+[; ;megaonoff.c: 683: TMR1L=0x40;
+"683
+[e = _TMR1L -> -> 64 `i `uc ]
+[; ;megaonoff.c: 684: T1CONbits.TMR1ON = 1;
+"684
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 685: break;
+"685
+[e $U 577  ]
+[; ;megaonoff.c: 686: case '1':
+"686
+[e :U 580 ]
+[; ;megaonoff.c: 687: TMR1H=0xD5;
+"687
+[e = _TMR1H -> -> 213 `i `uc ]
+[; ;megaonoff.c: 688: TMR1L=0xD0;
+"688
+[e = _TMR1L -> -> 208 `i `uc ]
+[; ;megaonoff.c: 689: T1CONbits.TMR1ON = 1;
+"689
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 690: break;
+"690
+[e $U 577  ]
+[; ;megaonoff.c: 691: case '2':
+"691
+[e :U 581 ]
+[; ;megaonoff.c: 692: TMR1H=0xD7;
+"692
+[e = _TMR1H -> -> 215 `i `uc ]
+[; ;megaonoff.c: 693: TMR1L=0x60;
+"693
+[e = _TMR1L -> -> 96 `i `uc ]
+[; ;megaonoff.c: 694: T1CONbits.TMR1ON = 1;
+"694
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 695: break;
+"695
+[e $U 577  ]
+[; ;megaonoff.c: 696: case '3':
+"696
+[e :U 582 ]
+[; ;megaonoff.c: 697: TMR1H=0xD8;
+"697
+[e = _TMR1H -> -> 216 `i `uc ]
+[; ;megaonoff.c: 698: TMR1L=0xF0;
+"698
+[e = _TMR1L -> -> 240 `i `uc ]
+[; ;megaonoff.c: 699: T1CONbits.TMR1ON = 1;
+"699
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 700: break;
+"700
+[e $U 577  ]
+[; ;megaonoff.c: 701: case '4':
+"701
+[e :U 583 ]
+[; ;megaonoff.c: 702: TMR1H=0xDA;
+"702
+[e = _TMR1H -> -> 218 `i `uc ]
+[; ;megaonoff.c: 703: TMR1L=0x80;
+"703
+[e = _TMR1L -> -> 128 `i `uc ]
+[; ;megaonoff.c: 704: T1CONbits.TMR1ON = 1;
+"704
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 705: break;
+"705
+[e $U 577  ]
+[; ;megaonoff.c: 706: case '5':
+"706
+[e :U 584 ]
+[; ;megaonoff.c: 707: TMR1H=0xDC;
+"707
+[e = _TMR1H -> -> 220 `i `uc ]
+[; ;megaonoff.c: 708: TMR1L=0x10;
+"708
+[e = _TMR1L -> -> 16 `i `uc ]
+[; ;megaonoff.c: 709: T1CONbits.TMR1ON = 1;
+"709
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 710: break;
+"710
+[e $U 577  ]
+[; ;megaonoff.c: 711: case '6':
+"711
+[e :U 585 ]
+[; ;megaonoff.c: 712: TMR1H=0xDD;
+"712
+[e = _TMR1H -> -> 221 `i `uc ]
+[; ;megaonoff.c: 713: TMR1L=0xA0;
+"713
+[e = _TMR1L -> -> 160 `i `uc ]
+[; ;megaonoff.c: 714: T1CONbits.TMR1ON = 1;
+"714
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 715: break;
 "715
-[e $U 475  ]
-[; ;megaonoff.c: 716: case '8':
+[e $U 577  ]
+[; ;megaonoff.c: 716: case '7':
 "716
-[e :U 589 ]
-[; ;megaonoff.c: 718: switch(levelofDimmer_LSB)
+[e :U 586 ]
+[; ;megaonoff.c: 717: TMR1H=0xDF;
+"717
+[e = _TMR1H -> -> 223 `i `uc ]
+[; ;megaonoff.c: 718: TMR1L=0x30;
 "718
-[e $U 591  ]
-[; ;megaonoff.c: 719: {
+[e = _TMR1L -> -> 48 `i `uc ]
+[; ;megaonoff.c: 719: T1CONbits.TMR1ON = 1;
 "719
-{
-[; ;megaonoff.c: 720: case '0':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 720: break;
 "720
-[e :U 592 ]
-[; ;megaonoff.c: 721: TMR1H=0xE3;
+[e $U 577  ]
+[; ;megaonoff.c: 721: case '8':
 "721
-[e = _TMR1H -> -> 227 `i `uc ]
-[; ;megaonoff.c: 722: TMR1L=0xE0;
+[e :U 587 ]
+[; ;megaonoff.c: 722: TMR1H=0xE0;
 "722
-[e = _TMR1L -> -> 224 `i `uc ]
-[; ;megaonoff.c: 723: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 224 `i `uc ]
+[; ;megaonoff.c: 723: TMR1L=0xC0;
 "723
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 724: break;
+[e = _TMR1L -> -> 192 `i `uc ]
+[; ;megaonoff.c: 724: T1CONbits.TMR1ON = 1;
 "724
-[e $U 590  ]
-[; ;megaonoff.c: 725: case '1':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 725: break;
 "725
-[e :U 593 ]
-[; ;megaonoff.c: 726: TMR1H=0xE4;
+[e $U 577  ]
+[; ;megaonoff.c: 726: case '9':
 "726
-[e = _TMR1H -> -> 228 `i `uc ]
-[; ;megaonoff.c: 727: TMR1L=0xA8;
+[e :U 588 ]
+[; ;megaonoff.c: 727: TMR1H=0xE2;
 "727
-[e = _TMR1L -> -> 168 `i `uc ]
-[; ;megaonoff.c: 728: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 226 `i `uc ]
+[; ;megaonoff.c: 728: TMR1L=0x50;
 "728
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 729: break;
+[e = _TMR1L -> -> 80 `i `uc ]
+[; ;megaonoff.c: 729: T1CONbits.TMR1ON = 1;
 "729
-[e $U 590  ]
-[; ;megaonoff.c: 730: case '2':
-"730
-[e :U 594 ]
-[; ;megaonoff.c: 731: TMR1H=0xE5;
-"731
-[e = _TMR1H -> -> 229 `i `uc ]
-[; ;megaonoff.c: 732: TMR1L=0x70;
-"732
-[e = _TMR1L -> -> 112 `i `uc ]
-[; ;megaonoff.c: 733: T1CONbits.TMR1ON = 1;
-"733
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 730: break;
+"730
+[e $U 577  ]
+[; ;megaonoff.c: 731: default:
+"731
+[e :U 589 ]
+[; ;megaonoff.c: 732: break;
+"732
+[e $U 577  ]
+"733
+}
+[; ;megaonoff.c: 733: }
+[e $U 577  ]
+"679
+[e :U 578 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 579
+ , $ -> -> 49 `ui `uc 580
+ , $ -> -> 50 `ui `uc 581
+ , $ -> -> 51 `ui `uc 582
+ , $ -> -> 52 `ui `uc 583
+ , $ -> -> 53 `ui `uc 584
+ , $ -> -> 54 `ui `uc 585
+ , $ -> -> 55 `ui `uc 586
+ , $ -> -> 56 `ui `uc 587
+ , $ -> -> 57 `ui `uc 588
+ 589 ]
+"733
+[e :U 577 ]
 [; ;megaonoff.c: 734: break;
 "734
-[e $U 590  ]
-[; ;megaonoff.c: 735: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 735: case '8':
 "735
-[e :U 595 ]
-[; ;megaonoff.c: 736: TMR1H=0xE6;
-"736
-[e = _TMR1H -> -> 230 `i `uc ]
-[; ;megaonoff.c: 737: TMR1L=0x38;
-"737
-[e = _TMR1L -> -> 56 `i `uc ]
-[; ;megaonoff.c: 738: T1CONbits.TMR1ON = 1;
-"738
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 739: break;
-"739
-[e $U 590  ]
-[; ;megaonoff.c: 740: case '4':
-"740
-[e :U 596 ]
-[; ;megaonoff.c: 741: TMR1H=0xE7;
-"741
-[e = _TMR1H -> -> 231 `i `uc ]
-[; ;megaonoff.c: 742: TMR1L=0x00;
-"742
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 743: T1CONbits.TMR1ON = 1;
-"743
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 744: break;
-"744
-[e $U 590  ]
-[; ;megaonoff.c: 745: case '5':
-"745
-[e :U 597 ]
-[; ;megaonoff.c: 746: TMR1H=0xE8;
-"746
-[e = _TMR1H -> -> 232 `i `uc ]
-[; ;megaonoff.c: 747: TMR1L=0x90;
-"747
-[e = _TMR1L -> -> 144 `i `uc ]
-[; ;megaonoff.c: 748: T1CONbits.TMR1ON = 1;
-"748
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 749: break;
-"749
-[e $U 590  ]
-[; ;megaonoff.c: 750: case '6':
-"750
-[e :U 598 ]
-[; ;megaonoff.c: 751: TMR1H=0xEA;
-"751
-[e = _TMR1H -> -> 234 `i `uc ]
-[; ;megaonoff.c: 752: TMR1L=0x20;
-"752
-[e = _TMR1L -> -> 32 `i `uc ]
-[; ;megaonoff.c: 753: T1CONbits.TMR1ON = 1;
-"753
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 754: break;
-"754
-[e $U 590  ]
-[; ;megaonoff.c: 755: case '7':
-"755
-[e :U 599 ]
-[; ;megaonoff.c: 756: TMR1H=0xEB;
-"756
-[e = _TMR1H -> -> 235 `i `uc ]
-[; ;megaonoff.c: 757: TMR1L=0xB0;
-"757
-[e = _TMR1L -> -> 176 `i `uc ]
-[; ;megaonoff.c: 758: T1CONbits.TMR1ON = 1;
-"758
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 759: break;
-"759
-[e $U 590  ]
-[; ;megaonoff.c: 760: case '8':
-"760
-[e :U 600 ]
-[; ;megaonoff.c: 761: TMR1H=0xEC;
-"761
-[e = _TMR1H -> -> 236 `i `uc ]
-[; ;megaonoff.c: 762: TMR1L=0x78;
-"762
-[e = _TMR1L -> -> 120 `i `uc ]
-[; ;megaonoff.c: 763: T1CONbits.TMR1ON = 1;
-"763
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 764: break;
-"764
-[e $U 590  ]
-[; ;megaonoff.c: 765: case '9':
-"765
-[e :U 601 ]
-[; ;megaonoff.c: 766: TMR1H=0xED;
-"766
-[e = _TMR1H -> -> 237 `i `uc ]
-[; ;megaonoff.c: 767: TMR1L=0x40;
-"767
-[e = _TMR1L -> -> 64 `i `uc ]
-[; ;megaonoff.c: 768: T1CONbits.TMR1ON = 1;
-"768
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 769: break;
-"769
-[e $U 590  ]
-[; ;megaonoff.c: 770: default:
-"770
-[e :U 602 ]
-[; ;megaonoff.c: 771: break;
-"771
-[e $U 590  ]
-"772
-}
-[; ;megaonoff.c: 772: }
-[e $U 590  ]
-"718
-[e :U 591 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 592
- , $ -> -> 49 `ui `uc 593
- , $ -> -> 50 `ui `uc 594
- , $ -> -> 51 `ui `uc 595
- , $ -> -> 52 `ui `uc 596
- , $ -> -> 53 `ui `uc 597
- , $ -> -> 54 `ui `uc 598
- , $ -> -> 55 `ui `uc 599
- , $ -> -> 56 `ui `uc 600
- , $ -> -> 57 `ui `uc 601
- 602 ]
-"772
 [e :U 590 ]
+[; ;megaonoff.c: 737: switch(levelofDimmer_LSB)
+"737
+[e $U 592  ]
+[; ;megaonoff.c: 738: {
+"738
+{
+[; ;megaonoff.c: 739: case '0':
+"739
+[e :U 593 ]
+[; ;megaonoff.c: 740: TMR1H=0xE3;
+"740
+[e = _TMR1H -> -> 227 `i `uc ]
+[; ;megaonoff.c: 741: TMR1L=0xE0;
+"741
+[e = _TMR1L -> -> 224 `i `uc ]
+[; ;megaonoff.c: 742: T1CONbits.TMR1ON = 1;
+"742
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 743: break;
+"743
+[e $U 591  ]
+[; ;megaonoff.c: 744: case '1':
+"744
+[e :U 594 ]
+[; ;megaonoff.c: 745: TMR1H=0xE4;
+"745
+[e = _TMR1H -> -> 228 `i `uc ]
+[; ;megaonoff.c: 746: TMR1L=0xA8;
+"746
+[e = _TMR1L -> -> 168 `i `uc ]
+[; ;megaonoff.c: 747: T1CONbits.TMR1ON = 1;
+"747
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 748: break;
+"748
+[e $U 591  ]
+[; ;megaonoff.c: 749: case '2':
+"749
+[e :U 595 ]
+[; ;megaonoff.c: 750: TMR1H=0xE5;
+"750
+[e = _TMR1H -> -> 229 `i `uc ]
+[; ;megaonoff.c: 751: TMR1L=0x70;
+"751
+[e = _TMR1L -> -> 112 `i `uc ]
+[; ;megaonoff.c: 752: T1CONbits.TMR1ON = 1;
+"752
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 753: break;
+"753
+[e $U 591  ]
+[; ;megaonoff.c: 754: case '3':
+"754
+[e :U 596 ]
+[; ;megaonoff.c: 755: TMR1H=0xE6;
+"755
+[e = _TMR1H -> -> 230 `i `uc ]
+[; ;megaonoff.c: 756: TMR1L=0x38;
+"756
+[e = _TMR1L -> -> 56 `i `uc ]
+[; ;megaonoff.c: 757: T1CONbits.TMR1ON = 1;
+"757
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 758: break;
+"758
+[e $U 591  ]
+[; ;megaonoff.c: 759: case '4':
+"759
+[e :U 597 ]
+[; ;megaonoff.c: 760: TMR1H=0xE7;
+"760
+[e = _TMR1H -> -> 231 `i `uc ]
+[; ;megaonoff.c: 761: TMR1L=0x00;
+"761
+[e = _TMR1L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 762: T1CONbits.TMR1ON = 1;
+"762
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 763: break;
+"763
+[e $U 591  ]
+[; ;megaonoff.c: 764: case '5':
+"764
+[e :U 598 ]
+[; ;megaonoff.c: 765: TMR1H=0xE8;
+"765
+[e = _TMR1H -> -> 232 `i `uc ]
+[; ;megaonoff.c: 766: TMR1L=0x90;
+"766
+[e = _TMR1L -> -> 144 `i `uc ]
+[; ;megaonoff.c: 767: T1CONbits.TMR1ON = 1;
+"767
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 768: break;
+"768
+[e $U 591  ]
+[; ;megaonoff.c: 769: case '6':
+"769
+[e :U 599 ]
+[; ;megaonoff.c: 770: TMR1H=0xEA;
+"770
+[e = _TMR1H -> -> 234 `i `uc ]
+[; ;megaonoff.c: 771: TMR1L=0x20;
+"771
+[e = _TMR1L -> -> 32 `i `uc ]
+[; ;megaonoff.c: 772: T1CONbits.TMR1ON = 1;
+"772
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 773: break;
 "773
-[e $U 475  ]
-[; ;megaonoff.c: 774: case '9':
+[e $U 591  ]
+[; ;megaonoff.c: 774: case '7':
 "774
-[e :U 603 ]
-[; ;megaonoff.c: 776: switch(levelofDimmer_LSB)
+[e :U 600 ]
+[; ;megaonoff.c: 775: TMR1H=0xEB;
+"775
+[e = _TMR1H -> -> 235 `i `uc ]
+[; ;megaonoff.c: 776: TMR1L=0xB0;
 "776
-[e $U 605  ]
-[; ;megaonoff.c: 777: {
+[e = _TMR1L -> -> 176 `i `uc ]
+[; ;megaonoff.c: 777: T1CONbits.TMR1ON = 1;
 "777
-{
-[; ;megaonoff.c: 778: case '0':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 778: break;
 "778
-[e :U 606 ]
-[; ;megaonoff.c: 779: TMR1H=0xEE;
+[e $U 591  ]
+[; ;megaonoff.c: 779: case '8':
 "779
-[e = _TMR1H -> -> 238 `i `uc ]
-[; ;megaonoff.c: 780: TMR1L=0xD0;
+[e :U 601 ]
+[; ;megaonoff.c: 780: TMR1H=0xEC;
 "780
-[e = _TMR1L -> -> 208 `i `uc ]
-[; ;megaonoff.c: 781: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 236 `i `uc ]
+[; ;megaonoff.c: 781: TMR1L=0x78;
 "781
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 782: break;
+[e = _TMR1L -> -> 120 `i `uc ]
+[; ;megaonoff.c: 782: T1CONbits.TMR1ON = 1;
 "782
-[e $U 604  ]
-[; ;megaonoff.c: 783: case '1':
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 783: break;
 "783
-[e :U 607 ]
-[; ;megaonoff.c: 784: TMR1H=0xF0;
+[e $U 591  ]
+[; ;megaonoff.c: 784: case '9':
 "784
-[e = _TMR1H -> -> 240 `i `uc ]
-[; ;megaonoff.c: 785: TMR1L=0x60;
+[e :U 602 ]
+[; ;megaonoff.c: 785: TMR1H=0xED;
 "785
-[e = _TMR1L -> -> 96 `i `uc ]
-[; ;megaonoff.c: 786: T1CONbits.TMR1ON = 1;
+[e = _TMR1H -> -> 237 `i `uc ]
+[; ;megaonoff.c: 786: TMR1L=0x40;
 "786
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 787: break;
+[e = _TMR1L -> -> 64 `i `uc ]
+[; ;megaonoff.c: 787: T1CONbits.TMR1ON = 1;
 "787
-[e $U 604  ]
-[; ;megaonoff.c: 788: case '2':
-"788
-[e :U 608 ]
-[; ;megaonoff.c: 789: TMR1H=0xF1;
-"789
-[e = _TMR1H -> -> 241 `i `uc ]
-[; ;megaonoff.c: 790: TMR1L=0xF0;
-"790
-[e = _TMR1L -> -> 240 `i `uc ]
-[; ;megaonoff.c: 791: T1CONbits.TMR1ON = 1;
-"791
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 788: break;
+"788
+[e $U 591  ]
+[; ;megaonoff.c: 789: default:
+"789
+[e :U 603 ]
+[; ;megaonoff.c: 790: break;
+"790
+[e $U 591  ]
+"791
+}
+[; ;megaonoff.c: 791: }
+[e $U 591  ]
+"737
+[e :U 592 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 593
+ , $ -> -> 49 `ui `uc 594
+ , $ -> -> 50 `ui `uc 595
+ , $ -> -> 51 `ui `uc 596
+ , $ -> -> 52 `ui `uc 597
+ , $ -> -> 53 `ui `uc 598
+ , $ -> -> 54 `ui `uc 599
+ , $ -> -> 55 `ui `uc 600
+ , $ -> -> 56 `ui `uc 601
+ , $ -> -> 57 `ui `uc 602
+ 603 ]
+"791
+[e :U 591 ]
 [; ;megaonoff.c: 792: break;
 "792
-[e $U 604  ]
-[; ;megaonoff.c: 793: case '3':
+[e $U 476  ]
+[; ;megaonoff.c: 793: case '9':
 "793
-[e :U 609 ]
-[; ;megaonoff.c: 794: TMR1H=0xF3;
-"794
-[e = _TMR1H -> -> 243 `i `uc ]
-[; ;megaonoff.c: 795: TMR1L=0x80;
+[e :U 604 ]
+[; ;megaonoff.c: 795: switch(levelofDimmer_LSB)
 "795
-[e = _TMR1L -> -> 128 `i `uc ]
-[; ;megaonoff.c: 796: T1CONbits.TMR1ON = 1;
+[e $U 606  ]
+[; ;megaonoff.c: 796: {
 "796
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 797: break;
+{
+[; ;megaonoff.c: 797: case '0':
 "797
-[e $U 604  ]
-[; ;megaonoff.c: 798: case '4':
+[e :U 607 ]
+[; ;megaonoff.c: 798: TMR1H=0xEE;
 "798
-[e :U 610 ]
-[; ;megaonoff.c: 799: TMR1H=0xF5;
+[e = _TMR1H -> -> 238 `i `uc ]
+[; ;megaonoff.c: 799: TMR1L=0xD0;
 "799
-[e = _TMR1H -> -> 245 `i `uc ]
-[; ;megaonoff.c: 800: TMR1L=0x10;
+[e = _TMR1L -> -> 208 `i `uc ]
+[; ;megaonoff.c: 800: T1CONbits.TMR1ON = 1;
 "800
-[e = _TMR1L -> -> 16 `i `uc ]
-[; ;megaonoff.c: 801: T1CONbits.TMR1ON = 1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 801: break;
 "801
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 802: break;
+[e $U 605  ]
+[; ;megaonoff.c: 802: case '1':
 "802
-[e $U 604  ]
-[; ;megaonoff.c: 803: case '5':
+[e :U 608 ]
+[; ;megaonoff.c: 803: TMR1H=0xF0;
 "803
-[e :U 611 ]
-[; ;megaonoff.c: 804: TMR1H=0xF6;
+[e = _TMR1H -> -> 240 `i `uc ]
+[; ;megaonoff.c: 804: TMR1L=0x60;
 "804
-[e = _TMR1H -> -> 246 `i `uc ]
-[; ;megaonoff.c: 805: TMR1L=0xA0;
+[e = _TMR1L -> -> 96 `i `uc ]
+[; ;megaonoff.c: 805: T1CONbits.TMR1ON = 1;
 "805
-[e = _TMR1L -> -> 160 `i `uc ]
-[; ;megaonoff.c: 806: T1CONbits.TMR1ON = 1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 806: break;
 "806
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 807: break;
+[e $U 605  ]
+[; ;megaonoff.c: 807: case '2':
 "807
-[e $U 604  ]
-[; ;megaonoff.c: 808: case '6':
+[e :U 609 ]
+[; ;megaonoff.c: 808: TMR1H=0xF1;
 "808
-[e :U 612 ]
-[; ;megaonoff.c: 809: TMR1H=0xF8;
+[e = _TMR1H -> -> 241 `i `uc ]
+[; ;megaonoff.c: 809: TMR1L=0xF0;
 "809
-[e = _TMR1H -> -> 248 `i `uc ]
-[; ;megaonoff.c: 810: TMR1L=0x30;
+[e = _TMR1L -> -> 240 `i `uc ]
+[; ;megaonoff.c: 810: T1CONbits.TMR1ON = 1;
 "810
-[e = _TMR1L -> -> 48 `i `uc ]
-[; ;megaonoff.c: 811: T1CONbits.TMR1ON = 1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 811: break;
 "811
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 812: break;
+[e $U 605  ]
+[; ;megaonoff.c: 812: case '3':
 "812
-[e $U 604  ]
-[; ;megaonoff.c: 813: case '7':
+[e :U 610 ]
+[; ;megaonoff.c: 813: TMR1H=0xF3;
 "813
-[e :U 613 ]
-[; ;megaonoff.c: 814: TMR1H=0xF9;
+[e = _TMR1H -> -> 243 `i `uc ]
+[; ;megaonoff.c: 814: TMR1L=0x80;
 "814
-[e = _TMR1H -> -> 249 `i `uc ]
-[; ;megaonoff.c: 815: TMR1L=0xC0;
+[e = _TMR1L -> -> 128 `i `uc ]
+[; ;megaonoff.c: 815: T1CONbits.TMR1ON = 1;
 "815
-[e = _TMR1L -> -> 192 `i `uc ]
-[; ;megaonoff.c: 816: T1CONbits.TMR1ON = 1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 816: break;
 "816
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 817: break;
+[e $U 605  ]
+[; ;megaonoff.c: 817: case '4':
 "817
-[e $U 604  ]
-[; ;megaonoff.c: 818: case '8':
+[e :U 611 ]
+[; ;megaonoff.c: 818: TMR1H=0xF5;
 "818
-[e :U 614 ]
-[; ;megaonoff.c: 819: TMR1H=0xFB;
+[e = _TMR1H -> -> 245 `i `uc ]
+[; ;megaonoff.c: 819: TMR1L=0x10;
 "819
-[e = _TMR1H -> -> 251 `i `uc ]
-[; ;megaonoff.c: 820: TMR1L=0x50;
+[e = _TMR1L -> -> 16 `i `uc ]
+[; ;megaonoff.c: 820: T1CONbits.TMR1ON = 1;
 "820
-[e = _TMR1L -> -> 80 `i `uc ]
-[; ;megaonoff.c: 821: T1CONbits.TMR1ON = 1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 821: break;
 "821
-[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 823: break;
+[e $U 605  ]
+[; ;megaonoff.c: 822: case '5':
+"822
+[e :U 612 ]
+[; ;megaonoff.c: 823: TMR1H=0xF6;
 "823
-[e $U 604  ]
-[; ;megaonoff.c: 824: case '9':
+[e = _TMR1H -> -> 246 `i `uc ]
+[; ;megaonoff.c: 824: TMR1L=0xA0;
 "824
-[e :U 615 ]
-[; ;megaonoff.c: 825: TMR1H=0xFC;
+[e = _TMR1L -> -> 160 `i `uc ]
+[; ;megaonoff.c: 825: T1CONbits.TMR1ON = 1;
 "825
-[e = _TMR1H -> -> 252 `i `uc ]
-[; ;megaonoff.c: 826: TMR1L=0xE0;
-"826
-[e = _TMR1L -> -> 224 `i `uc ]
-[; ;megaonoff.c: 827: T1CONbits.TMR1ON = 1;
-"827
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 829: break;
+[; ;megaonoff.c: 826: break;
+"826
+[e $U 605  ]
+[; ;megaonoff.c: 827: case '6':
+"827
+[e :U 613 ]
+[; ;megaonoff.c: 828: TMR1H=0xF8;
+"828
+[e = _TMR1H -> -> 248 `i `uc ]
+[; ;megaonoff.c: 829: TMR1L=0x30;
 "829
-[e $U 604  ]
-[; ;megaonoff.c: 830: default:
+[e = _TMR1L -> -> 48 `i `uc ]
+[; ;megaonoff.c: 830: T1CONbits.TMR1ON = 1;
 "830
-[e :U 616 ]
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
 [; ;megaonoff.c: 831: break;
 "831
-[e $U 604  ]
+[e $U 605  ]
+[; ;megaonoff.c: 832: case '7':
 "832
-}
-[; ;megaonoff.c: 832: }
-[e $U 604  ]
-"776
-[e :U 605 ]
-[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 606
- , $ -> -> 49 `ui `uc 607
- , $ -> -> 50 `ui `uc 608
- , $ -> -> 51 `ui `uc 609
- , $ -> -> 52 `ui `uc 610
- , $ -> -> 53 `ui `uc 611
- , $ -> -> 54 `ui `uc 612
- , $ -> -> 55 `ui `uc 613
- , $ -> -> 56 `ui `uc 614
- , $ -> -> 57 `ui `uc 615
- 616 ]
-"832
-[e :U 604 ]
-[; ;megaonoff.c: 833: break;
+[e :U 614 ]
+[; ;megaonoff.c: 833: TMR1H=0xF9;
 "833
-[e $U 475  ]
-[; ;megaonoff.c: 834: default:
+[e = _TMR1H -> -> 249 `i `uc ]
+[; ;megaonoff.c: 834: TMR1L=0xC0;
 "834
-[e :U 617 ]
-[; ;megaonoff.c: 835: break;
+[e = _TMR1L -> -> 192 `i `uc ]
+[; ;megaonoff.c: 835: T1CONbits.TMR1ON = 1;
 "835
-[e $U 475  ]
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 836: break;
 "836
-}
-[; ;megaonoff.c: 836: }
-[e $U 475  ]
-"244
-[e :U 476 ]
-[e [\ _levelofDimmer_MSB , $ -> -> 48 `ui `uc 477
- , $ -> -> 49 `ui `uc 491
- , $ -> -> 50 `ui `uc 505
- , $ -> -> 51 `ui `uc 519
- , $ -> -> 52 `ui `uc 533
- , $ -> -> 53 `ui `uc 547
- , $ -> -> 54 `ui `uc 561
- , $ -> -> 55 `ui `uc 575
- , $ -> -> 56 `ui `uc 589
- , $ -> -> 57 `ui `uc 603
- 617 ]
-"836
-[e :U 475 ]
+[e $U 605  ]
+[; ;megaonoff.c: 837: case '8':
 "837
+[e :U 615 ]
+[; ;megaonoff.c: 838: TMR1H=0xFB;
+"838
+[e = _TMR1H -> -> 251 `i `uc ]
+[; ;megaonoff.c: 839: TMR1L=0x50;
+"839
+[e = _TMR1L -> -> 80 `i `uc ]
+[; ;megaonoff.c: 840: T1CONbits.TMR1ON = 1;
+"840
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 842: break;
+"842
+[e $U 605  ]
+[; ;megaonoff.c: 843: case '9':
+"843
+[e :U 616 ]
+[; ;megaonoff.c: 844: TMR1H=0xFC;
+"844
+[e = _TMR1H -> -> 252 `i `uc ]
+[; ;megaonoff.c: 845: TMR1L=0xE0;
+"845
+[e = _TMR1L -> -> 224 `i `uc ]
+[; ;megaonoff.c: 846: T1CONbits.TMR1ON = 1;
+"846
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 848: break;
+"848
+[e $U 605  ]
+[; ;megaonoff.c: 849: default:
+"849
+[e :U 617 ]
+[; ;megaonoff.c: 850: break;
+"850
+[e $U 605  ]
+"851
+}
+[; ;megaonoff.c: 851: }
+[e $U 605  ]
+"795
+[e :U 606 ]
+[e [\ _levelofDimmer_LSB , $ -> -> 48 `ui `uc 607
+ , $ -> -> 49 `ui `uc 608
+ , $ -> -> 50 `ui `uc 609
+ , $ -> -> 51 `ui `uc 610
+ , $ -> -> 52 `ui `uc 611
+ , $ -> -> 53 `ui `uc 612
+ , $ -> -> 54 `ui `uc 613
+ , $ -> -> 55 `ui `uc 614
+ , $ -> -> 56 `ui `uc 615
+ , $ -> -> 57 `ui `uc 616
+ 617 ]
+"851
+[e :U 605 ]
+[; ;megaonoff.c: 852: break;
+"852
+[e $U 476  ]
+[; ;megaonoff.c: 853: default:
+"853
+[e :U 618 ]
+[; ;megaonoff.c: 854: break;
+"854
+[e $U 476  ]
+"855
+}
+[; ;megaonoff.c: 855: }
+[e $U 476  ]
+"263
+[e :U 477 ]
+[e [\ _levelofDimmer_MSB , $ -> -> 48 `ui `uc 478
+ , $ -> -> 49 `ui `uc 492
+ , $ -> -> 50 `ui `uc 506
+ , $ -> -> 51 `ui `uc 520
+ , $ -> -> 52 `ui `uc 534
+ , $ -> -> 53 `ui `uc 548
+ , $ -> -> 54 `ui `uc 562
+ , $ -> -> 55 `ui `uc 576
+ , $ -> -> 56 `ui `uc 590
+ , $ -> -> 57 `ui `uc 604
+ 618 ]
+"855
+[e :U 476 ]
+"856
+}
+[e :U 475 ]
+"857
 }
 [e :U 474 ]
-"838
+"859
 }
 [e :U 473 ]
-"840
+"860
 }
 [e :U 472 ]
-[; ;megaonoff.c: 837: }
-[; ;megaonoff.c: 838: }
-[; ;megaonoff.c: 840: }
-[; ;megaonoff.c: 842: }
-"842
+[; ;megaonoff.c: 856: }
+[; ;megaonoff.c: 857: }
+[; ;megaonoff.c: 859: }
+[; ;megaonoff.c: 860: }
+[; ;megaonoff.c: 862: }
+"862
 [e :UE 464 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"851
+"871
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 851: int main() {
+[; ;megaonoff.c: 871: int main() {
 [e :U _main ]
 [f ]
-[; ;megaonoff.c: 852: _delay((unsigned long)((2000)*(16000000/4000.0)));
-"852
+[; ;megaonoff.c: 872: _delay((unsigned long)((2000)*(16000000/4000.0)));
+"872
 [e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 853: M1=1; M2=1; M3=1; M4=1; M5=1; M6=1; M7=1;M8=1;
-"853
+[; ;megaonoff.c: 873: M1=1; M2=1; M3=1; M4=1; M5=1; M6=1; M7=1;M8=1;
+"873
 [e = _M1 -> -> 1 `i `ui ]
 [e = _M2 -> -> 1 `i `ui ]
 [e = _M3 -> -> 1 `i `ui ]
@@ -6171,1642 +6271,1933 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _M6 -> -> 1 `i `ui ]
 [e = _M7 -> -> 1 `i `ui ]
 [e = _M8 -> -> 1 `i `ui ]
-[; ;megaonoff.c: 854: M9=1;
-"854
-[e = _M9 -> -> 1 `i `ui ]
-[; ;megaonoff.c: 855: GPIO_pin_Initialize();
-"855
-[e ( _GPIO_pin_Initialize ..  ]
-[; ;megaonoff.c: 856: allPeripheralInit();
-"856
-[e ( _allPeripheralInit ..  ]
-[; ;megaonoff.c: 858: while(1){
-"858
-[e :U 620 ]
-{
-[; ;megaonoff.c: 859: if(mainDataReceived==1){
-"859
-[e $ ! == _mainDataReceived -> 1 `i 622  ]
-{
-[; ;megaonoff.c: 860: mainDataReceived=0;
-"860
-[e = _mainDataReceived -> 0 `i ]
-[; ;megaonoff.c: 861: if(mainReceivedDataBuffer[0]=='%' && mainReceivedDataBuffer[1]=='%' && mainReceivedDataBuffer[14]=='@' && mainReceivedDataBuffer[15]=='@'){
-"861
-[e $ ! && && && == -> *U + &U _mainReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 37 `ui == -> *U + &U _mainReceivedDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 37 `ui == -> *U + &U _mainReceivedDataBuffer * -> -> -> 14 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 64 `ui == -> *U + &U _mainReceivedDataBuffer * -> -> -> 15 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 64 `ui 623  ]
-{
-[; ;megaonoff.c: 862: ReceivingIndicationLedBlinking();
-"862
-[e ( _ReceivingIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 863: copyReceivedDataBuffer();
-"863
-[e ( _copyReceivedDataBuffer ..  ]
-[; ;megaonoff.c: 865: applianceControl(tempReceivedDataBuffer[0],
-[; ;megaonoff.c: 866: tempReceivedDataBuffer[1],
-[; ;megaonoff.c: 867: tempReceivedDataBuffer[2],
-[; ;megaonoff.c: 868: tempReceivedDataBuffer[3],
-[; ;megaonoff.c: 869: tempReceivedDataBuffer[4],
-[; ;megaonoff.c: 870: tempReceivedDataBuffer[5],
-[; ;megaonoff.c: 871: tempReceivedDataBuffer[6]);
-"871
-[e ( _applianceControl (4 , , , , , , *U + &U _tempReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux ]
-"873
-}
-[; ;megaonoff.c: 873: }
-[e $U 624  ]
+[; ;megaonoff.c: 874: M9=1;
 "874
-[e :U 623 ]
-[; ;megaonoff.c: 874: else
-[; ;megaonoff.c: 875: {
+[e = _M9 -> -> 1 `i `ui ]
+[; ;megaonoff.c: 875: GPIO_pin_Initialize();
 "875
-{
-[; ;megaonoff.c: 877: errorsMain("ERLS");
-"877
-[e ( _errorsMain (1 :s 3C ]
-[; ;megaonoff.c: 878: RC1STAbits.SPEN=0;
+[e ( _GPIO_pin_Initialize ..  ]
+[; ;megaonoff.c: 876: allPeripheralInit();
+"876
+[e ( _allPeripheralInit ..  ]
+[; ;megaonoff.c: 878: while(1){
 "878
-[e = . . _RC1STAbits 0 7 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 879: RC1STAbits.CREN = 0;
+[e :U 621 ]
+{
+[; ;megaonoff.c: 879: if(mainDataReceived==1){
 "879
-[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 880: for(int dataBufferCounter = 0; dataBufferCounter< 15; dataBufferCounter++)
+[e $ ! == _mainDataReceived -> 1 `i 623  ]
+{
+[; ;megaonoff.c: 880: mainDataReceived=0;
 "880
+[e = _mainDataReceived -> 0 `i ]
+[; ;megaonoff.c: 881: if(mainReceivedDataBuffer[0]=='%' && mainReceivedDataBuffer[1]=='%' && mainReceivedDataBuffer[14]=='@' && mainReceivedDataBuffer[15]=='@'){
+"881
+[e $ ! && && && == -> *U + &U _mainReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 37 `ui == -> *U + &U _mainReceivedDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 37 `ui == -> *U + &U _mainReceivedDataBuffer * -> -> -> 14 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 64 `ui == -> *U + &U _mainReceivedDataBuffer * -> -> -> 15 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 64 `ui 624  ]
+{
+[; ;megaonoff.c: 882: ReceivingIndicationLedBlinking();
+"882
+[e ( _ReceivingIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 883: copyReceivedDataBuffer();
+"883
+[e ( _copyReceivedDataBuffer ..  ]
+[; ;megaonoff.c: 885: applianceControl(tempReceivedDataBuffer[0],
+[; ;megaonoff.c: 886: tempReceivedDataBuffer[1],
+[; ;megaonoff.c: 887: tempReceivedDataBuffer[2],
+[; ;megaonoff.c: 888: tempReceivedDataBuffer[3],
+[; ;megaonoff.c: 889: tempReceivedDataBuffer[4],
+[; ;megaonoff.c: 890: tempReceivedDataBuffer[5],
+[; ;megaonoff.c: 891: tempReceivedDataBuffer[6]);
+"891
+[e ( _applianceControl (4 , , , , , , *U + &U _tempReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _tempReceivedDataBuffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux ]
+"893
+}
+[; ;megaonoff.c: 893: }
+[e $U 625  ]
+"894
+[e :U 624 ]
+[; ;megaonoff.c: 894: else
+[; ;megaonoff.c: 895: {
+"895
+{
+[; ;megaonoff.c: 897: errorsMain("ERLS");
+"897
+[e ( _errorsMain (1 :s 3C ]
+[; ;megaonoff.c: 898: RC1STAbits.SPEN=0;
+"898
+[e = . . _RC1STAbits 0 7 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 899: RC1STAbits.CREN = 0;
+"899
+[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 900: for(int dataBufferCounter = 0; dataBufferCounter< 15; dataBufferCounter++)
+"900
 {
 [v _dataBufferCounter `i ~T0 @X0 1 a ]
 [e = _dataBufferCounter -> 0 `i ]
-[e $ < _dataBufferCounter -> 15 `i 625  ]
-[e $U 626  ]
-"881
-[e :U 625 ]
-[; ;megaonoff.c: 881: {
-{
-[; ;megaonoff.c: 882: mainReceivedDataBuffer[dataBufferCounter] = '#';
-"882
-[e = *U + &U _mainReceivedDataBuffer * -> -> _dataBufferCounter `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux -> -> 35 `ui `uc ]
-"883
-}
-"880
-[e ++ _dataBufferCounter -> 1 `i ]
-[e $ < _dataBufferCounter -> 15 `i 625  ]
-[e :U 626 ]
-"883
-}
-[; ;megaonoff.c: 883: }
-[; ;megaonoff.c: 884: RC1STAbits.CREN = 1;
-"884
-[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 885: RC1STAbits.SPEN=1;
-"885
-[e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
-"886
-}
-[e :U 624 ]
-"887
-}
-[e :U 622 ]
+[e $ < _dataBufferCounter -> 15 `i 626  ]
+[e $U 627  ]
 "901
-[v _man `i ~T0 @X0 1 a ]
-[; ;megaonoff.c: 886: }
-[; ;megaonoff.c: 887: }
-[; ;megaonoff.c: 901: int man = 1;
-[e = _man -> 1 `i ]
-[; ;megaonoff.c: 902: if(copy_parentalLockBuffer[1] == '0' && PORTDbits.RD6 == 0 && M1 == 0)
+[e :U 626 ]
+[; ;megaonoff.c: 901: {
+{
+[; ;megaonoff.c: 902: mainReceivedDataBuffer[dataBufferCounter] = '#';
 "902
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 6 `i -> 0 `i == _M1 -> -> 0 `i `ui 628  ]
-[; ;megaonoff.c: 903: {
+[e = *U + &U _mainReceivedDataBuffer * -> -> _dataBufferCounter `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux -> -> 35 `ui `uc ]
 "903
-{
-[; ;megaonoff.c: 904: if(man == 1)
+}
+"900
+[e ++ _dataBufferCounter -> 1 `i ]
+[e $ < _dataBufferCounter -> 15 `i 626  ]
+[e :U 627 ]
+"903
+}
+[; ;megaonoff.c: 903: }
+[; ;megaonoff.c: 904: RC1STAbits.CREN = 1;
 "904
-[e $ ! == _man -> 1 `i 629  ]
-[; ;megaonoff.c: 905: {
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 905: RC1STAbits.SPEN=1;
 "905
-{
-[; ;megaonoff.c: 906: SwitchOnStatustToGatway('1');
+[e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
 "906
-[e ( _SwitchOnStatustToGatway (1 -> -> 49 `ui `uc ]
-[; ;megaonoff.c: 908: TransmissionIndicationLedBlinking();
-"908
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 909: PORTEbits.RE0=1;
-"909
-[e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
-"911
 }
-[e :U 629 ]
-[; ;megaonoff.c: 911: }
-[; ;megaonoff.c: 912: man=0;
-"912
-[e = _man -> 0 `i ]
-[; ;megaonoff.c: 913: M1=1;
-"913
-[e = _M1 -> -> 1 `i `ui ]
-"915
+[e :U 625 ]
+"907
 }
-[e :U 628 ]
-[; ;megaonoff.c: 915: }
-[; ;megaonoff.c: 917: if(copy_parentalLockBuffer[1] == '0' && PORTDbits.RD6 == 1 && M1 == 1)
-"917
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 6 `i -> 1 `i == _M1 -> -> 1 `i `ui 630  ]
-[; ;megaonoff.c: 918: {
-"918
-{
-[; ;megaonoff.c: 920: if(man==1)
-"920
-[e $ ! == _man -> 1 `i 631  ]
-[; ;megaonoff.c: 921: {
+[e :U 623 ]
 "921
-{
-[; ;megaonoff.c: 922: SwitchOffStatustToGatway('1');
+[v _man `i ~T0 @X0 1 a ]
+[; ;megaonoff.c: 906: }
+[; ;megaonoff.c: 907: }
+[; ;megaonoff.c: 921: int man = 1;
+[e = _man -> 1 `i ]
+[; ;megaonoff.c: 922: if(copy_parentalLockBuffer[1] == '0' && PORTDbits.RD6 == 0 && M1 == 0)
 "922
-[e ( _SwitchOffStatustToGatway (1 -> -> 49 `ui `uc ]
-[; ;megaonoff.c: 923: TransmissionIndicationLedBlinking();
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 6 `i -> 0 `i == _M1 -> -> 0 `i `ui 629  ]
+[; ;megaonoff.c: 923: {
 "923
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 924: PORTEbits.RE0=0;
+{
+[; ;megaonoff.c: 924: if(man == 1)
 "924
-[e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
+[e $ ! == _man -> 1 `i 630  ]
+[; ;megaonoff.c: 925: {
 "925
-}
-[e :U 631 ]
-[; ;megaonoff.c: 925: }
-[; ;megaonoff.c: 926: man=0;
+{
+[; ;megaonoff.c: 926: SwitchOnStatustToGatway('1');
 "926
-[e = _man -> 0 `i ]
-[; ;megaonoff.c: 927: M1=0;
-"927
-[e = _M1 -> -> 0 `i `ui ]
+[e ( _SwitchOnStatustToGatway (1 -> -> 49 `ui `uc ]
+[; ;megaonoff.c: 928: TransmissionIndicationLedBlinking();
 "928
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 929: PORTEbits.RE0=1;
+"929
+[e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
+"931
 }
 [e :U 630 ]
-[; ;megaonoff.c: 928: }
-[; ;megaonoff.c: 932: if(copy_parentalLockBuffer[2] == '0' && PORTDbits.RD7 == 0 && M2 == 0)
+[; ;megaonoff.c: 931: }
+[; ;megaonoff.c: 932: man=0;
 "932
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 7 `i -> 0 `i == _M2 -> -> 0 `i `ui 632  ]
-[; ;megaonoff.c: 933: {
-"933
-{
-[; ;megaonoff.c: 934: if(man==1)
-"934
-[e $ ! == _man -> 1 `i 633  ]
-[; ;megaonoff.c: 935: {
-"935
-{
-[; ;megaonoff.c: 936: SwitchOnStatustToGatway('2');
-"936
-[e ( _SwitchOnStatustToGatway (1 -> -> 50 `ui `uc ]
-[; ;megaonoff.c: 937: TransmissionIndicationLedBlinking();
-"937
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 938: PORTEbits.RE1=1;
-"938
-[e = . . _PORTEbits 0 1 -> -> 1 `i `uc ]
-"939
-}
-[e :U 633 ]
-[; ;megaonoff.c: 939: }
-[; ;megaonoff.c: 940: man=0;
-"940
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 941: M2=1;
+[; ;megaonoff.c: 933: M1=1;
+"933
+[e = _M1 -> -> 1 `i `ui ]
+"935
+}
+[e :U 629 ]
+[; ;megaonoff.c: 935: }
+[; ;megaonoff.c: 937: if(copy_parentalLockBuffer[1] == '0' && PORTDbits.RD6 == 1 && M1 == 1)
+"937
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 6 `i -> 1 `i == _M1 -> -> 1 `i `ui 631  ]
+[; ;megaonoff.c: 938: {
+"938
+{
+[; ;megaonoff.c: 940: if(man==1)
+"940
+[e $ ! == _man -> 1 `i 632  ]
+[; ;megaonoff.c: 941: {
 "941
-[e = _M2 -> -> 1 `i `ui ]
+{
+[; ;megaonoff.c: 942: SwitchOffStatustToGatway('1');
 "942
+[e ( _SwitchOffStatustToGatway (1 -> -> 49 `ui `uc ]
+[; ;megaonoff.c: 943: TransmissionIndicationLedBlinking();
+"943
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 944: PORTEbits.RE0=0;
+"944
+[e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
+"945
 }
 [e :U 632 ]
-[; ;megaonoff.c: 942: }
-[; ;megaonoff.c: 944: if(copy_parentalLockBuffer[2] == '0' && PORTDbits.RD7 == 1 && M2 == 1)
-"944
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 7 `i -> 1 `i == _M2 -> -> 1 `i `ui 634  ]
-[; ;megaonoff.c: 945: {
-"945
-{
-[; ;megaonoff.c: 946: if(man==1)
+[; ;megaonoff.c: 945: }
+[; ;megaonoff.c: 946: man=0;
 "946
-[e $ ! == _man -> 1 `i 635  ]
-[; ;megaonoff.c: 947: {
-"947
-{
-[; ;megaonoff.c: 948: SwitchOffStatustToGatway('2');
-"948
-[e ( _SwitchOffStatustToGatway (1 -> -> 50 `ui `uc ]
-[; ;megaonoff.c: 949: TransmissionIndicationLedBlinking();
-"949
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 950: PORTEbits.RE1=0;
-"950
-[e = . . _PORTEbits 0 1 -> -> 0 `i `uc ]
-"951
-}
-[e :U 635 ]
-[; ;megaonoff.c: 951: }
-[; ;megaonoff.c: 952: man=0;
-"952
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 953: M2=0;
+[; ;megaonoff.c: 947: M1=0;
+"947
+[e = _M1 -> -> 0 `i `ui ]
+"948
+}
+[e :U 631 ]
+[; ;megaonoff.c: 948: }
+[; ;megaonoff.c: 952: if(copy_parentalLockBuffer[2] == '0' && PORTDbits.RD7 == 0 && M2 == 0)
+"952
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 7 `i -> 0 `i == _M2 -> -> 0 `i `ui 633  ]
+[; ;megaonoff.c: 953: {
 "953
-[e = _M2 -> -> 0 `i `ui ]
+{
+[; ;megaonoff.c: 954: if(man==1)
 "954
+[e $ ! == _man -> 1 `i 634  ]
+[; ;megaonoff.c: 955: {
+"955
+{
+[; ;megaonoff.c: 956: SwitchOnStatustToGatway('2');
+"956
+[e ( _SwitchOnStatustToGatway (1 -> -> 50 `ui `uc ]
+[; ;megaonoff.c: 957: TransmissionIndicationLedBlinking();
+"957
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 958: PORTEbits.RE1=1;
+"958
+[e = . . _PORTEbits 0 1 -> -> 1 `i `uc ]
+"959
 }
 [e :U 634 ]
-[; ;megaonoff.c: 954: }
-[; ;megaonoff.c: 959: if(copy_parentalLockBuffer[3] == '0' && PORTBbits.RB0 == 0 && M3 == 0)
-"959
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 0 `i -> 0 `i == _M3 -> -> 0 `i `ui 636  ]
-[; ;megaonoff.c: 960: {
+[; ;megaonoff.c: 959: }
+[; ;megaonoff.c: 960: man=0;
 "960
-{
-[; ;megaonoff.c: 961: if(man == 1)
-"961
-[e $ ! == _man -> 1 `i 637  ]
-[; ;megaonoff.c: 962: {
-"962
-{
-[; ;megaonoff.c: 963: SwitchOnStatustToGatway('3');
-"963
-[e ( _SwitchOnStatustToGatway (1 -> -> 51 `ui `uc ]
-[; ;megaonoff.c: 964: TransmissionIndicationLedBlinking();
-"964
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 965: PORTGbits.RG0=1;
-"965
-[e = . . _PORTGbits 0 0 -> -> 1 `i `uc ]
-"966
-}
-[e :U 637 ]
-[; ;megaonoff.c: 966: }
-[; ;megaonoff.c: 967: man=0;
-"967
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 968: M3=1;
+[; ;megaonoff.c: 961: M2=1;
+"961
+[e = _M2 -> -> 1 `i `ui ]
+"962
+}
+[e :U 633 ]
+[; ;megaonoff.c: 962: }
+[; ;megaonoff.c: 964: if(copy_parentalLockBuffer[2] == '0' && PORTDbits.RD7 == 1 && M2 == 1)
+"964
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 7 `i -> 1 `i == _M2 -> -> 1 `i `ui 635  ]
+[; ;megaonoff.c: 965: {
+"965
+{
+[; ;megaonoff.c: 966: if(man==1)
+"966
+[e $ ! == _man -> 1 `i 636  ]
+[; ;megaonoff.c: 967: {
+"967
+{
+[; ;megaonoff.c: 968: SwitchOffStatustToGatway('2');
 "968
-[e = _M3 -> -> 1 `i `ui ]
+[e ( _SwitchOffStatustToGatway (1 -> -> 50 `ui `uc ]
+[; ;megaonoff.c: 969: TransmissionIndicationLedBlinking();
+"969
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 970: PORTEbits.RE1=0;
 "970
+[e = . . _PORTEbits 0 1 -> -> 0 `i `uc ]
+"971
 }
 [e :U 636 ]
-[; ;megaonoff.c: 970: }
-[; ;megaonoff.c: 972: if(copy_parentalLockBuffer[3] == '0' && PORTBbits.RB0 == 1 && M3 == 1)
+[; ;megaonoff.c: 971: }
+[; ;megaonoff.c: 972: man=0;
 "972
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 0 `i -> 1 `i == _M3 -> -> 1 `i `ui 638  ]
-[; ;megaonoff.c: 973: {
-"973
-{
-[; ;megaonoff.c: 974: if(man==1)
-"974
-[e $ ! == _man -> 1 `i 639  ]
-[; ;megaonoff.c: 975: {
-"975
-{
-[; ;megaonoff.c: 976: SwitchOffStatustToGatway('3');
-"976
-[e ( _SwitchOffStatustToGatway (1 -> -> 51 `ui `uc ]
-[; ;megaonoff.c: 978: TransmissionIndicationLedBlinking();
-"978
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 979: PORTGbits.RG0=0;
-"979
-[e = . . _PORTGbits 0 0 -> -> 0 `i `uc ]
-"980
-}
-[e :U 639 ]
-[; ;megaonoff.c: 980: }
-[; ;megaonoff.c: 981: man=0;
-"981
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 982: M3=0;
+[; ;megaonoff.c: 973: M2=0;
+"973
+[e = _M2 -> -> 0 `i `ui ]
+"974
+}
+[e :U 635 ]
+[; ;megaonoff.c: 974: }
+[; ;megaonoff.c: 979: if(copy_parentalLockBuffer[3] == '0' && PORTBbits.RB0 == 0 && M3 == 0)
+"979
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 0 `i -> 0 `i == _M3 -> -> 0 `i `ui 637  ]
+[; ;megaonoff.c: 980: {
+"980
+{
+[; ;megaonoff.c: 981: if(man == 1)
+"981
+[e $ ! == _man -> 1 `i 638  ]
+[; ;megaonoff.c: 982: {
 "982
-[e = _M3 -> -> 0 `i `ui ]
+{
+[; ;megaonoff.c: 983: SwitchOnStatustToGatway('3');
+"983
+[e ( _SwitchOnStatustToGatway (1 -> -> 51 `ui `uc ]
+[; ;megaonoff.c: 984: TransmissionIndicationLedBlinking();
 "984
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 985: PORTGbits.RG0=1;
+"985
+[e = . . _PORTGbits 0 0 -> -> 1 `i `uc ]
+"986
 }
 [e :U 638 ]
-[; ;megaonoff.c: 984: }
-[; ;megaonoff.c: 989: if(copy_parentalLockBuffer[4] == '0' && PORTBbits.RB1 == 0 && M4 == 0)
-"989
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 1 `i -> 0 `i == _M4 -> -> 0 `i `ui 640  ]
-[; ;megaonoff.c: 990: {
-"990
-{
-[; ;megaonoff.c: 991: if(man==1)
-"991
-[e $ ! == _man -> 1 `i 641  ]
-[; ;megaonoff.c: 992: {
-"992
-{
-[; ;megaonoff.c: 993: SwitchOnStatustToGatway('4');
-"993
-[e ( _SwitchOnStatustToGatway (1 -> -> 52 `ui `uc ]
-[; ;megaonoff.c: 994: TransmissionIndicationLedBlinking();
-"994
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 995: PORTGbits.RG3=1;
-"995
-[e = . . _PORTGbits 0 3 -> -> 1 `i `uc ]
-"996
-}
-[e :U 641 ]
-[; ;megaonoff.c: 996: }
-[; ;megaonoff.c: 997: man=0;
-"997
+[; ;megaonoff.c: 986: }
+[; ;megaonoff.c: 987: man=0;
+"987
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 998: M4=1;
+[; ;megaonoff.c: 988: M3=1;
+"988
+[e = _M3 -> -> 1 `i `ui ]
+"990
+}
+[e :U 637 ]
+[; ;megaonoff.c: 990: }
+[; ;megaonoff.c: 992: if(copy_parentalLockBuffer[3] == '0' && PORTBbits.RB0 == 1 && M3 == 1)
+"992
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 0 `i -> 1 `i == _M3 -> -> 1 `i `ui 639  ]
+[; ;megaonoff.c: 993: {
+"993
+{
+[; ;megaonoff.c: 994: if(man==1)
+"994
+[e $ ! == _man -> 1 `i 640  ]
+[; ;megaonoff.c: 995: {
+"995
+{
+[; ;megaonoff.c: 996: SwitchOffStatustToGatway('3');
+"996
+[e ( _SwitchOffStatustToGatway (1 -> -> 51 `ui `uc ]
+[; ;megaonoff.c: 998: TransmissionIndicationLedBlinking();
 "998
-[e = _M4 -> -> 1 `i `ui ]
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 999: PORTGbits.RG0=0;
+"999
+[e = . . _PORTGbits 0 0 -> -> 0 `i `uc ]
 "1000
 }
 [e :U 640 ]
 [; ;megaonoff.c: 1000: }
-[; ;megaonoff.c: 1002: if(copy_parentalLockBuffer[4] == '0' && PORTBbits.RB1 == 1 && M4 == 1)
-"1002
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 1 `i -> 1 `i == _M4 -> -> 1 `i `ui 642  ]
-[; ;megaonoff.c: 1003: {
-"1003
-{
-[; ;megaonoff.c: 1004: if(man==1)
-"1004
-[e $ ! == _man -> 1 `i 643  ]
-[; ;megaonoff.c: 1005: {
-"1005
-{
-[; ;megaonoff.c: 1007: SwitchOffStatustToGatway('4');
-"1007
-[e ( _SwitchOffStatustToGatway (1 -> -> 52 `ui `uc ]
-[; ;megaonoff.c: 1008: TransmissionIndicationLedBlinking();
-"1008
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1009: PORTGbits.RG3=0;
-"1009
-[e = . . _PORTGbits 0 3 -> -> 0 `i `uc ]
-"1010
-}
-[e :U 643 ]
-[; ;megaonoff.c: 1010: }
-[; ;megaonoff.c: 1011: man=0;
-"1011
+[; ;megaonoff.c: 1001: man=0;
+"1001
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1012: M4=0;
+[; ;megaonoff.c: 1002: M3=0;
+"1002
+[e = _M3 -> -> 0 `i `ui ]
+"1004
+}
+[e :U 639 ]
+[; ;megaonoff.c: 1004: }
+[; ;megaonoff.c: 1009: if(copy_parentalLockBuffer[4] == '0' && PORTBbits.RB1 == 0 && M4 == 0)
+"1009
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 1 `i -> 0 `i == _M4 -> -> 0 `i `ui 641  ]
+[; ;megaonoff.c: 1010: {
+"1010
+{
+[; ;megaonoff.c: 1011: if(man==1)
+"1011
+[e $ ! == _man -> 1 `i 642  ]
+[; ;megaonoff.c: 1012: {
 "1012
-[e = _M4 -> -> 0 `i `ui ]
+{
+[; ;megaonoff.c: 1013: SwitchOnStatustToGatway('4');
+"1013
+[e ( _SwitchOnStatustToGatway (1 -> -> 52 `ui `uc ]
+[; ;megaonoff.c: 1014: TransmissionIndicationLedBlinking();
 "1014
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1015: PORTGbits.RG3=1;
+"1015
+[e = . . _PORTGbits 0 3 -> -> 1 `i `uc ]
+"1016
 }
 [e :U 642 ]
-[; ;megaonoff.c: 1014: }
-[; ;megaonoff.c: 1016: if(copy_parentalLockBuffer[5] == '0' && PORTBbits.RB2 == 0 && M5 == 0)
-"1016
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 2 `i -> 0 `i == _M5 -> -> 0 `i `ui 644  ]
-[; ;megaonoff.c: 1017: {
+[; ;megaonoff.c: 1016: }
+[; ;megaonoff.c: 1017: man=0;
 "1017
-{
-[; ;megaonoff.c: 1018: if(man==1)
-"1018
-[e $ ! == _man -> 1 `i 645  ]
-[; ;megaonoff.c: 1019: {
-"1019
-{
-[; ;megaonoff.c: 1020: SwitchOnStatustToGatway('5');
-"1020
-[e ( _SwitchOnStatustToGatway (1 -> -> 53 `ui `uc ]
-[; ;megaonoff.c: 1021: TransmissionIndicationLedBlinking();
-"1021
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1022: PORTGbits.RG4=1;
-"1022
-[e = . . _PORTGbits 0 4 -> -> 1 `i `uc ]
-"1023
-}
-[e :U 645 ]
-[; ;megaonoff.c: 1023: }
-[; ;megaonoff.c: 1024: man=0;
-"1024
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1025: M5=1;
+[; ;megaonoff.c: 1018: M4=1;
+"1018
+[e = _M4 -> -> 1 `i `ui ]
+"1020
+}
+[e :U 641 ]
+[; ;megaonoff.c: 1020: }
+[; ;megaonoff.c: 1022: if(copy_parentalLockBuffer[4] == '0' && PORTBbits.RB1 == 1 && M4 == 1)
+"1022
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 1 `i -> 1 `i == _M4 -> -> 1 `i `ui 643  ]
+[; ;megaonoff.c: 1023: {
+"1023
+{
+[; ;megaonoff.c: 1024: if(man==1)
+"1024
+[e $ ! == _man -> 1 `i 644  ]
+[; ;megaonoff.c: 1025: {
 "1025
-[e = _M5 -> -> 1 `i `ui ]
+{
+[; ;megaonoff.c: 1027: SwitchOffStatustToGatway('4');
 "1027
+[e ( _SwitchOffStatustToGatway (1 -> -> 52 `ui `uc ]
+[; ;megaonoff.c: 1028: TransmissionIndicationLedBlinking();
+"1028
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1029: PORTGbits.RG3=0;
+"1029
+[e = . . _PORTGbits 0 3 -> -> 0 `i `uc ]
+"1030
 }
 [e :U 644 ]
-[; ;megaonoff.c: 1027: }
-[; ;megaonoff.c: 1029: if(copy_parentalLockBuffer[5] == '0' && PORTBbits.RB2 == 1 && M5 == 1)
-"1029
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 2 `i -> 1 `i == _M5 -> -> 1 `i `ui 646  ]
-[; ;megaonoff.c: 1030: {
-"1030
-{
-[; ;megaonoff.c: 1031: if(man==1)
+[; ;megaonoff.c: 1030: }
+[; ;megaonoff.c: 1031: man=0;
 "1031
-[e $ ! == _man -> 1 `i 647  ]
-[; ;megaonoff.c: 1032: {
-"1032
-{
-[; ;megaonoff.c: 1034: SwitchOffStatustToGatway('5');
-"1034
-[e ( _SwitchOffStatustToGatway (1 -> -> 53 `ui `uc ]
-[; ;megaonoff.c: 1035: TransmissionIndicationLedBlinking();
-"1035
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1036: PORTGbits.RG4=0;
-"1036
-[e = . . _PORTGbits 0 4 -> -> 0 `i `uc ]
-"1037
-}
-[e :U 647 ]
-[; ;megaonoff.c: 1037: }
-[; ;megaonoff.c: 1038: man=0;
-"1038
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1039: M5=0;
+[; ;megaonoff.c: 1032: M4=0;
+"1032
+[e = _M4 -> -> 0 `i `ui ]
+"1034
+}
+[e :U 643 ]
+[; ;megaonoff.c: 1034: }
+[; ;megaonoff.c: 1036: if(copy_parentalLockBuffer[5] == '0' && PORTBbits.RB2 == 0 && M5 == 0)
+"1036
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 2 `i -> 0 `i == _M5 -> -> 0 `i `ui 645  ]
+[; ;megaonoff.c: 1037: {
+"1037
+{
+[; ;megaonoff.c: 1038: if(man==1)
+"1038
+[e $ ! == _man -> 1 `i 646  ]
+[; ;megaonoff.c: 1039: {
 "1039
-[e = _M5 -> -> 0 `i `ui ]
+{
+[; ;megaonoff.c: 1040: SwitchOnStatustToGatway('5');
+"1040
+[e ( _SwitchOnStatustToGatway (1 -> -> 53 `ui `uc ]
+[; ;megaonoff.c: 1041: TransmissionIndicationLedBlinking();
 "1041
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1042: PORTGbits.RG4=1;
+"1042
+[e = . . _PORTGbits 0 4 -> -> 1 `i `uc ]
+"1043
 }
 [e :U 646 ]
-[; ;megaonoff.c: 1041: }
-[; ;megaonoff.c: 1044: if(copy_parentalLockBuffer[6] == '0' && PORTBbits.RB3 == 0 && M6 == 0)
+[; ;megaonoff.c: 1043: }
+[; ;megaonoff.c: 1044: man=0;
 "1044
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 3 `i -> 0 `i == _M6 -> -> 0 `i `ui 648  ]
-[; ;megaonoff.c: 1045: {
-"1045
-{
-[; ;megaonoff.c: 1046: if(man==1)
-"1046
-[e $ ! == _man -> 1 `i 649  ]
-[; ;megaonoff.c: 1047: {
-"1047
-{
-[; ;megaonoff.c: 1048: SwitchOnStatustToGatway('6');
-"1048
-[e ( _SwitchOnStatustToGatway (1 -> -> 54 `ui `uc ]
-[; ;megaonoff.c: 1049: TransmissionIndicationLedBlinking();
-"1049
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1050: PORTFbits.RF6=1;
-"1050
-[e = . . _PORTFbits 0 6 -> -> 1 `i `uc ]
-"1051
-}
-[e :U 649 ]
-[; ;megaonoff.c: 1051: }
-[; ;megaonoff.c: 1052: man=0;
-"1052
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1053: M6=1;
-"1053
-[e = _M6 -> -> 1 `i `ui ]
+[; ;megaonoff.c: 1045: M5=1;
+"1045
+[e = _M5 -> -> 1 `i `ui ]
+"1047
+}
+[e :U 645 ]
+[; ;megaonoff.c: 1047: }
+[; ;megaonoff.c: 1049: if(copy_parentalLockBuffer[5] == '0' && PORTBbits.RB2 == 1 && M5 == 1)
+"1049
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 2 `i -> 1 `i == _M5 -> -> 1 `i `ui 647  ]
+[; ;megaonoff.c: 1050: {
+"1050
+{
+[; ;megaonoff.c: 1051: if(man==1)
+"1051
+[e $ ! == _man -> 1 `i 648  ]
+[; ;megaonoff.c: 1052: {
+"1052
+{
+[; ;megaonoff.c: 1054: SwitchOffStatustToGatway('5');
+"1054
+[e ( _SwitchOffStatustToGatway (1 -> -> 53 `ui `uc ]
+[; ;megaonoff.c: 1055: TransmissionIndicationLedBlinking();
 "1055
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1056: PORTGbits.RG4=0;
+"1056
+[e = . . _PORTGbits 0 4 -> -> 0 `i `uc ]
+"1057
 }
 [e :U 648 ]
-[; ;megaonoff.c: 1055: }
-[; ;megaonoff.c: 1057: if(copy_parentalLockBuffer[6] == '0' && PORTBbits.RB3 == 1 && M6 == 1)
-"1057
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 3 `i -> 1 `i == _M6 -> -> 1 `i `ui 650  ]
-[; ;megaonoff.c: 1058: {
+[; ;megaonoff.c: 1057: }
+[; ;megaonoff.c: 1058: man=0;
 "1058
-{
-[; ;megaonoff.c: 1059: if(man==1)
-"1059
-[e $ ! == _man -> 1 `i 651  ]
-[; ;megaonoff.c: 1060: {
-"1060
-{
-[; ;megaonoff.c: 1062: SwitchOffStatustToGatway('6');
-"1062
-[e ( _SwitchOffStatustToGatway (1 -> -> 54 `ui `uc ]
-[; ;megaonoff.c: 1063: TransmissionIndicationLedBlinking();
-"1063
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1064: PORTFbits.RF6=0;
-"1064
-[e = . . _PORTFbits 0 6 -> -> 0 `i `uc ]
-"1065
-}
-[e :U 651 ]
-[; ;megaonoff.c: 1065: }
-[; ;megaonoff.c: 1066: man=0;
-"1066
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1067: M6=0;
+[; ;megaonoff.c: 1059: M5=0;
+"1059
+[e = _M5 -> -> 0 `i `ui ]
+"1061
+}
+[e :U 647 ]
+[; ;megaonoff.c: 1061: }
+[; ;megaonoff.c: 1064: if(copy_parentalLockBuffer[6] == '0' && PORTBbits.RB3 == 0 && M6 == 0)
+"1064
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 3 `i -> 0 `i == _M6 -> -> 0 `i `ui 649  ]
+[; ;megaonoff.c: 1065: {
+"1065
+{
+[; ;megaonoff.c: 1066: if(man==1)
+"1066
+[e $ ! == _man -> 1 `i 650  ]
+[; ;megaonoff.c: 1067: {
 "1067
-[e = _M6 -> -> 0 `i `ui ]
+{
+[; ;megaonoff.c: 1068: SwitchOnStatustToGatway('6');
+"1068
+[e ( _SwitchOnStatustToGatway (1 -> -> 54 `ui `uc ]
+[; ;megaonoff.c: 1069: TransmissionIndicationLedBlinking();
 "1069
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1070: PORTFbits.RF6=1;
+"1070
+[e = . . _PORTFbits 0 6 -> -> 1 `i `uc ]
+"1071
 }
 [e :U 650 ]
-[; ;megaonoff.c: 1069: }
-[; ;megaonoff.c: 1073: if(copy_parentalLockBuffer[7] == '0' && PORTBbits.RB4 == 0 && M7 == 0)
-"1073
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 7 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 4 `i -> 0 `i == _M7 -> -> 0 `i `ui 652  ]
-[; ;megaonoff.c: 1074: {
-"1074
-{
-[; ;megaonoff.c: 1075: if(man==1)
-"1075
-[e $ ! == _man -> 1 `i 653  ]
-[; ;megaonoff.c: 1076: {
-"1076
-{
-[; ;megaonoff.c: 1077: SwitchOnStatustToGatway('7');
-"1077
-[e ( _SwitchOnStatustToGatway (1 -> -> 55 `ui `uc ]
-[; ;megaonoff.c: 1078: TransmissionIndicationLedBlinking();
-"1078
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1079: PORTFbits.RF5=1;
-"1079
-[e = . . _PORTFbits 0 5 -> -> 1 `i `uc ]
-"1080
-}
-[e :U 653 ]
-[; ;megaonoff.c: 1080: }
-[; ;megaonoff.c: 1081: man=0;
-"1081
+[; ;megaonoff.c: 1071: }
+[; ;megaonoff.c: 1072: man=0;
+"1072
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1082: M7=1;
+[; ;megaonoff.c: 1073: M6=1;
+"1073
+[e = _M6 -> -> 1 `i `ui ]
+"1075
+}
+[e :U 649 ]
+[; ;megaonoff.c: 1075: }
+[; ;megaonoff.c: 1077: if(copy_parentalLockBuffer[6] == '0' && PORTBbits.RB3 == 1 && M6 == 1)
+"1077
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 3 `i -> 1 `i == _M6 -> -> 1 `i `ui 651  ]
+[; ;megaonoff.c: 1078: {
+"1078
+{
+[; ;megaonoff.c: 1079: if(man==1)
+"1079
+[e $ ! == _man -> 1 `i 652  ]
+[; ;megaonoff.c: 1080: {
+"1080
+{
+[; ;megaonoff.c: 1082: SwitchOffStatustToGatway('6');
 "1082
-[e = _M7 -> -> 1 `i `ui ]
+[e ( _SwitchOffStatustToGatway (1 -> -> 54 `ui `uc ]
+[; ;megaonoff.c: 1083: TransmissionIndicationLedBlinking();
+"1083
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1084: PORTFbits.RF6=0;
 "1084
+[e = . . _PORTFbits 0 6 -> -> 0 `i `uc ]
+"1085
 }
 [e :U 652 ]
-[; ;megaonoff.c: 1084: }
-[; ;megaonoff.c: 1086: if(copy_parentalLockBuffer[7] == '0' && PORTBbits.RB4 == 1 && M7 == 1)
+[; ;megaonoff.c: 1085: }
+[; ;megaonoff.c: 1086: man=0;
 "1086
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 7 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 4 `i -> 1 `i == _M7 -> -> 1 `i `ui 654  ]
-[; ;megaonoff.c: 1087: {
-"1087
-{
-[; ;megaonoff.c: 1088: if(man==1)
-"1088
-[e $ ! == _man -> 1 `i 655  ]
-[; ;megaonoff.c: 1089: {
-"1089
-{
-[; ;megaonoff.c: 1091: SwitchOffStatustToGatway('7');
-"1091
-[e ( _SwitchOffStatustToGatway (1 -> -> 55 `ui `uc ]
-[; ;megaonoff.c: 1092: TransmissionIndicationLedBlinking();
-"1092
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1093: PORTFbits.RF5=0;
-"1093
-[e = . . _PORTFbits 0 5 -> -> 0 `i `uc ]
-"1094
-}
-[e :U 655 ]
-[; ;megaonoff.c: 1094: }
-[; ;megaonoff.c: 1095: man=0;
-"1095
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1096: M7=0;
+[; ;megaonoff.c: 1087: M6=0;
+"1087
+[e = _M6 -> -> 0 `i `ui ]
+"1089
+}
+[e :U 651 ]
+[; ;megaonoff.c: 1089: }
+[; ;megaonoff.c: 1093: if(copy_parentalLockBuffer[7] == '0' && PORTBbits.RB4 == 0 && M7 == 0)
+"1093
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 7 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 4 `i -> 0 `i == _M7 -> -> 0 `i `ui 653  ]
+[; ;megaonoff.c: 1094: {
+"1094
+{
+[; ;megaonoff.c: 1095: if(man==1)
+"1095
+[e $ ! == _man -> 1 `i 654  ]
+[; ;megaonoff.c: 1096: {
 "1096
-[e = _M7 -> -> 0 `i `ui ]
+{
+[; ;megaonoff.c: 1097: SwitchOnStatustToGatway('7');
+"1097
+[e ( _SwitchOnStatustToGatway (1 -> -> 55 `ui `uc ]
+[; ;megaonoff.c: 1098: TransmissionIndicationLedBlinking();
 "1098
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1099: PORTFbits.RF5=1;
+"1099
+[e = . . _PORTFbits 0 5 -> -> 1 `i `uc ]
+"1100
 }
 [e :U 654 ]
-[; ;megaonoff.c: 1098: }
-[; ;megaonoff.c: 1103: if(copy_parentalLockBuffer[8] == '0' && PORTBbits.RB5 == 0 && M8 == 0)
-"1103
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 8 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 5 `i -> 0 `i == _M8 -> -> 0 `i `ui 656  ]
-[; ;megaonoff.c: 1104: {
-"1104
-{
-[; ;megaonoff.c: 1105: if(man==1)
-"1105
-[e $ ! == _man -> 1 `i 657  ]
-[; ;megaonoff.c: 1106: {
-"1106
-{
-[; ;megaonoff.c: 1107: SwitchOnStatustToGatway('8');
-"1107
-[e ( _SwitchOnStatustToGatway (1 -> -> 56 `ui `uc ]
-[; ;megaonoff.c: 1108: TransmissionIndicationLedBlinking();
-"1108
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1109: PORTFbits.RF4=1;
-"1109
-[e = . . _PORTFbits 0 4 -> -> 1 `i `uc ]
-"1110
-}
-[e :U 657 ]
-[; ;megaonoff.c: 1110: }
-[; ;megaonoff.c: 1111: man=0;
-"1111
+[; ;megaonoff.c: 1100: }
+[; ;megaonoff.c: 1101: man=0;
+"1101
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1112: M8=1;
+[; ;megaonoff.c: 1102: M7=1;
+"1102
+[e = _M7 -> -> 1 `i `ui ]
+"1104
+}
+[e :U 653 ]
+[; ;megaonoff.c: 1104: }
+[; ;megaonoff.c: 1106: if(copy_parentalLockBuffer[7] == '0' && PORTBbits.RB4 == 1 && M7 == 1)
+"1106
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 7 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 4 `i -> 1 `i == _M7 -> -> 1 `i `ui 655  ]
+[; ;megaonoff.c: 1107: {
+"1107
+{
+[; ;megaonoff.c: 1108: if(man==1)
+"1108
+[e $ ! == _man -> 1 `i 656  ]
+[; ;megaonoff.c: 1109: {
+"1109
+{
+[; ;megaonoff.c: 1111: SwitchOffStatustToGatway('7');
+"1111
+[e ( _SwitchOffStatustToGatway (1 -> -> 55 `ui `uc ]
+[; ;megaonoff.c: 1112: TransmissionIndicationLedBlinking();
 "1112
-[e = _M8 -> -> 1 `i `ui ]
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1113: PORTFbits.RF5=0;
+"1113
+[e = . . _PORTFbits 0 5 -> -> 0 `i `uc ]
 "1114
 }
 [e :U 656 ]
 [; ;megaonoff.c: 1114: }
-[; ;megaonoff.c: 1116: if(copy_parentalLockBuffer[8] == '0' && PORTBbits.RB5 == 1 && M8 == 1)
-"1116
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 8 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 5 `i -> 1 `i == _M8 -> -> 1 `i `ui 658  ]
-[; ;megaonoff.c: 1117: {
-"1117
-{
-[; ;megaonoff.c: 1118: if(man==1)
-"1118
-[e $ ! == _man -> 1 `i 659  ]
-[; ;megaonoff.c: 1119: {
-"1119
-{
-[; ;megaonoff.c: 1121: SwitchOffStatustToGatway('8');
-"1121
-[e ( _SwitchOffStatustToGatway (1 -> -> 56 `ui `uc ]
-[; ;megaonoff.c: 1122: TransmissionIndicationLedBlinking();
-"1122
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1123: PORTFbits.RF4=0;
-"1123
-[e = . . _PORTFbits 0 4 -> -> 0 `i `uc ]
-"1124
-}
-[e :U 659 ]
-[; ;megaonoff.c: 1124: }
-[; ;megaonoff.c: 1125: man=0;
-"1125
+[; ;megaonoff.c: 1115: man=0;
+"1115
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1126: M8=0;
+[; ;megaonoff.c: 1116: M7=0;
+"1116
+[e = _M7 -> -> 0 `i `ui ]
+"1118
+}
+[e :U 655 ]
+[; ;megaonoff.c: 1118: }
+[; ;megaonoff.c: 1123: if(copy_parentalLockBuffer[8] == '0' && PORTBbits.RB5 == 0 && M8 == 0)
+"1123
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 8 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 5 `i -> 0 `i == _M8 -> -> 0 `i `ui 657  ]
+[; ;megaonoff.c: 1124: {
+"1124
+{
+[; ;megaonoff.c: 1125: if(man==1)
+"1125
+[e $ ! == _man -> 1 `i 658  ]
+[; ;megaonoff.c: 1126: {
 "1126
-[e = _M8 -> -> 0 `i `ui ]
+{
+[; ;megaonoff.c: 1127: SwitchOnStatustToGatway('8');
+"1127
+[e ( _SwitchOnStatustToGatway (1 -> -> 56 `ui `uc ]
+[; ;megaonoff.c: 1128: TransmissionIndicationLedBlinking();
 "1128
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1129: PORTFbits.RF4=1;
+"1129
+[e = . . _PORTFbits 0 4 -> -> 1 `i `uc ]
+"1130
 }
 [e :U 658 ]
-[; ;megaonoff.c: 1128: }
-[; ;megaonoff.c: 1130: if(copy_parentalLockBuffer[9] == '0' && PORTDbits.RD5 == 0 && M9 == 0)
-"1130
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 9 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 5 `i -> 0 `i == _M9 -> -> 0 `i `ui 660  ]
-[; ;megaonoff.c: 1131: {
+[; ;megaonoff.c: 1130: }
+[; ;megaonoff.c: 1131: man=0;
 "1131
-{
-[; ;megaonoff.c: 1132: if(man==1)
-"1132
-[e $ ! == _man -> 1 `i 661  ]
-[; ;megaonoff.c: 1133: {
-"1133
-{
-[; ;megaonoff.c: 1135: start_PWM_Generation_in_ISR_FLAG = 0;
-"1135
-[e = _start_PWM_Generation_in_ISR_FLAG -> 0 `i ]
-[; ;megaonoff.c: 1136: SwitchOnStatustToGatway('9');
-"1136
-[e ( _SwitchOnStatustToGatway (1 -> -> 57 `ui `uc ]
-[; ;megaonoff.c: 1137: TransmissionIndicationLedBlinking();
-"1137
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1138: PORTFbits.RF3=1;
-"1138
-[e = . . _PORTFbits 0 3 -> -> 1 `i `uc ]
-"1139
-}
-[e :U 661 ]
-[; ;megaonoff.c: 1139: }
-[; ;megaonoff.c: 1140: man=0;
-"1140
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1141: M9=1;
+[; ;megaonoff.c: 1132: M8=1;
+"1132
+[e = _M8 -> -> 1 `i `ui ]
+"1134
+}
+[e :U 657 ]
+[; ;megaonoff.c: 1134: }
+[; ;megaonoff.c: 1136: if(copy_parentalLockBuffer[8] == '0' && PORTBbits.RB5 == 1 && M8 == 1)
+"1136
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 8 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTBbits 0 5 `i -> 1 `i == _M8 -> -> 1 `i `ui 659  ]
+[; ;megaonoff.c: 1137: {
+"1137
+{
+[; ;megaonoff.c: 1138: if(man==1)
+"1138
+[e $ ! == _man -> 1 `i 660  ]
+[; ;megaonoff.c: 1139: {
+"1139
+{
+[; ;megaonoff.c: 1141: SwitchOffStatustToGatway('8');
 "1141
-[e = _M9 -> -> 1 `i `ui ]
+[e ( _SwitchOffStatustToGatway (1 -> -> 56 `ui `uc ]
+[; ;megaonoff.c: 1142: TransmissionIndicationLedBlinking();
+"1142
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1143: PORTFbits.RF4=0;
 "1143
+[e = . . _PORTFbits 0 4 -> -> 0 `i `uc ]
+"1144
 }
 [e :U 660 ]
-[; ;megaonoff.c: 1143: }
-[; ;megaonoff.c: 1145: if(copy_parentalLockBuffer[9] == '0' && PORTDbits.RD5 == 1 && M9 == 1)
+[; ;megaonoff.c: 1144: }
+[; ;megaonoff.c: 1145: man=0;
 "1145
-[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 9 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 5 `i -> 1 `i == _M9 -> -> 1 `i `ui 662  ]
-[; ;megaonoff.c: 1146: {
-"1146
-{
-[; ;megaonoff.c: 1147: if(man==1)
-"1147
-[e $ ! == _man -> 1 `i 663  ]
-[; ;megaonoff.c: 1148: {
-"1148
-{
-[; ;megaonoff.c: 1150: SwitchOffStatustToGatway('9');
-"1150
-[e ( _SwitchOffStatustToGatway (1 -> -> 57 `ui `uc ]
-[; ;megaonoff.c: 1151: TransmissionIndicationLedBlinking();
-"1151
-[e ( _TransmissionIndicationLedBlinking ..  ]
-[; ;megaonoff.c: 1152: PORTFbits.RF3=0;
-"1152
-[e = . . _PORTFbits 0 3 -> -> 0 `i `uc ]
-"1153
-}
-[e :U 663 ]
-[; ;megaonoff.c: 1153: }
-[; ;megaonoff.c: 1154: man=0;
-"1154
 [e = _man -> 0 `i ]
-[; ;megaonoff.c: 1155: M9=0;
+[; ;megaonoff.c: 1146: M8=0;
+"1146
+[e = _M8 -> -> 0 `i `ui ]
+"1148
+}
+[e :U 659 ]
+[; ;megaonoff.c: 1148: }
+[; ;megaonoff.c: 1150: if(copy_parentalLockBuffer[9] == '0' && PORTDbits.RD5 == 0 && M9 == 0)
+"1150
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 9 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 5 `i -> 0 `i == _M9 -> -> 0 `i `ui 661  ]
+[; ;megaonoff.c: 1151: {
+"1151
+{
+[; ;megaonoff.c: 1152: if(man==1)
+"1152
+[e $ ! == _man -> 1 `i 662  ]
+[; ;megaonoff.c: 1153: {
+"1153
+{
+[; ;megaonoff.c: 1155: start_PWM_Generation_in_ISR_FLAG = 0;
 "1155
-[e = _M9 -> -> 0 `i `ui ]
+[e = _start_PWM_Generation_in_ISR_FLAG -> 0 `i ]
+[; ;megaonoff.c: 1156: SwitchOnStatustToGatway('9');
+"1156
+[e ( _SwitchOnStatustToGatway (1 -> -> 57 `ui `uc ]
+[; ;megaonoff.c: 1157: TransmissionIndicationLedBlinking();
 "1157
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1158: PORTFbits.RF3=1;
+"1158
+[e = . . _PORTFbits 0 3 -> -> 1 `i `uc ]
+"1159
 }
 [e :U 662 ]
+[; ;megaonoff.c: 1159: }
+[; ;megaonoff.c: 1160: man=0;
 "1160
-}
-[e :U 619 ]
-"858
-[e $U 620  ]
-[e :U 621 ]
-[; ;megaonoff.c: 1157: }
-[; ;megaonoff.c: 1160: }
-[; ;megaonoff.c: 1161: }
+[e = _man -> 0 `i ]
+[; ;megaonoff.c: 1161: M9=1;
 "1161
-[e :UE 618 ]
+[e = _M9 -> -> 1 `i `ui ]
+"1163
 }
-"1163
-[v _applianceControl `(v ~T0 @X0 1 ef7`uc`uc`uc`uc`uc`uc`uc ]
-"1164
+[e :U 661 ]
+[; ;megaonoff.c: 1163: }
+[; ;megaonoff.c: 1165: if(copy_parentalLockBuffer[9] == '0' && PORTDbits.RD5 == 1 && M9 == 1)
+"1165
+[e $ ! && && == -> *U + &U _copy_parentalLockBuffer * -> -> -> 9 `i `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux `ui -> 48 `ui == -> . . _PORTDbits 0 5 `i -> 1 `i == _M9 -> -> 1 `i `ui 663  ]
+[; ;megaonoff.c: 1166: {
+"1166
 {
-[; ;megaonoff.c: 1163: void applianceControl(char charSwitchMSB, char charSwitchLSB, char charSwitchSTATE, char chDimmerSpeedMSB, char chDimmerSpeedLSB,
-[; ;megaonoff.c: 1164: char charParentalControl, char charFinalFrameState){
+[; ;megaonoff.c: 1167: if(man==1)
+"1167
+[e $ ! == _man -> 1 `i 664  ]
+[; ;megaonoff.c: 1168: {
+"1168
+{
+[; ;megaonoff.c: 1170: SwitchOffStatustToGatway('9');
+"1170
+[e ( _SwitchOffStatustToGatway (1 -> -> 57 `ui `uc ]
+[; ;megaonoff.c: 1171: TransmissionIndicationLedBlinking();
+"1171
+[e ( _TransmissionIndicationLedBlinking ..  ]
+[; ;megaonoff.c: 1172: PORTFbits.RF3=0;
+"1172
+[e = . . _PORTFbits 0 3 -> -> 0 `i `uc ]
+"1173
+}
+[e :U 664 ]
+[; ;megaonoff.c: 1173: }
+[; ;megaonoff.c: 1174: man=0;
+"1174
+[e = _man -> 0 `i ]
+[; ;megaonoff.c: 1175: M9=0;
+"1175
+[e = _M9 -> -> 0 `i `ui ]
+"1177
+}
+[e :U 663 ]
+"1180
+}
+[e :U 620 ]
+"878
+[e $U 621  ]
+[e :U 622 ]
+[; ;megaonoff.c: 1177: }
+[; ;megaonoff.c: 1180: }
+[; ;megaonoff.c: 1181: }
+"1181
+[e :UE 619 ]
+}
+"1183
+[v _applianceControl `(v ~T0 @X0 1 ef7`uc`uc`uc`uc`uc`uc`uc ]
+"1184
+{
+[; ;megaonoff.c: 1183: void applianceControl(char charSwitchMSB, char charSwitchLSB, char charSwitchSTATE, char chDimmerSpeedMSB, char chDimmerSpeedLSB,
+[; ;megaonoff.c: 1184: char charParentalControl, char charFinalFrameState){
 [e :U _applianceControl ]
-"1163
+"1183
 [v _charSwitchMSB `uc ~T0 @X0 1 r1 ]
 [v _charSwitchLSB `uc ~T0 @X0 1 r2 ]
 [v _charSwitchSTATE `uc ~T0 @X0 1 r3 ]
 [v _chDimmerSpeedMSB `uc ~T0 @X0 1 r4 ]
 [v _chDimmerSpeedLSB `uc ~T0 @X0 1 r5 ]
-"1164
+"1184
 [v _charParentalControl `uc ~T0 @X0 1 r6 ]
 [v _charFinalFrameState `uc ~T0 @X0 1 r7 ]
 [f ]
-"1167
-[v _integerSwitchNumber `i ~T0 @X0 1 a ]
-[; ;megaonoff.c: 1167: int integerSwitchNumber = 0;
-[e = _integerSwitchNumber -> 0 `i ]
-"1168
-[v _integerSwitchState `i ~T0 @X0 1 a ]
-[; ;megaonoff.c: 1168: int integerSwitchState = 0;
-[e = _integerSwitchState -> 0 `i ]
-"1169
-[v _integerSpeed `i ~T0 @X0 1 a ]
-[; ;megaonoff.c: 1169: int integerSpeed = 0;
-[e = _integerSpeed -> 0 `i ]
-"1170
-[v _currentStateBufferPositions `i ~T0 @X0 1 a ]
-[; ;megaonoff.c: 1170: int currentStateBufferPositions=0;
-[e = _currentStateBufferPositions -> 0 `i ]
-[v F3725 `uc ~T0 @X0 -> 2 `i s ]
-[i F3725
-:U ..
--> 35 `c
--> 0 `c
-..
-]
-"1173
-[v _switchNumberStringBuffer `uc ~T0 @X0 -> 2 `i a ]
-[; ;megaonoff.c: 1173: char switchNumberStringBuffer[2]="#";
-[e = _switchNumberStringBuffer F3725 ]
-[v F3727 `uc ~T0 @X0 -> 2 `i s ]
-[i F3727
-:U ..
--> 35 `c
--> 0 `c
-..
-]
-"1174
-[v _dimmerSpeedStringBuffer `uc ~T0 @X0 -> 2 `i a ]
-[; ;megaonoff.c: 1174: char dimmerSpeedStringBuffer[2]="#";
-[e = _dimmerSpeedStringBuffer F3727 ]
-[; ;megaonoff.c: 1176: switchNumberStringBuffer[0]=charSwitchMSB;
-"1176
-[e = *U + &U _switchNumberStringBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _switchNumberStringBuffer `ui `ux _charSwitchMSB ]
-[; ;megaonoff.c: 1177: switchNumberStringBuffer[1]=charSwitchLSB;
-"1177
-[e = *U + &U _switchNumberStringBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _switchNumberStringBuffer `ui `ux _charSwitchLSB ]
-[; ;megaonoff.c: 1178: integerSwitchNumber = atoi(switchNumberStringBuffer);
-"1178
-[e = _integerSwitchNumber ( _atoi (1 -> &U _switchNumberStringBuffer `*Cuc ]
-[; ;megaonoff.c: 1182: integerSwitchState = charSwitchSTATE-'0';
-"1182
-[e = _integerSwitchState -> - -> _charSwitchSTATE `ui -> 48 `ui `i ]
-[; ;megaonoff.c: 1185: dimmerSpeedStringBuffer[0]=chDimmerSpeedMSB;
-"1185
-[e = *U + &U _dimmerSpeedStringBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _dimmerSpeedStringBuffer `ui `ux _chDimmerSpeedMSB ]
-[; ;megaonoff.c: 1186: dimmerSpeedStringBuffer[1]=chDimmerSpeedLSB;
-"1186
-[e = *U + &U _dimmerSpeedStringBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _dimmerSpeedStringBuffer `ui `ux _chDimmerSpeedLSB ]
-[; ;megaonoff.c: 1187: integerSpeed = atoi(dimmerSpeedStringBuffer);
 "1187
-[e = _integerSpeed ( _atoi (1 -> &U _dimmerSpeedStringBuffer `*Cuc ]
-[; ;megaonoff.c: 1191: parentalLockBuffer[integerSwitchNumber] = charParentalControl;
-"1191
-[e = *U + &U _parentalLockBuffer * -> -> _integerSwitchNumber `ui `ux -> -> # *U &U _parentalLockBuffer `ui `ux _charParentalControl ]
-[; ;megaonoff.c: 1192: copy_parentalLockBuffer[integerSwitchNumber]=parentalLockBuffer[integerSwitchNumber];
-"1192
-[e = *U + &U _copy_parentalLockBuffer * -> -> _integerSwitchNumber `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux *U + &U _parentalLockBuffer * -> -> _integerSwitchNumber `ui `ux -> -> # *U &U _parentalLockBuffer `ui `ux ]
-[; ;megaonoff.c: 1195: currentStateBufferPositions = ((1+4*(integerSwitchNumber))-5);
-"1195
-[e = _currentStateBufferPositions - + -> 1 `i * -> 4 `i _integerSwitchNumber -> 5 `i ]
-[; ;megaonoff.c: 1196: currentStateBuffer[currentStateBufferPositions++] = 'G';
+[v _integerSwitchNumber `i ~T0 @X0 1 a ]
+[; ;megaonoff.c: 1187: int integerSwitchNumber = 0;
+[e = _integerSwitchNumber -> 0 `i ]
+"1188
+[v _integerSwitchState `i ~T0 @X0 1 a ]
+[; ;megaonoff.c: 1188: int integerSwitchState = 0;
+[e = _integerSwitchState -> 0 `i ]
+"1189
+[v _integerSpeed `i ~T0 @X0 1 a ]
+[; ;megaonoff.c: 1189: int integerSpeed = 0;
+[e = _integerSpeed -> 0 `i ]
+"1190
+[v _currentStateBufferPositions `i ~T0 @X0 1 a ]
+[; ;megaonoff.c: 1190: int currentStateBufferPositions=0;
+[e = _currentStateBufferPositions -> 0 `i ]
+[v F3734 `uc ~T0 @X0 -> 2 `i s ]
+[i F3734
+:U ..
+-> 35 `c
+-> 0 `c
+..
+]
+"1193
+[v _switchNumberStringBuffer `uc ~T0 @X0 -> 2 `i a ]
+[; ;megaonoff.c: 1193: char switchNumberStringBuffer[2]="#";
+[e = _switchNumberStringBuffer F3734 ]
+[v F3736 `uc ~T0 @X0 -> 2 `i s ]
+[i F3736
+:U ..
+-> 35 `c
+-> 0 `c
+..
+]
+"1194
+[v _dimmerSpeedStringBuffer `uc ~T0 @X0 -> 2 `i a ]
+[; ;megaonoff.c: 1194: char dimmerSpeedStringBuffer[2]="#";
+[e = _dimmerSpeedStringBuffer F3736 ]
+[; ;megaonoff.c: 1196: switchNumberStringBuffer[0]=charSwitchMSB;
 "1196
-[e = *U + &U _currentStateBuffer * -> -> ++ _currentStateBufferPositions -> 1 `i `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux -> -> 71 `ui `uc ]
-[; ;megaonoff.c: 1197: currentStateBuffer[currentStateBufferPositions++] = charSwitchSTATE;
+[e = *U + &U _switchNumberStringBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _switchNumberStringBuffer `ui `ux _charSwitchMSB ]
+[; ;megaonoff.c: 1197: switchNumberStringBuffer[1]=charSwitchLSB;
 "1197
-[e = *U + &U _currentStateBuffer * -> -> ++ _currentStateBufferPositions -> 1 `i `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux _charSwitchSTATE ]
-[; ;megaonoff.c: 1198: currentStateBuffer[currentStateBufferPositions++] = charSwitchMSB;
+[e = *U + &U _switchNumberStringBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _switchNumberStringBuffer `ui `ux _charSwitchLSB ]
+[; ;megaonoff.c: 1198: integerSwitchNumber = atoi(switchNumberStringBuffer);
 "1198
-[e = *U + &U _currentStateBuffer * -> -> ++ _currentStateBufferPositions -> 1 `i `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux _charSwitchMSB ]
-[; ;megaonoff.c: 1199: currentStateBuffer[currentStateBufferPositions] = charSwitchLSB;
-"1199
-[e = *U + &U _currentStateBuffer * -> -> _currentStateBufferPositions `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux _charSwitchLSB ]
-[; ;megaonoff.c: 1201: currentStateBufferPositions-=3;
-"1201
-[e =- _currentStateBufferPositions -> 3 `i ]
-[; ;megaonoff.c: 1202: if(charFinalFrameState=='1')
+[e = _integerSwitchNumber ( _atoi (1 -> &U _switchNumberStringBuffer `*Cuc ]
+[; ;megaonoff.c: 1202: integerSwitchState = charSwitchSTATE-'0';
 "1202
-[e $ ! == -> _charFinalFrameState `ui -> 49 `ui 665  ]
-[; ;megaonoff.c: 1203: {
-"1203
-{
-[; ;megaonoff.c: 1204: sendAcknowledgment(currentStateBuffer+currentStateBufferPositions);
-"1204
-[e ( _sendAcknowledgment (1 + &U _currentStateBuffer * -> _currentStateBufferPositions `x -> -> # *U &U _currentStateBuffer `i `x ]
+[e = _integerSwitchState -> - -> _charSwitchSTATE `ui -> 48 `ui `i ]
+[; ;megaonoff.c: 1205: dimmerSpeedStringBuffer[0]=chDimmerSpeedMSB;
 "1205
-}
-[e :U 665 ]
-[; ;megaonoff.c: 1205: }
-[; ;megaonoff.c: 1207: switch(integerSwitchNumber){
+[e = *U + &U _dimmerSpeedStringBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _dimmerSpeedStringBuffer `ui `ux _chDimmerSpeedMSB ]
+[; ;megaonoff.c: 1206: dimmerSpeedStringBuffer[1]=chDimmerSpeedLSB;
+"1206
+[e = *U + &U _dimmerSpeedStringBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _dimmerSpeedStringBuffer `ui `ux _chDimmerSpeedLSB ]
+[; ;megaonoff.c: 1207: integerSpeed = atoi(dimmerSpeedStringBuffer);
 "1207
-[e $U 667  ]
-{
-[; ;megaonoff.c: 1208: case 1:
-"1208
-[e :U 668 ]
-[; ;megaonoff.c: 1209: {
-"1209
-{
-[; ;megaonoff.c: 1210: PORTEbits.RE0 = integerSwitchState;
-"1210
-[e = . . _PORTEbits 0 0 -> _integerSwitchState `uc ]
+[e = _integerSpeed ( _atoi (1 -> &U _dimmerSpeedStringBuffer `*Cuc ]
+[; ;megaonoff.c: 1211: parentalLockBuffer[integerSwitchNumber] = charParentalControl;
 "1211
-}
-[; ;megaonoff.c: 1211: }break;
-[e $U 666  ]
-[; ;megaonoff.c: 1213: case 2:
-"1213
-[e :U 669 ]
-[; ;megaonoff.c: 1214: {
-"1214
-{
-[; ;megaonoff.c: 1215: PORTEbits.RE1 = integerSwitchState;
+[e = *U + &U _parentalLockBuffer * -> -> _integerSwitchNumber `ui `ux -> -> # *U &U _parentalLockBuffer `ui `ux _charParentalControl ]
+[; ;megaonoff.c: 1212: copy_parentalLockBuffer[integerSwitchNumber]=parentalLockBuffer[integerSwitchNumber];
+"1212
+[e = *U + &U _copy_parentalLockBuffer * -> -> _integerSwitchNumber `ui `ux -> -> # *U &U _copy_parentalLockBuffer `ui `ux *U + &U _parentalLockBuffer * -> -> _integerSwitchNumber `ui `ux -> -> # *U &U _parentalLockBuffer `ui `ux ]
+[; ;megaonoff.c: 1215: currentStateBufferPositions = ((1+4*(integerSwitchNumber))-5);
 "1215
-[e = . . _PORTEbits 0 1 -> _integerSwitchState `uc ]
+[e = _currentStateBufferPositions - + -> 1 `i * -> 4 `i _integerSwitchNumber -> 5 `i ]
+[; ;megaonoff.c: 1216: currentStateBuffer[currentStateBufferPositions++] = 'G';
+"1216
+[e = *U + &U _currentStateBuffer * -> -> ++ _currentStateBufferPositions -> 1 `i `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux -> -> 71 `ui `uc ]
+[; ;megaonoff.c: 1217: currentStateBuffer[currentStateBufferPositions++] = charSwitchSTATE;
 "1217
-}
-[; ;megaonoff.c: 1217: } break;
-[e $U 666  ]
-[; ;megaonoff.c: 1218: case 3:
+[e = *U + &U _currentStateBuffer * -> -> ++ _currentStateBufferPositions -> 1 `i `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux _charSwitchSTATE ]
+[; ;megaonoff.c: 1218: currentStateBuffer[currentStateBufferPositions++] = charSwitchMSB;
 "1218
-[e :U 670 ]
-[; ;megaonoff.c: 1219: {
+[e = *U + &U _currentStateBuffer * -> -> ++ _currentStateBufferPositions -> 1 `i `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux _charSwitchMSB ]
+[; ;megaonoff.c: 1219: currentStateBuffer[currentStateBufferPositions] = charSwitchLSB;
 "1219
-{
-[; ;megaonoff.c: 1220: PORTGbits.RG0 = integerSwitchState;
-"1220
-[e = . . _PORTGbits 0 0 -> _integerSwitchState `uc ]
+[e = *U + &U _currentStateBuffer * -> -> _currentStateBufferPositions `ui `ux -> -> # *U &U _currentStateBuffer `ui `ux _charSwitchLSB ]
+[; ;megaonoff.c: 1221: currentStateBufferPositions-=3;
+"1221
+[e =- _currentStateBufferPositions -> 3 `i ]
+[; ;megaonoff.c: 1222: if(charFinalFrameState=='1')
 "1222
-}
-[; ;megaonoff.c: 1222: } break;
-[e $U 666  ]
-[; ;megaonoff.c: 1224: case 4:
-"1224
-[e :U 671 ]
-[; ;megaonoff.c: 1225: {
-"1225
+[e $ ! == -> _charFinalFrameState `ui -> 49 `ui 666  ]
+[; ;megaonoff.c: 1223: {
+"1223
 {
-[; ;megaonoff.c: 1226: PORTGbits.RG3 = integerSwitchState;
-"1226
-[e = . . _PORTGbits 0 3 -> _integerSwitchState `uc ]
-"1227
+[; ;megaonoff.c: 1224: sendAcknowledgment(currentStateBuffer+currentStateBufferPositions);
+"1224
+[e ( _sendAcknowledgment (1 + &U _currentStateBuffer * -> _currentStateBufferPositions `x -> -> # *U &U _currentStateBuffer `i `x ]
+"1225
 }
-[; ;megaonoff.c: 1227: }break;
-[e $U 666  ]
-[; ;megaonoff.c: 1228: case 5:
+[e :U 666 ]
+[; ;megaonoff.c: 1225: }
+[; ;megaonoff.c: 1227: switch(integerSwitchNumber){
+"1227
+[e $U 668  ]
+{
+[; ;megaonoff.c: 1228: case 1:
 "1228
-[e :U 672 ]
+[e :U 669 ]
 [; ;megaonoff.c: 1229: {
 "1229
 {
-[; ;megaonoff.c: 1230: PORTGbits.RG4 = integerSwitchState;
+[; ;megaonoff.c: 1230: PORTEbits.RE0 = integerSwitchState;
 "1230
-[e = . . _PORTGbits 0 4 -> _integerSwitchState `uc ]
+[e = . . _PORTEbits 0 0 -> _integerSwitchState `uc ]
 "1231
 }
 [; ;megaonoff.c: 1231: }break;
-[e $U 666  ]
-[; ;megaonoff.c: 1232: case 6:
-"1232
-[e :U 673 ]
-[; ;megaonoff.c: 1233: {
+[e $U 667  ]
+[; ;megaonoff.c: 1233: case 2:
 "1233
-{
-[; ;megaonoff.c: 1234: PORTFbits.RF6 = integerSwitchState;
+[e :U 670 ]
+[; ;megaonoff.c: 1234: {
 "1234
-[e = . . _PORTFbits 0 6 -> _integerSwitchState `uc ]
+{
+[; ;megaonoff.c: 1235: PORTEbits.RE1 = integerSwitchState;
 "1235
-}
-[; ;megaonoff.c: 1235: }break;
-[e $U 666  ]
-[; ;megaonoff.c: 1237: case 7:
+[e = . . _PORTEbits 0 1 -> _integerSwitchState `uc ]
 "1237
-[e :U 674 ]
-[; ;megaonoff.c: 1238: {
+}
+[; ;megaonoff.c: 1237: } break;
+[e $U 667  ]
+[; ;megaonoff.c: 1238: case 3:
 "1238
-{
-[; ;megaonoff.c: 1239: PORTFbits.RF5 = integerSwitchState;
+[e :U 671 ]
+[; ;megaonoff.c: 1239: {
 "1239
-[e = . . _PORTFbits 0 5 -> _integerSwitchState `uc ]
+{
+[; ;megaonoff.c: 1240: PORTGbits.RG0 = integerSwitchState;
 "1240
-}
-[; ;megaonoff.c: 1240: }break;
-[e $U 666  ]
-[; ;megaonoff.c: 1242: case 8:
+[e = . . _PORTGbits 0 0 -> _integerSwitchState `uc ]
 "1242
-[e :U 675 ]
-[; ;megaonoff.c: 1243: {
-"1243
-{
-[; ;megaonoff.c: 1244: PORTFbits.RF4 = integerSwitchState;
+}
+[; ;megaonoff.c: 1242: } break;
+[e $U 667  ]
+[; ;megaonoff.c: 1244: case 4:
 "1244
-[e = . . _PORTFbits 0 4 -> _integerSwitchState `uc ]
+[e :U 672 ]
+[; ;megaonoff.c: 1245: {
 "1245
-}
-[; ;megaonoff.c: 1245: }break;
-[e $U 666  ]
-[; ;megaonoff.c: 1246: case 9:{
+{
+[; ;megaonoff.c: 1246: PORTGbits.RG3 = integerSwitchState;
 "1246
-[e :U 676 ]
-{
-[; ;megaonoff.c: 1247: start_PWM_Generation_in_ISR_FLAG = integerSwitchState;
+[e = . . _PORTGbits 0 3 -> _integerSwitchState `uc ]
 "1247
-[e = _start_PWM_Generation_in_ISR_FLAG _integerSwitchState ]
-[; ;megaonoff.c: 1248: switch(integerSwitchState){
+}
+[; ;megaonoff.c: 1247: }break;
+[e $U 667  ]
+[; ;megaonoff.c: 1248: case 5:
 "1248
-[e $U 678  ]
-{
-[; ;megaonoff.c: 1249: case 0:
+[e :U 673 ]
+[; ;megaonoff.c: 1249: {
 "1249
-[e :U 679 ]
-[; ;megaonoff.c: 1250: PORTFbits.RF3=1;
+{
+[; ;megaonoff.c: 1250: PORTGbits.RG4 = integerSwitchState;
 "1250
-[e = . . _PORTFbits 0 3 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1251: break;
+[e = . . _PORTGbits 0 4 -> _integerSwitchState `uc ]
 "1251
-[e $U 677  ]
-[; ;megaonoff.c: 1252: case 1:
+}
+[; ;megaonoff.c: 1251: }break;
+[e $U 667  ]
+[; ;megaonoff.c: 1252: case 6:
 "1252
-[e :U 680 ]
-[; ;megaonoff.c: 1253: levelofDimmer_MSB = chDimmerSpeedMSB;
+[e :U 674 ]
+[; ;megaonoff.c: 1253: {
 "1253
-[e = _levelofDimmer_MSB _chDimmerSpeedMSB ]
-[; ;megaonoff.c: 1254: levelofDimmer_LSB = chDimmerSpeedLSB;
+{
+[; ;megaonoff.c: 1254: PORTFbits.RF6 = integerSwitchState;
 "1254
-[e = _levelofDimmer_LSB _chDimmerSpeedLSB ]
-[; ;megaonoff.c: 1255: break;
+[e = . . _PORTFbits 0 6 -> _integerSwitchState `uc ]
 "1255
-[e $U 677  ]
-[; ;megaonoff.c: 1256: default:
-"1256
-[e :U 681 ]
-[; ;megaonoff.c: 1257: break;
+}
+[; ;megaonoff.c: 1255: }break;
+[e $U 667  ]
+[; ;megaonoff.c: 1257: case 7:
 "1257
-[e $U 677  ]
+[e :U 675 ]
+[; ;megaonoff.c: 1258: {
 "1258
-}
-[; ;megaonoff.c: 1258: }
-[e $U 677  ]
-"1248
-[e :U 678 ]
-[e [\ _integerSwitchState , $ -> 0 `i 679
- , $ -> 1 `i 680
- 681 ]
-"1258
-[e :U 677 ]
+{
+[; ;megaonoff.c: 1259: PORTFbits.RF5 = integerSwitchState;
 "1259
-}
-[; ;megaonoff.c: 1259: }break;
-[e $U 666  ]
-[; ;megaonoff.c: 1260: default:
+[e = . . _PORTFbits 0 5 -> _integerSwitchState `uc ]
 "1260
-[e :U 682 ]
-[; ;megaonoff.c: 1261: break;
-"1261
-[e $U 666  ]
-"1262
 }
-[; ;megaonoff.c: 1262: }
-[e $U 666  ]
-"1207
-[e :U 667 ]
-[e [\ _integerSwitchNumber , $ -> 1 `i 668
- , $ -> 2 `i 669
- , $ -> 3 `i 670
- , $ -> 4 `i 671
- , $ -> 5 `i 672
- , $ -> 6 `i 673
- , $ -> 7 `i 674
- , $ -> 8 `i 675
- , $ -> 9 `i 676
- 682 ]
+[; ;megaonoff.c: 1260: }break;
+[e $U 667  ]
+[; ;megaonoff.c: 1262: case 8:
 "1262
-[e :U 666 ]
-[; ;megaonoff.c: 1264: }
+[e :U 676 ]
+[; ;megaonoff.c: 1263: {
+"1263
+{
+[; ;megaonoff.c: 1264: PORTFbits.RF4 = integerSwitchState;
 "1264
-[e :UE 664 ]
+[e = . . _PORTFbits 0 4 -> _integerSwitchState `uc ]
+"1265
 }
+[; ;megaonoff.c: 1265: }break;
+[e $U 667  ]
+[; ;megaonoff.c: 1266: case 9:{
+"1266
+[e :U 677 ]
+{
+[; ;megaonoff.c: 1267: start_PWM_Generation_in_ISR_FLAG = integerSwitchState;
+"1267
+[e = _start_PWM_Generation_in_ISR_FLAG _integerSwitchState ]
+[; ;megaonoff.c: 1268: switch(integerSwitchState){
+"1268
+[e $U 679  ]
+{
+[; ;megaonoff.c: 1269: case 0:
+"1269
+[e :U 680 ]
+[; ;megaonoff.c: 1270: PORTFbits.RF3=1;
 "1270
+[e = . . _PORTFbits 0 3 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1271: break;
+"1271
+[e $U 678  ]
+[; ;megaonoff.c: 1272: case 1:
+"1272
+[e :U 681 ]
+[; ;megaonoff.c: 1273: levelofDimmer_MSB = chDimmerSpeedMSB;
+"1273
+[e = _levelofDimmer_MSB _chDimmerSpeedMSB ]
+[; ;megaonoff.c: 1274: levelofDimmer_LSB = chDimmerSpeedLSB;
+"1274
+[e = _levelofDimmer_LSB _chDimmerSpeedLSB ]
+[; ;megaonoff.c: 1275: break;
+"1275
+[e $U 678  ]
+[; ;megaonoff.c: 1276: default:
+"1276
+[e :U 682 ]
+[; ;megaonoff.c: 1277: break;
+"1277
+[e $U 678  ]
+"1278
+}
+[; ;megaonoff.c: 1278: }
+[e $U 678  ]
+"1268
+[e :U 679 ]
+[e [\ _integerSwitchState , $ -> 0 `i 680
+ , $ -> 1 `i 681
+ 682 ]
+"1278
+[e :U 678 ]
+"1279
+}
+[; ;megaonoff.c: 1279: }break;
+[e $U 667  ]
+[; ;megaonoff.c: 1280: default:
+"1280
+[e :U 683 ]
+[; ;megaonoff.c: 1281: break;
+"1281
+[e $U 667  ]
+"1282
+}
+[; ;megaonoff.c: 1282: }
+[e $U 667  ]
+"1227
+[e :U 668 ]
+[e [\ _integerSwitchNumber , $ -> 1 `i 669
+ , $ -> 2 `i 670
+ , $ -> 3 `i 671
+ , $ -> 4 `i 672
+ , $ -> 5 `i 673
+ , $ -> 6 `i 674
+ , $ -> 7 `i 675
+ , $ -> 8 `i 676
+ , $ -> 9 `i 677
+ 683 ]
+"1282
+[e :U 667 ]
+[; ;megaonoff.c: 1284: }
+"1284
+[e :UE 665 ]
+}
+"1290
 [v _GPIO_pin_Initialize `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1270: void GPIO_pin_Initialize(){
+[; ;megaonoff.c: 1290: void GPIO_pin_Initialize(){
 [e :U _GPIO_pin_Initialize ]
 [f ]
-[; ;megaonoff.c: 1271: clearAllPorts();
-"1271
-[e ( _clearAllPorts ..  ]
-[; ;megaonoff.c: 1272: pinINIT_extra();
-"1272
-[e ( _pinINIT_extra ..  ]
-[; ;megaonoff.c: 1273: TRISDbits.TRISD6 = 1;
-"1273
-[e = . . _TRISDbits 0 6 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1274: TRISDbits.TRISD7 = 1;
-"1274
-[e = . . _TRISDbits 0 7 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1275: TRISBbits.TRISB0 = 1;
-"1275
-[e = . . _TRISBbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1276: TRISBbits.TRISB1 = 1;
-"1276
-[e = . . _TRISBbits 0 1 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1277: TRISBbits.TRISB2 = 1;
-"1277
-[e = . . _TRISBbits 0 2 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1278: TRISBbits.TRISB3 = 1;
-"1278
-[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1279: TRISBbits.TRISB4 = 1;
-"1279
-[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1280: TRISBbits.TRISB5 = 1;
-"1280
-[e = . . _TRISBbits 0 5 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1281: TRISDbits.TRISD5 = 1;
-"1281
-[e = . . _TRISDbits 0 5 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1285: TRISEbits.TRISE0 = 0;
-"1285
-[e = . . _TRISEbits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1286: TRISEbits.TRISE1 = 0;
-"1286
-[e = . . _TRISEbits 0 1 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1287: TRISGbits.TRISG0 = 0;
-"1287
-[e = . . _TRISGbits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1288: TRISGbits.TRISG3 = 0;
-"1288
-[e = . . _TRISGbits 0 3 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1289: TRISGbits.TRISG4 = 0;
-"1289
-[e = . . _TRISGbits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1290: TRISFbits.TRISF6 = 0;
-"1290
-[e = . . _TRISFbits 0 6 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1291: TRISFbits.TRISF5 = 0;
+[; ;megaonoff.c: 1291: clearAllPorts();
 "1291
-[e = . . _TRISFbits 0 5 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1292: TRISFbits.TRISF4 = 0;
-"1292
-[e = . . _TRISFbits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1293: TRISFbits.TRISF3 = 0;
-"1293
-[e = . . _TRISFbits 0 3 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1296: TRISEbits.TRISE3 = 1;
-"1296
-[e = . . _TRISEbits 0 3 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1298: TRISFbits.TRISF0 = 0;
-"1298
-[e = . . _TRISFbits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1299: TRISFbits.TRISF1 = 0;
-"1299
-[e = . . _TRISFbits 0 1 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1300: TRISFbits.TRISF2 = 0;
-"1300
-[e = . . _TRISFbits 0 2 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1305: TRISCbits.TRISC6 = 0;
-"1305
-[e = . . _TRISCbits 0 6 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1306: TRISCbits.TRISC7 = 1;
-"1306
-[e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1308: clearAllPorts();
-"1308
 [e ( _clearAllPorts ..  ]
-[; ;megaonoff.c: 1309: }
+[; ;megaonoff.c: 1292: pinINIT_extra();
+"1292
+[e ( _pinINIT_extra ..  ]
+[; ;megaonoff.c: 1293: TRISDbits.TRISD6 = 1;
+"1293
+[e = . . _TRISDbits 0 6 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1294: TRISDbits.TRISD7 = 1;
+"1294
+[e = . . _TRISDbits 0 7 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1295: TRISBbits.TRISB0 = 1;
+"1295
+[e = . . _TRISBbits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1296: TRISBbits.TRISB1 = 1;
+"1296
+[e = . . _TRISBbits 0 1 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1297: TRISBbits.TRISB2 = 1;
+"1297
+[e = . . _TRISBbits 0 2 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1298: TRISBbits.TRISB3 = 1;
+"1298
+[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1299: TRISBbits.TRISB4 = 1;
+"1299
+[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1300: TRISBbits.TRISB5 = 1;
+"1300
+[e = . . _TRISBbits 0 5 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1301: TRISDbits.TRISD5 = 1;
+"1301
+[e = . . _TRISDbits 0 5 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1305: TRISEbits.TRISE0 = 0;
+"1305
+[e = . . _TRISEbits 0 0 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1306: TRISEbits.TRISE1 = 0;
+"1306
+[e = . . _TRISEbits 0 1 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1307: TRISGbits.TRISG0 = 0;
+"1307
+[e = . . _TRISGbits 0 0 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1308: TRISGbits.TRISG3 = 0;
+"1308
+[e = . . _TRISGbits 0 3 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1309: TRISGbits.TRISG4 = 0;
 "1309
-[e :UE 683 ]
-}
-"1314
-[v _allPeripheralInit `(v ~T0 @X0 1 ef ]
-{
-[; ;megaonoff.c: 1314: void allPeripheralInit(){
-[e :U _allPeripheralInit ]
-[f ]
-[; ;megaonoff.c: 1315: EUSART_Initialize();
-"1315
-[e ( _EUSART_Initialize ..  ]
-[; ;megaonoff.c: 1316: TMR1_Initialize();
+[e = . . _TRISGbits 0 4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1310: TRISFbits.TRISF6 = 0;
+"1310
+[e = . . _TRISFbits 0 6 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1311: TRISFbits.TRISF5 = 0;
+"1311
+[e = . . _TRISFbits 0 5 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1312: TRISFbits.TRISF4 = 0;
+"1312
+[e = . . _TRISFbits 0 4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1313: TRISFbits.TRISF3 = 0;
+"1313
+[e = . . _TRISFbits 0 3 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1316: TRISEbits.TRISE3 = 1;
 "1316
-[e ( _TMR1_Initialize ..  ]
-[; ;megaonoff.c: 1317: TMR3_Initialize();
+[e = . . _TRISEbits 0 3 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1317: TRISEbits.TRISE3 = 1;
 "1317
-[e ( _TMR3_Initialize ..  ]
-[; ;megaonoff.c: 1318: CCP9_Initialize();
+[e = . . _TRISEbits 0 3 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1318: TRISEbits.TRISE4 = 1;
 "1318
-[e ( _CCP9_Initialize ..  ]
-[; ;megaonoff.c: 1319: }
+[e = . . _TRISEbits 0 4 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1319: TRISEbits.TRISE3 = 1;
 "1319
+[e = . . _TRISEbits 0 3 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1320: TRISFbits.TRISF0 = 0;
+"1320
+[e = . . _TRISFbits 0 0 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1321: TRISFbits.TRISF1 = 0;
+"1321
+[e = . . _TRISFbits 0 1 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1322: TRISFbits.TRISF2 = 0;
+"1322
+[e = . . _TRISFbits 0 2 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1325: TRISDbits.TRISD4 = 0;
+"1325
+[e = . . _TRISDbits 0 4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1326: TRISDbits.TRISD3 = 0;
+"1326
+[e = . . _TRISDbits 0 3 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1327: TRISDbits.TRISD2 = 0;
+"1327
+[e = . . _TRISDbits 0 2 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1331: TRISCbits.TRISC6 = 0;
+"1331
+[e = . . _TRISCbits 0 6 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1332: TRISCbits.TRISC7 = 1;
+"1332
+[e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1334: clearAllPorts();
+"1334
+[e ( _clearAllPorts ..  ]
+[; ;megaonoff.c: 1335: }
+"1335
 [e :UE 684 ]
 }
-"1324
-[v _EUSART_Initialize `(v ~T0 @X0 1 ef ]
+"1340
+[v _allPeripheralInit `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1324: void EUSART_Initialize(){
-[e :U _EUSART_Initialize ]
+[; ;megaonoff.c: 1340: void allPeripheralInit(){
+[e :U _allPeripheralInit ]
 [f ]
-[; ;megaonoff.c: 1325: PIE1bits.RC1IE = 0;
-"1325
-[e = . . _PIE1bits 0 5 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1326: PIE1bits.TX1IE = 0;
-"1326
-[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1331: BAUD1CON = 0x0A;
-"1331
-[e = _BAUD1CON -> -> 10 `i `uc ]
-[; ;megaonoff.c: 1334: RC1STA = 0x90;
-"1334
-[e = _RC1STA -> -> 144 `i `uc ]
-[; ;megaonoff.c: 1337: TX1STA = 0x24;
-"1337
-[e = _TX1STA -> -> 36 `i `uc ]
-[; ;megaonoff.c: 1342: SP1BRGL = 0xA0;
+[; ;megaonoff.c: 1341: EUSART_Initialize();
+"1341
+[e ( _EUSART_Initialize ..  ]
+[; ;megaonoff.c: 1342: TMR1_Initialize();
 "1342
-[e = _SP1BRGL -> -> 160 `i `uc ]
-[; ;megaonoff.c: 1344: SP1BRGH = 0x01;
+[e ( _TMR1_Initialize ..  ]
+[; ;megaonoff.c: 1343: TMR2_Initialize();
+"1343
+[e ( _TMR2_Initialize ..  ]
+[; ;megaonoff.c: 1344: TMR3_Initialize();
 "1344
-[e = _SP1BRGH -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1347: GIE = 1;
+[e ( _TMR3_Initialize ..  ]
+[; ;megaonoff.c: 1345: TMR4_Initialize();
+"1345
+[e ( _TMR4_Initialize ..  ]
+[; ;megaonoff.c: 1346: TMR5_Initialize();
+"1346
+[e ( _TMR5_Initialize ..  ]
+[; ;megaonoff.c: 1347: TMR6_Initialize();
 "1347
-[e = _GIE -> -> 1 `i `b ]
-[; ;megaonoff.c: 1350: PEIE = 1;
+[e ( _TMR6_Initialize ..  ]
+[; ;megaonoff.c: 1349: TMR8_Initialize();
+"1349
+[e ( _TMR8_Initialize ..  ]
+[; ;megaonoff.c: 1350: TMR10_Initialize();
 "1350
-[e = _PEIE -> -> 1 `i `b ]
-[; ;megaonoff.c: 1353: PIE1bits.RC1IE = 1;
+[e ( _TMR10_Initialize ..  ]
+[; ;megaonoff.c: 1351: CCP9_Initialize();
+"1351
+[e ( _CCP9_Initialize ..  ]
+[; ;megaonoff.c: 1352: CCP8_Initialize();
+"1352
+[e ( _CCP8_Initialize ..  ]
+[; ;megaonoff.c: 1353: CCP7_Initialize();
 "1353
-[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1356: TX1STAbits.TXEN = 1;
-"1356
-[e = . . _TX1STAbits 0 5 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1359: RC1STAbits.SPEN = 1;
-"1359
-[e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1360: }
-"1360
+[e ( _CCP7_Initialize ..  ]
+[; ;megaonoff.c: 1354: CCP10_Initialize();
+"1354
+[e ( _CCP10_Initialize ..  ]
+[; ;megaonoff.c: 1355: }
+"1355
 [e :UE 685 ]
 }
-"1362
-[v _TMR1_Initialize `(v ~T0 @X0 1 ef ]
-"1363
+"1360
+[v _EUSART_Initialize `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1362: void TMR1_Initialize(void)
-[; ;megaonoff.c: 1363: {
-[e :U _TMR1_Initialize ]
+[; ;megaonoff.c: 1360: void EUSART_Initialize(){
+[e :U _EUSART_Initialize ]
 [f ]
-[; ;megaonoff.c: 1365: T1CON = 0x00;
-"1365
-[e = _T1CON -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1368: T1GCON = 0x00;
-"1368
-[e = _T1GCON -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1371: TMR1H = 0x00;
-"1371
-[e = _TMR1H -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1374: TMR1L = 0x00;
-"1374
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1377: PIR1bits.TMR1IF = 0;
-"1377
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1380: PIE1bits.TMR1IE = 1;
+[; ;megaonoff.c: 1361: PIE1bits.RC1IE = 0;
+"1361
+[e = . . _PIE1bits 0 5 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1362: PIE1bits.TX1IE = 0;
+"1362
+[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1367: BAUD1CON = 0x0A;
+"1367
+[e = _BAUD1CON -> -> 10 `i `uc ]
+[; ;megaonoff.c: 1370: RC1STA = 0x90;
+"1370
+[e = _RC1STA -> -> 144 `i `uc ]
+[; ;megaonoff.c: 1373: TX1STA = 0x24;
+"1373
+[e = _TX1STA -> -> 36 `i `uc ]
+[; ;megaonoff.c: 1378: SP1BRGL = 0xA0;
+"1378
+[e = _SP1BRGL -> -> 160 `i `uc ]
+[; ;megaonoff.c: 1380: SP1BRGH = 0x01;
 "1380
-[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1386: GIE = 1;
-"1386
+[e = _SP1BRGH -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1383: GIE = 1;
+"1383
 [e = _GIE -> -> 1 `i `b ]
-[; ;megaonoff.c: 1389: PEIE = 1;
-"1389
+[; ;megaonoff.c: 1386: PEIE = 1;
+"1386
 [e = _PEIE -> -> 1 `i `b ]
-[; ;megaonoff.c: 1391: }
-"1391
+[; ;megaonoff.c: 1389: PIE1bits.RC1IE = 1;
+"1389
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1392: TX1STAbits.TXEN = 1;
+"1392
+[e = . . _TX1STAbits 0 5 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1395: RC1STAbits.SPEN = 1;
+"1395
+[e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1396: }
+"1396
 [e :UE 686 ]
 }
-"1393
-[v _TMR3_Initialize `(v ~T0 @X0 1 ef ]
-"1394
-{
-[; ;megaonoff.c: 1393: void TMR3_Initialize(void)
-[; ;megaonoff.c: 1394: {
-[e :U _TMR3_Initialize ]
-[f ]
-[; ;megaonoff.c: 1396: T3CON = 0x00;
-"1396
-[e = _T3CON -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1399: T3GCON = 0x00;
+"1398
+[v _TMR1_Initialize `(v ~T0 @X0 1 ef ]
 "1399
-[e = _T3GCON -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1402: TMR3H = 0x00;
-"1402
-[e = _TMR3H -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1405: TMR3L = 0x00;
-"1405
-[e = _TMR3L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1408: PIR3bits.TMR3IF = 0;
-"1408
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1411: PIE3bits.TMR3IE = 1;
-"1411
-[e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1417: GIE = 1;
-"1417
-[e = _GIE -> -> 1 `i `b ]
-[; ;megaonoff.c: 1420: PEIE = 1;
-"1420
-[e = _PEIE -> -> 1 `i `b ]
-[; ;megaonoff.c: 1422: }
+{
+[; ;megaonoff.c: 1398: void TMR1_Initialize(void)
+[; ;megaonoff.c: 1399: {
+[e :U _TMR1_Initialize ]
+[f ]
+[; ;megaonoff.c: 1401: T1CON = 0x00;
+"1401
+[e = _T1CON -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1404: T1GCON = 0x00;
+"1404
+[e = _T1GCON -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1407: TMR1H = 0x00;
+"1407
+[e = _TMR1H -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1410: TMR1L = 0x00;
+"1410
+[e = _TMR1L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1413: PIR1bits.TMR1IF = 0;
+"1413
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1416: PIE1bits.TMR1IE = 1;
+"1416
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1422: GIE = 1;
 "1422
+[e = _GIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1425: PEIE = 1;
+"1425
+[e = _PEIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1427: }
+"1427
 [e :UE 687 ]
 }
-"1423
-[v _CCP9_Initialize `(v ~T0 @X0 1 ef ]
-{
-[; ;megaonoff.c: 1423: void CCP9_Initialize(){
-[e :U _CCP9_Initialize ]
-[f ]
-[; ;megaonoff.c: 1427: CCP9CON = 0x84;
-"1427
-[e = _CCP9CON -> -> 132 `i `uc ]
-[; ;megaonoff.c: 1430: CCPR9H = 0x00;
+"1429
+[v _TMR3_Initialize `(v ~T0 @X0 1 ef ]
 "1430
-[e = _CCPR9H -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1433: CCPR9L = 0x00;
-"1433
-[e = _CCPR9L -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1439: PIR4bits.CCP9IF = 0;
-"1439
-[e = . . _PIR4bits 0 6 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1442: PIE4bits.CCP9IE = 1;
-"1442
-[e = . . _PIE4bits 0 6 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1443: }
-"1443
+{
+[; ;megaonoff.c: 1429: void TMR3_Initialize(void)
+[; ;megaonoff.c: 1430: {
+[e :U _TMR3_Initialize ]
+[f ]
+[; ;megaonoff.c: 1432: T3CON = 0x00;
+"1432
+[e = _T3CON -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1435: T3GCON = 0x00;
+"1435
+[e = _T3GCON -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1438: TMR3H = 0x00;
+"1438
+[e = _TMR3H -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1441: TMR3L = 0x00;
+"1441
+[e = _TMR3L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1444: PIR3bits.TMR3IF = 0;
+"1444
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1447: PIE3bits.TMR3IE = 1;
+"1447
+[e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1453: GIE = 1;
+"1453
+[e = _GIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1456: PEIE = 1;
+"1456
+[e = _PEIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1458: }
+"1458
 [e :UE 688 ]
 }
-"1446
+"1459
+[v _TMR5_Initialize `(v ~T0 @X0 1 ef ]
+"1460
+{
+[; ;megaonoff.c: 1459: void TMR5_Initialize(void)
+[; ;megaonoff.c: 1460: {
+[e :U _TMR5_Initialize ]
+[f ]
+[; ;megaonoff.c: 1464: T5CON = 0x00;
+"1464
+[e = _T5CON -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1467: T5GCON = 0x00;
+"1467
+[e = _T5GCON -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1470: TMR5H = 0x00;
+"1470
+[e = _TMR5H -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1473: TMR5L = 0x00;
+"1473
+[e = _TMR5L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1476: PIR3bits.TMR5IF = 0;
+"1476
+[e = . . _PIR3bits 0 2 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1479: PIE3bits.TMR5IE = 1;
+"1479
+[e = . . _PIE3bits 0 2 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1480: }
+"1480
+[e :UE 689 ]
+}
+"1482
+[v _TMR2_Initialize `(v ~T0 @X0 1 ef ]
+"1483
+{
+[; ;megaonoff.c: 1482: void TMR2_Initialize(void)
+[; ;megaonoff.c: 1483: {
+[e :U _TMR2_Initialize ]
+[f ]
+[; ;megaonoff.c: 1487: T2CON = 0x08;
+"1487
+[e = _T2CON -> -> 8 `i `uc ]
+[; ;megaonoff.c: 1493: TMR2 = 0x00;
+"1493
+[e = _TMR2 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1496: PIR1bits.TMR2IF = 0;
+"1496
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1499: PIE1bits.TMR2IE = 1;
+"1499
+[e = . . _PIE1bits 0 1 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1500: GIE = 1;
+"1500
+[e = _GIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1503: PEIE = 1;
+"1503
+[e = _PEIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1504: }
+"1504
+[e :UE 690 ]
+}
+"1507
+[v _TMR4_Initialize `(v ~T0 @X0 1 ef ]
+"1508
+{
+[; ;megaonoff.c: 1507: void TMR4_Initialize(void)
+[; ;megaonoff.c: 1508: {
+[e :U _TMR4_Initialize ]
+[f ]
+[; ;megaonoff.c: 1512: T4CON = 0x08;
+"1512
+[e = _T4CON -> -> 8 `i `uc ]
+[; ;megaonoff.c: 1518: TMR4 = 0x00;
+"1518
+[e = _TMR4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1521: PIR3bits.TMR4IF = 0;
+"1521
+[e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1524: PIE3bits.TMR4IE = 1;
+"1524
+[e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1525: GIE = 1;
+"1525
+[e = _GIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1528: PEIE = 1;
+"1528
+[e = _PEIE -> -> 1 `i `b ]
+[; ;megaonoff.c: 1529: }
+"1529
+[e :UE 691 ]
+}
+"1531
+[v _TMR6_Initialize `(v ~T0 @X0 1 ef ]
+"1532
+{
+[; ;megaonoff.c: 1531: void TMR6_Initialize(void)
+[; ;megaonoff.c: 1532: {
+[e :U _TMR6_Initialize ]
+[f ]
+[; ;megaonoff.c: 1536: T6CON = 0x08;
+"1536
+[e = _T6CON -> -> 8 `i `uc ]
+[; ;megaonoff.c: 1542: TMR6 = 0x00;
+"1542
+[e = _TMR6 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1545: PIR3bits.TMR6IF = 0;
+"1545
+[e = . . _PIR3bits 0 3 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1548: PIE3bits.TMR6IE = 1;
+"1548
+[e = . . _PIE3bits 0 3 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1549: }
+"1549
+[e :UE 692 ]
+}
+"1550
+[v _TMR8_Initialize `(v ~T0 @X0 1 ef ]
+"1551
+{
+[; ;megaonoff.c: 1550: void TMR8_Initialize(void)
+[; ;megaonoff.c: 1551: {
+[e :U _TMR8_Initialize ]
+[f ]
+[; ;megaonoff.c: 1555: T8CON = 0x08;
+"1555
+[e = _T8CON -> -> 8 `i `uc ]
+[; ;megaonoff.c: 1561: TMR8 = 0x00;
+"1561
+[e = _TMR8 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1564: PIR2bits.TMR8IF = 0;
+"1564
+[e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1567: PIE2bits.TMR8IE = 1;
+"1567
+[e = . . _PIE2bits 0 1 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1568: }
+"1568
+[e :UE 693 ]
+}
+"1569
+[v _TMR10_Initialize `(v ~T0 @X0 1 ef ]
+"1570
+{
+[; ;megaonoff.c: 1569: void TMR10_Initialize(void)
+[; ;megaonoff.c: 1570: {
+[e :U _TMR10_Initialize ]
+[f ]
+[; ;megaonoff.c: 1574: T10CON = 0x08;
+"1574
+[e = _T10CON -> -> 8 `i `uc ]
+[; ;megaonoff.c: 1580: TMR10 = 0x00;
+"1580
+[e = _TMR10 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1583: PIR2bits.TMR10IF = 0;
+"1583
+[e = . . _PIR2bits 0 2 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1586: PIE2bits.TMR10IE = 1;
+"1586
+[e = . . _PIE2bits 0 2 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1587: }
+"1587
+[e :UE 694 ]
+}
+"1588
+[v _CCP9_Initialize `(v ~T0 @X0 1 ef ]
+{
+[; ;megaonoff.c: 1588: void CCP9_Initialize(){
+[e :U _CCP9_Initialize ]
+[f ]
+[; ;megaonoff.c: 1592: CCP9CON = 0x84;
+"1592
+[e = _CCP9CON -> -> 132 `i `uc ]
+[; ;megaonoff.c: 1595: CCPR9H = 0x00;
+"1595
+[e = _CCPR9H -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1598: CCPR9L = 0x00;
+"1598
+[e = _CCPR9L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1604: PIR4bits.CCP9IF = 0;
+"1604
+[e = . . _PIR4bits 0 6 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1607: PIE4bits.CCP9IE = 1;
+"1607
+[e = . . _PIE4bits 0 6 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1608: }
+"1608
+[e :UE 695 ]
+}
+"1609
+[v _CCP10_Initialize `(v ~T0 @X0 1 ef ]
+{
+[; ;megaonoff.c: 1609: void CCP10_Initialize(){
+[e :U _CCP10_Initialize ]
+[f ]
+[; ;megaonoff.c: 1613: CCP10CON = 0x84;
+"1613
+[e = _CCP10CON -> -> 132 `i `uc ]
+[; ;megaonoff.c: 1616: CCPR10H = 0x00;
+"1616
+[e = _CCPR10H -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1619: CCPR10L = 0x00;
+"1619
+[e = _CCPR10L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1625: PIR4bits.CCP10IF = 0;
+"1625
+[e = . . _PIR4bits 0 7 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1628: PIE4bits.CCP10IE = 1;
+"1628
+[e = . . _PIE4bits 0 7 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1629: }
+"1629
+[e :UE 696 ]
+}
+"1630
+[v _CCP7_Initialize `(v ~T0 @X0 1 ef ]
+{
+[; ;megaonoff.c: 1630: void CCP7_Initialize(){
+[e :U _CCP7_Initialize ]
+[f ]
+[; ;megaonoff.c: 1634: CCP7CON = 0x84;
+"1634
+[e = _CCP7CON -> -> 132 `i `uc ]
+[; ;megaonoff.c: 1637: CCPR7H = 0x00;
+"1637
+[e = _CCPR7H -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1640: CCPR7L = 0x00;
+"1640
+[e = _CCPR7L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1646: PIR4bits.CCP7IF = 0;
+"1646
+[e = . . _PIR4bits 0 2 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1649: PIE4bits.CCP7IE = 1;
+"1649
+[e = . . _PIE4bits 0 2 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1650: }
+"1650
+[e :UE 697 ]
+}
+"1651
+[v _CCP8_Initialize `(v ~T0 @X0 1 ef ]
+{
+[; ;megaonoff.c: 1651: void CCP8_Initialize(){
+[e :U _CCP8_Initialize ]
+[f ]
+[; ;megaonoff.c: 1655: CCP9CON = 0x84;
+"1655
+[e = _CCP9CON -> -> 132 `i `uc ]
+[; ;megaonoff.c: 1658: CCPR8H = 0x00;
+"1658
+[e = _CCPR8H -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1661: CCPR8L = 0x00;
+"1661
+[e = _CCPR8L -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1667: PIR4bits.CCP8IF = 0;
+"1667
+[e = . . _PIR4bits 0 3 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1670: PIE4bits.CCP8IE = 1;
+"1670
+[e = . . _PIE4bits 0 3 -> -> 1 `i `uc ]
+[; ;megaonoff.c: 1671: }
+"1671
+[e :UE 698 ]
+}
+"1672
 [v _errorsISR `(v ~T0 @X0 1 ef1`*Cuc ]
 {
-[; ;megaonoff.c: 1446: void errorsISR(const char* errNum){
+[; ;megaonoff.c: 1672: void errorsISR(const char* errNum){
 [e :U _errorsISR ]
 [v _errNum `*Cuc ~T0 @X0 1 r1 ]
 [f ]
-[; ;megaonoff.c: 1448: while(*errNum != (0))
-"1448
-[e $U 690  ]
-[e :U 691 ]
-[; ;megaonoff.c: 1449: {
-"1449
+[; ;megaonoff.c: 1674: while(*errNum != (0))
+"1674
+[e $U 700  ]
+[e :U 701 ]
+[; ;megaonoff.c: 1675: {
+"1675
 {
-[; ;megaonoff.c: 1450: while (!TX1STAbits.TRMT);
-"1450
-[e $U 693  ]
-[e :U 694 ]
-[e :U 693 ]
-[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 694  ]
-[e :U 695 ]
-[; ;megaonoff.c: 1451: TX1REG = *errNum;
-"1451
+[; ;megaonoff.c: 1676: while (!TX1STAbits.TRMT);
+"1676
+[e $U 703  ]
+[e :U 704 ]
+[e :U 703 ]
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 704  ]
+[e :U 705 ]
+[; ;megaonoff.c: 1677: TX1REG = *errNum;
+"1677
 [e = _TX1REG *U _errNum ]
-[; ;megaonoff.c: 1452: *errNum++;
-"1452
+[; ;megaonoff.c: 1678: *errNum++;
+"1678
 [e *U ++ _errNum * -> -> 1 `i `x -> -> # *U _errNum `i `x ]
-"1454
+"1680
 }
-[e :U 690 ]
-"1448
-[e $ != -> *U _errNum `i -> 0 `i 691  ]
-[e :U 692 ]
-[; ;megaonoff.c: 1454: }
-[; ;megaonoff.c: 1455: }
-"1455
-[e :UE 689 ]
+[e :U 700 ]
+"1674
+[e $ != -> *U _errNum `i -> 0 `i 701  ]
+[e :U 702 ]
+[; ;megaonoff.c: 1680: }
+[; ;megaonoff.c: 1681: }
+"1681
+[e :UE 699 ]
 }
-"1456
+"1682
 [v _errorsMain `(v ~T0 @X0 1 ef1`*Cuc ]
 {
-[; ;megaonoff.c: 1456: void errorsMain(const char* errNum){
+[; ;megaonoff.c: 1682: void errorsMain(const char* errNum){
 [e :U _errorsMain ]
 [v _errNum `*Cuc ~T0 @X0 1 r1 ]
 [f ]
-[; ;megaonoff.c: 1458: while(*errNum != (0))
-"1458
-[e $U 697  ]
-[e :U 698 ]
-[; ;megaonoff.c: 1459: {
-"1459
+[; ;megaonoff.c: 1684: while(*errNum != (0))
+"1684
+[e $U 707  ]
+[e :U 708 ]
+[; ;megaonoff.c: 1685: {
+"1685
 {
-[; ;megaonoff.c: 1460: while (!TX1STAbits.TRMT);
-"1460
-[e $U 700  ]
-[e :U 701 ]
-[e :U 700 ]
-[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 701  ]
-[e :U 702 ]
-[; ;megaonoff.c: 1461: TX1REG = *errNum;
-"1461
+[; ;megaonoff.c: 1686: while (!TX1STAbits.TRMT);
+"1686
+[e $U 710  ]
+[e :U 711 ]
+[e :U 710 ]
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 711  ]
+[e :U 712 ]
+[; ;megaonoff.c: 1687: TX1REG = *errNum;
+"1687
 [e = _TX1REG *U _errNum ]
-[; ;megaonoff.c: 1462: *errNum++;
-"1462
+[; ;megaonoff.c: 1688: *errNum++;
+"1688
 [e *U ++ _errNum * -> -> 1 `i `x -> -> # *U _errNum `i `x ]
-"1464
+"1690
 }
-[e :U 697 ]
-"1458
-[e $ != -> *U _errNum `i -> 0 `i 698  ]
-[e :U 699 ]
-[; ;megaonoff.c: 1464: }
-[; ;megaonoff.c: 1465: }
-"1465
-[e :UE 696 ]
+[e :U 707 ]
+"1684
+[e $ != -> *U _errNum `i -> 0 `i 708  ]
+[e :U 709 ]
+[; ;megaonoff.c: 1690: }
+[; ;megaonoff.c: 1691: }
+"1691
+[e :UE 706 ]
 }
-"1467
+"1693
 [v _TransmissionIndicationLedBlinking `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1467: void TransmissionIndicationLedBlinking(){
+[; ;megaonoff.c: 1693: void TransmissionIndicationLedBlinking(){
 [e :U _TransmissionIndicationLedBlinking ]
 [f ]
-[; ;megaonoff.c: 1468: PORTFbits.RF0 = 0;
-"1468
+[; ;megaonoff.c: 1694: PORTFbits.RF0 = 0;
+"1694
 [e = . . _PORTFbits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1469: _delay((unsigned long)((100)*(16000000/4000.0)));
-"1469
+[; ;megaonoff.c: 1695: _delay((unsigned long)((100)*(16000000/4000.0)));
+"1695
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1470: PORTFbits.RF0 = 1;
-"1470
+[; ;megaonoff.c: 1696: PORTFbits.RF0 = 1;
+"1696
 [e = . . _PORTFbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1471: }
-"1471
-[e :UE 703 ]
+[; ;megaonoff.c: 1697: }
+"1697
+[e :UE 713 ]
 }
-"1472
+"1698
 [v _ReceivingIndicationLedBlinking `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1472: void ReceivingIndicationLedBlinking(){
+[; ;megaonoff.c: 1698: void ReceivingIndicationLedBlinking(){
 [e :U _ReceivingIndicationLedBlinking ]
 [f ]
-[; ;megaonoff.c: 1473: PORTFbits.RF1 = 0;
-"1473
+[; ;megaonoff.c: 1699: PORTFbits.RF1 = 0;
+"1699
 [e = . . _PORTFbits 0 1 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1474: _delay((unsigned long)((100)*(16000000/4000.0)));
-"1474
+[; ;megaonoff.c: 1700: _delay((unsigned long)((100)*(16000000/4000.0)));
+"1700
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1475: PORTFbits.RF1 = 1;
-"1475
+[; ;megaonoff.c: 1701: PORTFbits.RF1 = 1;
+"1701
 [e = . . _PORTFbits 0 1 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1477: }
-"1477
-[e :UE 704 ]
+[; ;megaonoff.c: 1703: }
+"1703
+[e :UE 714 ]
 }
-"1478
+"1704
 [v _sendAcknowledgment `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;megaonoff.c: 1478: void sendAcknowledgment(char* currentStateBuffer){
+[; ;megaonoff.c: 1704: void sendAcknowledgment( char* currentStateBuffer){
 [e :U _sendAcknowledgment ]
 [v _currentStateBuffer `*uc ~T0 @X0 1 r1 ]
 [f ]
-"1479
+"1705
 [v _Tx_count `i ~T0 @X0 1 a ]
-[; ;megaonoff.c: 1479: int Tx_count=0;
+[; ;megaonoff.c: 1705: int Tx_count=0;
 [e = _Tx_count -> 0 `i ]
-[; ;megaonoff.c: 1480: while(Tx_count!=4)
-"1480
-[e $U 706  ]
-[e :U 707 ]
-[; ;megaonoff.c: 1481: {
-"1481
+[; ;megaonoff.c: 1706: while(Tx_count!=4)
+"1706
+[e $U 716  ]
+[e :U 717 ]
+[; ;megaonoff.c: 1707: {
+"1707
 {
-[; ;megaonoff.c: 1482: while (!TX1STAbits.TRMT);
-"1482
-[e $U 709  ]
-[e :U 710 ]
-[e :U 709 ]
-[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 710  ]
-[e :U 711 ]
-[; ;megaonoff.c: 1484: TX1REG = *currentStateBuffer;
-"1484
+[; ;megaonoff.c: 1708: while (!TX1STAbits.TRMT);
+"1708
+[e $U 719  ]
+[e :U 720 ]
+[e :U 719 ]
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 720  ]
+[e :U 721 ]
+[; ;megaonoff.c: 1710: TX1REG = *currentStateBuffer;
+"1710
 [e = _TX1REG *U _currentStateBuffer ]
-[; ;megaonoff.c: 1485: *currentStateBuffer++;
-"1485
+[; ;megaonoff.c: 1711: *currentStateBuffer++;
+"1711
 [e *U ++ _currentStateBuffer * -> -> 1 `i `x -> -> # *U _currentStateBuffer `i `x ]
-[; ;megaonoff.c: 1486: Tx_count++;
-"1486
+[; ;megaonoff.c: 1712: Tx_count++;
+"1712
 [e ++ _Tx_count -> 1 `i ]
-"1487
+"1713
 }
-[e :U 706 ]
-"1480
-[e $ != _Tx_count -> 4 `i 707  ]
-[e :U 708 ]
-[; ;megaonoff.c: 1487: }
-[; ;megaonoff.c: 1488: }
-"1488
-[e :UE 705 ]
+[e :U 716 ]
+"1706
+[e $ != _Tx_count -> 4 `i 717  ]
+[e :U 718 ]
+[; ;megaonoff.c: 1713: }
+[; ;megaonoff.c: 1714: }
+"1714
+[e :UE 715 ]
 }
-"1489
+"1715
 [v _SwitchOffStatustToGatway `(v ~T0 @X0 1 ef1`uc ]
-"1490
+"1716
 {
-[; ;megaonoff.c: 1489: void SwitchOffStatustToGatway(char SwitchOffNumber)
-[; ;megaonoff.c: 1490: {
+[; ;megaonoff.c: 1715: void SwitchOffStatustToGatway(const char SwitchOffNumber)
+[; ;megaonoff.c: 1716: {
 [e :U _SwitchOffStatustToGatway ]
-"1489
-[v _SwitchOffNumber `uc ~T0 @X0 1 r1 ]
-"1490
+"1715
+[v _SwitchOffNumber `Cuc ~T0 @X0 1 r1 ]
+"1716
 [f ]
-[; ;megaonoff.c: 1491: TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));
-"1491
+[; ;megaonoff.c: 1717: TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));
+"1717
 [e = _TX1REG -> -> 82 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1492: TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
-"1492
+[; ;megaonoff.c: 1718: TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
+"1718
 [e = _TX1REG -> -> 48 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1493: TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
-"1493
+[; ;megaonoff.c: 1719: TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
+"1719
 [e = _TX1REG -> -> 48 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1494: TX1REG = SwitchOffNumber;_delay((unsigned long)((1)*(16000000/4000.0)));
-"1494
+[; ;megaonoff.c: 1720: TX1REG = SwitchOffNumber;_delay((unsigned long)((1)*(16000000/4000.0)));
+"1720
 [e = _TX1REG _SwitchOffNumber ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1495: }
-"1495
-[e :UE 712 ]
+[; ;megaonoff.c: 1721: }
+"1721
+[e :UE 722 ]
 }
-"1496
+"1722
 [v _SwitchOnStatustToGatway `(v ~T0 @X0 1 ef1`uc ]
-"1497
+"1723
 {
-[; ;megaonoff.c: 1496: void SwitchOnStatustToGatway(char SwitchOnNumber)
-[; ;megaonoff.c: 1497: {
+[; ;megaonoff.c: 1722: void SwitchOnStatustToGatway(const char SwitchOnNumber)
+[; ;megaonoff.c: 1723: {
 [e :U _SwitchOnStatustToGatway ]
-"1496
-[v _SwitchOnNumber `uc ~T0 @X0 1 r1 ]
-"1497
+"1722
+[v _SwitchOnNumber `Cuc ~T0 @X0 1 r1 ]
+"1723
 [f ]
-[; ;megaonoff.c: 1498: TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));
-"1498
+[; ;megaonoff.c: 1724: TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));
+"1724
 [e = _TX1REG -> -> 82 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1499: TX1REG = '1';_delay((unsigned long)((1)*(16000000/4000.0)));
-"1499
+[; ;megaonoff.c: 1725: TX1REG = '1';_delay((unsigned long)((1)*(16000000/4000.0)));
+"1725
 [e = _TX1REG -> -> 49 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1500: TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
-"1500
+[; ;megaonoff.c: 1726: TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
+"1726
 [e = _TX1REG -> -> 48 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1501: TX1REG = SwitchOnNumber;_delay((unsigned long)((1)*(16000000/4000.0)));
-"1501
+[; ;megaonoff.c: 1727: TX1REG = SwitchOnNumber;_delay((unsigned long)((1)*(16000000/4000.0)));
+"1727
 [e = _TX1REG _SwitchOnNumber ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;megaonoff.c: 1502: }
-"1502
-[e :UE 713 ]
+[; ;megaonoff.c: 1728: }
+"1728
+[e :UE 723 ]
 }
-"1503
+"1729
 [v _copyReceivedDataBuffer `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1503: void copyReceivedDataBuffer(){
+[; ;megaonoff.c: 1729: void copyReceivedDataBuffer(){
 [e :U _copyReceivedDataBuffer ]
 [f ]
-"1504
+"1730
 [v _dataBufferCounter `i ~T0 @X0 1 a ]
-[; ;megaonoff.c: 1504: int dataBufferCounter=2;
+[; ;megaonoff.c: 1730: int dataBufferCounter=2;
 [e = _dataBufferCounter -> 2 `i ]
-[; ;megaonoff.c: 1505: for(dataBufferCounter=2;dataBufferCounter<9;dataBufferCounter++){
-"1505
+[; ;megaonoff.c: 1731: for(dataBufferCounter=2;dataBufferCounter<9;dataBufferCounter++){
+"1731
 {
 [e = _dataBufferCounter -> 2 `i ]
-[e $ < _dataBufferCounter -> 9 `i 715  ]
-[e $U 716  ]
-[e :U 715 ]
+[e $ < _dataBufferCounter -> 9 `i 725  ]
+[e $U 726  ]
+[e :U 725 ]
 {
-[; ;megaonoff.c: 1506: tempReceivedDataBuffer[dataBufferCounter-2]=mainReceivedDataBuffer[dataBufferCounter];
-"1506
+[; ;megaonoff.c: 1732: tempReceivedDataBuffer[dataBufferCounter-2]=mainReceivedDataBuffer[dataBufferCounter];
+"1732
 [e = *U + &U _tempReceivedDataBuffer * -> -> - _dataBufferCounter -> 2 `i `ui `ux -> -> # *U &U _tempReceivedDataBuffer `ui `ux *U + &U _mainReceivedDataBuffer * -> -> _dataBufferCounter `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux ]
-[; ;megaonoff.c: 1507: mainReceivedDataBuffer[dataBufferCounter]='#';
-"1507
+[; ;megaonoff.c: 1733: mainReceivedDataBuffer[dataBufferCounter]='#';
+"1733
 [e = *U + &U _mainReceivedDataBuffer * -> -> _dataBufferCounter `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux -> -> 35 `ui `uc ]
-"1508
+"1734
 }
-"1505
+"1731
 [e ++ _dataBufferCounter -> 1 `i ]
-[e $ < _dataBufferCounter -> 9 `i 715  ]
-[e :U 716 ]
-"1508
+[e $ < _dataBufferCounter -> 9 `i 725  ]
+[e :U 726 ]
+"1734
 }
-[; ;megaonoff.c: 1508: }
-[; ;megaonoff.c: 1509: }
-"1509
-[e :UE 714 ]
+[; ;megaonoff.c: 1734: }
+[; ;megaonoff.c: 1735: }
+"1735
+[e :UE 724 ]
 }
-"1513
+"1739
 [v _pinINIT_extra `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1513: void pinINIT_extra(){
+[; ;megaonoff.c: 1739: void pinINIT_extra(){
 [e :U _pinINIT_extra ]
 [f ]
-[; ;megaonoff.c: 1514: ANSELG=0x00; WPUG = 0;
-"1514
+[; ;megaonoff.c: 1740: ANSELG=0x00; WPUG = 0;
+"1740
 [e = _ANSELG -> -> 0 `i `uc ]
 [e = _WPUG -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1516: ANSELF=0x00;
-"1516
+[; ;megaonoff.c: 1742: ANSELF=0x00;
+"1742
 [e = _ANSELF -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1518: ANSELE=0x00; WPUE=0x00;
-"1518
+[; ;megaonoff.c: 1744: ANSELE=0x00; WPUE=0x00;
+"1744
 [e = _ANSELE -> -> 0 `i `uc ]
 [e = _WPUE -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1520: ANSELD=0x00; WPUD=0x00;
-"1520
+[; ;megaonoff.c: 1746: ANSELD=0x00; WPUD=0x00;
+"1746
 [e = _ANSELD -> -> 0 `i `uc ]
 [e = _WPUD -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1522: ANSELB=0x00; WPUB=0x00;
-"1522
+[; ;megaonoff.c: 1748: ANSELB=0x00; WPUB=0x00;
+"1748
 [e = _ANSELB -> -> 0 `i `uc ]
 [e = _WPUB -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1524: ANSELA=0x00;
-"1524
+[; ;megaonoff.c: 1750: ANSELA=0x00;
+"1750
 [e = _ANSELA -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1525: }
-"1525
-[e :UE 718 ]
+[; ;megaonoff.c: 1751: }
+"1751
+[e :UE 728 ]
 }
-"1530
+"1756
 [v _clearAllPorts `(v ~T0 @X0 1 ef ]
 {
-[; ;megaonoff.c: 1530: void clearAllPorts(){
+[; ;megaonoff.c: 1756: void clearAllPorts(){
 [e :U _clearAllPorts ]
 [f ]
-[; ;megaonoff.c: 1534: PORTEbits.RE0=0;
-"1534
+[; ;megaonoff.c: 1760: PORTEbits.RE0=0;
+"1760
 [e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1535: PORTEbits.RE1=0;
-"1535
+[; ;megaonoff.c: 1761: PORTEbits.RE1=0;
+"1761
 [e = . . _PORTEbits 0 1 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1536: PORTGbits.RG0=0;
-"1536
+[; ;megaonoff.c: 1762: PORTGbits.RG0=0;
+"1762
 [e = . . _PORTGbits 0 0 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1537: PORTGbits.RG3=0;
-"1537
+[; ;megaonoff.c: 1763: PORTGbits.RG3=0;
+"1763
 [e = . . _PORTGbits 0 3 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1538: PORTGbits.RG4=0;
-"1538
+[; ;megaonoff.c: 1764: PORTGbits.RG4=0;
+"1764
 [e = . . _PORTGbits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1539: PORTFbits.RF6=0;
-"1539
+[; ;megaonoff.c: 1765: PORTFbits.RF6=0;
+"1765
 [e = . . _PORTFbits 0 6 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1540: PORTFbits.RF5=0;
-"1540
+[; ;megaonoff.c: 1766: PORTFbits.RF5=0;
+"1766
 [e = . . _PORTFbits 0 5 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1541: PORTFbits.RF4=0;
-"1541
+[; ;megaonoff.c: 1767: PORTFbits.RF4=0;
+"1767
 [e = . . _PORTFbits 0 4 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1542: PORTFbits.RF0 = 1;
-"1542
+[; ;megaonoff.c: 1768: PORTFbits.RF0 = 1;
+"1768
 [e = . . _PORTFbits 0 0 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1543: PORTFbits.RF1 = 1;
-"1543
+[; ;megaonoff.c: 1769: PORTFbits.RF1 = 1;
+"1769
 [e = . . _PORTFbits 0 1 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1544: PORTFbits.RF2 = 1;
-"1544
+[; ;megaonoff.c: 1770: PORTFbits.RF2 = 1;
+"1770
 [e = . . _PORTFbits 0 2 -> -> 1 `i `uc ]
-[; ;megaonoff.c: 1545: PORTFbits.RF3 = 0;
-"1545
+[; ;megaonoff.c: 1772: PORTDbits.RD4=0;
+"1772
+[e = . . _PORTDbits 0 4 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1773: PORTDbits.RD3=0;
+"1773
+[e = . . _PORTDbits 0 3 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1774: PORTDbits.RD2=0;
+"1774
+[e = . . _PORTDbits 0 2 -> -> 0 `i `uc ]
+[; ;megaonoff.c: 1775: PORTFbits.RF3 = 0;
+"1775
 [e = . . _PORTFbits 0 3 -> -> 0 `i `uc ]
-[; ;megaonoff.c: 1547: }
-"1547
-[e :UE 719 ]
+[; ;megaonoff.c: 1777: }
+"1777
+[e :UE 729 ]
 }
 [a 2C 69 82 82 88 0 ]
 [a 1C 69 82 79 86 0 ]

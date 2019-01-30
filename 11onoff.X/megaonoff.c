@@ -68,7 +68,20 @@
 #define OUTPUT_RELAY_DIR_8 TRISFbits.TRISF4
 #define OUTPUT_DIMMER_DIR TRISFbits.TRISF3
 
+//RGB MACORS
+#define OUTPUT_FOR_RED_LED PORTDbits.RD4 ///pwm for red
+#define OUTPUT_FOR_GREEN_LED PORTDbits.RD3 //pwm for green
+#define OUTPUT_FOR_BLUE_LED PORTDbits.RD2   // PWM for blue
+
+#define OUTPUT_RELAY_RED_LED_DIR TRISDbits.TRISD4
+#define OUTPUT_RELAY_GREEN_LED_DIR TRISDbits.TRISD3
+#define OUTPUT_RELAY_BLUE_LED_DIR TRISDbits.TRISD2        // direction of PWM OUTPUT to MOC3021
+
 #define ZCD_CCP9_DIR TRISEbits.TRISE3
+#define ZCD_CCP7_DIR TRISEbits.TRISE4
+#define ZCD_CCP8_DIR TRISEbits.TRISE3
+
+#define ZCD_CCP10_DIR TRISEbits.TRISE3
 
 
 #define INPUTSWITCH1 PORTDbits.RD6
@@ -142,6 +155,8 @@
 #define OFF 0
 #define CHAR_OFF '0'
 #define CHAR_ON '1'
+#define SWITCH_PRESSED 0
+#define SWITCH_RELEASED 1
         
 /* DATA USED IN MANUAL END HERE*/
 
@@ -173,7 +188,16 @@ void EUSART_Initialize();
 
 void TMR3_Initialize();
 void TMR1_Initialize();
+void TMR2_Initialize();
+void TMR4_Initialize();
+void TMR5_Initialize();
+void TMR6_Initialize();
+void TMR8_Initialize();
+void TMR10_Initialize();
 void CCP9_Initialize();
+void CCP10_Initialize();
+void CCP7_Initialize();
+void CCP8_Initialize();
 void allPeripheralInit();
 
 void copyReceivedDataBuffer();
@@ -213,33 +237,30 @@ interrupt void isr(){
     }// End of RC1IF 
     
     
-    
-      //*******************TIMER3 INTERRUPT**************************//
-     if(PIE3bits.TMR3IE==1 && PIR3bits.TMR3IF==1)
+    //*******************LIGHT DIMMER*************************///
+      //*******************TIMER2 INTERRUPT**************************//
+     if(PIE1bits.TMR2IE==1 && PIR1bits.TMR2IF==1)
     {           
-        PIR3bits.TMR3IF=0;
-        OUTPUT_DIMMER = FALSE;
-        T3CONbits.TMR3ON=0;
-       // TX1REG='Q';
-    }    
+        PIR1bits.TMR2IF=0;
+        OUTPUT_DIMMER = FALSE;//for rgb
+        T2CONbits.TMR2ON=0;
+    }   
    
      
     //*********************TIMER1 INTERRUPT**************************//
      if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF==1)
     {
-        PIR1bits.TMR1IF=0;
-        //TX1REG='T';        
+        PIR1bits.TMR1IF=0;        
         OUTPUT_DIMMER = TRUE;            
-        TMR3H=0xFF;
-        TMR3L=0xD8;
-        T3CONbits.TMR3ON = 1;
+        PR2=0x9F;
+         T2CONbits.TMR2ON = 1;
         T1CONbits.TMR1ON = 0;        
     }
     //*************************ZCD INTERRRUPT****************************//
-    
-    if(CCP9IF){
-        if(CCP9IF == 1){
-             CCP9IF=0;
+    if(PIR4bits.CCP8IF==1 || PIR4bits.CCP7IF == 1 || PIR4bits.CCP9IF==1 || PIR4bits.CCP10IF==1){
+    if(CCP10IF){
+        if(CCP10IF == 1){
+             CCP10IF=0;
          if(start_PWM_Generation_in_ISR_FLAG == 1){
           switch(levelofDimmer_MSB)
                 {
@@ -837,7 +858,8 @@ interrupt void isr(){
          }
         }
        
-    }
+    }//end of ccp10
+    }//end of CCP
     
 }
 
@@ -899,7 +921,7 @@ int main() {
 //        OUTPUT_RELAY7=OFF;__delay_ms(100);OUTPUT_RELAY7=ON;
 //        OUTPUT_RELAY8=OFF;__delay_ms(100);OUTPUT_RELAY8=ON;
        int man = 1;
-        if(copy_parentalLockBuffer[1] == CHAR_OFF  && INPUTSWITCH1 == OFF && M1 == OFF)//switch is pressed
+        if(copy_parentalLockBuffer[1] == CHAR_OFF  && INPUTSWITCH1 == SWITCH_PRESSED && M1 == OFF)//switch is pressed
         {
             if(man == 1)
             {
@@ -914,7 +936,7 @@ int main() {
             
         }
         //on condition
-        if(copy_parentalLockBuffer[1] == CHAR_OFF && INPUTSWITCH1 == ON && M1 == ON)////switch is released
+        if(copy_parentalLockBuffer[1] == CHAR_OFF && INPUTSWITCH1 == SWITCH_RELEASED && M1 == ON)////switch is released
         {
             //TX1REG='C';
             if(man==1)
@@ -929,7 +951,7 @@ int main() {
         
        // //check switch second status 
         //off condition
-        if(copy_parentalLockBuffer[2] == CHAR_OFF && INPUTSWITCH2 == OFF && M2 == OFF)
+        if(copy_parentalLockBuffer[2] == CHAR_OFF && INPUTSWITCH2 == SWITCH_PRESSED && M2 == OFF)
         {
             if(man==1)
             {
@@ -941,7 +963,7 @@ int main() {
             M2=1;
         }
         //on condtion
-        if(copy_parentalLockBuffer[2] == CHAR_OFF && INPUTSWITCH2 == ON && M2 == ON)
+        if(copy_parentalLockBuffer[2] == CHAR_OFF && INPUTSWITCH2 == SWITCH_RELEASED && M2 == ON)
         {
             if(man==1)
             {
@@ -956,7 +978,7 @@ int main() {
         
        // //check switch third status 
         //off condition
-        if(copy_parentalLockBuffer[3] == CHAR_OFF && INPUTSWITCH3 == OFF && M3 == OFF)
+        if(copy_parentalLockBuffer[3] == CHAR_OFF && INPUTSWITCH3 == SWITCH_PRESSED && M3 == OFF)
         {
             if(man == 1)
             {
@@ -969,12 +991,11 @@ int main() {
           
         }
         //on condtion
-        if(copy_parentalLockBuffer[3] == CHAR_OFF && INPUTSWITCH3 == ON && M3 == ON)
+        if(copy_parentalLockBuffer[3] == CHAR_OFF && INPUTSWITCH3 == SWITCH_RELEASED && M3 == ON)
         {
             if(man==1)
             {
-                SwitchOffStatustToGatway('3');
-            
+            SwitchOffStatustToGatway('3');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY3=OFF;
             }
@@ -986,7 +1007,7 @@ int main() {
      
        // //check switch fourth status 
         //off condition
-        if(copy_parentalLockBuffer[4] == CHAR_OFF && INPUTSWITCH4 == OFF && M4 == OFF)
+        if(copy_parentalLockBuffer[4] == CHAR_OFF && INPUTSWITCH4 == SWITCH_PRESSED && M4 == OFF)
         {
             if(man==1)
             {
@@ -999,7 +1020,7 @@ int main() {
             
         }
         //on condtion
-        if(copy_parentalLockBuffer[4] == CHAR_OFF && INPUTSWITCH4 == ON && M4 == ON)
+        if(copy_parentalLockBuffer[4] == CHAR_OFF && INPUTSWITCH4 == SWITCH_RELEASED && M4 == ON)
         {
             if(man==1)
             {
@@ -1013,7 +1034,7 @@ int main() {
            
         }
                //off condition
-        if(copy_parentalLockBuffer[5] == CHAR_OFF && INPUTSWITCH5 == OFF && M5 == OFF)
+        if(copy_parentalLockBuffer[5] == CHAR_OFF && INPUTSWITCH5 == SWITCH_PRESSED && M5 == OFF)
         {
             if(man==1)
             {
@@ -1026,7 +1047,7 @@ int main() {
             
         }
         //on condtion
-        if(copy_parentalLockBuffer[5] == CHAR_OFF && INPUTSWITCH5 == ON && M5 == ON)
+        if(copy_parentalLockBuffer[5] == CHAR_OFF && INPUTSWITCH5 == SWITCH_RELEASED && M5 == ON)
         {
             if(man==1)
             {
@@ -1041,7 +1062,7 @@ int main() {
         }
        
                //off condition
-        if(copy_parentalLockBuffer[6] == CHAR_OFF && INPUTSWITCH6 == OFF && M6 == OFF)
+        if(copy_parentalLockBuffer[6] == CHAR_OFF && INPUTSWITCH6 == SWITCH_PRESSED && M6 == OFF)
         {
             if(man==1)
             {
@@ -1054,7 +1075,7 @@ int main() {
             
         }
         //on condtion
-        if(copy_parentalLockBuffer[6] == CHAR_OFF && INPUTSWITCH6 == ON && M6 == ON)
+        if(copy_parentalLockBuffer[6] == CHAR_OFF && INPUTSWITCH6 == SWITCH_RELEASED && M6 == ON)
         {
             if(man==1)
             {
@@ -1070,7 +1091,7 @@ int main() {
        
 
                //off condition
-        if(copy_parentalLockBuffer[7] == CHAR_OFF && INPUTSWITCH7 == OFF && M7 == OFF)
+        if(copy_parentalLockBuffer[7] == CHAR_OFF && INPUTSWITCH7 == SWITCH_PRESSED && M7 == OFF)
         {
             if(man==1)
             {
@@ -1083,7 +1104,7 @@ int main() {
             
         }
         //on condtion
-        if(copy_parentalLockBuffer[7] == CHAR_OFF && INPUTSWITCH7 == ON && M7 == ON)
+        if(copy_parentalLockBuffer[7] == CHAR_OFF && INPUTSWITCH7 == SWITCH_RELEASED && M7 == ON)
         {
             if(man==1)
             {
@@ -1100,7 +1121,7 @@ int main() {
        
 
        //off condition
-         if(copy_parentalLockBuffer[8] == CHAR_OFF && INPUTSWITCH8 == OFF && M8 == OFF)
+         if(copy_parentalLockBuffer[8] == CHAR_OFF && INPUTSWITCH8 == SWITCH_PRESSED && M8 == OFF)
          {
              if(man==1)
              {
@@ -1113,7 +1134,7 @@ int main() {
             
          }
          //on condtion
-         if(copy_parentalLockBuffer[8] == CHAR_OFF && INPUTSWITCH8 == ON && M8 == ON)
+         if(copy_parentalLockBuffer[8] == CHAR_OFF && INPUTSWITCH8 == SWITCH_RELEASED && M8 == ON)
          {
              if(man==1)
              {
@@ -1127,7 +1148,7 @@ int main() {
            
          }
               //off condition
-         if(copy_parentalLockBuffer[9] == CHAR_OFF && INPUTSWITCH9 == OFF && M9 == OFF)
+         if(copy_parentalLockBuffer[9] == CHAR_OFF && INPUTSWITCH9 == SWITCH_PRESSED && M9 == OFF)
          {
              if(man==1)
              {
@@ -1142,7 +1163,7 @@ int main() {
             
          }
          //on condtion
-         if(copy_parentalLockBuffer[9] == CHAR_OFF && INPUTSWITCH9 == ON && M9 == ON)
+         if(copy_parentalLockBuffer[9] == CHAR_OFF && INPUTSWITCH9 == SWITCH_RELEASED && M9 == ON)
          {
              if(man==1)
              {
@@ -1293,12 +1314,18 @@ void GPIO_pin_Initialize(){
     OUTPUT_DIMMER_DIR = 0;
     
     
+    ZCD_CCP10_DIR = 1;
     ZCD_CCP9_DIR = 1;
-    
+    ZCD_CCP7_DIR = 1;
+    ZCD_CCP8_DIR = 1;
    OUTPUT_TRANMIT_INDICATION_LED_DIR = 0;
     OUTPUT_RECEIVE_INDICATION_LED_DIR = 0;
     USER_RECEIVE_INDICATION_LED_DIR = 0;
     
+    
+    OUTPUT_RELAY_RED_LED_DIR = 0;
+    OUTPUT_RELAY_GREEN_LED_DIR = 0;
+    OUTPUT_RELAY_BLUE_LED_DIR = 0;
     // peripherals directions
     
     // USART DIRECTIONS
@@ -1314,8 +1341,18 @@ void GPIO_pin_Initialize(){
 void allPeripheralInit(){
     EUSART_Initialize();
     TMR1_Initialize();
+    TMR2_Initialize();
     TMR3_Initialize();
+    TMR4_Initialize();
+    TMR5_Initialize();
+    TMR6_Initialize();
+    
+    TMR8_Initialize();
+    TMR10_Initialize();
     CCP9_Initialize();
+    CCP8_Initialize();
+    CCP7_Initialize();
+    CCP10_Initialize();
 }
 
 /*
@@ -1420,6 +1457,135 @@ void TMR3_Initialize(void)
     PEIE = 1;
 
 }
+void TMR5_Initialize(void)
+{
+    //Set the Timer to the options selected in the GUI
+
+    //T5CKPS 1:1; T5OSCEN disabled; nT5SYNC synchronize; TMR5CS FOSC/4; TMR5ON off; 
+    T5CON = 0x00;
+
+    //T5GSS T5G; TMR5GE disabled; T5GTM disabled; T5GPOL low; T5GGO_nDONE done; T5GSPM disabled; 
+    T5GCON = 0x00;
+
+    //TMR5H 123; 
+    TMR5H = 0x00;
+
+    //TMR5L 48; 
+    TMR5L = 0x00;
+
+    // Clearing IF flag.
+    PIR3bits.TMR5IF = 0;    
+    
+    // Enabling TMR5 interrupt.
+    PIE3bits.TMR5IE = 1;
+}
+
+void TMR2_Initialize(void)
+{
+//     Set TMR2 to the options selected in the User Interface
+
+//     T2CKPS 1:1; T2OUTPS 1:1; TMR2ON off; 
+    T2CON = 0x08;
+//
+//     PR2 39; 
+//    PR2 = 0x00;
+//
+//     TMR2 10; 
+    TMR2 = 0x00;
+
+//     Clearing IF flag before enabling the interrupt.
+    PIR1bits.TMR2IF = 0;
+
+//     Enabling TMR2 interrupt.
+    PIE1bits.TMR2IE = 1;
+         GIE = 1;
+
+//     Enables all active peripheral interrupts -----> INTCON reg .... bit 6         page 105
+    PEIE = 1;
+}
+
+
+void TMR4_Initialize(void)
+{
+    // Set TMR2 to the options selected in the User Interface
+
+    // T2CKPS 1:2; T2OUTPS 1:1; TMR2ON off; 
+    T4CON = 0x08;
+
+    // PR2 39; 
+//    PR2 = 0x00;
+
+    // TMR2 10; 
+    TMR4 = 0x00;
+
+    // Clearing IF flag before enabling the interrupt.
+    PIR3bits.TMR4IF = 0;
+
+    // Enabling TMR2 interrupt.
+    PIE3bits.TMR4IE = 1;
+            GIE = 1;
+
+//     Enables all active peripheral interrupts -----> INTCON reg .... bit 6         page 105
+    PEIE = 1;
+}
+
+void TMR6_Initialize(void)
+{
+    // Set TMR6 to the options selected in the User Interface
+
+    // T6CKPS 1:2; T6OUTPS 1:1; TMR6ON off; 
+    T6CON = 0x08;
+
+    // PR6 39; 
+//    PR6 = 0x27;
+
+    // TMR6 0; 
+    TMR6 = 0x00;
+
+    // Clearing IF flag before enabling the interrupt.
+    PIR3bits.TMR6IF = 0;
+
+    // Enabling TMR6 interrupt.
+    PIE3bits.TMR6IE = 1;
+}
+void TMR8_Initialize(void)
+{
+    // Set TMR6 to the options selected in the User Interface
+
+    // T6CKPS 1:2; T6OUTPS 1:1; TMR6ON off; 
+    T8CON = 0x08;
+
+    // PR6 39; 
+//    PR6 = 0x27;
+
+    // TMR6 0; 
+    TMR8 = 0x00;
+
+    // Clearing IF flag before enabling the interrupt.
+    PIR2bits.TMR8IF = 0;
+
+    // Enabling TMR6 interrupt.
+    PIE2bits.TMR8IE = 1;
+}
+void TMR10_Initialize(void)
+{
+    // Set TMR6 to the options selected in the User Interface
+
+    // T6CKPS 1:2; T6OUTPS 1:1; TMR6ON off; 
+    T10CON = 0x08;
+
+    // PR6 39; 
+//    PR6 = 0x27;
+
+    // TMR6 0; 
+    TMR10 = 0x00;
+
+    // Clearing IF flag before enabling the interrupt.
+    PIR2bits.TMR10IF = 0;
+
+    // Enabling TMR6 interrupt.
+    PIE2bits.TMR10IE = 1;
+}
 void CCP9_Initialize(){
     // Set the CCP1 to the options selected in the User Interface
 
@@ -1441,8 +1607,69 @@ void CCP9_Initialize(){
     // Enable the CCP1 interrupt
     PIE4bits.CCP9IE = 1;
 }
+void CCP10_Initialize(){
+    // Set the CCP1 to the options selected in the User Interface
 
+    // MODE Every edge; EN enabled; FMT right_aligned;
+    CCP10CON = 0x84;
 
+    // RH 0;
+    CCPR10H = 0x00;
+
+    // RL 0;
+    CCPR10L = 0x00;
+    
+//    CCPTMRS2bits.C9TSEL0=0;
+//    CCPTMRS2bits.C9TSEL1=0;
+
+    // Clear the CCP1 interrupt flag
+    PIR4bits.CCP10IF = 0;
+
+    // Enable the CCP1 interrupt
+    PIE4bits.CCP10IE = 1;
+}
+void CCP7_Initialize(){
+    // Set the CCP1 to the options selected in the User Interface
+
+    // MODE Every edge; EN enabled; FMT right_aligned;
+    CCP7CON = 0x84;
+
+    // RH 0;
+    CCPR7H = 0x00;
+
+    // RL 0;
+    CCPR7L = 0x00;
+    
+//    CCPTMRS2bits.C9TSEL0=0;
+//    CCPTMRS2bits.C9TSEL1=0;
+
+    // Clear the CCP1 interrupt flag
+    PIR4bits.CCP7IF = 0;
+
+    // Enable the CCP1 interrupt
+    PIE4bits.CCP7IE = 1;
+}
+void CCP8_Initialize(){
+    // Set the CCP1 to the options selected in the User Interface
+
+    // MODE Every edge; EN enabled; FMT right_aligned;
+    CCP9CON = 0x84;
+
+    // RH 0;
+    CCPR8H = 0x00;
+
+    // RL 0;
+    CCPR8L = 0x00;
+    
+//    CCPTMRS2bits.C9TSEL0=0;
+//    CCPTMRS2bits.C9TSEL1=0;
+
+    // Clear the CCP1 interrupt flag
+    PIR4bits.CCP8IF = 0;
+
+    // Enable the CCP1 interrupt
+    PIE4bits.CCP8IE = 1;
+}
 void errorsISR(const char* errNum){
    
   	while(*errNum != NULL)
@@ -1475,7 +1702,7 @@ void ReceivingIndicationLedBlinking(){
                 OUTPUT_RECEIVE_INDICATION_LED = 1;
  
 }
-void sendAcknowledgment(const char* currentStateBuffer){
+void sendAcknowledgment( char* currentStateBuffer){
   int Tx_count=0;
   	while(Tx_count!=4)
  	{ 
@@ -1542,6 +1769,10 @@ void clearAllPorts(){
     OUTPUT_TRANMIT_INDICATION_LED = 1;
     OUTPUT_RECEIVE_INDICATION_LED = 1;
     USER_RECEIVE_INDICATION_LED = 1;//off condition--->>>leds are high by default
+    
+    OUTPUT_FOR_RED_LED=0;
+    OUTPUT_FOR_GREEN_LED=0;
+    OUTPUT_FOR_BLUE_LED=0;
     OUTPUT_DIMMER = 0;
    
 }

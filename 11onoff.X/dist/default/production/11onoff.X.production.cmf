@@ -11,45 +11,58 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 219 219 2 2
+config CONFIG 0 8007 8007 2 2
 $dist/default/production\11onoff.X.production.obj
-cinit CODE 0 217 217 39 2
-text1 CODE 0 FAD FAD 19 2
-text2 CODE 0 771 771 2F 2
-text3 CODE 0 558 558 10C 2
-text4 CODE 0 FE2 FE2 1E 2
-text5 CODE 0 664 664 6B 2
-text6 CODE 0 F3C F3C F 2
-text7 CODE 0 FC6 FC6 1C 2
-text8 CODE 0 7F4 7F4 C 2
-text9 CODE 0 F13 F13 C 2
-text10 CODE 0 F08 F08 B 2
-text11 CODE 0 F97 F97 16 2
-text12 CODE 0 EFE EFE A 2
-text13 CODE 0 F5C F5C 11 2
-text14 CODE 0 709 709 34 2
-text15 CODE 0 73D 73D 34 2
-text16 CODE 0 F4B F4B 11 2
-text17 CODE 0 7CE 7CE 26 2
-text18 CODE 0 F82 F82 15 2
-text19 CODE 0 F2D F2D F 2
-text21 CODE 0 F6D F6D 15 2
-idataCOMMON CODE 0 2 2 2 2
-maintext CODE 0 250 250 308 2
+cinit CODE 0 21B 21B 39 2
+text1 CODE 0 F86 F86 19 2
+text2 CODE 0 775 775 2F 2
+text3 CODE 0 55C 55C 10C 2
+text4 CODE 0 FBB FBB 1E 2
+text5 CODE 0 668 668 6B 2
+text6 CODE 0 F01 F01 F 2
+text7 CODE 0 F9F F9F 1C 2
+text8 CODE 0 FD9 FD9 27 2
+text9 CODE 0 E8C E8C 9 2
+text10 CODE 0 E83 E83 9 2
+text11 CODE 0 EC7 EC7 A 2
+text12 CODE 0 EDC EDC B 2
+text13 CODE 0 EE7 EE7 C 2
+text14 CODE 0 EBD EBD A 2
+text15 CODE 0 ED1 ED1 B 2
+text16 CODE 0 E7A E7A 9 2
+text17 CODE 0 F70 F70 16 2
+text18 CODE 0 EB3 EB3 A 2
+text19 CODE 0 EA9 EA9 A 2
+text20 CODE 0 E9F E9F A 2
+text21 CODE 0 E95 E95 A 2
+text22 CODE 0 F21 F21 11 2
+text23 CODE 0 70D 70D 34 2
+text24 CODE 0 741 741 34 2
+text25 CODE 0 F10 F10 11 2
+text26 CODE 0 7D2 7D2 2C 2
+text27 CODE 0 F5B F5B 15 2
+text28 CODE 0 F32 F32 14 2
+text30 CODE 0 F46 F46 15 2
+idataCOMMON CODE 0 7FE 7FE 2 2
+maintext CODE 0 254 254 308 2
 cstackCOMMON COMMON 1 70 70 5 1
 cstackBANK0 BANK0 1 20 20 29 1
 cstackBANK1 BANK1 1 CE CE 4 1
-inittext CODE 0 EF8 EF8 6 2
+inittext CODE 0 E74 E74 6 2
 stringtext1 STRCODE 0 1000 1000 5 2
 stringtext2 STRCODE 0 1005 1005 5 2
 stringtext3 STRCODE 0 100A 100A 5 2
 swtext10 CONST 0 8A0 8A0 14 2
 swtext11 CONST 0 8B4 8B4 14 2
 swtext12 CONST 0 8C8 8C8 14 2
-intentry CODE 0 4 4 211 2
+intentry CODE 0 4 4 215 2
 bssBANK0 BANK0 1 49 49 16 1
-idataBANK0 CODE 0 F1F F1F E 2
-idataBANK1 CODE 0 7A0 7A0 2E 2
-idataBANK2 CODE 0 6CF 6CF 3A 2
+idataBANK0 CODE 0 EF3 EF3 E 2
+idataBANK1 CODE 0 7A4 7A4 2E 2
+idataBANK2 CODE 0 6D3 6D3 3A 2
 swtext1 CONST 0 8DC 8DC 12 2
 swtext2 CONST 0 800 800 14 2
 swtext3 CONST 0 814 814 14 2
@@ -63,12 +76,8 @@ dataBANK0 BANK0 1 5F 5F E 1
 dataBANK1 BANK1 1 A0 A0 2E 1
 dataBANK2 BANK2 1 120 120 3A 1
 dataCOMMON COMMON 1 77 77 2 1
-clrtext CODE 0 EF2 EF2 6 2
+clrtext CODE 0 E6E E6E 6 2
 bssCOMMON COMMON 1 75 75 2 1
-$C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-reset_vec CODE 0 0 0 2 2
-end_init CODE 0 215 215 2 2
-config CONFIG 0 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -95,9 +104,11 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4BF 1
-CONST 8EE-EF1 2
+CONST 2-3 2
+CONST 8EE-E6D 2
 CONST 100F-1FFF 2
-ENTRY 8EE-EF1 2
+ENTRY 2-3 2
+ENTRY 8EE-E6D 2
 ENTRY 100F-1FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
@@ -123,7 +134,8 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 20DA-22EF 1
-CODE 8EE-EF1 2
+CODE 2-3 2
+CODE 8EE-E6D 2
 CODE 100F-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -137,9 +149,11 @@ SFR8 400-41F 1
 SFR9 480-49F 1
 BIGRAM 2000-22EF 1
 COMMON 79-7D 1
-STRCODE 8EE-EF1 2
+STRCODE 2-3 2
+STRCODE 8EE-E6D 2
 STRCODE 100F-1FFF 2
-STRING 8EE-EF1 2
+STRING 2-3 2
+STRING 8EE-E6D 2
 STRING 100F-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -155,650 +169,731 @@ STRING 100F-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\11onoff.X.production.obj
-217 cinit CODE >851:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-217 cinit CODE >854:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-217 cinit CODE >974:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21A cinit CODE >975:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21B cinit CODE >976:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21E cinit CODE >977:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21F cinit CODE >981:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-220 cinit CODE >982:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-221 cinit CODE >983:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-222 cinit CODE >984:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-223 cinit CODE >985:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-224 cinit CODE >986:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-225 cinit CODE >987:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-226 cinit CODE >988:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-227 cinit CODE >989:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-228 cinit CODE >990:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22B cinit CODE >994:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22C cinit CODE >995:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22D cinit CODE >996:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22E cinit CODE >997:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22F cinit CODE >998:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-230 cinit CODE >999:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-231 cinit CODE >1000:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-232 cinit CODE >1001:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-233 cinit CODE >1002:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-234 cinit CODE >1003:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-237 cinit CODE >1007:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-238 cinit CODE >1008:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-239 cinit CODE >1009:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23A cinit CODE >1010:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23B cinit CODE >1011:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23C cinit CODE >1012:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23D cinit CODE >1013:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23E cinit CODE >1014:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23F cinit CODE >1015:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-240 cinit CODE >1016:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-243 cinit CODE >1033:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-244 cinit CODE >1034:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-245 cinit CODE >1038:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-246 cinit CODE >1039:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-247 cinit CODE >1040:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-248 cinit CODE >1041:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-249 cinit CODE >1042:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24A cinit CODE >1043:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24C cinit CODE >1049:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24C cinit CODE >1051:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24D cinit CODE >1052:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24E cinit CODE >1053:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-4 intentry CODE >183:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-9 intentry CODE >186:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-B intentry CODE >187:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-E intentry CODE >188:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F intentry CODE >189:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-10 intentry CODE >190:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-17 intentry CODE >193:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-20 intentry CODE >197:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-25 intentry CODE >198:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-29 intentry CODE >199:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-34 intentry CODE >200:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-39 intentry CODE >201:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3B intentry CODE >202:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3C intentry CODE >204:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3D intentry CODE >205:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3D intentry CODE >206:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3F intentry CODE >207:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-40 intentry CODE >208:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-42 intentry CODE >211:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-49 intentry CODE >218:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4F intentry CODE >220:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-50 intentry CODE >221:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-52 intentry CODE >222:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-54 intentry CODE >224:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-54 intentry CODE >228:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5A intentry CODE >230:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5B intentry CODE >232:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5D intentry CODE >233:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-60 intentry CODE >234:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-62 intentry CODE >235:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-63 intentry CODE >236:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-65 intentry CODE >240:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-67 intentry CODE >241:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-69 intentry CODE >242:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-6A intentry CODE >243:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-6F intentry CODE >251:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-71 intentry CODE >257:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-73 intentry CODE >263:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-75 intentry CODE >264:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-77 intentry CODE >268:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-79 intentry CODE >269:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7B intentry CODE >273:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7D intentry CODE >278:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7F intentry CODE >283:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-81 intentry CODE >288:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-83 intentry CODE >289:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-85 intentry CODE >293:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-86 intentry CODE >298:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-88 intentry CODE >299:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-8A intentry CODE >248:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-97 intentry CODE >306:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-98 intentry CODE >312:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-9A intentry CODE >317:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-9C intentry CODE >318:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-9E intentry CODE >322:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-A0 intentry CODE >327:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-A2 intentry CODE >332:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-A4 intentry CODE >337:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-A6 intentry CODE >338:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-A8 intentry CODE >342:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-AA intentry CODE >347:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-AC intentry CODE >348:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-AE intentry CODE >352:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-B0 intentry CODE >357:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-B2 intentry CODE >358:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-B4 intentry CODE >309:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-C1 intentry CODE >365:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-C2 intentry CODE >371:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-C4 intentry CODE >376:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-C6 intentry CODE >377:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-C8 intentry CODE >381:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-CA intentry CODE >386:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-CC intentry CODE >387:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-CE intentry CODE >391:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-D0 intentry CODE >396:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-D2 intentry CODE >397:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-D4 intentry CODE >401:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-D6 intentry CODE >406:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-D8 intentry CODE >407:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-DA intentry CODE >411:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-DC intentry CODE >416:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-DE intentry CODE >417:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-E0 intentry CODE >368:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-ED intentry CODE >424:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-EE intentry CODE >430:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F0 intentry CODE >435:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F2 intentry CODE >440:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F4 intentry CODE >445:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F6 intentry CODE >450:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F8 intentry CODE >455:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FA intentry CODE >460:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FC intentry CODE >465:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FE intentry CODE >470:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-100 intentry CODE >475:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-102 intentry CODE >427:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-10F intentry CODE >482:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-110 intentry CODE >488:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-112 intentry CODE >493:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-114 intentry CODE >498:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-116 intentry CODE >503:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-118 intentry CODE >508:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-11A intentry CODE >513:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-11C intentry CODE >518:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-11E intentry CODE >523:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-120 intentry CODE >528:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-122 intentry CODE >533:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-124 intentry CODE >485:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-131 intentry CODE >540:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-132 intentry CODE >546:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-134 intentry CODE >551:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-136 intentry CODE >556:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-138 intentry CODE >561:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-13A intentry CODE >566:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-13C intentry CODE >571:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-13E intentry CODE >576:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-140 intentry CODE >581:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-142 intentry CODE >586:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-144 intentry CODE >591:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-146 intentry CODE >543:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-153 intentry CODE >599:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-154 intentry CODE >605:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-156 intentry CODE >610:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-158 intentry CODE >615:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-15A intentry CODE >620:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-15C intentry CODE >625:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-15E intentry CODE >630:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-160 intentry CODE >635:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-162 intentry CODE >640:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-164 intentry CODE >645:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-166 intentry CODE >650:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-168 intentry CODE >602:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-175 intentry CODE >657:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-176 intentry CODE >663:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-178 intentry CODE >668:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-17A intentry CODE >673:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-17C intentry CODE >678:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-17E intentry CODE >683:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-180 intentry CODE >688:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-182 intentry CODE >693:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-184 intentry CODE >698:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-186 intentry CODE >703:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-188 intentry CODE >708:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-18A intentry CODE >660:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-197 intentry CODE >715:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-198 intentry CODE >721:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-19A intentry CODE >726:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-19C intentry CODE >727:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-19E intentry CODE >731:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1A0 intentry CODE >732:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1A2 intentry CODE >736:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1A4 intentry CODE >737:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1A6 intentry CODE >741:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1A8 intentry CODE >742:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1A9 intentry CODE >743:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1AA intentry CODE >746:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1AC intentry CODE >747:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1AE intentry CODE >751:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1B0 intentry CODE >752:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1B2 intentry CODE >756:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1B4 intentry CODE >757:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1B6 intentry CODE >761:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1B8 intentry CODE >762:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1BA intentry CODE >766:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1BC intentry CODE >767:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1BE intentry CODE >718:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1CB intentry CODE >773:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1CC intentry CODE >779:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1CE intentry CODE >780:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1D0 intentry CODE >784:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1D2 intentry CODE >785:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1D4 intentry CODE >789:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1D6 intentry CODE >790:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1D8 intentry CODE >794:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1DA intentry CODE >795:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1DC intentry CODE >799:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1DE intentry CODE >800:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1E0 intentry CODE >804:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1E2 intentry CODE >805:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1E4 intentry CODE >809:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1E6 intentry CODE >810:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1E8 intentry CODE >814:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1EA intentry CODE >815:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1EC intentry CODE >819:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1EE intentry CODE >820:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1F0 intentry CODE >825:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1F2 intentry CODE >826:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1F4 intentry CODE >827:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1F5 intentry CODE >832:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-1F6 intentry CODE >776:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-203 intentry CODE >836:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-204 intentry CODE >244:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-211 intentry CODE >842:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F6D text21 CODE >1446:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F6D text21 CODE >1448:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F74 text21 CODE >1450:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F77 text21 CODE >1451:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F7D text21 CODE >1452:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F81 text21 CODE >1448:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-8C8 swtext12 CONST >244:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-8B4 swtext11 CONST >776:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-8A0 swtext10 CONST >718:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-88C swtext9 CONST >660:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-878 swtext8 CONST >602:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-864 swtext7 CONST >543:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-850 swtext6 CONST >485:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-83C swtext5 CONST >427:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-828 swtext4 CONST >368:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-814 swtext3 CONST >309:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-800 swtext2 CONST >248:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F2D text19 CODE >1530:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F2D text19 CODE >1534:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F2F text19 CODE >1535:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F30 text19 CODE >1536:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F32 text19 CODE >1537:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F33 text19 CODE >1538:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F34 text19 CODE >1539:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F35 text19 CODE >1540:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F36 text19 CODE >1541:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F37 text19 CODE >1542:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F38 text19 CODE >1543:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F39 text19 CODE >1544:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F3A text19 CODE >1545:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F3B text19 CODE >1547:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F82 text18 CODE >1513:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F82 text18 CODE >1514:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F86 text18 CODE >1516:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F88 text18 CODE >1518:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F8C text18 CODE >1520:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F90 text18 CODE >1522:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F94 text18 CODE >1524:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F96 text18 CODE >1525:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7CE text17 CODE >1270:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7CE text17 CODE >1271:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7D1 text17 CODE >1272:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7D4 text17 CODE >1273:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7D6 text17 CODE >1274:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7D7 text17 CODE >1275:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7D8 text17 CODE >1276:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7D9 text17 CODE >1277:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7DA text17 CODE >1278:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7DB text17 CODE >1279:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7DC text17 CODE >1280:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7DD text17 CODE >1281:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7DE text17 CODE >1285:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7DF text17 CODE >1286:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E0 text17 CODE >1287:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E2 text17 CODE >1288:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E3 text17 CODE >1289:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E4 text17 CODE >1290:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E5 text17 CODE >1291:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E6 text17 CODE >1292:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E7 text17 CODE >1293:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7E8 text17 CODE >1296:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7EA text17 CODE >1298:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7EC text17 CODE >1299:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7ED text17 CODE >1300:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7EE text17 CODE >1305:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7F0 text17 CODE >1306:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7F1 text17 CODE >1308:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7F3 text17 CODE >1309:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F4B text16 CODE >1472:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F4B text16 CODE >1473:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F4D text16 CODE >1474:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F59 text16 CODE >1475:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F5B text16 CODE >1477:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-73D text15 CODE >1489:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-73F text15 CODE >1491:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-74B text15 CODE >1492:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-757 text15 CODE >1493:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-763 text15 CODE >1494:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-770 text15 CODE >1495:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-709 text14 CODE >1496:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-70B text14 CODE >1498:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-717 text14 CODE >1499:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-723 text14 CODE >1500:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-72F text14 CODE >1501:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-73C text14 CODE >1502:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F5C text13 CODE >1467:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F5C text13 CODE >1468:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F5E text13 CODE >1469:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F6A text13 CODE >1470:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F6C text13 CODE >1471:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-EFE text12 CODE >1423:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-EFE text12 CODE >1427:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F01 text12 CODE >1430:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F02 text12 CODE >1433:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F03 text12 CODE >1439:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F05 text12 CODE >1442:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F07 text12 CODE >1443:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F97 text11 CODE >1324:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F97 text11 CODE >1325:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F99 text11 CODE >1326:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F9A text11 CODE >1331:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F9D text11 CODE >1334:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F9F text11 CODE >1337:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FA1 text11 CODE >1342:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FA3 text11 CODE >1344:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FA5 text11 CODE >1347:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FA6 text11 CODE >1350:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FA7 text11 CODE >1353:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FA9 text11 CODE >1356:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FAB text11 CODE >1359:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FAC text11 CODE >1360:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F08 text10 CODE >1362:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F08 text10 CODE >1365:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F0A text10 CODE >1368:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F0B text10 CODE >1371:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F0C text10 CODE >1374:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F0D text10 CODE >1377:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F0E text10 CODE >1380:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F10 text10 CODE >1386:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F11 text10 CODE >1389:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F12 text10 CODE >1391:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F13 text9 CODE >1393:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F13 text9 CODE >1396:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F15 text9 CODE >1399:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F16 text9 CODE >1402:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F17 text9 CODE >1405:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F18 text9 CODE >1408:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F1A text9 CODE >1411:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F1C text9 CODE >1417:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F1D text9 CODE >1420:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-F1E text9 CODE >1422:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7F4 text8 CODE >1314:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7F4 text8 CODE >1315:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7F7 text8 CODE >1316:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7FA text8 CODE >1317:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7FD text8 CODE >1318:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-7FF text8 CODE >1319:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FC6 text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-FC6 text7 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-FC9 text7 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-FCB text7 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-FCF text7 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-FD4 text7 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-FD9 text7 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-FDD text7 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
-F3C text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
-F3E text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
-664 text5 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-666 text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-66D text5 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-671 text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-679 text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-67B text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-67C text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-683 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-688 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-68F text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-693 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-69C text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-6B9 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-6BA text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-6BE text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-6CA text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
-FE2 text4 CODE >1478:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FE4 text4 CODE >1479:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FE6 text4 CODE >1480:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FEB text4 CODE >1482:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FEE text4 CODE >1484:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FF6 text4 CODE >1485:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FFB text4 CODE >1486:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FFF text4 CODE >1480:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-8DC swtext1 CONST >1207:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-558 text3 CODE >1163:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-55A text3 CODE >1167:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-55C text3 CODE >1168:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-55E text3 CODE >1169:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-560 text3 CODE >1170:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-562 text3 CODE >1173:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-566 text3 CODE >1174:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-56A text3 CODE >1176:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-56E text3 CODE >1177:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-572 text3 CODE >1178:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-57B text3 CODE >1182:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-582 text3 CODE >1185:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-586 text3 CODE >1186:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-58A text3 CODE >1187:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-593 text3 CODE >1191:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-59B text3 CODE >1192:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5A7 text3 CODE >1195:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5B5 text3 CODE >1196:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5C2 text3 CODE >1197:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5CF text3 CODE >1198:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5DC text3 CODE >1199:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5E5 text3 CODE >1201:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5E9 text3 CODE >1202:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5ED text3 CODE >1204:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5F2 text3 CODE >1207:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5F3 text3 CODE >1210:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5F9 text3 CODE >1211:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5FA text3 CODE >1215:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-5FF text3 CODE >1217:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-600 text3 CODE >1220:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-606 text3 CODE >1222:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-607 text3 CODE >1226:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-60E text3 CODE >1227:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-60F text3 CODE >1230:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-616 text3 CODE >1231:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-617 text3 CODE >1234:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-61E text3 CODE >1235:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-61F text3 CODE >1239:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-626 text3 CODE >1240:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-627 text3 CODE >1244:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-62E text3 CODE >1245:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-62F text3 CODE >1247:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-634 text3 CODE >1248:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-635 text3 CODE >1249:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-635 text3 CODE >1250:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-637 text3 CODE >1251:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-638 text3 CODE >1253:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-63D text3 CODE >1254:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-641 text3 CODE >1258:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-642 text3 CODE >1248:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-64F text3 CODE >1262:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-650 text3 CODE >1207:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-663 text3 CODE >1264:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-771 text2 CODE >1503:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-771 text2 CODE >1504:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-776 text2 CODE >1505:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-785 text2 CODE >1506:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-793 text2 CODE >1507:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-79B text2 CODE >1505:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FAD text1 CODE >1456:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FAD text1 CODE >1458:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FB5 text1 CODE >1460:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FB8 text1 CODE >1461:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FC0 text1 CODE >1462:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-FC5 text1 CODE >1458:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-250 maintext CODE >851:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-250 maintext CODE >852:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-25C maintext CODE >853:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-27D maintext CODE >854:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-281 maintext CODE >855:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-284 maintext CODE >856:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-287 maintext CODE >859:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-28C maintext CODE >860:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-28E maintext CODE >861:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-29F maintext CODE >862:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2A2 maintext CODE >863:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2A5 maintext CODE >871:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2C2 maintext CODE >873:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2C3 maintext CODE >877:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2CB maintext CODE >878:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2CD maintext CODE >879:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2CE maintext CODE >880:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2DE maintext CODE >882:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2E9 maintext CODE >880:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2FB maintext CODE >884:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2FD maintext CODE >885:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-2FE maintext CODE >901:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-303 maintext CODE >902:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-30E maintext CODE >904:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-313 maintext CODE >906:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-317 maintext CODE >908:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-31A maintext CODE >909:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-31C maintext CODE >912:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-31F maintext CODE >913:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-324 maintext CODE >917:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-330 maintext CODE >920:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-335 maintext CODE >922:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-339 maintext CODE >923:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-33C maintext CODE >924:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-33E maintext CODE >926:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-341 maintext CODE >927:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-344 maintext CODE >932:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-350 maintext CODE >934:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-355 maintext CODE >936:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-359 maintext CODE >937:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-35C maintext CODE >938:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-35E maintext CODE >940:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-361 maintext CODE >941:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-366 maintext CODE >944:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-372 maintext CODE >946:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-377 maintext CODE >948:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-37B maintext CODE >949:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-37E maintext CODE >950:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-380 maintext CODE >952:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-383 maintext CODE >953:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-386 maintext CODE >959:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-392 maintext CODE >961:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-397 maintext CODE >963:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-39B maintext CODE >964:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-39E maintext CODE >965:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3A0 maintext CODE >967:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3A3 maintext CODE >968:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3A8 maintext CODE >972:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3B4 maintext CODE >974:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3B9 maintext CODE >976:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3BD maintext CODE >978:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3C0 maintext CODE >979:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3C2 maintext CODE >981:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3C5 maintext CODE >982:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3C8 maintext CODE >989:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3D4 maintext CODE >991:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3D9 maintext CODE >993:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3DD maintext CODE >994:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3E0 maintext CODE >995:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3E2 maintext CODE >997:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3E5 maintext CODE >998:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3EA maintext CODE >1002:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3F6 maintext CODE >1004:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3FB maintext CODE >1007:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-3FF maintext CODE >1008:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-402 maintext CODE >1009:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-404 maintext CODE >1011:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-407 maintext CODE >1012:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-40A maintext CODE >1016:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-416 maintext CODE >1018:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-41B maintext CODE >1020:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-41F maintext CODE >1021:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-422 maintext CODE >1022:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-424 maintext CODE >1024:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-427 maintext CODE >1025:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-42C maintext CODE >1029:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-438 maintext CODE >1031:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-43D maintext CODE >1034:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-441 maintext CODE >1035:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-444 maintext CODE >1036:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-446 maintext CODE >1038:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-449 maintext CODE >1039:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-44C maintext CODE >1044:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-458 maintext CODE >1046:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-45D maintext CODE >1048:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-461 maintext CODE >1049:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-464 maintext CODE >1050:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-466 maintext CODE >1052:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-469 maintext CODE >1053:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-46E maintext CODE >1057:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-47A maintext CODE >1059:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-47F maintext CODE >1062:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-483 maintext CODE >1063:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-486 maintext CODE >1064:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-488 maintext CODE >1066:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-48B maintext CODE >1067:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-48E maintext CODE >1073:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-49A maintext CODE >1075:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-49F maintext CODE >1077:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4A3 maintext CODE >1078:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4A6 maintext CODE >1079:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4A8 maintext CODE >1081:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4AB maintext CODE >1082:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4B0 maintext CODE >1086:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4BC maintext CODE >1088:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4C1 maintext CODE >1091:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4C5 maintext CODE >1092:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4C8 maintext CODE >1093:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4CA maintext CODE >1095:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4CD maintext CODE >1096:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4D0 maintext CODE >1103:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4DC maintext CODE >1105:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4E1 maintext CODE >1107:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4E5 maintext CODE >1108:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4E8 maintext CODE >1109:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4EA maintext CODE >1111:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4ED maintext CODE >1112:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4F2 maintext CODE >1116:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-4FE maintext CODE >1118:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-503 maintext CODE >1121:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-507 maintext CODE >1122:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-50A maintext CODE >1123:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-50C maintext CODE >1125:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-50F maintext CODE >1126:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-512 maintext CODE >1130:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-51E maintext CODE >1132:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-523 maintext CODE >1135:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-526 maintext CODE >1136:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-52A maintext CODE >1137:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-52D maintext CODE >1138:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-52F maintext CODE >1139:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-52F maintext CODE >1140:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-532 maintext CODE >1141:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-537 maintext CODE >1145:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-543 maintext CODE >1147:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-548 maintext CODE >1150:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-54C maintext CODE >1151:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-54F maintext CODE >1152:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-551 maintext CODE >1154:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-554 maintext CODE >1155:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-557 maintext CODE >858:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-EF2 clrtext CODE >1022:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF2 clrtext CODE >1023:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF3 clrtext CODE >1024:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF3 clrtext CODE >1025:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF4 clrtext CODE >1026:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF5 clrtext CODE >1027:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF6 clrtext CODE >1028:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF7 clrtext CODE >1029:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF8 inittext CODE >963:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF8 inittext CODE >964:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF9 inittext CODE >965:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF9 inittext CODE >966:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFA inittext CODE >967:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFB inittext CODE >968:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFC inittext CODE >969:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFD inittext CODE >970:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
+21B cinit CODE >910:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+21B cinit CODE >913:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+21B cinit CODE >1033:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+21E cinit CODE >1034:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+21F cinit CODE >1035:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+222 cinit CODE >1036:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+223 cinit CODE >1040:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+224 cinit CODE >1041:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+225 cinit CODE >1042:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+226 cinit CODE >1043:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+227 cinit CODE >1044:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+228 cinit CODE >1045:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+229 cinit CODE >1046:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+22A cinit CODE >1047:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+22B cinit CODE >1048:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+22C cinit CODE >1049:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+22F cinit CODE >1053:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+230 cinit CODE >1054:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+231 cinit CODE >1055:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+232 cinit CODE >1056:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+233 cinit CODE >1057:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+234 cinit CODE >1058:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+235 cinit CODE >1059:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+236 cinit CODE >1060:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+237 cinit CODE >1061:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+238 cinit CODE >1062:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+23B cinit CODE >1066:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+23C cinit CODE >1067:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+23D cinit CODE >1068:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+23E cinit CODE >1069:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+23F cinit CODE >1070:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+240 cinit CODE >1071:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+241 cinit CODE >1072:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+242 cinit CODE >1073:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+243 cinit CODE >1074:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+244 cinit CODE >1075:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+247 cinit CODE >1092:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+248 cinit CODE >1093:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+249 cinit CODE >1097:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+24A cinit CODE >1098:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+24B cinit CODE >1099:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+24C cinit CODE >1100:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+24D cinit CODE >1101:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+24E cinit CODE >1102:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+250 cinit CODE >1108:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+250 cinit CODE >1110:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+251 cinit CODE >1111:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+252 cinit CODE >1112:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+4 intentry CODE >205:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+9 intentry CODE >208:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+B intentry CODE >209:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E intentry CODE >210:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F intentry CODE >211:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+10 intentry CODE >212:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+17 intentry CODE >215:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+20 intentry CODE >219:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+25 intentry CODE >220:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+29 intentry CODE >221:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+34 intentry CODE >222:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+39 intentry CODE >223:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3B intentry CODE >224:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3C intentry CODE >226:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3D intentry CODE >227:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3D intentry CODE >228:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3F intentry CODE >229:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+40 intentry CODE >230:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+42 intentry CODE >233:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+49 intentry CODE >240:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4F intentry CODE >242:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+50 intentry CODE >243:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+52 intentry CODE >244:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+54 intentry CODE >245:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+54 intentry CODE >249:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5A intentry CODE >251:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5B intentry CODE >252:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5D intentry CODE >253:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+60 intentry CODE >254:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+61 intentry CODE >255:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+62 intentry CODE >258:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+6A intentry CODE >259:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+6B intentry CODE >260:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+6D intentry CODE >261:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+6E intentry CODE >262:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+73 intentry CODE >270:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+75 intentry CODE >276:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+77 intentry CODE >282:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+79 intentry CODE >283:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7B intentry CODE >287:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7D intentry CODE >288:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F intentry CODE >292:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+81 intentry CODE >297:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+83 intentry CODE >302:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+85 intentry CODE >307:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+87 intentry CODE >308:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+89 intentry CODE >312:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+8A intentry CODE >317:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+8C intentry CODE >318:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+8E intentry CODE >267:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+9B intentry CODE >325:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+9C intentry CODE >331:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+9E intentry CODE >336:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+A0 intentry CODE >337:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+A2 intentry CODE >341:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+A4 intentry CODE >346:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+A6 intentry CODE >351:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+A8 intentry CODE >356:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+AA intentry CODE >357:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+AC intentry CODE >361:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+AE intentry CODE >366:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+B0 intentry CODE >367:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+B2 intentry CODE >371:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+B4 intentry CODE >376:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+B6 intentry CODE >377:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+B8 intentry CODE >328:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+C5 intentry CODE >384:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+C6 intentry CODE >390:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+C8 intentry CODE >395:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+CA intentry CODE >396:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+CC intentry CODE >400:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+CE intentry CODE >405:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+D0 intentry CODE >406:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+D2 intentry CODE >410:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+D4 intentry CODE >415:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+D6 intentry CODE >416:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+D8 intentry CODE >420:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+DA intentry CODE >425:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+DC intentry CODE >426:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+DE intentry CODE >430:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E0 intentry CODE >435:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E2 intentry CODE >436:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E4 intentry CODE >387:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F1 intentry CODE >443:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F2 intentry CODE >449:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F4 intentry CODE >454:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F6 intentry CODE >459:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F8 intentry CODE >464:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FA intentry CODE >469:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FC intentry CODE >474:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FE intentry CODE >479:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+100 intentry CODE >484:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+102 intentry CODE >489:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+104 intentry CODE >494:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+106 intentry CODE >446:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+113 intentry CODE >501:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+114 intentry CODE >507:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+116 intentry CODE >512:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+118 intentry CODE >517:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+11A intentry CODE >522:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+11C intentry CODE >527:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+11E intentry CODE >532:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+120 intentry CODE >537:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+122 intentry CODE >542:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+124 intentry CODE >547:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+126 intentry CODE >552:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+128 intentry CODE >504:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+135 intentry CODE >559:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+136 intentry CODE >565:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+138 intentry CODE >570:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+13A intentry CODE >575:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+13C intentry CODE >580:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+13E intentry CODE >585:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+140 intentry CODE >590:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+142 intentry CODE >595:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+144 intentry CODE >600:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+146 intentry CODE >605:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+148 intentry CODE >610:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+14A intentry CODE >562:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+157 intentry CODE >618:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+158 intentry CODE >624:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+15A intentry CODE >629:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+15C intentry CODE >634:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+15E intentry CODE >639:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+160 intentry CODE >644:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+162 intentry CODE >649:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+164 intentry CODE >654:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+166 intentry CODE >659:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+168 intentry CODE >664:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+16A intentry CODE >669:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+16C intentry CODE >621:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+179 intentry CODE >676:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+17A intentry CODE >682:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+17C intentry CODE >687:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+17E intentry CODE >692:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+180 intentry CODE >697:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+182 intentry CODE >702:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+184 intentry CODE >707:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+186 intentry CODE >712:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+188 intentry CODE >717:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+18A intentry CODE >722:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+18C intentry CODE >727:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+18E intentry CODE >679:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+19B intentry CODE >734:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+19C intentry CODE >740:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+19E intentry CODE >745:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1A0 intentry CODE >746:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1A2 intentry CODE >750:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1A4 intentry CODE >751:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1A6 intentry CODE >755:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1A8 intentry CODE >756:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1AA intentry CODE >760:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1AC intentry CODE >761:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1AD intentry CODE >762:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1AE intentry CODE >765:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1B0 intentry CODE >766:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1B2 intentry CODE >770:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1B4 intentry CODE >771:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1B6 intentry CODE >775:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1B8 intentry CODE >776:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1BA intentry CODE >780:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1BC intentry CODE >781:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1BE intentry CODE >785:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1C0 intentry CODE >786:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1C2 intentry CODE >737:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1CF intentry CODE >792:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1D0 intentry CODE >798:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1D2 intentry CODE >799:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1D4 intentry CODE >803:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1D6 intentry CODE >804:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1D8 intentry CODE >808:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1DA intentry CODE >809:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1DC intentry CODE >813:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1DE intentry CODE >814:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1E0 intentry CODE >818:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1E2 intentry CODE >819:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1E4 intentry CODE >823:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1E6 intentry CODE >824:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1E8 intentry CODE >828:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1EA intentry CODE >829:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1EC intentry CODE >833:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1EE intentry CODE >834:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1F0 intentry CODE >838:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1F2 intentry CODE >839:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1F4 intentry CODE >844:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1F6 intentry CODE >845:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1F8 intentry CODE >846:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1F9 intentry CODE >851:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+1FA intentry CODE >795:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+207 intentry CODE >855:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+208 intentry CODE >263:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+215 intentry CODE >862:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F46 text30 CODE >1672:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F46 text30 CODE >1674:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F4D text30 CODE >1676:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F50 text30 CODE >1677:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F56 text30 CODE >1678:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F5A text30 CODE >1674:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+8C8 swtext12 CONST >263:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+8B4 swtext11 CONST >795:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+8A0 swtext10 CONST >737:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+88C swtext9 CONST >679:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+878 swtext8 CONST >621:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+864 swtext7 CONST >562:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+850 swtext6 CONST >504:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+83C swtext5 CONST >446:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+828 swtext4 CONST >387:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+814 swtext3 CONST >328:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+800 swtext2 CONST >267:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F32 text28 CODE >1756:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F32 text28 CODE >1760:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F34 text28 CODE >1761:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F35 text28 CODE >1762:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F37 text28 CODE >1763:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F38 text28 CODE >1764:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F39 text28 CODE >1765:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F3A text28 CODE >1766:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F3B text28 CODE >1767:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F3C text28 CODE >1768:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F3D text28 CODE >1769:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F3E text28 CODE >1770:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F3F text28 CODE >1772:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F41 text28 CODE >1773:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F42 text28 CODE >1774:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F43 text28 CODE >1775:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F45 text28 CODE >1777:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F5B text27 CODE >1739:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F5B text27 CODE >1740:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F5F text27 CODE >1742:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F61 text27 CODE >1744:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F65 text27 CODE >1746:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F69 text27 CODE >1748:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F6D text27 CODE >1750:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F6F text27 CODE >1751:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7D2 text26 CODE >1290:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7D2 text26 CODE >1291:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7D5 text26 CODE >1292:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7D8 text26 CODE >1293:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7DA text26 CODE >1294:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7DB text26 CODE >1295:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7DC text26 CODE >1296:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7DD text26 CODE >1297:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7DE text26 CODE >1298:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7DF text26 CODE >1299:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E0 text26 CODE >1300:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E1 text26 CODE >1301:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E2 text26 CODE >1305:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E3 text26 CODE >1306:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E4 text26 CODE >1307:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E6 text26 CODE >1308:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E7 text26 CODE >1309:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E8 text26 CODE >1310:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7E9 text26 CODE >1311:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7EA text26 CODE >1312:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7EB text26 CODE >1313:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7EC text26 CODE >1316:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7EE text26 CODE >1317:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7EF text26 CODE >1318:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F0 text26 CODE >1319:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F1 text26 CODE >1320:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F3 text26 CODE >1321:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F4 text26 CODE >1322:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F5 text26 CODE >1325:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F7 text26 CODE >1326:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F8 text26 CODE >1327:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7F9 text26 CODE >1331:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7FA text26 CODE >1332:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7FB text26 CODE >1334:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+7FD text26 CODE >1335:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F10 text25 CODE >1698:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F10 text25 CODE >1699:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F12 text25 CODE >1700:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F1E text25 CODE >1701:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F20 text25 CODE >1703:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+741 text24 CODE >1715:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+743 text24 CODE >1717:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+74F text24 CODE >1718:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+75B text24 CODE >1719:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+767 text24 CODE >1720:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+774 text24 CODE >1721:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+70D text23 CODE >1722:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+70F text23 CODE >1724:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+71B text23 CODE >1725:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+727 text23 CODE >1726:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+733 text23 CODE >1727:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+740 text23 CODE >1728:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F21 text22 CODE >1693:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F21 text22 CODE >1694:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F23 text22 CODE >1695:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F2F text22 CODE >1696:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F31 text22 CODE >1697:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E95 text21 CODE >1609:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E95 text21 CODE >1613:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E98 text21 CODE >1616:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E99 text21 CODE >1619:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E9A text21 CODE >1625:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E9C text21 CODE >1628:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E9E text21 CODE >1629:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E9F text20 CODE >1630:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E9F text20 CODE >1634:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EA2 text20 CODE >1637:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EA3 text20 CODE >1640:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EA4 text20 CODE >1646:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EA6 text20 CODE >1649:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EA8 text20 CODE >1650:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EA9 text19 CODE >1651:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EA9 text19 CODE >1655:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EAC text19 CODE >1658:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EAD text19 CODE >1661:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EAE text19 CODE >1667:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EB0 text19 CODE >1670:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EB2 text19 CODE >1671:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EB3 text18 CODE >1588:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EB3 text18 CODE >1592:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EB6 text18 CODE >1595:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EB7 text18 CODE >1598:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EB8 text18 CODE >1604:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EBA text18 CODE >1607:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EBC text18 CODE >1608:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F70 text17 CODE >1360:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F70 text17 CODE >1361:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F72 text17 CODE >1362:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F73 text17 CODE >1367:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F76 text17 CODE >1370:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F78 text17 CODE >1373:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F7A text17 CODE >1378:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F7C text17 CODE >1380:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F7E text17 CODE >1383:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F7F text17 CODE >1386:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F80 text17 CODE >1389:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F82 text17 CODE >1392:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F84 text17 CODE >1395:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F85 text17 CODE >1396:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E7A text16 CODE >1569:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E7A text16 CODE >1574:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E7D text16 CODE >1580:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E7E text16 CODE >1583:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E80 text16 CODE >1586:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E82 text16 CODE >1587:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED1 text15 CODE >1398:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED1 text15 CODE >1401:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED3 text15 CODE >1404:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED4 text15 CODE >1407:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED5 text15 CODE >1410:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED6 text15 CODE >1413:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED7 text15 CODE >1416:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED9 text15 CODE >1422:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EDA text15 CODE >1425:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EDB text15 CODE >1427:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EBD text14 CODE >1482:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EBD text14 CODE >1487:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC0 text14 CODE >1493:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC1 text14 CODE >1496:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC2 text14 CODE >1499:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC4 text14 CODE >1500:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC5 text14 CODE >1503:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC6 text14 CODE >1504:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE7 text13 CODE >1429:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE7 text13 CODE >1432:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE9 text13 CODE >1435:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EEA text13 CODE >1438:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EEB text13 CODE >1441:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EEC text13 CODE >1444:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EEE text13 CODE >1447:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EF0 text13 CODE >1453:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EF1 text13 CODE >1456:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EF2 text13 CODE >1458:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EDC text12 CODE >1507:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EDC text12 CODE >1512:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EDF text12 CODE >1518:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE0 text12 CODE >1521:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE2 text12 CODE >1524:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE4 text12 CODE >1525:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE5 text12 CODE >1528:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EE6 text12 CODE >1529:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC7 text11 CODE >1459:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC7 text11 CODE >1464:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+EC9 text11 CODE >1467:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ECA text11 CODE >1470:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ECB text11 CODE >1473:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ECC text11 CODE >1476:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ECE text11 CODE >1479:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+ED0 text11 CODE >1480:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E83 text10 CODE >1531:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E83 text10 CODE >1536:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E86 text10 CODE >1542:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E87 text10 CODE >1545:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E89 text10 CODE >1548:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E8B text10 CODE >1549:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E8C text9 CODE >1550:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E8C text9 CODE >1555:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E8F text9 CODE >1561:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E90 text9 CODE >1564:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E92 text9 CODE >1567:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E94 text9 CODE >1568:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FD9 text8 CODE >1340:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FD9 text8 CODE >1341:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FDC text8 CODE >1342:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FDF text8 CODE >1343:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FE2 text8 CODE >1344:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FE5 text8 CODE >1345:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FE8 text8 CODE >1346:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FEB text8 CODE >1347:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FEE text8 CODE >1349:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FF1 text8 CODE >1350:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FF4 text8 CODE >1351:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FF7 text8 CODE >1352:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FFA text8 CODE >1353:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FFD text8 CODE >1354:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FFF text8 CODE >1355:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F9F text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F9F text7 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+FA2 text7 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+FA4 text7 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+FA8 text7 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+FAD text7 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+FB2 text7 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+FB6 text7 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F01 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+F03 text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+668 text5 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+66A text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+671 text5 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+675 text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+67D text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+67F text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+680 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+687 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+68C text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+693 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+697 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+6A0 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+6BD text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+6BE text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+6C2 text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+6CE text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+FBB text4 CODE >1704:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FBD text4 CODE >1705:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FBF text4 CODE >1706:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FC4 text4 CODE >1708:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FC7 text4 CODE >1710:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FCF text4 CODE >1711:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FD4 text4 CODE >1712:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+FD8 text4 CODE >1706:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+8DC swtext1 CONST >1227:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+55C text3 CODE >1183:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+55E text3 CODE >1187:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+560 text3 CODE >1188:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+562 text3 CODE >1189:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+564 text3 CODE >1190:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+566 text3 CODE >1193:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+56A text3 CODE >1194:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+56E text3 CODE >1196:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+572 text3 CODE >1197:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+576 text3 CODE >1198:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+57F text3 CODE >1202:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+586 text3 CODE >1205:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+58A text3 CODE >1206:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+58E text3 CODE >1207:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+597 text3 CODE >1211:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+59F text3 CODE >1212:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5AB text3 CODE >1215:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5B9 text3 CODE >1216:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5C6 text3 CODE >1217:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5D3 text3 CODE >1218:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5E0 text3 CODE >1219:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5E9 text3 CODE >1221:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5ED text3 CODE >1222:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5F1 text3 CODE >1224:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5F6 text3 CODE >1227:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5F7 text3 CODE >1230:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5FD text3 CODE >1231:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+5FE text3 CODE >1235:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+603 text3 CODE >1237:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+604 text3 CODE >1240:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+60A text3 CODE >1242:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+60B text3 CODE >1246:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+612 text3 CODE >1247:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+613 text3 CODE >1250:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+61A text3 CODE >1251:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+61B text3 CODE >1254:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+622 text3 CODE >1255:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+623 text3 CODE >1259:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+62A text3 CODE >1260:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+62B text3 CODE >1264:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+632 text3 CODE >1265:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+633 text3 CODE >1267:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+638 text3 CODE >1268:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+639 text3 CODE >1269:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+639 text3 CODE >1270:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+63B text3 CODE >1271:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+63C text3 CODE >1273:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+641 text3 CODE >1274:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+645 text3 CODE >1278:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+646 text3 CODE >1268:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+653 text3 CODE >1282:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+654 text3 CODE >1227:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+667 text3 CODE >1284:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+775 text2 CODE >1729:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+775 text2 CODE >1730:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+77A text2 CODE >1731:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+789 text2 CODE >1732:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+797 text2 CODE >1733:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+79F text2 CODE >1731:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F86 text1 CODE >1682:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F86 text1 CODE >1684:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F8E text1 CODE >1686:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F91 text1 CODE >1687:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F99 text1 CODE >1688:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+F9E text1 CODE >1684:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+254 maintext CODE >871:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+254 maintext CODE >872:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+260 maintext CODE >873:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+281 maintext CODE >874:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+285 maintext CODE >875:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+288 maintext CODE >876:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+28B maintext CODE >879:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+290 maintext CODE >880:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+292 maintext CODE >881:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2A3 maintext CODE >882:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2A6 maintext CODE >883:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2A9 maintext CODE >891:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2C6 maintext CODE >893:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2C7 maintext CODE >897:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2CF maintext CODE >898:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2D1 maintext CODE >899:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2D2 maintext CODE >900:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2E2 maintext CODE >902:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2ED maintext CODE >900:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+2FF maintext CODE >904:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+301 maintext CODE >905:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+302 maintext CODE >921:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+307 maintext CODE >922:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+312 maintext CODE >924:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+317 maintext CODE >926:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+31B maintext CODE >928:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+31E maintext CODE >929:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+320 maintext CODE >932:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+323 maintext CODE >933:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+328 maintext CODE >937:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+334 maintext CODE >940:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+339 maintext CODE >942:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+33D maintext CODE >943:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+340 maintext CODE >944:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+342 maintext CODE >946:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+345 maintext CODE >947:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+348 maintext CODE >952:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+354 maintext CODE >954:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+359 maintext CODE >956:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+35D maintext CODE >957:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+360 maintext CODE >958:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+362 maintext CODE >960:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+365 maintext CODE >961:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+36A maintext CODE >964:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+376 maintext CODE >966:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+37B maintext CODE >968:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+37F maintext CODE >969:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+382 maintext CODE >970:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+384 maintext CODE >972:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+387 maintext CODE >973:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+38A maintext CODE >979:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+396 maintext CODE >981:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+39B maintext CODE >983:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+39F maintext CODE >984:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3A2 maintext CODE >985:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3A4 maintext CODE >987:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3A7 maintext CODE >988:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3AC maintext CODE >992:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3B8 maintext CODE >994:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3BD maintext CODE >996:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3C1 maintext CODE >998:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3C4 maintext CODE >999:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3C6 maintext CODE >1001:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3C9 maintext CODE >1002:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3CC maintext CODE >1009:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3D8 maintext CODE >1011:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3DD maintext CODE >1013:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3E1 maintext CODE >1014:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3E4 maintext CODE >1015:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3E6 maintext CODE >1017:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3E9 maintext CODE >1018:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3EE maintext CODE >1022:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3FA maintext CODE >1024:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+3FF maintext CODE >1027:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+403 maintext CODE >1028:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+406 maintext CODE >1029:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+408 maintext CODE >1031:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+40B maintext CODE >1032:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+40E maintext CODE >1036:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+41A maintext CODE >1038:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+41F maintext CODE >1040:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+423 maintext CODE >1041:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+426 maintext CODE >1042:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+428 maintext CODE >1044:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+42B maintext CODE >1045:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+430 maintext CODE >1049:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+43C maintext CODE >1051:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+441 maintext CODE >1054:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+445 maintext CODE >1055:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+448 maintext CODE >1056:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+44A maintext CODE >1058:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+44D maintext CODE >1059:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+450 maintext CODE >1064:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+45C maintext CODE >1066:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+461 maintext CODE >1068:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+465 maintext CODE >1069:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+468 maintext CODE >1070:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+46A maintext CODE >1072:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+46D maintext CODE >1073:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+472 maintext CODE >1077:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+47E maintext CODE >1079:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+483 maintext CODE >1082:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+487 maintext CODE >1083:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+48A maintext CODE >1084:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+48C maintext CODE >1086:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+48F maintext CODE >1087:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+492 maintext CODE >1093:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+49E maintext CODE >1095:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4A3 maintext CODE >1097:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4A7 maintext CODE >1098:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4AA maintext CODE >1099:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4AC maintext CODE >1101:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4AF maintext CODE >1102:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4B4 maintext CODE >1106:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4C0 maintext CODE >1108:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4C5 maintext CODE >1111:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4C9 maintext CODE >1112:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4CC maintext CODE >1113:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4CE maintext CODE >1115:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4D1 maintext CODE >1116:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4D4 maintext CODE >1123:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4E0 maintext CODE >1125:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4E5 maintext CODE >1127:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4E9 maintext CODE >1128:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4EC maintext CODE >1129:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4EE maintext CODE >1131:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4F1 maintext CODE >1132:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+4F6 maintext CODE >1136:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+502 maintext CODE >1138:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+507 maintext CODE >1141:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+50B maintext CODE >1142:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+50E maintext CODE >1143:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+510 maintext CODE >1145:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+513 maintext CODE >1146:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+516 maintext CODE >1150:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+522 maintext CODE >1152:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+527 maintext CODE >1155:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+52A maintext CODE >1156:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+52E maintext CODE >1157:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+531 maintext CODE >1158:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+533 maintext CODE >1159:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+533 maintext CODE >1160:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+536 maintext CODE >1161:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+53B maintext CODE >1165:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+547 maintext CODE >1167:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+54C maintext CODE >1170:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+550 maintext CODE >1171:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+553 maintext CODE >1172:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+555 maintext CODE >1174:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+558 maintext CODE >1175:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+55B maintext CODE >878:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
+E6E clrtext CODE >1081:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E6E clrtext CODE >1082:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E6F clrtext CODE >1083:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E6F clrtext CODE >1084:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E70 clrtext CODE >1085:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E71 clrtext CODE >1086:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E72 clrtext CODE >1087:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E73 clrtext CODE >1088:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E74 inittext CODE >1022:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E74 inittext CODE >1023:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E75 inittext CODE >1024:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E75 inittext CODE >1025:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E76 inittext CODE >1026:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E77 inittext CODE >1027:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E78 inittext CODE >1028:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
+E79 inittext CODE >1029:C:\Users\Alfaone\AppData\Local\Temp\s6dc.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -824,7 +919,7 @@ __HidataBANK0 0 0 ABS 0 idataBANK0 -
 __HidataBANK1 0 0 ABS 0 idataBANK1 -
 __HidataBANK2 0 0 ABS 0 idataBANK2 -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_allPeripheralInit 1000 0 CODE 0 text8 dist/default/production\11onoff.X.production.obj
+__end_of_allPeripheralInit 2000 0 CODE 0 text8 dist/default/production\11onoff.X.production.obj
 _T1CONbits 18 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 applianceControl@charSwitchSTATE 2F 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _M1 5B 0 BANK0 1 bssBANK0 dist/default/production\11onoff.X.production.obj
@@ -836,50 +931,59 @@ _M6 51 0 BANK0 1 bssBANK0 dist/default/production\11onoff.X.production.obj
 _M7 4F 0 BANK0 1 bssBANK0 dist/default/production\11onoff.X.production.obj
 _M8 4D 0 BANK0 1 bssBANK0 dist/default/production\11onoff.X.production.obj
 _M9 4B 0 BANK0 1 bssBANK0 dist/default/production\11onoff.X.production.obj
-__end_of_sendAcknowledgment 2000 0 CODE 0 text4 dist/default/production\11onoff.X.production.obj
+__end_of_sendAcknowledgment 1FB2 0 CODE 0 text4 dist/default/production\11onoff.X.production.obj
 applianceControl@currentStateBufferPositions 3F 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR2 1A 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR4 415 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR6 41C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR8 595 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _WPUB 20D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _WPUD 20F 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _WPUE 210 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _WPUG 48D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-_atoi CC8 0 CODE 0 text5 dist/default/production\11onoff.X.production.obj
-_main 4A0 0 CODE 0 maintext dist/default/production\11onoff.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+_atoi CD0 0 CODE 0 text5 dist/default/production\11onoff.X.production.obj
+_main 4A8 0 CODE 0 maintext dist/default/production\11onoff.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-start 42A 0 CODE 0 init C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+start 432 0 CODE 0 init C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
 _mainReceivedDataPosition 75 0 COMMON 1 bssCOMMON dist/default/production\11onoff.X.production.obj
-_GPIO_pin_Initialize F9C 0 CODE 0 text17 dist/default/production\11onoff.X.production.obj
+_GPIO_pin_Initialize FA4 0 CODE 0 text26 dist/default/production\11onoff.X.production.obj
+__end_of_TMR10_Initialize 1D06 0 CODE 0 text16 dist/default/production\11onoff.X.production.obj
+__size_of_TMR6_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __size_of_clearAllPorts 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __size_of_atoi 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
-_ReceivingIndicationLedBlinking 1E96 0 CODE 0 text16 dist/default/production\11onoff.X.production.obj
+_ReceivingIndicationLedBlinking 1E20 0 CODE 0 text25 dist/default/production\11onoff.X.production.obj
 ?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
+__size_of_TMR10_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _currentStateBuffer 120 0 BANK2 1 dataBANK2 dist/default/production\11onoff.X.production.obj
-_TransmissionIndicationLedBlinking 1EB8 0 CODE 0 text13 dist/default/production\11onoff.X.production.obj
+_TransmissionIndicationLedBlinking 1E42 0 CODE 0 text22 dist/default/production\11onoff.X.production.obj
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
 __LidataBANK2 0 0 ABS 0 idataBANK2 -
 applianceControl@charFinalFrameState 33 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-__end_of_EUSART_Initialize 1F5A 0 CODE 0 text11 dist/default/production\11onoff.X.production.obj
+__end_of_EUSART_Initialize 1F0C 0 CODE 0 text17 dist/default/production\11onoff.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR2_Initialize 1D7A 0 CODE 0 text14 dist/default/production\11onoff.X.production.obj
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
 applianceControl@integerSwitchNumber 3D 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 applianceControl@integerSwitchState 41 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-_sendAcknowledgment 1FC4 0 CODE 0 text4 dist/default/production\11onoff.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+_sendAcknowledgment 1F76 0 CODE 0 text4 dist/default/production\11onoff.X.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
-__end_of_errorsISR 1F04 0 CODE 0 text21 dist/default/production\11onoff.X.production.obj
-__end_of_clearAllPorts 1E78 0 CODE 0 text19 dist/default/production\11onoff.X.production.obj
+__end_of_errorsISR 1EB6 0 CODE 0 text30 dist/default/production\11onoff.X.production.obj
+__end_of_clearAllPorts 1E8C 0 CODE 0 text28 dist/default/production\11onoff.X.production.obj
+__end_of_TMR8_Initialize 1D2A 0 CODE 0 text9 dist/default/production\11onoff.X.production.obj
 _levelofDimmer_LSB 77 0 COMMON 1 dataCOMMON dist/default/production\11onoff.X.production.obj
 _levelofDimmer_MSB 78 0 COMMON 1 dataCOMMON dist/default/production\11onoff.X.production.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
@@ -888,38 +992,46 @@ __Hfunctab 0 0 ENTRY 0 functab -
 _RC1STAbits 19D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 applianceControl@dimmerSpeedStringBuffer 3B 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
-__pidataCOMMON 4 0 CODE 0 idataCOMMON dist/default/production\11onoff.X.production.obj
+__pidataCOMMON FFC 0 CODE 0 idataCOMMON dist/default/production\11onoff.X.production.obj
+__end_of_CCP7_Initialize 1D52 0 CODE 0 text20 dist/default/production\11onoff.X.production.obj
 ___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-__end_of_TMR3_Initialize 1E3E 0 CODE 0 text9 dist/default/production\11onoff.X.production.obj
+__end_of_TMR3_Initialize 1DE6 0 CODE 0 text13 dist/default/production\11onoff.X.production.obj
 _ANSELA 18C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _ANSELB 18D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _ANSELD 18F 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _ANSELE 190 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _ANSELF 40C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _ANSELG 40D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-_errorsISR 1EDA 0 CODE 0 text21 dist/default/production\11onoff.X.production.obj
+_errorsISR 1E8C 0 CODE 0 text30 dist/default/production\11onoff.X.production.obj
 __size_of_copyReceivedDataBuffer 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __LdataCOMMON 0 0 ABS 0 dataCOMMON -
-_CCP9IF A6 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCPR7H 615 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCPR7L 614 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCPR8H 618 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCPR8L 617 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _CCPR9H 61B 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _CCPR9L 61A 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-__end_of___wmul 1FC4 0 CODE 0 text7 dist/default/production\11onoff.X.production.obj
-_allPeripheralInit FE8 0 CODE 0 text8 dist/default/production\11onoff.X.production.obj
-_applianceControl AB0 0 CODE 0 text3 dist/default/production\11onoff.X.production.obj
+__end_of___wmul 1F76 0 CODE 0 text7 dist/default/production\11onoff.X.production.obj
+_allPeripheralInit 1FB2 0 CODE 0 text8 dist/default/production\11onoff.X.production.obj
+_applianceControl AB8 0 CODE 0 text3 dist/default/production\11onoff.X.production.obj
 main@man D0 0 BANK1 1 cstackBANK1 dist/default/production\11onoff.X.production.obj
+_CCP10_Initialize 1D2A 0 CODE 0 text21 dist/default/production\11onoff.X.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
 __size_of_isdigit 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-__end_of_GPIO_pin_Initialize FE8 0 CODE 0 text17 dist/default/production\11onoff.X.production.obj
+_TMR8_Initialize 1D18 0 CODE 0 text9 dist/default/production\11onoff.X.production.obj
+__end_of_GPIO_pin_Initialize FFC 0 CODE 0 text26 dist/default/production\11onoff.X.production.obj
 applianceControl@integerSpeed 36 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-_EUSART_Initialize 1F2E 0 CODE 0 text11 dist/default/production\11onoff.X.production.obj
+_EUSART_Initialize 1EE0 0 CODE 0 text17 dist/default/production\11onoff.X.production.obj
 applianceControl@charParentalControl 32 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __LidataCOMMON 0 0 ABS 0 idataCOMMON -
-_TMR3_Initialize 1E26 0 CODE 0 text9 dist/default/production\11onoff.X.production.obj
-_pinINIT_extra 1F04 0 CODE 0 text18 dist/default/production\11onoff.X.production.obj
+_CCP7_Initialize 1D3E 0 CODE 0 text20 dist/default/production\11onoff.X.production.obj
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR3_Initialize 1DCE 0 CODE 0 text13 dist/default/production\11onoff.X.production.obj
+_pinINIT_extra 1EB6 0 CODE 0 text27 dist/default/production\11onoff.X.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-start_initialization 42E 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
-__end_of_TransmissionIndicationLedBlinking 1EDA 0 CODE 0 text13 dist/default/production\11onoff.X.production.obj
+start_initialization 436 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
+__end_of_TransmissionIndicationLedBlinking 1E64 0 CODE 0 text22 dist/default/production\11onoff.X.production.obj
 SwitchOnStatustToGatway@SwitchOnNumber 21 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _TRISBbits 8D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _TRISCbits 8E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
@@ -930,18 +1042,21 @@ _TRISGbits 30D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _RC1REG 199 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _RC1STA 19D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-_SwitchOffStatustToGatway E7A 0 CODE 0 text15 dist/default/production\11onoff.X.production.obj
-clear_ram0 1DE4 0 CODE 0 clrtext dist/default/production\11onoff.X.production.obj
+_SwitchOffStatustToGatway E82 0 CODE 0 text24 dist/default/production\11onoff.X.production.obj
+clear_ram0 1CDC 0 CODE 0 clrtext dist/default/production\11onoff.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __pcstackBANK1 CE 0 BANK1 1 cstackBANK1 dist/default/production\11onoff.X.production.obj
+_T10CON 59E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 copyReceivedDataBuffer@dataBufferCounter 21 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _T1GCON 19 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _T3GCON 414 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_T5GCON 41B 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+__end_of_CCP8_Initialize 1D66 0 CODE 0 text19 dist/default/production\11onoff.X.production.obj
 _TX1REG 19A 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _TX1STA 19E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-_isdigit$987 20 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-__end_of_applianceControl CC8 0 CODE 0 text3 dist/default/production\11onoff.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+__end_of_TMR4_Initialize 1DCE 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
+__end_of_applianceControl CD0 0 CODE 0 text3 dist/default/production\11onoff.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -952,7 +1067,7 @@ __Hbank6 0 0 ABS 0 bank6 -
 __Hbank7 0 0 ABS 0 bank7 -
 __Hbank8 0 0 ABS 0 bank8 -
 __Hbank9 0 0 ABS 0 bank9 -
-__Hcinit 4A0 0 CODE 0 cinit -
+__Hcinit 4A8 0 CODE 0 cinit -
 __Hidloc 0 0 IDLOC 0 idloc -
 __Hsfr10 0 0 ABS 0 sfr10 -
 __Hsfr11 0 0 ABS 0 sfr11 -
@@ -977,6 +1092,7 @@ __Hsfr29 0 0 ABS 0 sfr29 -
 __Hsfr30 0 0 ABS 0 sfr30 -
 __Hsfr31 0 0 ABS 0 sfr31 -
 __Hstack 0 0 STACK 2 stack -
+__end_of_CCP10_Initialize 1D3E 0 CODE 0 text21 dist/default/production\11onoff.X.production.obj
 __Hbank10 0 0 BANK10 1 bank10 -
 __Hbank11 0 0 BANK11 1 bank11 -
 __Hbank12 0 0 BANK12 1 bank12 -
@@ -1006,6 +1122,7 @@ _BAUD1CON 19F 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _tempReceivedDataBuffer 5F 0 BANK0 1 dataBANK0 dist/default/production\11onoff.X.production.obj
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 0 config -
+__size_of_CCP10_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __size_of_SwitchOnStatustToGatway 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
@@ -1017,8 +1134,8 @@ __Lbank6 0 0 ABS 0 bank6 -
 __Lbank7 0 0 ABS 0 bank7 -
 __Lbank8 0 0 ABS 0 bank8 -
 __Lbank9 0 0 ABS 0 bank9 -
-__end_of_isdigit 1E96 0 CODE 0 text6 dist/default/production\11onoff.X.production.obj
-__Lcinit 42E 0 CODE 0 cinit -
+__end_of_isdigit 1E20 0 CODE 0 text6 dist/default/production\11onoff.X.production.obj
+__Lcinit 436 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 0 idloc -
 __Lsfr10 0 0 ABS 0 sfr10 -
 __Lsfr11 0 0 ABS 0 sfr11 -
@@ -1043,7 +1160,8 @@ __Lsfr29 0 0 ABS 0 sfr29 -
 __Lsfr30 0 0 ABS 0 sfr30 -
 __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-init_ram 1DF0 0 CODE 0 inittext dist/default/production\11onoff.X.production.obj
+__size_of_TMR8_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+init_ram 1CE8 0 CODE 0 inittext dist/default/production\11onoff.X.production.obj
 _mainReceivedDataBuffer A0 0 BANK1 1 dataBANK1 dist/default/production\11onoff.X.production.obj
 main@dataBufferCounter CE 0 BANK1 1 cstackBANK1 dist/default/production\11onoff.X.production.obj
 __Linittext 0 0 ABS 0 inittext -
@@ -1054,7 +1172,7 @@ _PORTFbits 28C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _PORTGbits 28D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
-__Hinit 42A 0 CODE 0 init -
+__Hinit 432 0 CODE 0 init -
 __Hsfr0 0 0 ABS 0 sfr0 -
 __Hsfr1 0 0 ABS 0 sfr1 -
 __Hsfr2 0 0 ABS 0 sfr2 -
@@ -1068,7 +1186,7 @@ __Hsfr9 0 0 ABS 0 sfr9 -
 __Htext 0 0 ABS 0 text -
 __Labs1 0 0 ABS 0 abs1 -
 __Lcode 0 0 ABS 0 code -
-__Linit 42A 0 CODE 0 init -
+__Linit 432 0 CODE 0 init -
 __Lsfr0 0 0 ABS 0 sfr0 -
 __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
@@ -1084,12 +1202,15 @@ __pstringtext1 2000 0 STRCODE 0 stringtext1 dist/default/production\11onoff.X.pr
 __pstringtext2 200A 0 STRCODE 0 stringtext2 dist/default/production\11onoff.X.production.obj
 __pstringtext3 2014 0 STRCODE 0 stringtext3 dist/default/production\11onoff.X.production.obj
 __pstringtext4 0 0 STRCODE 0 stringtext4 dist/default/production\11onoff.X.production.obj
-___wmul 1F8C 0 CODE 0 text7 dist/default/production\11onoff.X.production.obj
+___wmul 1F3E 0 CODE 0 text7 dist/default/production\11onoff.X.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 int$flags 7E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_CCP7_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCP8_Initialize 1D52 0 CODE 0 text19 dist/default/production\11onoff.X.production.obj
 _GIE 5F 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_PR2 1B 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __S0 8009 0 ABS 0 - -
 __S1 15A 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
@@ -1099,14 +1220,16 @@ applianceControl@chDimmerSpeedLSB 31 0 BANK0 1 cstackBANK0 dist/default/producti
 applianceControl@chDimmerSpeedMSB 30 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __size_of_sendAcknowledgment 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __size_of_TMR3_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR4_Initialize 1DB8 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
 __size_of_pinINIT_extra 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __HidataCOMMON 0 0 ABS 0 idataCOMMON -
-_errorsMain 1F5A 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
-__end_of_isr 42A 0 CODE 0 intentry dist/default/production\11onoff.X.production.obj
+_errorsMain 1F0C 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
+__end_of_isr 432 0 CODE 0 intentry dist/default/production\11onoff.X.production.obj
 __Lintentry 8 0 CODE 0 intentry -
-__end_of_CCP9_Initialize 1E10 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+__end_of_CCP9_Initialize 1D7A 0 CODE 0 text18 dist/default/production\11onoff.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
 errorsISR@errNum 70 0 COMMON 1 cstackCOMMON dist/default/production\11onoff.X.production.obj
+__end_of_TMR5_Initialize 1DA2 0 CODE 0 text11 dist/default/production\11onoff.X.production.obj
 __pdataBANK0 5F 0 BANK0 1 dataBANK0 dist/default/production\11onoff.X.production.obj
 __pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\11onoff.X.production.obj
 __pdataBANK2 120 0 BANK2 1 dataBANK2 dist/default/production\11onoff.X.production.obj
@@ -1117,23 +1240,33 @@ __Lstringtext1 0 0 ABS 0 stringtext1 -
 __Lstringtext2 0 0 ABS 0 stringtext2 -
 __Lstringtext3 0 0 ABS 0 stringtext3 -
 __Lstringtext4 0 0 ABS 0 stringtext4 -
-__end_of_pinINIT_extra 1F2E 0 CODE 0 text18 dist/default/production\11onoff.X.production.obj
-_copyReceivedDataBuffer EE2 0 CODE 0 text2 dist/default/production\11onoff.X.production.obj
+__end_of_pinINIT_extra 1EE0 0 CODE 0 text27 dist/default/production\11onoff.X.production.obj
+_copyReceivedDataBuffer EEA 0 CODE 0 text2 dist/default/production\11onoff.X.production.obj
 _PIE1bits 91 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_PIE2bits 92 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _PIE3bits 93 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _PIE4bits 94 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _parentalLockBuffer C0 0 BANK1 1 dataBANK1 dist/default/production\11onoff.X.production.obj
-__ptext10 1E10 0 CODE 0 text10 dist/default/production\11onoff.X.production.obj
-__ptext11 1F2E 0 CODE 0 text11 dist/default/production\11onoff.X.production.obj
-__ptext12 1DFC 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
-__ptext13 1EB8 0 CODE 0 text13 dist/default/production\11onoff.X.production.obj
-__ptext14 E12 0 CODE 0 text14 dist/default/production\11onoff.X.production.obj
-__ptext15 E7A 0 CODE 0 text15 dist/default/production\11onoff.X.production.obj
-__ptext16 1E96 0 CODE 0 text16 dist/default/production\11onoff.X.production.obj
-__ptext17 F9C 0 CODE 0 text17 dist/default/production\11onoff.X.production.obj
-__ptext18 1F04 0 CODE 0 text18 dist/default/production\11onoff.X.production.obj
-__ptext19 1E5A 0 CODE 0 text19 dist/default/production\11onoff.X.production.obj
-__ptext21 1EDA 0 CODE 0 text21 dist/default/production\11onoff.X.production.obj
+__ptext10 1D06 0 CODE 0 text10 dist/default/production\11onoff.X.production.obj
+__ptext11 1D8E 0 CODE 0 text11 dist/default/production\11onoff.X.production.obj
+__ptext12 1DB8 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
+__ptext13 1DCE 0 CODE 0 text13 dist/default/production\11onoff.X.production.obj
+__ptext14 1D7A 0 CODE 0 text14 dist/default/production\11onoff.X.production.obj
+__ptext15 1DA2 0 CODE 0 text15 dist/default/production\11onoff.X.production.obj
+__ptext16 1CF4 0 CODE 0 text16 dist/default/production\11onoff.X.production.obj
+__ptext17 1EE0 0 CODE 0 text17 dist/default/production\11onoff.X.production.obj
+__ptext18 1D66 0 CODE 0 text18 dist/default/production\11onoff.X.production.obj
+__ptext19 1D52 0 CODE 0 text19 dist/default/production\11onoff.X.production.obj
+__ptext20 1D3E 0 CODE 0 text20 dist/default/production\11onoff.X.production.obj
+__ptext21 1D2A 0 CODE 0 text21 dist/default/production\11onoff.X.production.obj
+__ptext22 1E42 0 CODE 0 text22 dist/default/production\11onoff.X.production.obj
+__ptext23 E1A 0 CODE 0 text23 dist/default/production\11onoff.X.production.obj
+__ptext24 E82 0 CODE 0 text24 dist/default/production\11onoff.X.production.obj
+__ptext25 1E20 0 CODE 0 text25 dist/default/production\11onoff.X.production.obj
+__ptext26 FA4 0 CODE 0 text26 dist/default/production\11onoff.X.production.obj
+__ptext27 1EB6 0 CODE 0 text27 dist/default/production\11onoff.X.production.obj
+__ptext28 1E64 0 CODE 0 text28 dist/default/production\11onoff.X.production.obj
+__ptext30 1E8C 0 CODE 0 text30 dist/default/production\11onoff.X.production.obj
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -1156,7 +1289,7 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext 4A0 0 CODE 0 maintext dist/default/production\11onoff.X.production.obj
+__pmaintext 4A8 0 CODE 0 maintext dist/default/production\11onoff.X.production.obj
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 ?_atoi 26 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
@@ -1172,12 +1305,15 @@ _start_PWM_Generation_in_ISR_FLAG 49 0 BANK0 1 bssBANK0 dist/default/production\
 ___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _copy_parentalLockBuffer B2 0 BANK1 1 dataBANK1 dist/default/production\11onoff.X.production.obj
 applianceControl@switchNumberStringBuffer 39 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-__end_of_errorsMain 1F8C 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
-_CCP9_Initialize 1DFC 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
+__end_of_errorsMain 1F3E 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
+__size_of_CCP8_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCP9_Initialize 1D66 0 CODE 0 text18 dist/default/production\11onoff.X.production.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-stackhi 22EF 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-stacklo 20DA 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+stackhi 22EF 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+stacklo 20DA 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s6dc.obj
+__size_of_TMR4_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 sendAcknowledgment@currentStateBuffer 23 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
+_TMR5_Initialize 1D8E 0 CODE 0 text11 dist/default/production\11onoff.X.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -1188,35 +1324,37 @@ errorsMain@errNum 20 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.pro
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 _PIR1bits 11 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_PIR2bits 12 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _PIR3bits 13 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _PIR4bits 14 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-__Lend_init 42A 0 CODE 0 end_init -
+__Lend_init 432 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-applianceControl@F3725 6B 0 BANK0 1 dataBANK0 dist/default/production\11onoff.X.production.obj
-applianceControl@F3727 69 0 BANK0 1 dataBANK0 dist/default/production\11onoff.X.production.obj
-end_of_initialization 498 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
-__Hintentry 42A 0 CODE 0 intentry -
+applianceControl@F3734 6B 0 BANK0 1 dataBANK0 dist/default/production\11onoff.X.production.obj
+applianceControl@F3736 69 0 BANK0 1 dataBANK0 dist/default/production\11onoff.X.production.obj
+end_of_initialization 4A0 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
+__Hintentry 432 0 CODE 0 intentry -
 SwitchOffStatustToGatway@SwitchOffNumber 21 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _TX1STAbits 19E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
 __size_of_TransmissionIndicationLedBlinking 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__end_of_SwitchOffStatustToGatway EE2 0 CODE 0 text15 dist/default/production\11onoff.X.production.obj
-__ptext1 1F5A 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
-__ptext2 EE2 0 CODE 0 text2 dist/default/production\11onoff.X.production.obj
-__ptext3 AB0 0 CODE 0 text3 dist/default/production\11onoff.X.production.obj
-__ptext4 1FC4 0 CODE 0 text4 dist/default/production\11onoff.X.production.obj
-__ptext5 CC8 0 CODE 0 text5 dist/default/production\11onoff.X.production.obj
-__ptext6 1E78 0 CODE 0 text6 dist/default/production\11onoff.X.production.obj
-__ptext7 1F8C 0 CODE 0 text7 dist/default/production\11onoff.X.production.obj
-__ptext8 FE8 0 CODE 0 text8 dist/default/production\11onoff.X.production.obj
-__ptext9 1E26 0 CODE 0 text9 dist/default/production\11onoff.X.production.obj
+__end_of_SwitchOffStatustToGatway EEA 0 CODE 0 text24 dist/default/production\11onoff.X.production.obj
+__end_of_TMR6_Initialize 1D18 0 CODE 0 text10 dist/default/production\11onoff.X.production.obj
+__ptext1 1F0C 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
+__ptext2 EEA 0 CODE 0 text2 dist/default/production\11onoff.X.production.obj
+__ptext3 AB8 0 CODE 0 text3 dist/default/production\11onoff.X.production.obj
+__ptext4 1F76 0 CODE 0 text4 dist/default/production\11onoff.X.production.obj
+__ptext5 CD0 0 CODE 0 text5 dist/default/production\11onoff.X.production.obj
+__ptext6 1E02 0 CODE 0 text6 dist/default/production\11onoff.X.production.obj
+__ptext7 1F3E 0 CODE 0 text7 dist/default/production\11onoff.X.production.obj
+__ptext8 1FB2 0 CODE 0 text8 dist/default/production\11onoff.X.production.obj
+__ptext9 1D18 0 CODE 0 text9 dist/default/production\11onoff.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-_isdigit 1E78 0 CODE 0 text6 dist/default/production\11onoff.X.production.obj
+_isdigit 1E02 0 CODE 0 text6 dist/default/production\11onoff.X.production.obj
 __size_of_allPeripheralInit 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-__end_of_TMR1_Initialize 1E26 0 CODE 0 text10 dist/default/production\11onoff.X.production.obj
+__end_of_TMR1_Initialize 1DB8 0 CODE 0 text15 dist/default/production\11onoff.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __Hstringtext1 0 0 ABS 0 stringtext1 -
 __Hstringtext2 0 0 ABS 0 stringtext2 -
@@ -1225,55 +1363,72 @@ __Hstringtext4 0 0 ABS 0 stringtext4 -
 __CFG_LPBOR$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-__end_of__initialization 498 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
+__end_of__initialization 4A0 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
 __Lfunctab 0 0 ENTRY 0 functab -
 sendAcknowledgment@Tx_count 21 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-__pidataBANK0 1E3E 0 CODE 0 idataBANK0 dist/default/production\11onoff.X.production.obj
-__pidataBANK1 F40 0 CODE 0 idataBANK1 dist/default/production\11onoff.X.production.obj
-__pidataBANK2 D9E 0 CODE 0 idataBANK2 dist/default/production\11onoff.X.production.obj
-__end_of_ReceivingIndicationLedBlinking 1EB8 0 CODE 0 text16 dist/default/production\11onoff.X.production.obj
+__pidataBANK0 1DE6 0 CODE 0 idataBANK0 dist/default/production\11onoff.X.production.obj
+__pidataBANK1 F48 0 CODE 0 idataBANK1 dist/default/production\11onoff.X.production.obj
+__pidataBANK2 DA6 0 CODE 0 idataBANK2 dist/default/production\11onoff.X.production.obj
+__end_of_ReceivingIndicationLedBlinking 1E42 0 CODE 0 text25 dist/default/production\11onoff.X.production.obj
 _SP1BRGH 19C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _SP1BRGL 19B 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext -
 __size_of_CCP9_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-_clearAllPorts 1E5A 0 CODE 0 text19 dist/default/production\11onoff.X.production.obj
+_clearAllPorts 1E64 0 CODE 0 text28 dist/default/production\11onoff.X.production.obj
 __pswtext10 1140 0 CONST 0 swtext10 dist/default/production\11onoff.X.production.obj
 __pswtext11 1168 0 CONST 0 swtext11 dist/default/production\11onoff.X.production.obj
 __pswtext12 1190 0 CONST 0 swtext12 dist/default/production\11onoff.X.production.obj
 __size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+__size_of_TMR5_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR6_Initialize 1D06 0 CODE 0 text10 dist/default/production\11onoff.X.production.obj
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\11onoff.X.production.obj
-_T3CONbits 413 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-__end_of_copyReceivedDataBuffer F40 0 CODE 0 text2 dist/default/production\11onoff.X.production.obj
-__Hend_init 42E 0 CODE 0 end_init -
-__end_of_atoi D9E 0 CODE 0 text5 dist/default/production\11onoff.X.production.obj
-__end_of_main AB0 0 CODE 0 maintext dist/default/production\11onoff.X.production.obj
+_TMR10_Initialize 1CF4 0 CODE 0 text16 dist/default/production\11onoff.X.production.obj
+__end_of_copyReceivedDataBuffer F48 0 CODE 0 text2 dist/default/production\11onoff.X.production.obj
+_CCP10CON 61F 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+__Hend_init 436 0 CODE 0 end_init -
+__end_of_atoi DA6 0 CODE 0 text5 dist/default/production\11onoff.X.production.obj
+__end_of_main AB8 0 CODE 0 maintext dist/default/production\11onoff.X.production.obj
 isdigit@c 21 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _mainDataReceived 5D 0 BANK0 1 bssBANK0 dist/default/production\11onoff.X.production.obj
+_isdigit$1120 20 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _RC1IF 8D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _T1CON 18 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_T2CON 1C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _T3CON 413 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_T4CON 417 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_T5CON 41A 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_T6CON 41E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_T8CON 597 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR10 59C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _TMR1H 17 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _TMR1L 16 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _TMR3H 412 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _TMR3L 411 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR5H 419 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_TMR5L 418 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_TMR1_Initialize 1E10 0 CODE 0 text10 dist/default/production\11onoff.X.production.obj
+_TMR1_Initialize 1DA2 0 CODE 0 text15 dist/default/production\11onoff.X.production.obj
+_CCP10IF A7 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __pintentry 8 0 CODE 0 intentry dist/default/production\11onoff.X.production.obj
+_CCP7CON 616 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _CCP9CON 61C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCPR10H 61E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
+_CCPR10L 61D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __size_of_isr 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
 __HdataBANK2 0 0 ABS 0 dataBANK2 -
 atoi@a 2B 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 atoi@s 2D 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
-_SwitchOnStatustToGatway E12 0 CODE 0 text14 dist/default/production\11onoff.X.production.obj
-__initialization 42E 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
+_SwitchOnStatustToGatway E1A 0 CODE 0 text23 dist/default/production\11onoff.X.production.obj
+__initialization 436 0 CODE 0 cinit dist/default/production\11onoff.X.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __pbssBANK0 49 0 BANK0 1 bssBANK0 dist/default/production\11onoff.X.production.obj
 __size_of_GPIO_pin_Initialize 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-__end_of_SwitchOnStatustToGatway E7A 0 CODE 0 text14 dist/default/production\11onoff.X.production.obj
+__end_of_SwitchOnStatustToGatway E82 0 CODE 0 text23 dist/default/production\11onoff.X.production.obj
 __pdataCOMMON 77 0 COMMON 1 dataCOMMON dist/default/production\11onoff.X.production.obj
+_T2CONbits 1C 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 ___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __size_of_errorsMain 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
@@ -1286,6 +1441,7 @@ __pswtext6 10A0 0 CONST 0 swtext6 dist/default/production\11onoff.X.production.o
 __pswtext7 10C8 0 CONST 0 swtext7 dist/default/production\11onoff.X.production.obj
 __pswtext8 10F0 0 CONST 0 swtext8 dist/default/production\11onoff.X.production.obj
 __pswtext9 1118 0 CONST 0 swtext9 dist/default/production\11onoff.X.production.obj
+__end_of_TMR2_Initialize 1D8E 0 CODE 0 text14 dist/default/production\11onoff.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1311,28 +1467,38 @@ __pswtext9 1118 0 CONST 0 swtext9 dist/default/production\11onoff.X.production.o
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text1 0 FAD 1F5A 19 2
-text4 0 FE2 1FC4 1E 2
-text6 0 F3C 1E78 F 2
-text7 0 FC6 1F8C 1C 2
-text9 0 F13 1E26 C 2
-text10 0 F08 1E10 B 2
-text11 0 F97 1F2E 16 2
-text12 0 EFE 1DFC A 2
-text13 0 F5C 1EB8 11 2
-text16 0 F4B 1E96 11 2
-text18 0 F82 1F04 15 2
-text19 0 F2D 1E5A F 2
-text21 0 F6D 1EDA 15 2
+text1 0 F86 1F0C 19 2
+text4 0 FBB 1F76 1E 2
+text6 0 F01 1E02 F 2
+text7 0 F9F 1F3E 1C 2
+text8 0 FD9 1FB2 27 2
+text9 0 E8C 1D18 9 2
+text10 0 E83 1D06 9 2
+text11 0 EC7 1D8E A 2
+text12 0 EDC 1DB8 B 2
+text13 0 EE7 1DCE C 2
+text14 0 EBD 1D7A A 2
+text15 0 ED1 1DA2 B 2
+text16 0 E7A 1CF4 9 2
+text17 0 F70 1EE0 16 2
+text18 0 EB3 1D66 A 2
+text19 0 EA9 1D52 A 2
+text20 0 E9F 1D3E A 2
+text21 0 E95 1D2A A 2
+text22 0 F21 1E42 11 2
+text25 0 F10 1E20 11 2
+text27 0 F5B 1EB6 15 2
+text28 0 F32 1E64 14 2
+text30 0 F46 1E8C 15 2
 cstackCOMMON 1 70 70 9 1
 cstackBANK0 1 20 20 4D 1
-inittext 0 EF8 1DF0 6 2
+inittext 0 E74 1CE8 6 2
 stringtext1 0 1000 2000 F 2
 intentry 0 4 8 7FC 2
-reset_vec 0 0 0 4 2
-idataBANK0 0 F1F 1E3E E 2
+reset_vec 0 0 0 2 2
+idataBANK0 0 EF3 1DE6 E 2
 swtext2 0 800 1000 EE 2
 dataBANK1 1 A0 A0 32 1
 dataBANK2 1 120 120 3A 1
-clrtext 0 EF2 1DE4 6 2
+clrtext 0 E6E 1CDC 6 2
 config 0 8007 1000E 2 2
