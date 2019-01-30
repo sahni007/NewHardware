@@ -2,7 +2,7 @@
  * File:   only_on_off.c
  * Author: Varun sahni
  *client: test
- * module: this is test code for New hardware with 8switches and one dimmer
+ * module: this is test code for New hardware with 8switches and one dimmer and one RGB
  * Note: for switching the led 
  * ON>>give low
  * OFF>>give 
