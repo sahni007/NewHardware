@@ -139,7 +139,7 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 extern char * ftoa(float f, int * status);
 
 
-# 25 "megaonoff.c"
+# 24 "megaonoff.c"
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -6273,14 +6273,14 @@ TX1REG = *currentStateBuffer;
 Tx_count++;
 }
 }
-void SwitchOffStatustToGatway(char SwitchOffNumber)
+void SwitchOffStatustToGatway(const char SwitchOffNumber)
 {
 TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));
 TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
 TX1REG = '0';_delay((unsigned long)((1)*(16000000/4000.0)));
 TX1REG = SwitchOffNumber;_delay((unsigned long)((1)*(16000000/4000.0)));
 }
-void SwitchOnStatustToGatway(char SwitchOnNumber)
+void SwitchOnStatustToGatway(const char SwitchOnNumber)
 {
 TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));
 TX1REG = '1';_delay((unsigned long)((1)*(16000000/4000.0)));

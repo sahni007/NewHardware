@@ -2,7 +2,7 @@
  * File:   only_on_off.c
  * Author: Varun sahni
  *client: test
- * module: this is test code for New hardware with 8switches and one dimmer
+ * module: this is proper working code for New hardware with 8switches and one dimmer
  * Note: for switching the led 
  * ON>>give low
  * OFF>>give 
@@ -1475,7 +1475,7 @@ void ReceivingIndicationLedBlinking(){
                 OUTPUT_RECEIVE_INDICATION_LED = 1;
  
 }
-void sendAcknowledgment(const char* currentStateBuffer){
+void sendAcknowledgment(char* currentStateBuffer){
   int Tx_count=0;
   	while(Tx_count!=4)
  	{ 

@@ -543,19 +543,19 @@
 "1496
 [v _SwitchOnStatustToGatway SwitchOnStatustToGatway `(v  1 e 1 0 ]
 {
-[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `uc  1 a 1 wreg ]
-[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `uc  1 a 1 wreg ]
+[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `DCuc  1 a 1 wreg ]
+[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `DCuc  1 a 1 wreg ]
 "1498
-[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `uc  1 a 1 1 ]
+[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `DCuc  1 a 1 1 ]
 "1502
 } 0
 "1489
 [v _SwitchOffStatustToGatway SwitchOffStatustToGatway `(v  1 e 1 0 ]
 {
-[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `uc  1 a 1 wreg ]
-[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `uc  1 a 1 wreg ]
+[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `DCuc  1 a 1 wreg ]
+[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `DCuc  1 a 1 wreg ]
 "1491
-[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `uc  1 a 1 1 ]
+[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `DCuc  1 a 1 1 ]
 "1495
 } 0
 "1472

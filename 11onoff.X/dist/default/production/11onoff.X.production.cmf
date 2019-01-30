@@ -11,6 +11,10 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 215 215 2 2
+config CONFIG 0 8007 8007 2 2
 $dist/default/production\11onoff.X.production.obj
 cinit CODE 0 217 217 39 2
 text1 CODE 0 FAD FAD 19 2
@@ -65,10 +69,6 @@ dataBANK2 BANK2 1 120 120 3A 1
 dataCOMMON COMMON 1 77 77 2 1
 clrtext CODE 0 EF2 EF2 6 2
 bssCOMMON COMMON 1 75 75 2 1
-$C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-reset_vec CODE 0 0 0 2 2
-end_init CODE 0 215 215 2 2
-config CONFIG 0 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -155,54 +155,54 @@ STRING 100F-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\11onoff.X.production.obj
-217 cinit CODE >851:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-217 cinit CODE >854:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-217 cinit CODE >974:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21A cinit CODE >975:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21B cinit CODE >976:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21E cinit CODE >977:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-21F cinit CODE >981:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-220 cinit CODE >982:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-221 cinit CODE >983:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-222 cinit CODE >984:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-223 cinit CODE >985:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-224 cinit CODE >986:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-225 cinit CODE >987:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-226 cinit CODE >988:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-227 cinit CODE >989:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-228 cinit CODE >990:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22B cinit CODE >994:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22C cinit CODE >995:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22D cinit CODE >996:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22E cinit CODE >997:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-22F cinit CODE >998:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-230 cinit CODE >999:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-231 cinit CODE >1000:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-232 cinit CODE >1001:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-233 cinit CODE >1002:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-234 cinit CODE >1003:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-237 cinit CODE >1007:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-238 cinit CODE >1008:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-239 cinit CODE >1009:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23A cinit CODE >1010:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23B cinit CODE >1011:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23C cinit CODE >1012:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23D cinit CODE >1013:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23E cinit CODE >1014:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-23F cinit CODE >1015:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-240 cinit CODE >1016:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-243 cinit CODE >1033:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-244 cinit CODE >1034:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-245 cinit CODE >1038:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-246 cinit CODE >1039:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-247 cinit CODE >1040:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-248 cinit CODE >1041:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-249 cinit CODE >1042:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24A cinit CODE >1043:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24C cinit CODE >1049:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24C cinit CODE >1051:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24D cinit CODE >1052:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-24E cinit CODE >1053:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
+217 cinit CODE >851:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+217 cinit CODE >854:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+217 cinit CODE >974:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+21A cinit CODE >975:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+21B cinit CODE >976:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+21E cinit CODE >977:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+21F cinit CODE >981:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+220 cinit CODE >982:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+221 cinit CODE >983:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+222 cinit CODE >984:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+223 cinit CODE >985:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+224 cinit CODE >986:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+225 cinit CODE >987:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+226 cinit CODE >988:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+227 cinit CODE >989:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+228 cinit CODE >990:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+22B cinit CODE >994:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+22C cinit CODE >995:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+22D cinit CODE >996:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+22E cinit CODE >997:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+22F cinit CODE >998:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+230 cinit CODE >999:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+231 cinit CODE >1000:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+232 cinit CODE >1001:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+233 cinit CODE >1002:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+234 cinit CODE >1003:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+237 cinit CODE >1007:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+238 cinit CODE >1008:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+239 cinit CODE >1009:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+23A cinit CODE >1010:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+23B cinit CODE >1011:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+23C cinit CODE >1012:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+23D cinit CODE >1013:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+23E cinit CODE >1014:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+23F cinit CODE >1015:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+240 cinit CODE >1016:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+243 cinit CODE >1033:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+244 cinit CODE >1034:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+245 cinit CODE >1038:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+246 cinit CODE >1039:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+247 cinit CODE >1040:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+248 cinit CODE >1041:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+249 cinit CODE >1042:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+24A cinit CODE >1043:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+24C cinit CODE >1049:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+24C cinit CODE >1051:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+24D cinit CODE >1052:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+24E cinit CODE >1053:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
 4 intentry CODE >183:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
 9 intentry CODE >186:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
 B intentry CODE >187:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
@@ -783,22 +783,22 @@ FC5 text1 CODE >1458:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUT
 551 maintext CODE >1154:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
 554 maintext CODE >1155:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
 557 maintext CODE >858:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\MEGA_AUTOMATION_CODE\11onoff.X\megaonoff.c
-EF2 clrtext CODE >1022:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF2 clrtext CODE >1023:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF3 clrtext CODE >1024:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF3 clrtext CODE >1025:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF4 clrtext CODE >1026:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF5 clrtext CODE >1027:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF6 clrtext CODE >1028:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF7 clrtext CODE >1029:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF8 inittext CODE >963:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF8 inittext CODE >964:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF9 inittext CODE >965:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EF9 inittext CODE >966:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFA inittext CODE >967:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFB inittext CODE >968:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFC inittext CODE >969:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
-EFD inittext CODE >970:C:\Users\Alfaone\AppData\Local\Temp\s4bk.
+EF2 clrtext CODE >1022:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF2 clrtext CODE >1023:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF3 clrtext CODE >1024:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF3 clrtext CODE >1025:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF4 clrtext CODE >1026:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF5 clrtext CODE >1027:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF6 clrtext CODE >1028:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF7 clrtext CODE >1029:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF8 inittext CODE >963:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF8 inittext CODE >964:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF9 inittext CODE >965:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EF9 inittext CODE >966:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EFA inittext CODE >967:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EFB inittext CODE >968:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EFC inittext CODE >969:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
+EFD inittext CODE >970:C:\Users\Alfaone\AppData\Local\Temp\s6ds.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -844,11 +844,11 @@ _WPUB 20D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _WPUD 20F 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _WPUE 210 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _WPUG 48D 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+___sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
 _atoi CC8 0 CODE 0 text5 dist/default/production\11onoff.X.production.obj
 _main 4A0 0 CODE 0 maintext dist/default/production\11onoff.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-start 42A 0 CODE 0 init C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+start 42A 0 CODE 0 init C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
 _mainReceivedDataPosition 75 0 COMMON 1 bssCOMMON dist/default/production\11onoff.X.production.obj
 _GPIO_pin_Initialize F9C 0 CODE 0 text17 dist/default/production\11onoff.X.production.obj
 __size_of_clearAllPorts 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
@@ -871,12 +871,12 @@ __HdataCOMMON 0 0 ABS 0 dataCOMMON -
 applianceControl@integerSwitchNumber 3D 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 applianceControl@integerSwitchState 41 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 _sendAcknowledgment 1FC4 0 CODE 0 text4 dist/default/production\11onoff.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 __end_of_errorsISR 1F04 0 CODE 0 text21 dist/default/production\11onoff.X.production.obj
 __end_of_clearAllPorts 1E78 0 CODE 0 text19 dist/default/production\11onoff.X.production.obj
@@ -941,7 +941,7 @@ _TX1REG 19A 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _TX1STA 19E 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 _isdigit$987 20 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __end_of_applianceControl CC8 0 CODE 0 text3 dist/default/production\11onoff.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1105,7 +1105,7 @@ _errorsMain 1F5A 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
 __end_of_isr 42A 0 CODE 0 intentry dist/default/production\11onoff.X.production.obj
 __Lintentry 8 0 CODE 0 intentry -
 __end_of_CCP9_Initialize 1E10 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
 errorsISR@errNum 70 0 COMMON 1 cstackCOMMON dist/default/production\11onoff.X.production.obj
 __pdataBANK0 5F 0 BANK0 1 dataBANK0 dist/default/production\11onoff.X.production.obj
 __pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\11onoff.X.production.obj
@@ -1175,8 +1175,8 @@ applianceControl@switchNumberStringBuffer 39 0 BANK0 1 cstackBANK0 dist/default/
 __end_of_errorsMain 1F8C 0 CODE 0 text1 dist/default/production\11onoff.X.production.obj
 _CCP9_Initialize 1DFC 0 CODE 0 text12 dist/default/production\11onoff.X.production.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
-stackhi 22EF 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
-stacklo 20DA 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+stackhi 22EF 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
+stacklo 20DA 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
 sendAcknowledgment@currentStateBuffer 23 0 BANK0 1 cstackBANK0 dist/default/production\11onoff.X.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\11onoff.X.production.obj
 __Lspace_0 0 0 ABS 0 - -

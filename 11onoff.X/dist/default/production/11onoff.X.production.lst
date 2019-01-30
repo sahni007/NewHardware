@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Tue Jan 29 18:10:23 2019
+                                                                                               Wed Jan 30 16:53:26 2019
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1526
@@ -3640,9 +3640,9 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   3602 ;; Defined at:
   3603 ;;		line 1496 in file "megaonoff.c"
   3604 ;; Parameters:    Size  Location     Type
-  3605 ;;  SwitchOnNumb    1    wreg     unsigned char 
+  3605 ;;  SwitchOnNumb    1    wreg     const unsigned char 
   3606 ;; Auto vars:     Size  Location     Type
-  3607 ;;  SwitchOnNumb    1    1[BANK0 ] unsigned char 
+  3607 ;;  SwitchOnNumb    1    1[BANK0 ] const unsigned char 
   3608 ;; Return value:  Size  Location     Type
   3609 ;;                  1    wreg      void 
   3610 ;; Registers used:
@@ -3746,9 +3746,9 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   3707 ;; Defined at:
   3708 ;;		line 1489 in file "megaonoff.c"
   3709 ;; Parameters:    Size  Location     Type
-  3710 ;;  SwitchOffNum    1    wreg     unsigned char 
+  3710 ;;  SwitchOffNum    1    wreg     const unsigned char 
   3711 ;; Auto vars:     Size  Location     Type
-  3712 ;;  SwitchOffNum    1    1[BANK0 ] unsigned char 
+  3712 ;;  SwitchOffNum    1    1[BANK0 ] const unsigned char 
   3713 ;; Return value:  Size  Location     Type
   3714 ;;                  1    wreg      void 
   3715 ;; Registers used:
@@ -6774,7 +6774,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Tue Jan 29 18:10:23 2019
+Symbol Table                                                                                   Wed Jan 30 16:53:26 2019
 
                  __size_of_allPeripheralInit 000C                                            pc 0002  
                                 __CFG_CP$OFF 0000                                           _M1 005B  

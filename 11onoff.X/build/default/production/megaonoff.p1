@@ -365,35 +365,35 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdlib.h: 101: extern char * ltoa(char * buf, long val, int base);
 [; ;stdlib.h: 102: extern char * ultoa(char * buf, unsigned long val, int base);
 [; ;stdlib.h: 104: extern char * ftoa(float f, int * status);
-"25 megaonoff.c
+"24 megaonoff.c
 [p x FOSC=HS ]
-"26
+"25
 [p x WDTE=OFF ]
-"27
+"26
 [p x PWRTE=OFF ]
-"28
+"27
 [p x MCLRE=OFF ]
-"29
+"28
 [p x CP=OFF ]
-"30
+"29
 [p x BOREN=OFF ]
-"31
+"30
 [p x CLKOUTEN=OFF ]
-"32
+"31
 [p x IESO=OFF ]
-"33
+"32
 [p x FCMEN=OFF ]
-"36
+"35
 [p x WRT=OFF ]
-"37
+"36
 [p x VCAPEN=OFF ]
-"38
+"37
 [p x STVREN=OFF ]
-"39
+"38
 [p x BORV=LO ]
-"40
+"39
 [p x LPBOR=OFF ]
-"41
+"40
 [p x LVP=OFF ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
@@ -7635,11 +7635,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _SwitchOffStatustToGatway `(v ~T0 @X0 1 ef1`uc ]
 "1490
 {
-[; ;megaonoff.c: 1489: void SwitchOffStatustToGatway(char SwitchOffNumber)
+[; ;megaonoff.c: 1489: void SwitchOffStatustToGatway(const char SwitchOffNumber)
 [; ;megaonoff.c: 1490: {
 [e :U _SwitchOffStatustToGatway ]
 "1489
-[v _SwitchOffNumber `uc ~T0 @X0 1 r1 ]
+[v _SwitchOffNumber `Cuc ~T0 @X0 1 r1 ]
 "1490
 [f ]
 [; ;megaonoff.c: 1491: TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));
@@ -7666,11 +7666,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _SwitchOnStatustToGatway `(v ~T0 @X0 1 ef1`uc ]
 "1497
 {
-[; ;megaonoff.c: 1496: void SwitchOnStatustToGatway(char SwitchOnNumber)
+[; ;megaonoff.c: 1496: void SwitchOnStatustToGatway(const char SwitchOnNumber)
 [; ;megaonoff.c: 1497: {
 [e :U _SwitchOnStatustToGatway ]
 "1496
-[v _SwitchOnNumber `uc ~T0 @X0 1 r1 ]
+[v _SwitchOnNumber `Cuc ~T0 @X0 1 r1 ]
 "1497
 [f ]
 [; ;megaonoff.c: 1498: TX1REG = 'R';_delay((unsigned long)((1)*(16000000/4000.0)));

@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
   -h+dist/default/production\11onoff.X.production.sym \
   --cmf=dist/default/production\11onoff.X.production.cmf -z -Q16F1526 \
-  -oC:\Users\Alfaone\AppData\Local\Temp\s4bk.2 \
+  -oC:\Users\Alfaone\AppData\Local\Temp\s6ds.2 \
   -Mdist/default/production/11onoff.X.production.map -E1 -ver=XC8 \
   -ASTACK=020DAh-022efh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -30,7 +30,7 @@ Linker command line:
   -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h \
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj \
+  C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj \
   dist/default/production\11onoff.X.production.obj 
 
 Object code version is 3.11
@@ -40,7 +40,7 @@ Machine type is 16F1526
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Alfaone\AppData\Local\Temp\s4bk.obj
+C:\Users\Alfaone\AppData\Local\Temp\s6ds.obj
                 end_init                            215      215        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
@@ -1351,9 +1351,9 @@ Total ram usage:        2 bytes
  Defined at:
 		line 1496 in file "megaonoff.c"
  Parameters:    Size  Location     Type
-  SwitchOnNumb    1    wreg     unsigned char 
+  SwitchOnNumb    1    wreg     const unsigned char 
  Auto vars:     Size  Location     Type
-  SwitchOnNumb    1    1[BANK0 ] unsigned char 
+  SwitchOnNumb    1    1[BANK0 ] const unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
@@ -1381,9 +1381,9 @@ Total ram usage:        2 bytes
  Defined at:
 		line 1489 in file "megaonoff.c"
  Parameters:    Size  Location     Type
-  SwitchOffNum    1    wreg     unsigned char 
+  SwitchOffNum    1    wreg     const unsigned char 
  Auto vars:     Size  Location     Type
-  SwitchOffNum    1    1[BANK0 ] unsigned char 
+  SwitchOffNum    1    1[BANK0 ] const unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
