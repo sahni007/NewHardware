@@ -1,0 +1,1261 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1526 ]
+[d frameptr 6 ]
+"3 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\applicationcontrol.h
+[v _applianceControl applianceControl `(v  1 e 1 0 ]
+"1 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\applicationcontrolRGB.h
+[v _applicationControlRGB applicationControlRGB `(v  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+[v _strcat strcat `(*.6uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strchr.c
+[v _strchr strchr `(*.25uc  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strncpy.c
+[v _strncpy strncpy `(*.4uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strtok.c
+[v _strtok strtok `(*.6uc  1 e 1 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"314 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\main.c
+[v _isr isr `II(v  1 e 1 0 ]
+"500
+[v _main main `(i  1 e 2 0 ]
+"909
+[v _GPIO_pin_Initialize GPIO_pin_Initialize `(v  1 e 1 0 ]
+"959
+[v _allPeripheralInit allPeripheralInit `(v  1 e 1 0 ]
+"979
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"1017
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"1048
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"1078
+[v _TMR5_Initialize TMR5_Initialize `(v  1 e 1 0 ]
+"1101
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"1126
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+"1150
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+"1169
+[v _TMR8_Initialize TMR8_Initialize `(v  1 e 1 0 ]
+"1188
+[v _TMR10_Initialize TMR10_Initialize `(v  1 e 1 0 ]
+"1207
+[v _CCP9_Initialize CCP9_Initialize `(v  1 e 1 0 ]
+"1228
+[v _CCP10_Initialize CCP10_Initialize `(v  1 e 1 0 ]
+"1249
+[v _CCP7_Initialize CCP7_Initialize `(v  1 e 1 0 ]
+"1270
+[v _CCP8_Initialize CCP8_Initialize `(v  1 e 1 0 ]
+"1291
+[v _errorsISR errorsISR `(v  1 e 1 0 ]
+"1301
+[v _errorsMain errorsMain `(v  1 e 1 0 ]
+"1312
+[v _hexadecimalToDecimal hexadecimalToDecimal `(i  1 e 2 0 ]
+"1349
+[v _TransmissionIndicationLedBlinking TransmissionIndicationLedBlinking `(v  1 e 1 0 ]
+"1354
+[v _ReceivingIndicationLedBlinking ReceivingIndicationLedBlinking `(v  1 e 1 0 ]
+"1360
+[v _sendAcknowledgment sendAcknowledgment `(v  1 e 1 0 ]
+"1370
+[v _SwitchOffStatustToGatway SwitchOffStatustToGatway `(v  1 e 1 0 ]
+"1377
+[v _SwitchOnStatustToGatway SwitchOnStatustToGatway `(v  1 e 1 0 ]
+"1385
+[v _copyReceivedDataBuffer copyReceivedDataBuffer `(v  1 e 1 0 ]
+"1396
+[v _pinINIT_extra pinINIT_extra `(v  1 e 1 0 ]
+"1413
+[v _clearAllPorts clearAllPorts `(v  1 e 1 0 ]
+[s S671 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"506 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
+[u S680 . 1 `S671 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES680  1 e 1 @13 ]
+[s S135 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"630
+[u S144 . 1 `S135 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES144  1 e 1 @15 ]
+[s S46 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+`uc 1 RE4 1 0 :1:4 
+`uc 1 RE5 1 0 :1:5 
+`uc 1 RE6 1 0 :1:6 
+`uc 1 RE7 1 0 :1:7 
+]
+"692
+[u S55 . 1 `S46 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES55  1 e 1 @16 ]
+[s S329 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"760
+[s S338 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S343 . 1 `S329 1 . 1 0 `S338 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES343  1 e 1 @17 ]
+[s S212 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR8IF 1 0 :1:1 
+`uc 1 TMR10IF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TMR3GIF 1 0 :1:5 
+`uc 1 TMR5GIF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"841
+[s S221 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 BCLIF 1 0 :1:3 
+]
+[u S224 . 1 `S212 1 . 1 0 `S221 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES224  1 e 1 @18 ]
+[s S443 . 1 `uc 1 TMR3IF 1 0 :1:0 
+`uc 1 TMR4IF 1 0 :1:1 
+`uc 1 TMR5IF 1 0 :1:2 
+`uc 1 TMR6IF 1 0 :1:3 
+`uc 1 CCP3IF 1 0 :1:4 
+`uc 1 CCP4IF 1 0 :1:5 
+`uc 1 CCP5IF 1 0 :1:6 
+`uc 1 CCP6IF 1 0 :1:7 
+]
+"903
+[u S452 . 1 `S443 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES452  1 e 1 @19 ]
+[s S586 . 1 `uc 1 SSP2IF 1 0 :1:0 
+`uc 1 BCL2IF 1 0 :1:1 
+`uc 1 CCP7IF 1 0 :1:2 
+`uc 1 CCP8IF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+`uc 1 CCP9IF 1 0 :1:6 
+`uc 1 CCP10IF 1 0 :1:7 
+]
+"965
+[u S595 . 1 `S586 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES595  1 e 1 @20 ]
+"1037
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"1057
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"1077
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S390 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"1100
+[s S397 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S404 . 1 `S390 1 . 1 0 `S397 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES404  1 e 1 @24 ]
+"1155
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+"1225
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"1245
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"1265
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S361 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"1286
+[s S365 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S373 . 1 `S361 1 . 1 0 `S365 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES373  1 e 1 @28 ]
+[s S721 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1415
+[u S730 . 1 `S721 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES730  1 e 1 @141 ]
+[s S799 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1477
+[u S808 . 1 `S799 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES808  1 e 1 @142 ]
+[s S700 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1539
+[u S709 . 1 `S700 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES709  1 e 1 @143 ]
+[s S742 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 TRISE3 1 0 :1:3 
+`uc 1 TRISE4 1 0 :1:4 
+`uc 1 TRISE5 1 0 :1:5 
+`uc 1 TRISE6 1 0 :1:6 
+`uc 1 TRISE7 1 0 :1:7 
+]
+"1601
+[u S751 . 1 `S742 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES751  1 e 1 @144 ]
+[s S297 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1669
+[s S306 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S311 . 1 `S297 1 . 1 0 `S306 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES311  1 e 1 @145 ]
+[s S184 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR8IE 1 0 :1:1 
+`uc 1 TMR10IE 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TMR3GIE 1 0 :1:5 
+`uc 1 TMR5GIE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+"1750
+[s S193 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 BCLIE 1 0 :1:3 
+]
+[u S196 . 1 `S184 1 . 1 0 `S193 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES196  1 e 1 @146 ]
+[s S422 . 1 `uc 1 TMR3IE 1 0 :1:0 
+`uc 1 TMR4IE 1 0 :1:1 
+`uc 1 TMR5IE 1 0 :1:2 
+`uc 1 TMR6IE 1 0 :1:3 
+`uc 1 CCP3IE 1 0 :1:4 
+`uc 1 CCP4IE 1 0 :1:5 
+`uc 1 CCP5IE 1 0 :1:6 
+`uc 1 CCP6IE 1 0 :1:7 
+]
+"1812
+[u S431 . 1 `S422 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES431  1 e 1 @147 ]
+[s S919 . 1 `uc 1 SSP2IE 1 0 :1:0 
+`uc 1 BCL2IE 1 0 :1:1 
+`uc 1 CCP7IE 1 0 :1:2 
+`uc 1 CCP8IE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+`uc 1 CCP9IE 1 0 :1:6 
+`uc 1 CCP10IE 1 0 :1:7 
+]
+"1874
+[u S928 . 1 `S919 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES928  1 e 1 @148 ]
+"2868
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2921
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2979
+[v _ANSELD ANSELD `VEuc  1 e 1 @399 ]
+"3025
+[v _ANSELE ANSELE `VEuc  1 e 1 @400 ]
+"3256
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"3310
+[v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
+"3371
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
+"3441
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"3495
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S157 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3521
+[u S166 . 1 `S157 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES166  1 e 1 @413 ]
+"3675
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+[s S879 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3701
+[u S888 . 1 `S879 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES888  1 e 1 @414 ]
+"3855
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"4005
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4075
+[v _WPUD WPUD `VEuc  1 e 1 @527 ]
+"4137
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+[s S84 . 1 `uc 1 RF0 1 0 :1:0 
+`uc 1 RF1 1 0 :1:1 
+`uc 1 RF2 1 0 :1:2 
+`uc 1 RF3 1 0 :1:3 
+`uc 1 RF4 1 0 :1:4 
+`uc 1 RF5 1 0 :1:5 
+`uc 1 RF6 1 0 :1:6 
+`uc 1 RF7 1 0 :1:7 
+]
+"5216
+[u S93 . 1 `S84 1 . 1 0 ]
+[v _PORTFbits PORTFbits `VES93  1 e 1 @652 ]
+[s S67 . 1 `uc 1 RG0 1 0 :1:0 
+`uc 1 RG1 1 0 :1:1 
+`uc 1 RG2 1 0 :1:2 
+`uc 1 RG3 1 0 :1:3 
+`uc 1 RG4 1 0 :1:4 
+`uc 1 RG5 1 0 :1:5 
+]
+"5276
+[u S74 . 1 `S67 1 . 1 0 ]
+[v _PORTGbits PORTGbits `VES74  1 e 1 @653 ]
+[s S778 . 1 `uc 1 TRISF0 1 0 :1:0 
+`uc 1 TRISF1 1 0 :1:1 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"5778
+[u S787 . 1 `S778 1 . 1 0 ]
+[v _TRISFbits TRISFbits `VES787  1 e 1 @780 ]
+[s S763 . 1 `uc 1 TRISG0 1 0 :1:0 
+`uc 1 TRISG1 1 0 :1:1 
+`uc 1 TRISG2 1 0 :1:2 
+`uc 1 TRISG3 1 0 :1:3 
+`uc 1 TRISG4 1 0 :1:4 
+]
+"5837
+[u S769 . 1 `S763 1 . 1 0 ]
+[v _TRISGbits TRISGbits `VES769  1 e 1 @781 ]
+"6516
+[v _ANSELF ANSELF `VEuc  1 e 1 @1036 ]
+"6578
+[v _ANSELG ANSELG `VEuc  1 e 1 @1037 ]
+"6624
+[v _TMR3L TMR3L `VEuc  1 e 1 @1041 ]
+"6644
+[v _TMR3H TMR3H `VEuc  1 e 1 @1042 ]
+"6664
+[v _T3CON T3CON `VEuc  1 e 1 @1043 ]
+[s S493 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 TMR3CS 1 0 :2:6 
+]
+"6687
+[s S500 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3OSCEN 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+`uc 1 TMR3CS0 1 0 :1:6 
+`uc 1 TMR3CS1 1 0 :1:7 
+]
+[u S507 . 1 `S493 1 . 1 0 `S500 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES507  1 e 1 @1043 ]
+"6742
+[v _T3GCON T3GCON `VEuc  1 e 1 @1044 ]
+"6812
+[v _TMR4 TMR4 `VEuc  1 e 1 @1045 ]
+"6832
+[v _PR4 PR4 `VEuc  1 e 1 @1046 ]
+"6852
+[v _T4CON T4CON `VEuc  1 e 1 @1047 ]
+[s S464 . 1 `uc 1 T4CKPS 1 0 :2:0 
+`uc 1 TMR4ON 1 0 :1:2 
+`uc 1 T4OUTPS 1 0 :4:3 
+]
+"6873
+[s S468 . 1 `uc 1 T4CKPS0 1 0 :1:0 
+`uc 1 T4CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T4OUTPS0 1 0 :1:3 
+`uc 1 T4OUTPS1 1 0 :1:4 
+`uc 1 T4OUTPS2 1 0 :1:5 
+`uc 1 T4OUTPS3 1 0 :1:6 
+]
+[u S476 . 1 `S464 1 . 1 0 `S468 1 . 1 0 ]
+[v _T4CONbits T4CONbits `VES476  1 e 1 @1047 ]
+"6930
+[v _TMR5L TMR5L `VEuc  1 e 1 @1048 ]
+"6950
+[v _TMR5H TMR5H `VEuc  1 e 1 @1049 ]
+"6970
+[v _T5CON T5CON `VEuc  1 e 1 @1050 ]
+[s S554 . 1 `uc 1 TMR5ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT5SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T5CKPS 1 0 :2:4 
+`uc 1 TMR5CS 1 0 :2:6 
+]
+"6993
+[s S561 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T5OSCEN 1 0 :1:3 
+`uc 1 T5CKPS0 1 0 :1:4 
+`uc 1 T5CKPS1 1 0 :1:5 
+`uc 1 TMR5CS0 1 0 :1:6 
+`uc 1 TMR5CS1 1 0 :1:7 
+]
+[u S568 . 1 `S554 1 . 1 0 `S561 1 . 1 0 ]
+[v _T5CONbits T5CONbits `VES568  1 e 1 @1050 ]
+"7048
+[v _T5GCON T5GCON `VEuc  1 e 1 @1051 ]
+"7118
+[v _TMR6 TMR6 `VEuc  1 e 1 @1052 ]
+"7138
+[v _PR6 PR6 `VEuc  1 e 1 @1053 ]
+"7158
+[v _T6CON T6CON `VEuc  1 e 1 @1054 ]
+[s S525 . 1 `uc 1 T6CKPS 1 0 :2:0 
+`uc 1 TMR6ON 1 0 :1:2 
+`uc 1 T6OUTPS 1 0 :4:3 
+]
+"7179
+[s S529 . 1 `uc 1 T6CKPS0 1 0 :1:0 
+`uc 1 T6CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T6OUTPS0 1 0 :1:3 
+`uc 1 T6OUTPS1 1 0 :1:4 
+`uc 1 T6OUTPS2 1 0 :1:5 
+`uc 1 T6OUTPS3 1 0 :1:6 
+]
+[u S537 . 1 `S525 1 . 1 0 `S529 1 . 1 0 ]
+[v _T6CONbits T6CONbits `VES537  1 e 1 @1054 ]
+"7229
+[v _WPUG WPUG `VEuc  1 e 1 @1165 ]
+"7755
+[v _TMR8 TMR8 `VEuc  1 e 1 @1429 ]
+"7775
+[v _PR8 PR8 `VEuc  1 e 1 @1430 ]
+"7795
+[v _T8CON T8CON `VEuc  1 e 1 @1431 ]
+[s S268 . 1 `uc 1 T8CKPS 1 0 :2:0 
+`uc 1 TMR8ON 1 0 :1:2 
+`uc 1 T8OUTPS 1 0 :4:3 
+]
+"7816
+[s S272 . 1 `uc 1 T8CKPS0 1 0 :1:0 
+`uc 1 T8CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T8OUTPS0 1 0 :1:3 
+`uc 1 T8OUTPS1 1 0 :1:4 
+`uc 1 T8OUTPS2 1 0 :1:5 
+`uc 1 T8OUTPS3 1 0 :1:6 
+]
+[u S280 . 1 `S268 1 . 1 0 `S272 1 . 1 0 ]
+[v _T8CONbits T8CONbits `VES280  1 e 1 @1431 ]
+"7866
+[v _TMR10 TMR10 `VEuc  1 e 1 @1436 ]
+"7886
+[v _PR10 PR10 `VEuc  1 e 1 @1437 ]
+"7906
+[v _T10CON T10CON `VEuc  1 e 1 @1438 ]
+[s S240 . 1 `uc 1 T10CKPS 1 0 :2:0 
+`uc 1 TMR10ON 1 0 :1:2 
+`uc 1 T10OUTPS 1 0 :4:3 
+]
+"7927
+[s S244 . 1 `uc 1 T10CKPS0 1 0 :1:0 
+`uc 1 T10CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T10OUTPS0 1 0 :1:3 
+`uc 1 T10OUTPS1 1 0 :1:4 
+`uc 1 T10OUTPS2 1 0 :1:5 
+`uc 1 T10OUTPS3 1 0 :1:6 
+]
+[u S252 . 1 `S240 1 . 1 0 `S244 1 . 1 0 ]
+[v _T10CONbits T10CONbits `VES252  1 e 1 @1438 ]
+"8095
+[v _CCPR7L CCPR7L `VEuc  1 e 1 @1556 ]
+"8115
+[v _CCPR7H CCPR7H `VEuc  1 e 1 @1557 ]
+"8135
+[v _CCP7CON CCP7CON `VEuc  1 e 1 @1558 ]
+"8206
+[v _CCPR8L CCPR8L `VEuc  1 e 1 @1559 ]
+"8226
+[v _CCPR8H CCPR8H `VEuc  1 e 1 @1560 ]
+"8317
+[v _CCPR9L CCPR9L `VEuc  1 e 1 @1562 ]
+"8337
+[v _CCPR9H CCPR9H `VEuc  1 e 1 @1563 ]
+"8357
+[v _CCP9CON CCP9CON `VEuc  1 e 1 @1564 ]
+"8428
+[v _CCPR10L CCPR10L `VEuc  1 e 1 @1565 ]
+"8448
+[v _CCPR10H CCPR10H `VEuc  1 e 1 @1566 ]
+"8468
+[v _CCP10CON CCP10CON `VEuc  1 e 1 @1567 ]
+"8923
+[v _CCP10IF CCP10IF `VEb  1 e 0 @167 ]
+"9009
+[v _CCP7IF CCP7IF `VEb  1 e 0 @162 ]
+"9021
+[v _CCP8IF CCP8IF `VEb  1 e 0 @163 ]
+"9033
+[v _CCP9IF CCP9IF `VEb  1 e 0 @166 ]
+"9107
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"9299
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"9347
+[v _RC1IF RC1IF `VEb  1 e 0 @141 ]
+"362 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _hexpowers hexpowers `DC[4]ui  1 s 8 hexpowers ]
+"195 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\main.c
+[v _sendFinalBufferToGAteway sendFinalBufferToGAteway `[46]uc  1 e 46 0 ]
+"199
+[v _mainReceivedDataBuffer mainReceivedDataBuffer `[18]uc  1 e 18 0 ]
+"200
+[v _tempReceivedDataBuffer tempReceivedDataBuffer `[10]uc  1 e 10 0 ]
+"201
+[v _parentalLockBuffer parentalLockBuffer `[14]uc  1 e 14 0 ]
+"202
+[v _copy_parentalLockBuffer copy_parentalLockBuffer `[14]uc  1 e 14 0 ]
+"203
+[v _currentStateBuffer currentStateBuffer `[58]uc  1 e 58 0 ]
+"208
+[v _mainReceivedDataPosition mainReceivedDataPosition `i  1 e 2 0 ]
+[v _mainDataReceived mainDataReceived `i  1 e 2 0 ]
+"213
+[v _start_PWM_Generation_For_DIMMER start_PWM_Generation_For_DIMMER `i  1 e 2 0 ]
+"214
+[v _start_PWM_Generation_For_RedLed start_PWM_Generation_For_RedLed `i  1 e 2 0 ]
+"215
+[v _start_PWM_Generation_For_GreenLed start_PWM_Generation_For_GreenLed `i  1 e 2 0 ]
+"216
+[v _start_PWM_Generation_For_BlueLed start_PWM_Generation_For_BlueLed `i  1 e 2 0 ]
+"221
+[v _Timer1H Timer1H `i  1 e 2 0 ]
+[v _Timer1L Timer1L `i  1 e 2 0 ]
+"222
+[v _Timer3H Timer3H `i  1 e 2 0 ]
+[v _Timer3L Timer3L `i  1 e 2 0 ]
+"223
+[v _Timer5H Timer5H `i  1 e 2 0 ]
+[v _Timer5L Timer5L `i  1 e 2 0 ]
+"224
+[v _Timer8HL Timer8HL `ul  1 e 4 0 ]
+"232
+[v _ConvertmaindataReceiveIntoString ConvertmaindataReceiveIntoString `*.6uc  1 e 1 0 ]
+"234
+[v _RedColorIntensityStringLength RedColorIntensityStringLength `i  1 e 2 0 ]
+"235
+[v _GreenColorIntensityStringLength GreenColorIntensityStringLength `i  1 e 2 0 ]
+"236
+[v _AllColorIntensityStringLength AllColorIntensityStringLength `i  1 e 2 0 ]
+"237
+[v _BlueColorIntensityStringLength BlueColorIntensityStringLength `i  1 e 2 0 ]
+"239
+[v _token token `*.6uc  1 e 1 0 ]
+"240
+[v _partCounter partCounter `i  1 e 2 0 ]
+"243
+[v _ModuleNameString ModuleNameString `*.6uc  1 e 1 0 ]
+"244
+[v _SwitchNumberString SwitchNumberString `*.5uc  1 e 1 0 ]
+"245
+[v _switchNumberBuffer switchNumberBuffer `[3]uc  1 e 3 0 ]
+"246
+[v _AcknowledgementString AcknowledgementString `*.6uc  1 e 1 0 ]
+"247
+[v _SwitchStatusString SwitchStatusString `*.5uc  1 e 1 0 ]
+"248
+[v _switchstatusbuffer switchstatusbuffer `[2]uc  1 e 2 0 ]
+"249
+[v _RedColorIntensityString RedColorIntensityString `*.6uc  1 e 1 0 ]
+"250
+[v _GreenColorIntensityString GreenColorIntensityString `*.6uc  1 e 1 0 ]
+"251
+[v _BlueColorIntensityString BlueColorIntensityString `*.6uc  1 e 1 0 ]
+"252
+[v _AllColorIntensityString AllColorIntensityString `*.6uc  1 e 1 0 ]
+"253
+[v _ChildLockString ChildLockString `*.5uc  1 e 1 0 ]
+"254
+[v _ChildLockbuffer ChildLockbuffer `[2]uc  1 e 2 0 ]
+"263
+[v _IntegerSwitchNumber IntegerSwitchNumber `i  1 e 2 0 ]
+"264
+[v _IntergerSwitchStatus IntergerSwitchStatus `i  1 e 2 0 ]
+"265
+[v _IntergerRedColorIntensity IntergerRedColorIntensity `ui  1 e 2 0 ]
+"266
+[v _IntegerGreenColorIntensity IntegerGreenColorIntensity `ui  1 e 2 0 ]
+"267
+[v _IntegerBlueColorIntensity IntegerBlueColorIntensity `ui  1 e 2 0 ]
+"268
+[v _IntegerAllColorIntensity IntegerAllColorIntensity `ui  1 e 2 0 ]
+"269
+[v _IntegerChildLock IntegerChildLock `i  1 e 2 0 ]
+"270
+[v _charchildLock charchildLock `uc  1 e 1 0 ]
+"271
+[v _charSwitchState charSwitchState `uc  1 e 1 0 ]
+"275
+[v _M1 M1 `ui  1 e 2 0 ]
+[v _M2 M2 `ui  1 e 2 0 ]
+[v _M3 M3 `ui  1 e 2 0 ]
+[v _M4 M4 `ui  1 e 2 0 ]
+"276
+[v _M5 M5 `ui  1 e 2 0 ]
+[v _M6 M6 `ui  1 e 2 0 ]
+[v _M7 M7 `ui  1 e 2 0 ]
+[v _M8 M8 `ui  1 e 2 0 ]
+"277
+[v _M9 M9 `ui  1 e 2 0 ]
+"500
+[v _main main `(i  1 e 2 0 ]
+{
+"594
+[v main@k_1266 k `i  1 a 2 6 ]
+"559
+[v main@k k `i  1 a 2 4 ]
+"540
+[v main@j j `i  1 a 2 2 ]
+"630
+[v main@dataBufferCounter dataBufferCounter `i  1 a 2 0 ]
+"642
+[v main@man man `i  1 a 2 8 ]
+"901
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strtok.c
+[v _strtok strtok `(*.6uc  1 e 1 0 ]
+{
+[v strtok@s1 s1 `*.6uc  1 a 1 wreg ]
+[v strtok@s1 s1 `*.6uc  1 a 1 wreg ]
+[v strtok@s2 s2 `*.25DCuc  1 p 2 14 ]
+"15
+[v strtok@sp sp `*.6uc  1 s 1 sp ]
+"18
+[v strtok@s1 s1 `*.6uc  1 a 1 19 ]
+"31
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+{
+[v strspn@s1 s1 `*.6DCuc  1 a 1 wreg ]
+"6
+[v strspn@i i `ui  1 a 2 11 ]
+"4
+[v strspn@s1 s1 `*.6DCuc  1 a 1 wreg ]
+[v strspn@s2 s2 `*.25DCuc  1 p 2 7 ]
+"8
+[v strspn@s1 s1 `*.6DCuc  1 a 1 13 ]
+"14
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+{
+[v strcspn@s1 s1 `*.6DCuc  1 a 1 wreg ]
+"6
+[v strcspn@i i `ui  1 a 2 11 ]
+"4
+[v strcspn@s1 s1 `*.6DCuc  1 a 1 wreg ]
+[v strcspn@s2 s2 `*.25DCuc  1 p 2 7 ]
+"8
+[v strcspn@s1 s1 `*.6DCuc  1 a 1 13 ]
+"14
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strchr.c
+[v _strchr strchr `(*.25uc  1 e 1 0 ]
+{
+[v strchr@ptr ptr `*.25DCuc  1 p 2 0 ]
+[v strchr@chr chr `i  1 p 2 2 ]
+"11
+} 0
+"33 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+[v strcmp@s1 s1 `*.6DCuc  1 a 1 wreg ]
+"35
+[v strcmp@r r `c  1 a 1 3 ]
+"33
+[v strcmp@s1 s1 `*.6DCuc  1 a 1 wreg ]
+[v strcmp@s2 s2 `*.25DCuc  1 p 2 0 ]
+[v strcmp@s1 s1 `*.6DCuc  1 a 1 4 ]
+"42
+} 0
+"1301 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\main.c
+[v _errorsMain errorsMain `(v  1 e 1 0 ]
+{
+[v errorsMain@errNum errNum `*.25DCuc  1 p 2 0 ]
+"1310
+} 0
+"1385
+[v _copyReceivedDataBuffer copyReceivedDataBuffer `(v  1 e 1 0 ]
+{
+"1386
+[v copyReceivedDataBuffer@dataBufferCounter dataBufferCounter `i  1 a 2 1 ]
+"1392
+} 0
+"1 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\applicationcontrolRGB.h
+[v _applicationControlRGB applicationControlRGB `(v  1 e 1 0 ]
+{
+[v applicationControlRGB@ModuleNamestr ModuleNamestr `*.6uc  1 a 1 wreg ]
+"49
+[v applicationControlRGB@HexlevelBuffer HexlevelBuffer `[5]uc  1 a 5 49 ]
+"44
+[v applicationControlRGB@CompleteClock CompleteClock `ul  1 a 4 54 ]
+[v applicationControlRGB@NeedBluePulse NeedBluePulse `ul  1 a 4 26 ]
+[v applicationControlRGB@NeedGreenPulse NeedGreenPulse `ul  1 a 4 22 ]
+[v applicationControlRGB@NeedRedPulse NeedRedPulse `ul  1 a 4 18 ]
+[v applicationControlRGB@BluePulse BluePulse `ul  1 a 4 14 ]
+[v applicationControlRGB@GreenPulse GreenPulse `ul  1 a 4 10 ]
+[v applicationControlRGB@RedPulse RedPulse `ul  1 a 4 6 ]
+"54
+[v applicationControlRGB@strBlueL strBlueL `[3]uc  1 a 3 46 ]
+[v applicationControlRGB@strBlueH strBlueH `[3]uc  1 a 3 43 ]
+"53
+[v applicationControlRGB@strGreenL strGreenL `[3]uc  1 a 3 40 ]
+[v applicationControlRGB@strGreenH strGreenH `[3]uc  1 a 3 37 ]
+"52
+[v applicationControlRGB@strRedL strRedL `[3]uc  1 a 3 34 ]
+[v applicationControlRGB@strRedH strRedH `[3]uc  1 a 3 31 ]
+"43
+[v applicationControlRGB@ConvertIntToTimeInMicrosecBlue ConvertIntToTimeInMicrosecBlue `d  1 a 3 72 ]
+"42
+[v applicationControlRGB@ConvertIntToTimeInMicrosecGreen ConvertIntToTimeInMicrosecGreen `d  1 a 3 69 ]
+"41
+[v applicationControlRGB@ConvertIntToTimeInMicrosecRed ConvertIntToTimeInMicrosecRed `d  1 a 3 66 ]
+"47
+[v applicationControlRGB@clockPerCycle clockPerCycle `f  1 a 3 61 ]
+"45
+[v applicationControlRGB@Convert255RangeintoHundred Convert255RangeintoHundred `f  1 a 3 58 ]
+"46
+[v applicationControlRGB@ConvertIntoTenMsRangeFactor ConvertIntoTenMsRangeFactor `i  1 a 2 64 ]
+"51
+[v applicationControlRGB@end end `i  1 a 2 4 ]
+"50
+[v applicationControlRGB@start start `i  1 a 2 2 ]
+"48
+[v applicationControlRGB@remainder remainder `i  1 a 2 0 ]
+"1
+[v applicationControlRGB@ModuleNamestr ModuleNamestr `*.6uc  1 a 1 wreg ]
+[v applicationControlRGB@SwitchNumberstr SwitchNumberstr `*.5uc  1 p 1 44 ]
+[v applicationControlRGB@SwitchStatusstr SwitchStatusstr `*.5uc  1 p 1 45 ]
+"2
+[v applicationControlRGB@RedColorIntensitystr RedColorIntensitystr `*.6uc  1 p 1 46 ]
+[v applicationControlRGB@GreenColorIntensitystr GreenColorIntensitystr `*.6uc  1 p 1 47 ]
+[v applicationControlRGB@BlueColorIntensitystr BlueColorIntensitystr `*.6uc  1 p 1 48 ]
+[v applicationControlRGB@ChildLockstr ChildLockstr `*.5uc  1 p 1 49 ]
+[v applicationControlRGB@Allcolorstr Allcolorstr `*.6uc  1 p 1 50 ]
+"7
+[v applicationControlRGB@ModuleNamestr ModuleNamestr `*.6uc  1 a 1 30 ]
+"180
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strncpy.c
+[v _strncpy strncpy `(*.4uc  1 e 1 0 ]
+{
+[v strncpy@to to `*.4uc  1 a 1 wreg ]
+"15
+[v strncpy@cp cp `*.4uc  1 a 1 4 ]
+"8
+[v strncpy@to to `*.4uc  1 a 1 wreg ]
+[v strncpy@from from `*.4DCuc  1 p 1 0 ]
+[v strncpy@size size `ui  1 p 2 1 ]
+"18
+[v strncpy@to to `*.4uc  1 a 1 5 ]
+"27
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+[v _strcat strcat `(*.6uc  1 e 1 0 ]
+{
+[v strcat@to to `*.6uc  1 a 1 wreg ]
+"15
+[v strcat@cp cp `*.6uc  1 a 1 3 ]
+"8
+[v strcat@to to `*.6uc  1 a 1 wreg ]
+[v strcat@from from `*.26DCuc  1 p 2 0 ]
+"18
+[v strcat@to to `*.6uc  1 a 1 4 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
+{
+"15
+[v memset@p p `*.39uc  1 a 2 6 ]
+"8
+[v memset@p1 p1 `*.39v  1 p 2 0 ]
+[v memset@c c `i  1 p 2 2 ]
+[v memset@n n `ui  1 p 2 4 ]
+"22
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 0 ]
+"9
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"3 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\applicationcontrol.h
+[v _applianceControl applianceControl `(v  1 e 1 0 ]
+{
+[v applianceControl@charSwitchMSB charSwitchMSB `uc  1 a 1 wreg ]
+"21
+[v applianceControl@strD strD `[6]uc  1 a 6 8 ]
+"18
+[v applianceControl@HexlevelBuffer HexlevelBuffer `[5]uc  1 a 5 14 ]
+"14
+[v applianceControl@NeedPulse NeedPulse `ul  1 a 4 33 ]
+[v applianceControl@Pulse Pulse `ul  1 a 4 29 ]
+[v applianceControl@CompleteClock CompleteClock `ul  1 a 4 19 ]
+"13
+[v applianceControl@ConvertIntToTimeInMilisec ConvertIntToTimeInMilisec `f  1 a 3 42 ]
+"16
+[v applianceControl@clockPerCycle clockPerCycle `f  1 a 3 26 ]
+"15
+[v applianceControl@deno deno `f  1 a 3 23 ]
+"8
+[v applianceControl@integerSwitchState integerSwitchState `i  1 a 2 51 ]
+"25
+[v applianceControl@dimmerSpeedStringBuffer dimmerSpeedStringBuffer `[2]uc  1 a 2 45 ]
+"10
+[v applianceControl@currentStateBufferPositions currentStateBufferPositions `i  1 a 2 49 ]
+"7
+[v applianceControl@integerSwitchNumber integerSwitchNumber `i  1 a 2 47 ]
+"24
+[v applianceControl@switchNumberStringBuffer switchNumberStringBuffer `[2]uc  1 a 2 40 ]
+"9
+[v applianceControl@integerSpeed integerSpeed `i  1 a 2 37 ]
+"20
+[v applianceControl@end end `i  1 a 2 6 ]
+"19
+[v applianceControl@start start `i  1 a 2 4 ]
+"17
+[v applianceControl@remainder remainder `i  1 a 2 2 ]
+"12
+[v applianceControl@ConvertStringIntoInt ConvertStringIntoInt `i  1 a 2 0 ]
+"3
+[v applianceControl@charSwitchMSB charSwitchMSB `uc  1 a 1 wreg ]
+[v applianceControl@charSwitchLSB charSwitchLSB `uc  1 p 1 44 ]
+[v applianceControl@charSwitchSTATE charSwitchSTATE `uc  1 p 1 45 ]
+[v applianceControl@chDimmerSpeedMSB chDimmerSpeedMSB `uc  1 p 1 46 ]
+[v applianceControl@chDimmerSpeedLSB chDimmerSpeedLSB `uc  1 p 1 47 ]
+"4
+[v applianceControl@charParentalControl charParentalControl `uc  1 p 1 48 ]
+[v applianceControl@charFinalFrameState charFinalFrameState `uc  1 p 1 49 ]
+"21
+[v applianceControl@F3972 F3972 `[2]uc  1 s 2 F3972 ]
+"24
+[v applianceControl@F3974 F3974 `[2]uc  1 s 2 F3974 ]
+"7
+[v applianceControl@charSwitchMSB charSwitchMSB `uc  1 a 1 39 ]
+"126
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 1 0 ]
+{
+"15
+[v strcpy@cp cp `*.39uc  1 a 2 4 ]
+"8
+[v strcpy@to to `*.39uc  1 p 2 0 ]
+[v strcpy@from from `*.39DCuc  1 p 2 2 ]
+"24
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"1500
+[v sprintf@idx idx `uc  1 a 1 19 ]
+"528
+[v sprintf@val val `ui  1 a 2 21 ]
+"499
+[v sprintf@c c `c  1 a 1 25 ]
+"506
+[v sprintf@prec prec `c  1 a 1 23 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 20 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 18 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.25DCuc  1 p 2 8 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 24 ]
+"1541
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"1360 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\main.c
+[v _sendAcknowledgment sendAcknowledgment `(v  1 e 1 0 ]
+{
+[v sendAcknowledgment@currentStateBuffer currentStateBuffer `*.6uc  1 a 1 wreg ]
+"1361
+[v sendAcknowledgment@Tx_count Tx_count `i  1 a 2 1 ]
+"1360
+[v sendAcknowledgment@currentStateBuffer currentStateBuffer `*.6uc  1 a 1 wreg ]
+[v sendAcknowledgment@currentStateBuffer currentStateBuffer `*.6uc  1 a 1 3 ]
+"1369
+} 0
+"1312
+[v _hexadecimalToDecimal hexadecimalToDecimal `(i  1 e 2 0 ]
+{
+[v hexadecimalToDecimal@hexVal hexVal `*.4uc  1 a 1 wreg ]
+"1322
+[v hexadecimalToDecimal@i i `i  1 a 2 16 ]
+"1317
+[v hexadecimalToDecimal@base base `i  1 a 2 14 ]
+"1319
+[v hexadecimalToDecimal@dec_val dec_val `i  1 a 2 12 ]
+"1314
+[v hexadecimalToDecimal@len len `i  1 a 2 10 ]
+"1312
+[v hexadecimalToDecimal@hexVal hexVal `*.4uc  1 a 1 wreg ]
+"1314
+[v hexadecimalToDecimal@hexVal hexVal `*.4uc  1 a 1 18 ]
+"1348
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"6
+[v strlen@cp cp `*.39DCuc  1 a 2 4 ]
+"4
+[v strlen@s s `*.39DCuc  1 p 2 0 ]
+"13
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"7
+[v atoi@a a `i  1 a 2 11 ]
+"8
+[v atoi@sign sign `uc  1 a 1 10 ]
+"5
+[v atoi@s s `*.39DCuc  1 p 2 6 ]
+"24
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 39 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 43 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 38 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 30 ]
+"73
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 19 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 23 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 22 ]
+[v ___ftmul@exp exp `uc  1 a 1 18 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 25 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 29 ]
+[v ___ftdiv@exp exp `uc  1 a 1 28 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 24 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 14 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 17 ]
+"86
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"959 D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\RGBDImmerSwitch\rgbdimmerswitch.X\main.c
+[v _allPeripheralInit allPeripheralInit `(v  1 e 1 0 ]
+{
+"974
+} 0
+"1169
+[v _TMR8_Initialize TMR8_Initialize `(v  1 e 1 0 ]
+{
+"1187
+} 0
+"1150
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+{
+"1168
+} 0
+"1078
+[v _TMR5_Initialize TMR5_Initialize `(v  1 e 1 0 ]
+{
+"1099
+} 0
+"1126
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+{
+"1148
+} 0
+"1048
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"1077
+} 0
+"1101
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"1123
+} 0
+"1017
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"1046
+} 0
+"1188
+[v _TMR10_Initialize TMR10_Initialize `(v  1 e 1 0 ]
+{
+"1206
+} 0
+"979
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"1015
+} 0
+"1207
+[v _CCP9_Initialize CCP9_Initialize `(v  1 e 1 0 ]
+{
+"1227
+} 0
+"1270
+[v _CCP8_Initialize CCP8_Initialize `(v  1 e 1 0 ]
+{
+"1290
+} 0
+"1249
+[v _CCP7_Initialize CCP7_Initialize `(v  1 e 1 0 ]
+{
+"1269
+} 0
+"1228
+[v _CCP10_Initialize CCP10_Initialize `(v  1 e 1 0 ]
+{
+"1248
+} 0
+"1349
+[v _TransmissionIndicationLedBlinking TransmissionIndicationLedBlinking `(v  1 e 1 0 ]
+{
+"1353
+} 0
+"1377
+[v _SwitchOnStatustToGatway SwitchOnStatustToGatway `(v  1 e 1 0 ]
+{
+[v SwitchOnStatustToGatway@SwitchOnNumber SwitchOnNumber `DCi  1 p 2 0 ]
+"1383
+} 0
+"1370
+[v _SwitchOffStatustToGatway SwitchOffStatustToGatway `(v  1 e 1 0 ]
+{
+[v SwitchOffStatustToGatway@SwitchOffNumber SwitchOffNumber `DCi  1 p 2 0 ]
+"1376
+} 0
+"1354
+[v _ReceivingIndicationLedBlinking ReceivingIndicationLedBlinking `(v  1 e 1 0 ]
+{
+"1359
+} 0
+"909
+[v _GPIO_pin_Initialize GPIO_pin_Initialize `(v  1 e 1 0 ]
+{
+"954
+} 0
+"1396
+[v _pinINIT_extra pinINIT_extra `(v  1 e 1 0 ]
+{
+"1408
+} 0
+"1413
+[v _clearAllPorts clearAllPorts `(v  1 e 1 0 ]
+{
+"1434
+} 0
+"314
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"494
+} 0
+"1291
+[v _errorsISR errorsISR `(v  1 e 1 0 ]
+{
+[v errorsISR@errNum errNum `*.25DCuc  1 p 2 0 ]
+"1300
+} 0
