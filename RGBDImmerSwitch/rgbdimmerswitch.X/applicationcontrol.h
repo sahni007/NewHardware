@@ -62,7 +62,7 @@ void applianceControl(char charSwitchMSB, char charSwitchLSB, char charSwitchSTA
     currentStateBuffer[currentStateBufferPositions] = charSwitchLSB;    
     
     currentStateBufferPositions-=3;     // since we have come forward by 3 address in current state buffer
-    if(charFinalFrameState=='1')    // until 
+    if(charFinalFrameState == '1')    // until 
     {
         sendAcknowledgment(currentStateBuffer+currentStateBufferPositions);    
     }

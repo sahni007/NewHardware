@@ -65,6 +65,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _errorsISR `(v ~T0 @X0 0 ef1`*Cuc ]
 "3256 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [v _RC1REG `Vuc ~T0 @X0 0 e@409 ]
+"3310
+[v _TX1REG `Vuc ~T0 @X0 0 e@410 ]
 "1735
 [s S86 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S86 . CCP2IE TMR8IE TMR10IE BCL1IE . TMR3GIE TMR5GIE OSFIE ]
@@ -446,8 +448,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CCPR8H `Vuc ~T0 @X0 0 e@1560 ]
 "8206
 [v _CCPR8L `Vuc ~T0 @X0 0 e@1559 ]
-"3310
-[v _TX1REG `Vuc ~T0 @X0 0 e@410 ]
 "6578
 [v _ANSELG `Vuc ~T0 @X0 0 e@1037 ]
 "7229
@@ -4946,7 +4946,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;applicationcontrol.h: 64: currentStateBufferPositions-=3;
 "64
 [e =- _currentStateBufferPositions -> 3 `i ]
-[; ;applicationcontrol.h: 65: if(charFinalFrameState=='1')
+[; ;applicationcontrol.h: 65: if(charFinalFrameState == '1')
 "65
 [e $ ! == -> _charFinalFrameState `ui -> 49 `ui 465  ]
 [; ;applicationcontrol.h: 66: {
@@ -5647,6 +5647,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 324: mainReceivedDataBuffer[mainReceivedDataPosition]=RC1REG;
 "324
 [e = *U + &U _mainReceivedDataBuffer * -> -> _mainReceivedDataPosition `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux _RC1REG ]
+[; ;main.c: 327: TX1REG=mainReceivedDataBuffer[mainReceivedDataPosition];
+"327
+[e = _TX1REG *U + &U _mainReceivedDataBuffer * -> -> _mainReceivedDataPosition `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux ]
 [; ;main.c: 329: if(mainReceivedDataBuffer[0]=='%'){
 "329
 [e $ ! == -> *U + &U _mainReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _mainReceivedDataBuffer `ui `ux `ui -> 37 `ui 508  ]
@@ -5765,9 +5768,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 373: T8CONbits.TMR8ON=0;
 "373
 [e = . . _T8CONbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 374: PR10=0x26;
+[; ;main.c: 374: PR10=0xEA;
 "374
-[e = _PR10 -> -> 38 `i `uc ]
+[e = _PR10 -> -> 234 `i `uc ]
 [; ;main.c: 375: T10CONbits.TMR10ON=1;
 "375
 [e = . . _T10CONbits 0 1 -> -> 1 `i `uc ]
@@ -7537,9 +7540,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 1170: {
 [e :U _TMR8_Initialize ]
 [f ]
-[; ;main.c: 1174: T8CON = 0x7B;
+[; ;main.c: 1174: T8CON = 0x1F;
 "1174
-[e = _T8CON -> -> 123 `i `uc ]
+[e = _T8CON -> -> 31 `i `uc ]
 [; ;main.c: 1180: TMR8 = 0x00;
 "1180
 [e = _TMR8 -> -> 0 `i `uc ]
@@ -7561,9 +7564,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 1189: {
 [e :U _TMR10_Initialize ]
 [f ]
-[; ;main.c: 1193: T10CON = 0x7B;
+[; ;main.c: 1193: T10CON = 0x1F;
 "1193
-[e = _T10CON -> -> 123 `i `uc ]
+[e = _T10CON -> -> 31 `i `uc ]
 [; ;main.c: 1199: TMR10 = 0x00;
 "1199
 [e = _TMR10 -> -> 0 `i `uc ]

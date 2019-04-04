@@ -5225,7 +5225,7 @@ currentStateBuffer[currentStateBufferPositions++] = charSwitchMSB;
 currentStateBuffer[currentStateBufferPositions] = charSwitchLSB;
 
 currentStateBufferPositions-=3;
-if(charFinalFrameState=='1')
+if(charFinalFrameState == '1')
 {
 sendAcknowledgment(currentStateBuffer+currentStateBufferPositions);
 }
@@ -5474,7 +5474,9 @@ errorsISR("EROV");
 
 mainReceivedDataBuffer[mainReceivedDataPosition]=RC1REG;
 
-# 329
+
+TX1REG=mainReceivedDataBuffer[mainReceivedDataPosition];
+
 if(mainReceivedDataBuffer[0]=='%'){
 mainReceivedDataPosition++;
 if(mainReceivedDataPosition>15){
@@ -5516,7 +5518,7 @@ if(PIE2bits.TMR8IE==1 && PIR2bits.TMR8IF==1)
 PIR2bits.TMR8IF=0;
 PORTFbits.RF3=1;
 T8CONbits.TMR8ON=0;
-PR10=0x26;
+PR10=0xEA;
 T10CONbits.TMR10ON=1;
 }
 
@@ -6286,7 +6288,7 @@ void TMR8_Initialize(void)
 
 
 
-T8CON = 0x7B;
+T8CON = 0x1F;
 
 # 1180
 TMR8 = 0x00;
@@ -6302,7 +6304,7 @@ void TMR10_Initialize(void)
 
 
 
-T10CON = 0x7B;
+T10CON = 0x1F;
 
 # 1199
 TMR10 = 0x00;
