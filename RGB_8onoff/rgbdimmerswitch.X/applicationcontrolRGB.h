@@ -2,7 +2,7 @@
                 char  *RedColorIntensitystr,char *GreenColorIntensitystr,char *BlueColorIntensitystr,char *ChildLockstr,char *Allcolorstr ){
    
 
-      //  sendAcknowledgment(Allcolorstr);
+       //// sendAcknowledgmentRGB("APPLICATION");
         
         IntegerSwitchNumber = atoi(SwitchNumberstr);
         IntergerSwitchStatus = atoi(SwitchStatusstr);
@@ -34,7 +34,7 @@
         strcat(sendFinalBufferToGAteway,ChildLockstr);
         strcat(sendFinalBufferToGAteway,".");
          strcat(sendFinalBufferToGAteway,Allcolorstr);
-        sendAcknowledgment(sendFinalBufferToGAteway);
+        sendAcknowledgmentRGB(sendFinalBufferToGAteway);
           
         parentalLockBuffer[IntegerSwitchNumber] = charchildLock;
             //**********************//
@@ -113,7 +113,7 @@
          
         switch(IntegerSwitchNumber)
         {
-            case 1:{
+            case 9 :{
                 switch(IntergerSwitchStatus){
                     case 0:
                         start_PWM_Generation_For_BlueLed = start_PWM_Generation_For_GreenLed = start_PWM_Generation_For_RedLed = 0;
