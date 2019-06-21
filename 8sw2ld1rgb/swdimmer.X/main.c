@@ -258,10 +258,10 @@ interrupt void isr(){
 
     
     //*************************ZCD INTERRRUPT****************************//
-    if(PIR4bits.CCP8IF == 1){
-    if(CCP8IF){
-        if(CCP8IF == 1){
-             CCP8IF=0;
+    if(PIR4bits.CCP10IF == 1){
+    if(CCP10IF){
+        if(CCP10IF == 1){
+             CCP10IF=0;
          if(start_PWM_Generation_For_DIMMER == 1)
                                     TMR1H = Timer1H;
                                     TMR1L = Timer1L;

@@ -9,7 +9,7 @@ void applianceControl(char charSwitchMSB, char charSwitchLSB, char charSwitchSTA
     int integerSpeed = 0;
     int currentStateBufferPositions=0;
         //**********************//
-    	int ConvertStringIntoInt=0;
+    int ConvertStringIntoInt=0;
 	float ConvertIntToTimeInMilisec=0;
 	unsigned long long int Pulse=0,NeedPulse=0,CompleteClock =65535;
 	float deno = 20.0;
@@ -106,11 +106,11 @@ void applianceControl(char charSwitchMSB, char charSwitchLSB, char charSwitchSTA
             OUTPUT_RELAY7 = integerSwitchState;
         }break; 
       
-        case 8:
-        {
-            OUTPUT_RELAY8 = integerSwitchState;
-        }break; 
-        case 9:{
+//        case 8:
+//        {
+//            OUTPUT_RELAY8 = integerSwitchState;
+//        }break; 
+        case 8:{
                 start_PWM_Generation_For_DIMMER = integerSwitchState;
                switch(integerSwitchState){
                 case 0:

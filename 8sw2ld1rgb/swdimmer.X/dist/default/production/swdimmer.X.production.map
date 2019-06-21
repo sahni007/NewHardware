@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
   -h+dist/default/production\swdimmer.X.production.sym \
   --cmf=dist/default/production\swdimmer.X.production.cmf -z -Q16F1526 \
-  -oC:\Users\Alfaone\AppData\Local\Temp\s6o4.2 \
+  -oC:\Users\Alfaone\AppData\Local\Temp\s9nc.2 \
   -Mdist/default/production/swdimmer.X.production.map -E1 -ver=XC8 \
   -ASTACK=0212Ah-022efh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -30,7 +30,7 @@ Linker command line:
   -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h \
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj \
+  C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj \
   dist/default/production\swdimmer.X.production.obj 
 
 Object code version is 3.11
@@ -40,7 +40,7 @@ Machine type is 16F1526
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
                 end_init                             7C       7C        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
@@ -55,17 +55,17 @@ dist/default/production\swdimmer.X.production.obj
                 text26                              C80      C80       33     1900       0
                 text25                              CB3      CB3       33     1966       0
                 text24                              ABB      ABB       11     1576       0
-                text23                              A63      A63        A     14C6       0
-                text22                              A6D      A6D        A     14DA       0
+                text23                              A6E      A6E        A     14DC       0
+                text22                              A78      A78        A     14F0       0
                 text21                              B1C      B1C       16     1638       0
-                text20                              A81      A81        B     1502       0
-                text19                              A77      A77        A     14EE       0
+                text20                              7F4      7F4        B        8       0
+                text19                              A82      A82        A     1504       0
                 text18                              A8C      A8C        F     1518       0
                 text17                              D55      D55       65     1AAA       0
                 text16                              B87      B87       22     170E       0
                 text15                              EA4      EA4       A9     1D48       0
-                text14                              6C1      6C1       B4        8       0
-                text13                              775      775       87        8       0
+                text14                              6B9      6B9       B4        8       0
+                text13                              76D      76D       87        8       0
                 text12                              B4B      B4B       1C     1696       0
                 text11                              A9B      A9B        F     1536       0
                 text10                              DBA      DBA       6B     1B74       0
@@ -75,8 +75,8 @@ dist/default/production\swdimmer.X.production.obj
                 text6                               CE6      CE6       35     19CC       0
                 text5                               F4D      F4D       B3     1E9A       0
                 text4                               C1F      C1F       2F     183E       0
-                swtext1                             800      800       12     1000       0
-                text3                               412      412      2AF        8       0
+                swtext1                             800      800       10     1000       0
+                text3                               412      412      2A7        8       0
                 text2                               C4E      C4E       32     189C       0
                 text1                               B32      B32       19     1664       0
                 maintext                             B9       B9      359        8       0
@@ -84,8 +84,8 @@ dist/default/production\swdimmer.X.production.obj
                 cstackCOMMON                         70       70        5       70       1
                 cstackBANK1                          A0       A0       35       A0       1
                 cstackBANK2                         14A      14A        4      120       1
-                clrtext                             A57      A57        6     14AE       0
-                inittext                            A5D      A5D        6     14BA       0
+                clrtext                             A62      A62        6     14C4       0
+                inittext                            A68      A68        6     14D0       0
                 dataBANK3                           1A0      1A0       3A      1A0       1
                 dataBANK2                           120      120       2A      120       1
                 dataBANK1                            D5       D5       12       A0       1
@@ -117,17 +117,17 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text26                              C80      C80       33         0
                 text25                              CB3      CB3       33         0
                 text24                              ABB      ABB       11         0
-                text23                              A63      A63        A         0
-                text22                              A6D      A6D        A         0
+                text23                              A6E      A6E        A         0
+                text22                              A78      A78        A         0
                 text21                              B1C      B1C       16         0
-                text20                              A81      A81        B         0
-                text19                              A77      A77        A         0
+                text20                              7F4      7F4        B         0
+                text19                              A82      A82        A         0
                 text18                              A8C      A8C        F         0
                 text17                              D55      D55       65         0
                 text16                              B87      B87       22         0
                 text15                              EA4      EA4       A9         0
-                text14                              6C1      6C1       B4         0
-                text13                              775      775       87         0
+                text14                              6B9      6B9       B4         0
+                text13                              76D      76D       87         0
                 text12                              B4B      B4B       1C         0
                 text11                              A9B      A9B        F         0
                 text10                              DBA      DBA       6B         0
@@ -137,12 +137,12 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text6                               CE6      CE6       35         0
                 text5                               F4D      F4D       B3         0
                 text4                               C1F      C1F       2F         0
-                text3                               412      412      2AF         0
+                text3                               412      412      2A7         0
                 text2                               C4E      C4E       32         0
                 text1                               B32      B32       19         0
                 maintext                             B9       B9      359         0
-                clrtext                             A57      A57        6         0
-                inittext                            A5D      A5D        6         0
+                clrtext                             A62      A62        6         0
+                inittext                            A68      A68        6         0
                 idataBANK3                          D1B      D1B       3A         0
                 idataBANK2                          BF5      BF5       2A         0
                 idataBANK1                          ACC      ACC       12         0
@@ -157,7 +157,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STRING         
 
         CLASS   CONST          
-                swtext1                             800      800       12         0
+                swtext1                             800      800       10         0
 
         CLASS   ENTRY          
 
@@ -320,19 +320,18 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                intentry                       000004  0007F8  0007FC         8       0  CODE        2
+                intentry                       000004  0007FB  0007FF         8       0  CODE        2
                 cstackBANK0                    000020  000050  000070        20       1  BANK0       1
                 cstackCOMMON                   000070  000009  000079        70       1  COMMON      1
                 cstackBANK1                    0000A0  00004F  0000EF        A0       1  BANK1       1
                 dataBANK2                      000120  00002E  00014E       120       1  BANK2       1
                 dataBANK3                      0001A0  00003A  0001DA       1A0       1  BANK3       1
-                swtext1                        000800  000012  000812      1000       0  CONST       2
-                clrtext                        000A57  000006  000A5D      14AE       0  CODE        2
-                inittext                       000A5D  000006  000A63      14BA       0  CODE        2
-                text23                         000A63  00000A  000A6D      14C6       0  CODE        2
-                text22                         000A6D  00000A  000A77      14DA       0  CODE        2
-                text19                         000A77  00000A  000A81      14EE       0  CODE        2
-                text20                         000A81  00000B  000A8C      1502       0  CODE        2
+                swtext1                        000800  000010  000810      1000       0  CONST       2
+                clrtext                        000A62  000006  000A68      14C4       0  CODE        2
+                inittext                       000A68  000006  000A6E      14D0       0  CODE        2
+                text23                         000A6E  00000A  000A78      14DC       0  CODE        2
+                text22                         000A78  00000A  000A82      14F0       0  CODE        2
+                text19                         000A82  00000A  000A8C      1504       0  CODE        2
                 text18                         000A8C  00000F  000A9B      1518       0  CODE        2
                 text11                         000A9B  00000F  000AAA      1536       0  CODE        2
                 text27                         000AAA  000011  000ABB      1554       0  CODE        2
@@ -378,17 +377,17 @@ UNUSED ADDRESS RANGES
         BANK9            004A0-004BF              20           1
         BIGRAM           02000-022EF             2F0           1
         CODE             00002-00003               2           2
-                         007FC-007FF               4
-                         00812-00A56             245
+                         007FF-007FF               1
+                         00810-00A61             252
                          0102B-01FFF             7D5
         COMMON           00079-0007D               5           1
         CONST            00002-00003               2           2
-                         007FC-007FF               4
-                         00812-00A56             100
+                         007FF-007FF               1
+                         00810-00A61             100
                          0102B-01FFF             100
         ENTRY            00002-00003               2           2
-                         007FC-007FF               4
-                         00812-00A56             100
+                         007FF-007FF               1
+                         00810-00A61             100
                          0102B-01FFF             100
         IDLOC            08000-08003               4           2
         RAM              000EF-000EF               1           1
@@ -434,12 +433,12 @@ UNUSED ADDRESS RANGES
         SFR9             00480-0049F              20           1
         STACK            0212A-022EF             1C6           1
         STRCODE          00002-00003               2           2
-                         007FC-007FF               4
-                         00812-00A56             245
+                         007FF-007FF               1
+                         00810-00A61             252
                          0102B-01FFF             FD5
         STRING           00002-00003               2           2
-                         007FC-007FF               4
-                         00812-00A56             100
+                         007FF-007FF               1
+                         00810-00A61             100
                          0102B-01FFF             100
 
                                   Symbol Table
@@ -465,9 +464,9 @@ _ANSELF                                      (abs)        0040C
 _ANSELG                                      (abs)        0040D
 _BAUD1CON                                    (abs)        0019F
 _CCP10CON                                    (abs)        0061F
-_CCP10_Initialize                            text23       00A63
-_CCP8IF                                      (abs)        000A3
-_CCP8_Initialize                             text22       00A6D
+_CCP10IF                                     (abs)        000A7
+_CCP10_Initialize                            text23       00A6E
+_CCP8_Initialize                             text22       00A78
 _CCP9CON                                     (abs)        0061C
 _CCPR10H                                     (abs)        0061E
 _CCPR10L                                     (abs)        0061D
@@ -512,9 +511,9 @@ _T2CON                                       (abs)        0001C
 _T2CONbits                                   (abs)        0001C
 _TMR1H                                       (abs)        00017
 _TMR1L                                       (abs)        00016
-_TMR1_Initialize                             text20       00A81
+_TMR1_Initialize                             text20       007F4
 _TMR2                                        (abs)        0001A
-_TMR2_Initialize                             text19       00A77
+_TMR2_Initialize                             text19       00A82
 _TRISBbits                                   (abs)        0008D
 _TRISCbits                                   (abs)        0008E
 _TRISDbits                                   (abs)        0008F
@@ -775,7 +774,7 @@ ___ftdiv@f1                                  cstackBANK0  00031
 ___ftdiv@f2                                  cstackBANK0  0002E
 ___ftdiv@f3                                  cstackBANK0  00039
 ___ftdiv@sign                                cstackBANK0  0003D
-___ftmul                                     text14       006C1
+___ftmul                                     text14       006B9
 ___ftmul@cntr                                cstackBANK0  00036
 ___ftmul@exp                                 cstackBANK0  00032
 ___ftmul@f1                                  cstackBANK0  00028
@@ -786,7 +785,7 @@ ___ftpack                                    text17       00D55
 ___ftpack@arg                                cstackBANK0  00020
 ___ftpack@exp                                cstackBANK0  00023
 ___ftpack@sign                               cstackBANK0  00024
-___fttol                                     text13       00775
+___fttol                                     text13       0076D
 ___fttol@exp1                                cstackBANK0  0004B
 ___fttol@f1                                  cstackBANK0  0003E
 ___fttol@lval                                cstackBANK0  00047
@@ -803,26 +802,26 @@ ___wmul                                      text12       00B4B
 ___wmul@multiplicand                         cstackBANK0  00022
 ___wmul@multiplier                           cstackBANK0  00020
 ___wmul@product                              cstackBANK0  00024
-__end_of_CCP10_Initialize                    text23       00A6D
-__end_of_CCP8_Initialize                     text22       00A77
+__end_of_CCP10_Initialize                    text23       00A78
+__end_of_CCP8_Initialize                     text22       00A82
 __end_of_EUSART_Initialize                   text21       00B32
 __end_of_GPIO_pin_Initialize                 text28       00BF5
 __end_of_ReceivingIndicationLedBlinking      text27       00ABB
 __end_of_SwitchOffStatustToGatway            text26       00CB3
 __end_of_SwitchOnStatustToGatway             text25       00CE6
-__end_of_TMR1_Initialize                     text20       00A8C
-__end_of_TMR2_Initialize                     text19       00A81
+__end_of_TMR1_Initialize                     text20       007FF
+__end_of_TMR2_Initialize                     text19       00A8C
 __end_of_TransmissionIndicationLedBlinking   text24       00ACC
 __end_of___awtoft                            text16       00BA9
 __end_of___ftdiv                             text15       00F4D
-__end_of___ftmul                             text14       00775
+__end_of___ftmul                             text14       0076D
 __end_of___ftpack                            text17       00DBA
-__end_of___fttol                             text13       007FC
+__end_of___fttol                             text13       007F4
 __end_of___lwdiv                             text6        00D1B
 __end_of___wmul                              text12       00B67
 __end_of__initialization                     cinit        000B5
 __end_of_allPeripheralInit                   text18       00A9B
-__end_of_applianceControl                    text3        006C1
+__end_of_applianceControl                    text3        006B9
 __end_of_atoi                                text10       00E25
 __end_of_clearAllPorts                       text30       00AF2
 __end_of_copyReceivedDataBuffer              text2        00C80
@@ -865,18 +864,18 @@ __ptext1                                     text1        00B32
 __ptext10                                    text10       00DBA
 __ptext11                                    text11       00A9B
 __ptext12                                    text12       00B4B
-__ptext13                                    text13       00775
-__ptext14                                    text14       006C1
+__ptext13                                    text13       0076D
+__ptext14                                    text14       006B9
 __ptext15                                    text15       00EA4
 __ptext16                                    text16       00B87
 __ptext17                                    text17       00D55
 __ptext18                                    text18       00A8C
-__ptext19                                    text19       00A77
+__ptext19                                    text19       00A82
 __ptext2                                     text2        00C4E
-__ptext20                                    text20       00A81
+__ptext20                                    text20       007F4
 __ptext21                                    text21       00B1C
-__ptext22                                    text22       00A6D
-__ptext23                                    text23       00A63
+__ptext22                                    text22       00A78
+__ptext23                                    text23       00A6E
 __ptext24                                    text24       00ABB
 __ptext25                                    text25       00CB3
 __ptext26                                    text26       00C80
@@ -983,7 +982,7 @@ atoi@a                                       cstackBANK0  0002B
 atoi@s                                       cstackBANK0  0002D
 atoi@sign                                    cstackBANK0  0002A
 btemp                                        (abs)        0007E
-clear_ram0                                   clrtext      00A57
+clear_ram0                                   clrtext      00A62
 copyReceivedDataBuffer@dataBufferCounter     cstackBANK0  00021
 end_of_initialization                        cinit        000B5
 errorsISR@errNum                             cstackCOMMON 00070
@@ -993,7 +992,7 @@ hexadecimalToDecimal@dec_val                 cstackBANK0  0002E
 hexadecimalToDecimal@hexVal                  cstackBANK0  00032
 hexadecimalToDecimal@i                       cstackBANK0  00033
 hexadecimalToDecimal@len                     cstackBANK0  0002C
-init_ram                                     inittext     00A5D
+init_ram                                     inittext     00A68
 int$flags                                    (abs)        0007E
 intlevel0                                    functab      00000
 intlevel1                                    functab      00000
@@ -1039,7 +1038,7 @@ FUNCTION INFORMATION:
   dataBufferCo    2    0[BANK2 ] int 
   man             2    2[BANK2 ] int 
  Return value:  Size  Location     Type
-                  2  235[None  ] int 
+                  2  234[None  ] int 
  Registers used:
 		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, pclath, cstack
  Tracked objects:
@@ -2142,9 +2141,9 @@ C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c estimated size: 180
 
 applicationcontrol.h
-		_applianceControl		CODE           	0412	0000	688
+		_applianceControl		CODE           	0412	0000	680
 
-applicationcontrol.h estimated size: 688
+applicationcontrol.h estimated size: 680
 
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 		___wmul        		CODE           	0B4B	0000	29
@@ -2157,7 +2156,7 @@ C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c estimated size: 16
 
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-		___ftmul       		CODE           	06C1	0000	181
+		___ftmul       		CODE           	06B9	0000	181
 
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c estimated size: 181
 
@@ -2178,7 +2177,7 @@ shared
 shared estimated size: 65
 
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-		___fttol       		CODE           	0775	0000	136
+		___fttol       		CODE           	076D	0000	136
 
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c estimated size: 136
 
@@ -2193,12 +2192,12 @@ C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c estimated size: 54
 
 main.c
-		_TMR1_Initialize		CODE           	0A81	0000	12
+		_TMR1_Initialize		CODE           	07F4	0000	12
 		_allPeripheralInit		CODE           	0A8C	0000	16
-		_TMR2_Initialize		CODE           	0A77	0000	11
+		_TMR2_Initialize		CODE           	0A82	0000	11
 		_SwitchOnStatustToGatway		CODE           	0CB3	0000	52
-		_CCP8_Initialize		CODE           	0A6D	0000	11
-		_CCP10_Initialize		CODE           	0A63	0000	11
+		_CCP8_Initialize		CODE           	0A78	0000	11
+		_CCP10_Initialize		CODE           	0A6E	0000	11
 		_errorsMain    		CODE           	0B32	0000	26
 		_main          		CODE           	00B9	0000	858
 		_TransmissionIndicationLedBlinking		CODE           	0ABB	0000	18

@@ -87,6 +87,7 @@
 #define ZCD_CCP9_DIR TRISEbits.TRISE3//for rgb
 #define ZCD_CCP7_DIR TRISEbits.TRISE5
 #define ZCD_CCP8_DIR TRISEbits.TRISE4
+#define ZCD_CCP10_DIR TRISEbits.TRISE2
 
 
 
@@ -331,13 +332,20 @@ interrupt void isr(){
             RC1STAbits.CREN = 1; // countinuous Recieve Enable
             errorsISR("EROV"); 
         } 
-       mainReceivedDataBuffer[mainReceivedDataPosition]=RC1REG;
+         mainReceivedDataBuffer[mainReceivedDataPosition]=RC1REG;
          copymainReceivedDataBuffer[mainReceivedDataPosition] = mainReceivedDataBuffer[mainReceivedDataPosition];
         #ifdef DEBUG
         TX1REG=copymainReceivedDataBuffer[mainReceivedDataPosition];
         #endif
-         
-            if(copymainReceivedDataBuffer[mainReceivedDataPosition] == '|'){
+            if(mainReceivedDataBuffer[0]=='%'){
+            mainReceivedDataPosition++;
+            if(mainReceivedDataPosition>15){
+                mainDataReceived=TRUE;
+                mainReceivedDataPosition=0;                
+                RC1IF=0;                
+            }
+        }
+        else if(copymainReceivedDataBuffer[mainReceivedDataPosition] == '|'){
                 mainDataReceived=TRUE;
                 mainReceivedDataPosition=0;               
                 RC1IF=0;                
@@ -362,8 +370,6 @@ interrupt void isr(){
   
    if(PIE1bits.TMR2IE==1 && PIR1bits.TMR2IF==1)
     {        
-
-        
         PIR1bits.TMR2IF=0;
         OUTPUT_FOR_RED_LED = FALSE;//for rgb
         T2CONbits.TMR2ON=0;
@@ -372,6 +378,7 @@ interrupt void isr(){
     //*********************TIMER1 INTERRUPT**************************//
      if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF==1)
     {
+         
         PIR1bits.TMR1IF=0;  
         OUTPUT_FOR_RED_LED = TRUE;
         PR2=0x9F;
@@ -383,7 +390,8 @@ interrupt void isr(){
      //*******************************GREEN COLOR 22222 *************************************
  
     if(PIE3bits.TMR4IE==1 && PIR3bits.TMR4IF==1)
-    {           
+    {     
+      
         PIR3bits.TMR4IF=0;
         OUTPUT_FOR_GREEN_LED = FALSE;
         T4CONbits.TMR4ON=0;
@@ -392,6 +400,7 @@ interrupt void isr(){
     
     if(PIE3bits.TMR3IE == 1 && PIR3bits.TMR3IF==1)
     {
+    
         PIR3bits.TMR3IF=0;   
         OUTPUT_FOR_GREEN_LED = TRUE;
         PR4=0x9F;
@@ -420,14 +429,15 @@ interrupt void isr(){
     
     
     //*************************ZCD INTERRRUPT****************************//
-    if(PIR4bits.CCP8IF==1 || PIR4bits.CCP7IF == 1 || PIR4bits.CCP9IF==1){
+    if(PIR4bits.CCP10IF==1 || PIR4bits.CCP7IF == 1 || PIR4bits.CCP9IF==1){
     //*********************************Interrupt for Dimmer***********//
 
     //*********************************Interuupt for REd***********//
-       if(CCP9IF){
-        if(CCP9IF == 1){
-             CCP9IF=0;
+       if(CCP10IF){
+        if(CCP10IF == 1){
+             CCP10IF=0;
          if(start_PWM_Generation_For_RedLed == 1){
+                                   
                                     TMR1H = Timer1H;
                                     TMR1L = Timer1L;
                                     T1CONbits.TMR1ON = 1;
@@ -438,10 +448,11 @@ interrupt void isr(){
         }       
     }//end of ccp9
     //**********************************green******************************//
-   if(CCP8IF){
-        if(CCP8IF == 1){
-             CCP8IF=0;
+   if(CCP9IF){
+        if(CCP9IF == 1){
+             CCP9IF=0;
          if(start_PWM_Generation_For_GreenLed == 1){
+                                  
                                     TMR3H = Timer3H;
                                     TMR3L = Timer3L;
                                     T3CONbits.TMR3ON = 1;
@@ -457,12 +468,13 @@ interrupt void isr(){
         if(CCP7IF == 1){
              CCP7IF=0;
          if(start_PWM_Generation_For_BlueLed == 1){
+                                  
                                     TMR5H = Timer5H;
                                     TMR5L = Timer5L;
                                     T5CONbits.TMR5ON = 1;
-                                    OUTPUT_FOR_BLUE_LED=1;
+                                    OUTPUT_FOR_BLUE_LED = 1;
                                     PIE3bits.TMR5IE = 1;
-                                    PIR3bits.TMR5IF=0;
+                                    PIR3bits.TMR5IF = 0;
                                                     }
                         }
                  }//end of ccp7
@@ -626,7 +638,7 @@ int main() {
         {
             if(man == 1)
             {
-                SwitchOnStatustToGatway(1);
+                SwitchOnStatustToGatway('1');
             
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY1=ON;
@@ -642,7 +654,7 @@ int main() {
             //TX1REG='C';
             if(man==1)
             {
-            SwitchOffStatustToGatway(1);
+            SwitchOffStatustToGatway('1');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY1=OFF;
             }
@@ -656,7 +668,7 @@ int main() {
         {
             if(man==1)
             {
-            SwitchOnStatustToGatway(2);           
+            SwitchOnStatustToGatway('2');           
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY2=ON;
             }
@@ -668,7 +680,7 @@ int main() {
         {
             if(man==1)
             {
-            SwitchOffStatustToGatway(2);
+            SwitchOffStatustToGatway('2');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY2=OFF;
             }
@@ -683,7 +695,7 @@ int main() {
         {
             if(man == 1)
             {
-            SwitchOnStatustToGatway(3);
+            SwitchOnStatustToGatway('3');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY3=ON;
             }
@@ -696,7 +708,7 @@ int main() {
         {
             if(man==1)
             {
-            SwitchOffStatustToGatway(3);
+            SwitchOffStatustToGatway('3');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY3=OFF;
             }
@@ -712,7 +724,7 @@ int main() {
         {
             if(man==1)
             {
-            SwitchOnStatustToGatway(4);
+            SwitchOnStatustToGatway('4');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY4=ON;
             }
@@ -726,7 +738,7 @@ int main() {
             if(man==1)
             {
             
-            SwitchOffStatustToGatway(4);
+            SwitchOffStatustToGatway('4');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY4=OFF;
             }
@@ -739,7 +751,7 @@ int main() {
         {
             if(man==1)
             {
-            SwitchOnStatustToGatway(5);
+            SwitchOnStatustToGatway('5');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY5=ON;
             }
@@ -753,7 +765,7 @@ int main() {
             if(man==1)
             {
             
-            SwitchOffStatustToGatway(5);
+            SwitchOffStatustToGatway('5');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY5=OFF;
             }
@@ -767,7 +779,7 @@ int main() {
         {
             if(man==1)
             {
-            SwitchOnStatustToGatway(6);
+            SwitchOnStatustToGatway('6');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY6=ON;
             }
@@ -781,7 +793,7 @@ int main() {
             if(man==1)
             {
             
-            SwitchOffStatustToGatway(6);
+            SwitchOffStatustToGatway('6');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY6=OFF;
             }
@@ -796,7 +808,7 @@ int main() {
         {
             if(man==1)
             {
-            SwitchOnStatustToGatway(7);
+            SwitchOnStatustToGatway('7');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY7=ON;
             }
@@ -810,7 +822,7 @@ int main() {
             if(man==1)
             {
             
-            SwitchOffStatustToGatway(7);
+            SwitchOffStatustToGatway('7');
             TransmissionIndicationLedBlinking();
             OUTPUT_RELAY7=OFF;
             }
@@ -826,7 +838,7 @@ int main() {
          {
              if(man==1)
              {
-              SwitchOnStatustToGatway(8);  
+              SwitchOnStatustToGatway('8');  
             TransmissionIndicationLedBlinking();
              OUTPUT_RELAY8=ON;
              }
@@ -840,41 +852,12 @@ int main() {
              if(man==1)
              {
             
-            SwitchOffStatustToGatway(8);
+            SwitchOffStatustToGatway('8');
             TransmissionIndicationLedBlinking();
              OUTPUT_RELAY8=OFF;
              }
              man=0;
              M8=0;
-           
-         }
-              //off condition
-         if(copy_parentalLockBuffer[9] == CHAR_OFF && INPUTSWITCH9 == SWITCH_PRESSED && M9 == OFF)
-         {
-             if(man==1)
-             {
-             sendAcknowledgmentRGB("RGB.9.ACTACK.1.0.0.0.0.100");
-              OUTPUT_FOR_BLUE_LED=1;
-              OUTPUT_FOR_RED_LED=0;
-              OUTPUT_FOR_GREEN_LED=0;
-
-             }
-             man=0;
-             M9=1;
-            
-         }
-         //on condtion
-         if(copy_parentalLockBuffer[9] == CHAR_OFF && INPUTSWITCH9 == SWITCH_RELEASED && M9 == ON)
-         {
-             if(man==1)
-             {
-               sendAcknowledgment("RGB.9.ACTACK.0.0.0.0.0.100");
-               OUTPUT_FOR_BLUE_LED=0;
-               OUTPUT_FOR_RED_LED=0;
-               OUTPUT_FOR_GREEN_LED=0;
-             }
-             man=0;
-             M9=0;
            
          }
        
@@ -918,6 +901,7 @@ void GPIO_pin_Initialize(){
     ZCD_CCP9_DIR = 1;
     ZCD_CCP7_DIR = 1;
     ZCD_CCP8_DIR = 1;
+    ZCD_CCP10_DIR = 1;
    OUTPUT_TRANMIT_INDICATION_LED_DIR = 0;
     OUTPUT_RECEIVE_INDICATION_LED_DIR = 0;
     USER_RECEIVE_INDICATION_LED_DIR = 0;
@@ -950,7 +934,7 @@ void allPeripheralInit(){
     CCP9_Initialize();
     CCP8_Initialize();
     CCP7_Initialize();
-   
+    CCP10_Initialize();
 }
 
 /*
@@ -1076,6 +1060,11 @@ void TMR5_Initialize(void)
     
     // Enabling TMR5 interrupt.
     PIE3bits.TMR5IE = 1;
+        // Enable all active interrupts ---> INTCON reg .... bit 7            page 105
+    GIE = 1;
+
+    // Enables all active peripheral interrupts -----> INTCON reg .... bit 6         page 105
+    PEIE = 1;
 }
 
 void TMR2_Initialize(void)
@@ -1145,6 +1134,11 @@ void TMR6_Initialize(void)
 
     // Enabling TMR6 interrupt.
     PIE3bits.TMR6IE = 1;
+        // Enable all active interrupts ---> INTCON reg .... bit 7            page 105
+    GIE = 1;
+
+    // Enables all active peripheral interrupts -----> INTCON reg .... bit 6         page 105
+    PEIE = 1;
 }
 
 void CCP9_Initialize(){
@@ -1189,6 +1183,27 @@ void CCP7_Initialize(){
 
     // Enable the CCP1 interrupt
     PIE4bits.CCP7IE = 1;
+}
+void CCP10_Initialize(){
+    // Set the CCP1 to the options selected in the User Interface
+
+    // MODE Every edge; EN enabled; FMT right_aligned;
+    CCP10CON = 0x84;
+
+    // RH 0;
+    CCPR10H = 0x00;
+
+    // RL 0;
+    CCPR10L = 0x00;
+    
+//    CCPTMRS2bits.C9TSEL0=0;
+//    CCPTMRS2bits.C9TSEL1=0;
+
+    // Clear the CCP1 interrupt flag
+    PIR4bits.CCP10IF = 0;
+
+    // Enable the CCP1 interrupt
+    PIE4bits.CCP10IE = 1;
 }
 void CCP8_Initialize(){
     // Set the CCP1 to the options selected in the User Interface

@@ -33,7 +33,7 @@
         strcat(sendFinalBufferToGAteway,".");
         strcat(sendFinalBufferToGAteway,ChildLockstr);
         strcat(sendFinalBufferToGAteway,".");
-         strcat(sendFinalBufferToGAteway,Allcolorstr);
+        strcat(sendFinalBufferToGAteway,"100|");
         sendAcknowledgmentRGB(sendFinalBufferToGAteway);
           
         parentalLockBuffer[IntegerSwitchNumber] = charchildLock;
@@ -124,31 +124,38 @@
                     case 1:
                         if(IntergerRedColorIntensity == 255)
                             OUTPUT_FOR_RED_LED=1;
+                        
                         else if(IntergerRedColorIntensity == 0)
-                                OUTPUT_FOR_RED_LED=0;
+                            OUTPUT_FOR_RED_LED=0;
                         else
-                        {
-                        start_PWM_Generation_For_RedLed = 1;
-                        Timer1H = hexadecimalToDecimal(strRedH);
-                        Timer1L = hexadecimalToDecimal(strRedL);
+                        { 
+                                start_PWM_Generation_For_RedLed = 1;
+                                Timer1H = hexadecimalToDecimal(strRedH);
+                                Timer1L = hexadecimalToDecimal(strRedL);
                             
                         }
+                        //*************Green color***************//
                         if(IntegerGreenColorIntensity == 255)
                             OUTPUT_FOR_GREEN_LED=1;
                         else if(IntegerGreenColorIntensity == 0)
-                        OUTPUT_FOR_GREEN_LED=0;
+                            OUTPUT_FOR_GREEN_LED=0;
                         else
                         {
-                        start_PWM_Generation_For_GreenLed =1;
-                        Timer3H = hexadecimalToDecimal(strGreenH);
-                        Timer3L = hexadecimalToDecimal(strGreenL);
+                              
+                                start_PWM_Generation_For_GreenLed = 1;
+                                Timer3H = hexadecimalToDecimal(strGreenH);
+                                Timer3L = hexadecimalToDecimal(strGreenL);
                         }
+                        
+                        
+                        //************blue led*******************
                         if(IntegerBlueColorIntensity == 255)
                             OUTPUT_FOR_BLUE_LED=1;
                         else if(IntegerBlueColorIntensity == 0)
-                        OUTPUT_FOR_BLUE_LED=0;
+                            OUTPUT_FOR_BLUE_LED=0;
                         else{
-                       start_PWM_Generation_For_BlueLed =1;
+                         
+                        start_PWM_Generation_For_BlueLed = 1;
                         Timer5H = hexadecimalToDecimal(strBlueH);
                         Timer5L = hexadecimalToDecimal(strBlueL);
                         }                      

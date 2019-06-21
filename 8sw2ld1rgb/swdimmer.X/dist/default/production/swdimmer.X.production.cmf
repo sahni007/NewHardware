@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+$C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 7C 7C 2 2
 config CONFIG 0 8007 8007 2 2
@@ -19,7 +19,7 @@ $dist/default/production\swdimmer.X.production.obj
 cinit CODE 0 7E 7E 3B 2
 text1 CODE 0 B32 B32 19 2
 text2 CODE 0 C4E C4E 32 2
-text3 CODE 0 412 412 2AF 2
+text3 CODE 0 412 412 2A7 2
 text4 CODE 0 C1F C1F 2F 2
 text5 CODE 0 F4D F4D B3 2
 text6 CODE 0 CE6 CE6 35 2
@@ -29,17 +29,17 @@ text9 CODE 0 BA9 BA9 25 2
 text10 CODE 0 DBA DBA 6B 2
 text11 CODE 0 A9B A9B F 2
 text12 CODE 0 B4B B4B 1C 2
-text13 CODE 0 775 775 87 2
-text14 CODE 0 6C1 6C1 B4 2
+text13 CODE 0 76D 76D 87 2
+text14 CODE 0 6B9 6B9 B4 2
 text15 CODE 0 EA4 EA4 A9 2
 text16 CODE 0 B87 B87 22 2
 text17 CODE 0 D55 D55 65 2
 text18 CODE 0 A8C A8C F 2
-text19 CODE 0 A77 A77 A 2
-text20 CODE 0 A81 A81 B 2
+text19 CODE 0 A82 A82 A 2
+text20 CODE 0 7F4 7F4 B 2
 text21 CODE 0 B1C B1C 16 2
-text22 CODE 0 A6D A6D A 2
-text23 CODE 0 A63 A63 A 2
+text22 CODE 0 A78 A78 A 2
+text23 CODE 0 A6E A6E A 2
 text24 CODE 0 ABB ABB 11 2
 text25 CODE 0 CB3 CB3 33 2
 text26 CODE 0 C80 C80 33 2
@@ -53,7 +53,7 @@ cstackCOMMON COMMON 1 70 70 5 1
 cstackBANK0 BANK0 1 20 20 40 1
 cstackBANK1 BANK1 1 A0 A0 35 1
 cstackBANK2 BANK2 1 14A 14A 4 1
-inittext CODE 0 A5D A5D 6 2
+inittext CODE 0 A68 A68 6 2
 stringtext1 STRCODE 0 1000 1000 19 2
 stringtext2 STRCODE 0 1019 1019 5 2
 stringtext3 STRCODE 0 101E 101E 5 2
@@ -65,11 +65,11 @@ bssBANK1 BANK1 1 E7 E7 8 1
 idataBANK1 CODE 0 ACC ACC 12 2
 idataBANK2 CODE 0 BF5 BF5 2A 2
 idataBANK3 CODE 0 D1B D1B 3A 2
-swtext1 CONST 0 800 800 12 2
+swtext1 CONST 0 800 800 10 2
 dataBANK1 BANK1 1 D5 D5 12 1
 dataBANK2 BANK2 1 120 120 2A 1
 dataBANK3 BANK3 1 1A0 1A0 3A 1
-clrtext CODE 0 A57 A57 6 2
+clrtext CODE 0 A62 A62 6 2
 bssCOMMON COMMON 1 75 75 4 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -96,12 +96,12 @@ BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4BF 1
 CONST 2-3 2
-CONST 7FC-7FF 2
-CONST 812-A56 2
+CONST 7FF-7FF 2
+CONST 810-A61 2
 CONST 102B-1FFF 2
 ENTRY 2-3 2
-ENTRY 7FC-7FF 2
-ENTRY 812-A56 2
+ENTRY 7FF-7FF 2
+ENTRY 810-A61 2
 ENTRY 102B-1FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
@@ -128,8 +128,8 @@ SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 212A-22EF 1
 CODE 2-3 2
-CODE 7FC-7FF 2
-CODE 812-A56 2
+CODE 7FF-7FF 2
+CODE 810-A61 2
 CODE 102B-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -144,12 +144,12 @@ SFR9 480-49F 1
 BIGRAM 2000-22EF 1
 COMMON 79-7D 1
 STRCODE 2-3 2
-STRCODE 7FC-7FF 2
-STRCODE 812-A56 2
+STRCODE 7FF-7FF 2
+STRCODE 810-A61 2
 STRCODE 102B-1FFF 2
 STRING 2-3 2
-STRING 7FC-7FF 2
-STRING 812-A56 2
+STRING 7FF-7FF 2
+STRING 810-A61 2
 STRING 102B-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -165,58 +165,58 @@ STRING 102B-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\swdimmer.X.production.obj
-7E cinit CODE >907:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-7E cinit CODE >910:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-7E cinit CODE >1025:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-7F cinit CODE >1026:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-80 cinit CODE >1027:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-81 cinit CODE >1028:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-82 cinit CODE >1029:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-83 cinit CODE >1030:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-84 cinit CODE >1031:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-85 cinit CODE >1032:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-86 cinit CODE >1033:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-87 cinit CODE >1034:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-8A cinit CODE >1038:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-8B cinit CODE >1039:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-8C cinit CODE >1040:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-8D cinit CODE >1041:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-8E cinit CODE >1042:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-8F cinit CODE >1043:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-90 cinit CODE >1044:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-91 cinit CODE >1045:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-92 cinit CODE >1046:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-93 cinit CODE >1047:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-96 cinit CODE >1051:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-97 cinit CODE >1052:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-98 cinit CODE >1053:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-99 cinit CODE >1054:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-9A cinit CODE >1055:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-9B cinit CODE >1056:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-9C cinit CODE >1057:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-9D cinit CODE >1058:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-9E cinit CODE >1059:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-9F cinit CODE >1060:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A2 cinit CODE >1077:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A3 cinit CODE >1078:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A4 cinit CODE >1079:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5 cinit CODE >1080:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A6 cinit CODE >1084:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A7 cinit CODE >1085:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A8 cinit CODE >1086:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A9 cinit CODE >1087:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-AA cinit CODE >1088:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-AB cinit CODE >1089:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-AE cinit CODE >1093:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-AF cinit CODE >1094:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B0 cinit CODE >1095:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B1 cinit CODE >1096:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B2 cinit CODE >1097:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B3 cinit CODE >1098:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B5 cinit CODE >1104:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B5 cinit CODE >1106:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B6 cinit CODE >1107:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-B7 cinit CODE >1108:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
+7E cinit CODE >907:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+7E cinit CODE >910:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+7E cinit CODE >1025:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+7F cinit CODE >1026:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+80 cinit CODE >1027:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+81 cinit CODE >1028:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+82 cinit CODE >1029:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+83 cinit CODE >1030:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+84 cinit CODE >1031:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+85 cinit CODE >1032:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+86 cinit CODE >1033:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+87 cinit CODE >1034:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+8A cinit CODE >1038:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+8B cinit CODE >1039:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+8C cinit CODE >1040:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+8D cinit CODE >1041:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+8E cinit CODE >1042:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+8F cinit CODE >1043:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+90 cinit CODE >1044:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+91 cinit CODE >1045:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+92 cinit CODE >1046:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+93 cinit CODE >1047:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+96 cinit CODE >1051:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+97 cinit CODE >1052:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+98 cinit CODE >1053:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+99 cinit CODE >1054:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+9A cinit CODE >1055:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+9B cinit CODE >1056:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+9C cinit CODE >1057:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+9D cinit CODE >1058:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+9E cinit CODE >1059:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+9F cinit CODE >1060:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A2 cinit CODE >1077:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A3 cinit CODE >1078:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A4 cinit CODE >1079:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A5 cinit CODE >1080:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A6 cinit CODE >1084:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A7 cinit CODE >1085:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A8 cinit CODE >1086:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A9 cinit CODE >1087:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+AA cinit CODE >1088:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+AB cinit CODE >1089:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+AE cinit CODE >1093:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+AF cinit CODE >1094:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B0 cinit CODE >1095:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B1 cinit CODE >1096:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B2 cinit CODE >1097:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B3 cinit CODE >1098:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B5 cinit CODE >1104:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B5 cinit CODE >1106:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B6 cinit CODE >1107:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+B7 cinit CODE >1108:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
 4 intentry CODE >206:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 9 intentry CODE >209:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 B intentry CODE >210:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
@@ -339,20 +339,20 @@ ABB text24 CODE >840:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1r
 ABD text24 CODE >841:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 AC9 text24 CODE >842:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 ACB text24 CODE >843:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A63 text23 CODE >796:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A63 text23 CODE >800:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A66 text23 CODE >803:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A67 text23 CODE >806:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A68 text23 CODE >812:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A6A text23 CODE >815:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A6C text23 CODE >816:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A6D text22 CODE >775:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A6D text22 CODE >779:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A70 text22 CODE >782:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A71 text22 CODE >785:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A72 text22 CODE >791:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A74 text22 CODE >794:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A76 text22 CODE >795:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A6E text23 CODE >796:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A6E text23 CODE >800:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A71 text23 CODE >803:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A72 text23 CODE >806:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A73 text23 CODE >812:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A75 text23 CODE >815:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A77 text23 CODE >816:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A78 text22 CODE >775:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A78 text22 CODE >779:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A7B text22 CODE >782:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A7C text22 CODE >785:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A7D text22 CODE >791:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A7F text22 CODE >794:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A81 text22 CODE >795:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 B1C text21 CODE >681:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 B1C text21 CODE >682:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 B1E text21 CODE >683:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
@@ -367,24 +367,24 @@ B2C text21 CODE >710:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1r
 B2E text21 CODE >713:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 B30 text21 CODE >716:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 B31 text21 CODE >717:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A81 text20 CODE >719:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A81 text20 CODE >722:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A83 text20 CODE >725:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A84 text20 CODE >728:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A85 text20 CODE >731:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A86 text20 CODE >734:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A87 text20 CODE >737:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A89 text20 CODE >743:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A8A text20 CODE >746:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A8B text20 CODE >748:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A77 text19 CODE >751:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A77 text19 CODE >756:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A7A text19 CODE >762:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A7B text19 CODE >765:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A7C text19 CODE >768:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A7E text19 CODE >769:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A7F text19 CODE >772:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A80 text19 CODE >773:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7F4 text20 CODE >719:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7F4 text20 CODE >722:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7F6 text20 CODE >725:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7F7 text20 CODE >728:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7F8 text20 CODE >731:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7F9 text20 CODE >734:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7FA text20 CODE >737:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7FC text20 CODE >743:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7FD text20 CODE >746:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+7FE text20 CODE >748:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A82 text19 CODE >751:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A82 text19 CODE >756:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A85 text19 CODE >762:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A86 text19 CODE >765:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A87 text19 CODE >768:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A89 text19 CODE >769:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A8A text19 CODE >772:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
+A8B text19 CODE >773:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 A8C text18 CODE >670:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 A8C text18 CODE >671:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 A8F text18 CODE >672:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
@@ -441,54 +441,54 @@ F2A text15 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ft
 F2B text15 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
 F31 text15 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
 F35 text15 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-6C1 text14 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6C1 text14 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6D1 text14 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6D8 text14 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6E7 text14 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6EE text14 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6F3 text14 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-703 text14 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-713 text14 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-717 text14 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-718 text14 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-719 text14 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-71F text14 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-725 text14 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-729 text14 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-72B text14 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-731 text14 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-737 text14 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-73D text14 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-741 text14 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-745 text14 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-747 text14 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-74D text14 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-753 text14 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-759 text14 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-75D text14 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-775 text13 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-775 text13 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-785 text13 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-78E text13 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-79E text13 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-79F text13 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7A5 text13 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7AC text13 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7AE text13 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7B0 text13 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7B5 text13 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7BE text13 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7C5 text13 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7CC text13 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7D0 text13 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7D9 text13 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7E0 text13 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7E2 text13 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7E2 text13 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7E5 text13 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7E8 text13 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-7F3 text13 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+6B9 text14 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+6B9 text14 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+6C9 text14 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+6D0 text14 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+6DF text14 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+6E6 text14 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+6EB text14 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+6FB text14 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+70B text14 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+70F text14 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+710 text14 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+711 text14 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+717 text14 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+71D text14 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+721 text14 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+723 text14 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+729 text14 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+72F text14 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+735 text14 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+739 text14 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+73D text14 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+73F text14 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+745 text14 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+74B text14 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+751 text14 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+755 text14 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+76D text13 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+76D text13 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+77D text13 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+786 text13 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+796 text13 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+797 text13 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+79D text13 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7A4 text13 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7A6 text13 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7A8 text13 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7AD text13 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7B6 text13 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7BD text13 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7C4 text13 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7C8 text13 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7D1 text13 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7D8 text13 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7DA text13 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7DA text13 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7DD text13 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7E0 text13 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+7EB text13 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
 B4B text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 B4B text12 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 B4E text12 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
@@ -644,20 +644,18 @@ C43 text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\str
 66D text3 CODE >102:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
 66E text3 CODE >106:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
 675 text3 CODE >107:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-676 text3 CODE >111:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-67D text3 CODE >112:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-67E text3 CODE >114:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-683 text3 CODE >115:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-684 text3 CODE >116:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-684 text3 CODE >117:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-686 text3 CODE >118:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-687 text3 CODE >120:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-693 text3 CODE >121:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-69E text3 CODE >125:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-69F text3 CODE >115:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-6AC text3 CODE >129:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-6AD text3 CODE >74:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
-6C0 text3 CODE >131:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+676 text3 CODE >114:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+67B text3 CODE >115:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+67C text3 CODE >116:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+67C text3 CODE >117:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+67E text3 CODE >118:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+67F text3 CODE >120:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+68B text3 CODE >121:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+696 text3 CODE >125:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+697 text3 CODE >115:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+6A4 text3 CODE >129:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+6A5 text3 CODE >74:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
+6B8 text3 CODE >131:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\applicationcontrol.h
 C4E text2 CODE >875:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 C4E text2 CODE >876:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 C53 text2 CODE >877:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
@@ -819,22 +817,22 @@ F7 maintext CODE >292:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1
 40C maintext CODE >575:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 40F maintext CODE >576:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
 411 maintext CODE >289:D:\ALFAONE\alfaone\VARUN\VARUN\GItHub\New_Hardware\8sw2ld1rgb\swdimmer.X\main.c
-A57 clrtext CODE >1066:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A57 clrtext CODE >1067:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A58 clrtext CODE >1068:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A58 clrtext CODE >1069:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A59 clrtext CODE >1070:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5A clrtext CODE >1071:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5B clrtext CODE >1072:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5C clrtext CODE >1073:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5D inittext CODE >1014:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5D inittext CODE >1015:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5E inittext CODE >1016:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5E inittext CODE >1017:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A5F inittext CODE >1018:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A60 inittext CODE >1019:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A61 inittext CODE >1020:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
-A62 inittext CODE >1021:C:\Users\Alfaone\AppData\Local\Temp\s6o4.
+A62 clrtext CODE >1066:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A62 clrtext CODE >1067:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A63 clrtext CODE >1068:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A63 clrtext CODE >1069:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A64 clrtext CODE >1070:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A65 clrtext CODE >1071:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A66 clrtext CODE >1072:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A67 clrtext CODE >1073:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A68 inittext CODE >1014:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A68 inittext CODE >1015:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A69 inittext CODE >1016:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A69 inittext CODE >1017:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A6A inittext CODE >1018:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A6B inittext CODE >1019:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A6C inittext CODE >1020:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
+A6D inittext CODE >1021:C:\Users\Alfaone\AppData\Local\Temp\s9nc.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -885,11 +883,11 @@ _WPUB 20D 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _WPUD 20F 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _WPUE 210 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _WPUG 48D 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+___sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
 _atoi 1B74 0 CODE 0 text10 dist/default/production\swdimmer.X.production.obj
 _main 172 0 CODE 0 maintext dist/default/production\swdimmer.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
-start F8 0 CODE 0 init C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+start F8 0 CODE 0 init C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
 _mainReceivedDataPosition 77 0 COMMON 1 bssCOMMON dist/default/production\swdimmer.X.production.obj
 _GPIO_pin_Initialize 179C 0 CODE 0 text28 dist/default/production\swdimmer.X.production.obj
 __size_of___ftdiv 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
@@ -915,16 +913,16 @@ applianceControl@charFinalFrameState 51 0 BANK0 1 cstackBANK0 dist/default/produ
 __end_of_EUSART_Initialize 1664 0 CODE 0 text21 dist/default/production\swdimmer.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
-_TMR2_Initialize 14EE 0 CODE 0 text19 dist/default/production\swdimmer.X.production.obj
+_TMR2_Initialize 1504 0 CODE 0 text19 dist/default/production\swdimmer.X.production.obj
 applianceControl@integerSwitchNumber CF 0 BANK1 1 cstackBANK1 dist/default/production\swdimmer.X.production.obj
 applianceControl@integerSwitchState D3 0 BANK1 1 cstackBANK1 dist/default/production\swdimmer.X.production.obj
 _sendAcknowledgment 16CE 0 CODE 0 text7 dist/default/production\swdimmer.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 __end_of_errorsISR 160E 0 CODE 0 text32 dist/default/production\swdimmer.X.production.obj
 __end_of_clearAllPorts 15E4 0 CODE 0 text30 dist/default/production\swdimmer.X.production.obj
@@ -953,21 +951,20 @@ applianceControl@strH BF 0 BANK1 1 cstackBANK1 dist/default/production\swdimmer.
 applianceControl@strL C2 0 BANK1 1 cstackBANK1 dist/default/production\swdimmer.X.production.obj
 __size_of_copyReceivedDataBuffer 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __size_of___awtoft 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
-_CCP8IF A3 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _CCPR8H 618 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _CCPR8L 617 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __end_of___wmul 16CE 0 CODE 0 text12 dist/default/production\swdimmer.X.production.obj
 _allPeripheralInit 1518 0 CODE 0 text18 dist/default/production\swdimmer.X.production.obj
 _applianceControl 824 0 CODE 0 text3 dist/default/production\swdimmer.X.production.obj
 main@man 14C 0 BANK2 1 cstackBANK2 dist/default/production\swdimmer.X.production.obj
-_CCP10_Initialize 14C6 0 CODE 0 text23 dist/default/production\swdimmer.X.production.obj
+_CCP10_Initialize 14DC 0 CODE 0 text23 dist/default/production\swdimmer.X.production.obj
 ___fttol@f1 3E 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
 __size_of_sprintf 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __size_of___ftpack 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __end_of___ftdiv 1E9A 0 CODE 0 text15 dist/default/production\swdimmer.X.production.obj
-__end_of___ftmul EEA 0 CODE 0 text14 dist/default/production\swdimmer.X.production.obj
-__end_of___fttol FF8 0 CODE 0 text13 dist/default/production\swdimmer.X.production.obj
+__end_of___ftmul EDA 0 CODE 0 text14 dist/default/production\swdimmer.X.production.obj
+__end_of___fttol FE8 0 CODE 0 text13 dist/default/production\swdimmer.X.production.obj
 __end_of___lwdiv 1A36 0 CODE 0 text6 dist/default/production\swdimmer.X.production.obj
 __size_of_isdigit 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __end_of_GPIO_pin_Initialize 17EA 0 CODE 0 text28 dist/default/production\swdimmer.X.production.obj
@@ -998,7 +995,7 @@ __CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _SwitchOffStatustToGatway 1900 0 CODE 0 text26 dist/default/production\swdimmer.X.production.obj
 ?_hexadecimalToDecimal 28 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 __end_of___awtoft 1752 0 CODE 0 text16 dist/default/production\swdimmer.X.production.obj
-clear_ram0 14AE 0 CODE 0 clrtext dist/default/production\swdimmer.X.production.obj
+clear_ram0 14C4 0 CODE 0 clrtext dist/default/production\swdimmer.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\swdimmer.X.production.obj
 __pcstackBANK2 14A 0 BANK2 1 cstackBANK2 dist/default/production\swdimmer.X.production.obj
@@ -1006,7 +1003,7 @@ copyReceivedDataBuffer@dataBufferCounter 21 0 BANK0 1 cstackBANK0 dist/default/p
 _T1GCON 19 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 ___fttol@exp1 4B 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 ___fttol@lval 47 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
-__end_of_CCP8_Initialize 14EE 0 CODE 0 text22 dist/default/production\swdimmer.X.production.obj
+__end_of_CCP8_Initialize 1504 0 CODE 0 text22 dist/default/production\swdimmer.X.production.obj
 _TX1REG 19A 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _TX1STA 19E 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 ___ftpack 1AAA 0 CODE 0 text17 dist/default/production\swdimmer.X.production.obj
@@ -1014,8 +1011,8 @@ _hexpowers 2000 0 STRCODE 0 stringtext1 dist/default/production\swdimmer.X.produ
 ___ftpack@arg 20 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 ___ftpack@exp 23 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 _isdigit$990 20 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
-__end_of_applianceControl D82 0 CODE 0 text3 dist/default/production\swdimmer.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+__end_of_applianceControl D72 0 CODE 0 text3 dist/default/production\swdimmer.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
 _Timer1H EB 0 BANK1 1 bssBANK1 dist/default/production\swdimmer.X.production.obj
 _Timer1L E9 0 BANK1 1 bssBANK1 dist/default/production\swdimmer.X.production.obj
 __end_of___ftpack 1B74 0 CODE 0 text17 dist/default/production\swdimmer.X.production.obj
@@ -1056,7 +1053,7 @@ __Hsfr30 0 0 ABS 0 sfr30 -
 __Hsfr31 0 0 ABS 0 sfr31 -
 __Hstack 0 0 STACK 2 stack -
 ___lwdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
-__end_of_CCP10_Initialize 14DA 0 CODE 0 text23 dist/default/production\swdimmer.X.production.obj
+__end_of_CCP10_Initialize 14F0 0 CODE 0 text23 dist/default/production\swdimmer.X.production.obj
 __Hbank10 0 0 BANK10 1 bank10 -
 __Hbank11 0 0 BANK11 1 bank11 -
 __Hbank12 0 0 BANK12 1 bank12 -
@@ -1125,7 +1122,7 @@ __Lsfr29 0 0 ABS 0 sfr29 -
 __Lsfr30 0 0 ABS 0 sfr30 -
 __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-init_ram 14BA 0 CODE 0 inittext dist/default/production\swdimmer.X.production.obj
+init_ram 14D0 0 CODE 0 inittext dist/default/production\swdimmer.X.production.obj
 _mainReceivedDataBuffer 120 0 BANK2 1 dataBANK2 dist/default/production\swdimmer.X.production.obj
 main@dataBufferCounter 14A 0 BANK2 1 cstackBANK2 dist/default/production\swdimmer.X.production.obj
 __Linittext 0 0 ABS 0 inittext -
@@ -1176,7 +1173,7 @@ __LcstackBANK2 0 0 ABS 0 cstackBANK2 -
 hexadecimalToDecimal@base 30 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 int$flags 7E 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_CCP8_Initialize 14DA 0 CODE 0 text22 dist/default/production\swdimmer.X.production.obj
+_CCP8_Initialize 14F0 0 CODE 0 text22 dist/default/production\swdimmer.X.production.obj
 _GIE 5F 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _PR2 1B 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __S0 8009 0 ABS 0 - -
@@ -1194,7 +1191,7 @@ sprintf@idx 33 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.producti
 sprintf@val 35 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 __end_of_isr F8 0 CODE 0 intentry dist/default/production\swdimmer.X.production.obj
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
 strlen@s 26 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 errorsISR@errNum 70 0 COMMON 1 cstackCOMMON dist/default/production\swdimmer.X.production.obj
 __pdataBANK1 D5 0 BANK1 1 dataBANK1 dist/default/production\swdimmer.X.production.obj
@@ -1224,17 +1221,17 @@ _parentalLockBuffer 132 0 BANK2 1 dataBANK2 dist/default/production\swdimmer.X.p
 __ptext10 1B74 0 CODE 0 text10 dist/default/production\swdimmer.X.production.obj
 __ptext11 1536 0 CODE 0 text11 dist/default/production\swdimmer.X.production.obj
 __ptext12 1696 0 CODE 0 text12 dist/default/production\swdimmer.X.production.obj
-__ptext13 EEA 0 CODE 0 text13 dist/default/production\swdimmer.X.production.obj
-__ptext14 D82 0 CODE 0 text14 dist/default/production\swdimmer.X.production.obj
+__ptext13 EDA 0 CODE 0 text13 dist/default/production\swdimmer.X.production.obj
+__ptext14 D72 0 CODE 0 text14 dist/default/production\swdimmer.X.production.obj
 __ptext15 1D48 0 CODE 0 text15 dist/default/production\swdimmer.X.production.obj
 __ptext16 170E 0 CODE 0 text16 dist/default/production\swdimmer.X.production.obj
 __ptext17 1AAA 0 CODE 0 text17 dist/default/production\swdimmer.X.production.obj
 __ptext18 1518 0 CODE 0 text18 dist/default/production\swdimmer.X.production.obj
-__ptext19 14EE 0 CODE 0 text19 dist/default/production\swdimmer.X.production.obj
-__ptext20 1502 0 CODE 0 text20 dist/default/production\swdimmer.X.production.obj
+__ptext19 1504 0 CODE 0 text19 dist/default/production\swdimmer.X.production.obj
+__ptext20 FE8 0 CODE 0 text20 dist/default/production\swdimmer.X.production.obj
 __ptext21 1638 0 CODE 0 text21 dist/default/production\swdimmer.X.production.obj
-__ptext22 14DA 0 CODE 0 text22 dist/default/production\swdimmer.X.production.obj
-__ptext23 14C6 0 CODE 0 text23 dist/default/production\swdimmer.X.production.obj
+__ptext22 14F0 0 CODE 0 text22 dist/default/production\swdimmer.X.production.obj
+__ptext23 14DC 0 CODE 0 text23 dist/default/production\swdimmer.X.production.obj
 __ptext24 1576 0 CODE 0 text24 dist/default/production\swdimmer.X.production.obj
 __ptext25 1966 0 CODE 0 text25 dist/default/production\swdimmer.X.production.obj
 __ptext26 1900 0 CODE 0 text26 dist/default/production\swdimmer.X.production.obj
@@ -1244,8 +1241,8 @@ __ptext29 160E 0 CODE 0 text29 dist/default/production\swdimmer.X.production.obj
 __ptext30 15BC 0 CODE 0 text30 dist/default/production\swdimmer.X.production.obj
 __ptext32 15E4 0 CODE 0 text32 dist/default/production\swdimmer.X.production.obj
 ___ftdiv 1D48 0 CODE 0 text15 dist/default/production\swdimmer.X.production.obj
-___ftmul D82 0 CODE 0 text14 dist/default/production\swdimmer.X.production.obj
-___fttol EEA 0 CODE 0 text13 dist/default/production\swdimmer.X.production.obj
+___ftmul D72 0 CODE 0 text14 dist/default/production\swdimmer.X.production.obj
+___fttol EDA 0 CODE 0 text13 dist/default/production\swdimmer.X.production.obj
 ___lwdiv 19CC 0 CODE 0 text6 dist/default/production\swdimmer.X.production.obj
 applianceControl@ConvertIntToTimeInMilisec C8 0 BANK1 1 cstackBANK1 dist/default/production\swdimmer.X.production.obj
 strlen@cp 27 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
@@ -1292,8 +1289,8 @@ _strlen 1752 0 CODE 0 text9 dist/default/production\swdimmer.X.production.obj
 __end_of_errorsMain 1696 0 CODE 0 text1 dist/default/production\swdimmer.X.production.obj
 __size_of_CCP8_Initialize 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
-stackhi 22EF 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
-stacklo 212A 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s6o4.obj
+stackhi 22EF 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
+stacklo 212A 0 ABS 0 - C:\Users\Alfaone\AppData\Local\Temp\s9nc.obj
 hexadecimalToDecimal@len 2C 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 sendAcknowledgment@currentStateBuffer 23 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
@@ -1352,7 +1349,7 @@ sprintf@ap 34 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.productio
 sprintf@sp 38 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 _isdigit 1536 0 CODE 0 text11 dist/default/production\swdimmer.X.production.obj
 __size_of_allPeripheralInit 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
-__end_of_TMR1_Initialize 1518 0 CODE 0 text20 dist/default/production\swdimmer.X.production.obj
+__end_of_TMR1_Initialize FFE 0 CODE 0 text20 dist/default/production\swdimmer.X.production.obj
 _start_PWM_Generation_For_DIMMER E7 0 BANK1 1 bssBANK1 dist/default/production\swdimmer.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __Hstringtext1 0 0 ABS 0 stringtext1 -
@@ -1403,7 +1400,8 @@ _TMR1H 17 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 _TMR1L 16 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_TMR1_Initialize 1502 0 CODE 0 text20 dist/default/production\swdimmer.X.production.obj
+_TMR1_Initialize FE8 0 CODE 0 text20 dist/default/production\swdimmer.X.production.obj
+_CCP10IF A7 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __pintentry 8 0 CODE 0 intentry dist/default/production\swdimmer.X.production.obj
 ___fttol@sign1 46 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
 _CCP9CON 61C 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
@@ -1428,7 +1426,7 @@ ___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.prod
 __size_of_errorsMain 0 0 ABS 0 - dist/default/production\swdimmer.X.production.obj
 __pswtext1 1000 0 CONST 0 swtext1 dist/default/production\swdimmer.X.production.obj
 ___ftmul@f3_as_product 33 0 BANK0 1 cstackBANK0 dist/default/production\swdimmer.X.production.obj
-__end_of_TMR2_Initialize 1502 0 CODE 0 text19 dist/default/production\swdimmer.X.production.obj
+__end_of_TMR2_Initialize 1518 0 CODE 0 text19 dist/default/production\swdimmer.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1469,11 +1467,10 @@ text15 0 EA4 1D48 A9 2
 text16 0 B87 170E 22 2
 text17 0 D55 1AAA 65 2
 text18 0 A8C 1518 F 2
-text19 0 A77 14EE A 2
-text20 0 A81 1502 B 2
+text19 0 A82 1504 A 2
 text21 0 B1C 1638 16 2
-text22 0 A6D 14DA A 2
-text23 0 A63 14C6 A 2
+text22 0 A78 14F0 A 2
+text23 0 A6E 14DC A 2
 text24 0 ABB 1576 11 2
 text25 0 CB3 1966 33 2
 text26 0 C80 1900 33 2
@@ -1485,15 +1482,15 @@ text32 0 AF2 15E4 15 2
 cstackCOMMON 1 70 70 9 1
 cstackBANK0 1 20 20 50 1
 cstackBANK1 1 A0 A0 4F 1
-inittext 0 A5D 14BA 6 2
+inittext 0 A68 14D0 6 2
 stringtext1 0 1000 2000 2B 2
-intentry 0 4 8 7F8 2
+intentry 0 4 8 7FB 2
 reset_vec 0 0 0 2 2
 idataBANK1 0 ACC 1598 12 2
 idataBANK2 0 BF5 17EA 2A 2
 idataBANK3 0 D1B 1A36 3A 2
-swtext1 0 800 1000 12 2
+swtext1 0 800 1000 10 2
 dataBANK2 1 120 120 2E 1
 dataBANK3 1 1A0 1A0 3A 1
-clrtext 0 A57 14AE 6 2
+clrtext 0 A62 14C4 6 2
 config 0 8007 1000E 2 2
